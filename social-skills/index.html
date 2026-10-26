@@ -815,26 +815,53 @@ function person(p) {
 /* ================= 語音 ================= */
 var state = { view: 'list', sc: 0, phase: 'wrong', frames: [], fi: 0, tts: true, auto: null, picked: null, demoDone: false, revealed: {}, checks: {} };
 try { var t = localStorage.getItem('le-tts'); if (t !== null) state.tts = t === '1'; } catch (e) {}
-var VOICE = null;
+/* 聲音：喬治是男生，旁白和男生用男生的聲音，女生、老師、媽媽用女生的聲音（老師要求）。
+ * 台灣口音的男生語音：Windows 的 Zhiwei、Edge 的 YunJhe。這台電腦沒有的話，用女生的聲音把音調調低代替。 */
+var V = { m: null, f: null };
+var MALE = /male|男|zhiwei|yunjhe|yunxi|yunyang|yunjian|yunze|kangkang|li-?mu|liang|\bhan\b/i;
+function isMale(v) { return MALE.test(v.name) && !/female|女/i.test(v.name); }
 function pickVoice() {
   if (!('speechSynthesis' in window)) return;
-  var vs = speechSynthesis.getVoices();
-  VOICE = vs.filter(function (v) { return /zh[-_]TW/i.test(v.lang); })[0] || vs.filter(function (v) { return /^zh|cmn/i.test(v.lang); })[0] || null;
+  var vs = speechSynthesis.getVoices(), tw = vs.filter(function (v) { return /zh[-_]TW/i.test(v.lang); });
+  if (!tw.length) tw = vs.filter(function (v) { return /^zh|cmn/i.test(v.lang); });
+  V.m = tw.filter(isMale)[0] || null;
+  V.f = tw.filter(function (v) { return !isMale(v); })[0] || tw[0] || null;
+  var n = document.getElementById('voice-note');
+  if (n) n.textContent = voiceNote();
+}
+function voiceNote() {
+  if (!('speechSynthesis' in window) || !(V.m || V.f)) return '這台電腦沒有中文語音，請老師念。';
+  return V.m ? '' : '這台電腦沒有男生的中文語音，喬治的聲音用調低音調代替。';
 }
 if ('speechSynthesis' in window) { pickVoice(); speechSynthesis.onvoiceschanged = pickVoice; }
-function speak(text, done) {
+/* sayTok：每次「重新開始念」就加一，正在念的一連串句子看到號碼變了就停下來 */
+var sayTok = 0;
+function say1(text, sex, done) {
   var est = 600 + text.length * 260;
   if (!state.tts || !('speechSynthesis' in window)) { if (done) setTimeout(done, est); return; }
   speechSynthesis.cancel();
-  var u = new SpeechSynthesisUtterance(fixSay(text)); u.lang = 'zh-TW'; if (VOICE) u.voice = VOICE; u.rate = .9;
+  var u = new SpeechSynthesisUtterance(fixSay(text)); u.lang = 'zh-TW'; u.rate = .9;
+  var fem = sex === 'f';
+  u.voice = fem ? (V.f || V.m) : (V.m || V.f);
+  u.pitch = !fem && !V.m ? .65 : 1;
   var fin = false, end = function () { if (!fin) { fin = true; if (done) done(); } };
   u.onend = end; u.onerror = end; setTimeout(end, est * 2 + 2000);
   speechSynthesis.speak(u);
 }
+/* 一句一句念：list 是 [文字, 'm' 或 'f']，全部念完才呼叫 done */
+function speakSeq(list, done) {
+  var tok = ++sayTok, i = 0;
+  (function next() {
+    if (tok !== sayTok) return;
+    if (i >= list.length) { if (done) done(); return; }
+    var x = list[i++]; say1(x[0], x[1], next);
+  })();
+}
+function speak(text, done, sex) { speakSeq([[text, sex || 'm']], done); }
 /* 語音念錯的詞：念的時候換成同音字（畫面上的字不變） */
 var SAY_FIX = [[/乾淨/g, '甘淨']];
 function fixSay(t) { SAY_FIX.forEach(function (f) { t = t.replace(f[0], f[1]); }); return t; }
-function stopAll() { if (state.auto) { clearTimeout(state.auto.t); state.auto = null; } if ('speechSynthesis' in window) speechSynthesis.cancel(); }
+function stopAll() { sayTok++; if (state.auto) { clearTimeout(state.auto.t); state.auto = null; } if ('speechSynthesis' in window) speechSynthesis.cancel(); }
 function storeChecks() { try { localStorage.setItem('le-rate', JSON.stringify(state.rate || {})); } catch (e) {} }
 try { state.rate = JSON.parse(localStorage.getItem('le-rate') || '{}') || {}; } catch (e) { state.rate = {}; }
 
@@ -849,6 +876,19 @@ document.addEventListener('click', function (e) {
   if (!b) return;
   e.preventDefault(); e.stopPropagation(); stopAll(); speak(b.dataset.say);
 }, true);
+/* 不識字的學生：換頁、選項這些按鈕，按下去先念出按鈕上的字，念完才換頁（老師要求） */
+var FIRST = '#go, #again, #nextsc, #cards, #back, .tab, .steps button, .opt, .sc-card';
+function labelOf(el) {
+  return (el.getAttribute('data-label') || el.textContent).replace(/[①-⑨→←▶◀■↺🔁]|[\u{1F300}-\u{1FAFF}☀-➿]️?/gu, ' ').replace(/\s+/g, ' ').trim();
+}
+document.addEventListener('click', function (e) {
+  var el = e.target.closest && e.target.closest(FIRST);
+  if (!el || el.__go || el.disabled || !state.tts || !('speechSynthesis' in window)) return;
+  e.preventDefault(); e.stopPropagation();
+  if (el.__wait) return;
+  el.__wait = true; stopAll();
+  speak(labelOf(el), function () { el.__wait = false; el.__go = true; el.click(); el.__go = false; });
+}, true);
 var PHASES = [
   { k: 'wrong', n: '①看一看', t: '喬治怎麼做' }, { k: 'stop', n: '②停！想一想', t: '發生什麼事' },
   { k: 'choose', n: '③選一選', t: '可以怎麼做' }, { k: 'right', n: '④換個方式', t: '再看一次' }, { k: 'act', n: '⑤換我練', t: '口訣和演練' }
@@ -862,7 +902,7 @@ function render() {
       '<p>嗨！我是<b>喬治</b>。在學校裡，有時候會遇到不知道該怎麼辦的事情。<br>我們一起看一看、想一想、練一練，找到讓自己和大家都開心的方法吧！</p>' + sayBtn('嗨！我是喬治。在學校裡，有時候會遇到不知道該怎麼辦的事情。我們一起看一看、想一想、練一練，找到讓自己和大家都開心的方法吧！') + '</div>' +
       '<div class="grid">' + SCENES.map(function (s, i) {
         var r = state.rate[s.id];
-        return '<div class="sc-wrap"><button class="sc-card" data-i="' + i + '"><span class="no"><span>情境 ' + (i + 1) + '</span>' + (r ? '<span class="stars">' + '★★★'.slice(0, r) + '</span>' : '') + '</span>' +
+        return '<div class="sc-wrap"><button class="sc-card" data-i="' + i + '" data-label="情境' + (i + 1) + '，' + esc(s.title) + '"><span class="no"><span>情境 ' + (i + 1) + '</span>' + (r ? '<span class="stars">' + '★★★'.slice(0, r) + '</span>' : '') + '</span>' +
           '<h3>' + esc(s.title) + '</h3><p>' + esc(s.short) + '</p>' + chain(s.how.chain, 'small') + '</button>' +
           sayBtn('情境' + (i + 1) + '，' + s.title + '。' + s.short, 'corner') + '</div>';
       }).join('') + '</div>';
@@ -883,6 +923,7 @@ function renderPlayer() {
   var s = SCENES[state.sc];
   $('#main').innerHTML =
     '<div class="bar2"><button class="btn sm" id="back">← 情境列表</button><h2>情境 ' + (state.sc + 1) + '　' + esc(s.title) + '</h2>' +
+    '<span class="note" id="voice-note" style="margin:0">' + voiceNote() + '</span>' +
     '<button class="btn sm" id="tts" aria-pressed="' + state.tts + '">' + (state.tts ? '🔊 語音：開' : '🔇 語音：關') + '</button></div>' +
     '<ol class="steps" id="steps"></ol>' +
     '<div class="stage" id="stage"></div>' +
@@ -899,7 +940,7 @@ function renderPlayer() {
 function renderSteps() {
   var idx = PHASES.map(function (p) { return p.k; }).indexOf(state.phase);
   $('#steps').innerHTML = PHASES.map(function (p, i) {
-    return '<li><button data-k="' + p.k + '" class="' + (i < idx ? 'done' : '') + '"' + (i === idx ? ' aria-current="step"' : '') + '><b>' + p.n + '</b><span>' + p.t + '</span></button></li>';
+    return '<li><button data-k="' + p.k + '" data-label="' + p.n.slice(1) + '，' + p.t + '" class="' + (i < idx ? 'done' : '') + '"' + (i === idx ? ' aria-current="step"' : '') + '><b>' + p.n + '</b><span>' + p.t + '</span></button></li>';
   }).join('');
   $('#steps').querySelectorAll('button').forEach(function (b) { b.onclick = function () { goPhase(b.dataset.k); }; });
 }
@@ -939,12 +980,14 @@ function drawFrame(badge) {
   if (state.stamp) html += '<div class="stamp"><span>' + state.stamp + '</span></div>';
   st.innerHTML = html;
 }
-function frameText(f) {
-  var s = SCENES[state.sc], parts = [];
-  if (f.cap) parts.push(f.cap);
-  f.say.forEach(function (b) { parts.push(b[1]); });
-  f.think.forEach(function (b) { parts.push(s.cast[b[0]].name + '心裡想：' + b[1]); });
-  return parts.map(function (t) { return /[。！？…」]$/.test(t) ? t : t + '。'; }).join('');
+function sexOf(p) { return p.kind === 'girl' || p.kind === 'teacher' || p.kind === 'mom' ? 'f' : 'm'; }
+function dot(t) { return /[。！？…」]$/.test(t) ? t : t + '。'; }
+function frameSegs(f) {
+  var s = SCENES[state.sc], out = [];
+  if (f.cap) out.push([dot(f.cap), 'm']);
+  f.say.forEach(function (b) { out.push([dot(b[1]), sexOf(s.cast[b[0]])]); });
+  f.think.forEach(function (b) { out.push([dot(s.cast[b[0]].name + '心裡想：' + b[1]), sexOf(s.cast[b[0]])]); });
+  return out;
 }
 
 function showFrames(list, badge, after) {
@@ -969,7 +1012,7 @@ function nextFrame() {
   if (state.fi < state.frames.length - 1) { state.fi++; drawFrame(state.badge); renderCtrl(); }
   if (state.fi === state.frames.length - 1 && state.after) { var a = state.after; state.after = null; a(); }
 }
-function speakFrame(done) { speak(frameText(state.frames[state.fi]), done); }
+function speakFrame(done) { speakSeq(frameSegs(state.frames[state.fi]), done); }
 /* 影片播完：錯誤版接著「停！想一想」、換個方式接著「我可以怎麼做」，自動念出來（老師要求） */
 function afterVideo() {
   var from = state.phase, sc = state.sc, next = { wrong: 'stop', right: 'act' }[from];
@@ -1012,7 +1055,7 @@ function goPhase(k, quiet) {
         (state.revealed[i] ? '<p class="hint"><span>💡 ' + esc(q.hint) + '</span>' + say(q.hint) + '</p>' : '<button class="hintbtn" data-i="' + i + '">看提示</button>') + '</li>';
     }).join('') + '</ol><div class="row"><span class="spacer"></span><button class="btn primary" id="go">我來選選看 →</button></div>';
     p.querySelectorAll('.hintbtn').forEach(function (b) { b.onclick = function () { var i = b.dataset.i; state.revealed[i] = true; goPhase('stop', true); speak(s.questions[i].hint); }; });
-    if (!quiet) speak('停！想一想。');
+    if (!quiet) speakSeq([['停！想一想。', 'm']].concat(s.questions.map(function (q, i) { return ['第' + '一二三四五'.charAt(i) + '題：' + q.q, 'm']; })));
     $('#go').onclick = function () { goPhase('choose'); };
   } else if (k === 'choose') { renderChoose(); speak(s.choose.q); }
   else if (k === 'right') {
@@ -1037,7 +1080,7 @@ function renderChoose() {
   else fb = '<p class="fb no row"><span style="flex:1">' + esc(c.opts[pk].fb) + '</span>' + sayBtn(c.opts[pk].fb) + '</p><div class="row"><span class="spacer"></span><button class="btn primary" id="again">再選一次</button></div>';
   p.innerHTML = '<h3><span class="dot" style="background:var(--yellow)"></span><span style="flex:1">' + esc(c.q) + '</span>' + sayBtn(c.q) + '</h3>' +
     '<div class="opts">' + c.opts.map(function (o, i) {
-      return '<div class="opt-row"><button class="opt ' + (pk === i ? (o.ok ? 'ok' : 'no') : '') + '" data-i="' + i + '"><span class="ic">' + o.ic + '</span><span>' + esc(o.t) + '</span></button>' + sayBtn(o.t) + '</div>';
+      return '<div class="opt-row"><button class="opt ' + (pk === i ? (o.ok ? 'ok' : 'no') : '') + '" data-i="' + i + '" data-label="' + esc(o.t) + '"><span class="ic">' + o.ic + '</span><span>' + esc(o.t) + '</span></button>' + sayBtn(o.t) + '</div>';
     }).join('') + '</div>' + fb;
   p.querySelectorAll('.opt').forEach(function (b) {
     b.onclick = function () {
