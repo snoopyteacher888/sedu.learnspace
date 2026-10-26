@@ -34,12 +34,12 @@
     .intro { background: var(--surface); border-radius: var(--radius); padding: 14px 18px; margin-bottom: 16px; display: flex; gap: 14px; align-items: center; }
     .intro .face { font-size: 44px; line-height: 1; flex: none; }
     .intro .face img { width: 76px; height: 76px; object-fit: contain; display: block; }
-    .intro p { margin: 0; }
+    .intro p { margin: 0; flex: 1; }
     .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 14px; }
     .sc-card { text-align: left; border: 3px solid var(--line); background: var(--surface); border-radius: var(--radius); padding: 16px;
       display: flex; flex-direction: column; gap: 6px; transition: border-color .15s, transform .12s; }
     .sc-card:hover { border-color: var(--brand); transform: translateY(-2px); }
-    .sc-card .no { font-size: .8em; color: var(--brand); font-weight: 700; display: flex; justify-content: space-between; }
+    .sc-card .no { font-size: .8em; color: var(--brand); font-weight: 700; display: flex; gap: 10px; }
     .sc-card h3 { margin: 0; font-size: 1.2em; }
     .sc-card p { margin: 0; color: var(--ink-soft); font-size: .9em; }
     .stars { color: var(--yellow); letter-spacing: 2px; }
@@ -94,13 +94,24 @@
     .panel h3 { margin: 0 0 8px; font-size: 1.3em; display: flex; align-items: center; gap: 10px; }
     .dot { width: 22px; height: 22px; border-radius: 50%; display: inline-block; flex: none; }
     .lead { margin: 0 0 12px; color: var(--ink-soft); }
-    .say { min-width: 40px; min-height: 40px; border-radius: 50%; border: 2px solid var(--line); background: var(--surface); flex: none; }
+    .say { min-width: 44px; min-height: 44px; border-radius: 50%; border: 2px solid var(--line); background: var(--surface); flex: none; font-size: 1.05em; }
+    .say:hover { border-color: var(--brand); }
+    .say.corner { position: absolute; top: 10px; right: 10px; }
+    .sc-wrap, .kcard { position: relative; }
+    .sc-wrap { display: flex; }
+    .sc-wrap .sc-card { flex: 1; padding-right: 64px; }
+    .opt-row, .practice li, .hint, .three h4 { display: flex; gap: 8px; align-items: center; }
+    .opt-row .opt, .practice li button:not(.say) { flex: 1; }
+    .three h4 span { flex: 1; }
+    .hint span { flex: 1; }
+    .twist { display: flex; gap: 10px; align-items: center; }
+    .twist div { flex: 1; }
     .qs { list-style: none; padding: 0; margin: 0 0 14px; display: grid; gap: 10px; }
     .q { background: var(--red-soft); border-radius: 14px; padding: 10px 14px; }
     .q .qrow { display: flex; gap: 10px; align-items: center; font-weight: 700; }
     .q .num { width: 30px; height: 30px; border-radius: 50%; background: var(--red); color: #fff; display: inline-flex; align-items: center; justify-content: center; flex: none; }
     .q .txt { flex: 1; }
-    .hint { margin: 8px 0 0 40px; background: #fff; border-radius: 10px; padding: 6px 12px; }
+    .hint { margin: 8px 0 0 40px; background: #fff; border-radius: 10px; padding: 4px 6px 4px 12px; }
     .hintbtn { margin: 8px 0 0 40px; border: 2px dashed var(--red); background: #fff; border-radius: 10px; padding: 4px 14px; color: var(--red); }
     .opts { display: grid; gap: 10px; margin-bottom: 12px; }
     .opt { display: flex; gap: 12px; align-items: center; text-align: left; border: 3px solid var(--line); background: var(--yellow-soft); border-radius: 16px; padding: 10px 14px; min-height: 64px; font-size: 1.1em; }
@@ -117,7 +128,7 @@
     .three p { margin: 0; }
     .b1 { background: var(--red-soft); } .b2 { background: var(--yellow-soft); } .b3 { background: var(--green-soft); }
     .practice { list-style: none; padding: 0; margin: 0 0 14px; display: grid; gap: 8px; }
-    .practice button { width: 100%; display: flex; gap: 12px; align-items: center; text-align: left; border: 3px solid var(--line); background: #fff; border-radius: 14px; padding: 10px 14px; min-height: 56px; }
+    .practice button:not(.say) { width: 100%; display: flex; gap: 12px; align-items: center; text-align: left; border: 3px solid var(--line); background: #fff; border-radius: 14px; padding: 10px 14px; min-height: 56px; }
     .practice .box { width: 30px; height: 30px; border-radius: 8px; border: 3px solid var(--green); flex: none; display: inline-flex; align-items: center; justify-content: center; color: #fff; font-weight: 700; }
     .practice .on { border-color: var(--green); background: var(--green-soft); }
     .practice .on .box { background: var(--green); }
@@ -150,7 +161,7 @@
 <body>
 <div class="wrap">
   <header class="top">
-    <h1><span class="lights" aria-hidden="true"><i style="background:#D2483C"></i><i style="background:#E0A21A"></i><i style="background:#2D8A57"></i></span>和喬治一起練習相處</h1>
+    <h1><span class="lights" aria-hidden="true"><i style="background:#D2483C"></i><i style="background:#E0A21A"></i><i style="background:#2D8A57"></i></span>和喬治一起練習相處<button class="say" data-say="和喬治一起練習相處" aria-label="念出來">🔊</button></h1>
     <nav class="tabs" aria-label="選單">
       <button class="tab" data-view="list">情境列表</button>
       <button class="tab" data-view="cards">口訣卡</button>
@@ -831,6 +842,13 @@ try { state.rate = JSON.parse(localStorage.getItem('le-rate') || '{}') || {}; } 
 function $(s) { return document.querySelector(s); }
 function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
 function chain(arr, cls) { return '<div class="chain ' + (cls || '') + '">' + arr.map(function (c, i) { return (i ? '<span class="ar">→</span>' : '') + '<span class="c">' + esc(c) + '</span>'; }).join('') + '</div>'; }
+function sayBtn(t, cls) { return '<button class="say' + (cls ? ' ' + cls : '') + '" data-say="' + esc(t) + '" aria-label="念出來">🔊</button>'; }
+/* 班上有不識字的學生：每段文字旁邊都有 🔊，按一下就念出來（老師要求） */
+document.addEventListener('click', function (e) {
+  var b = e.target.closest && e.target.closest('[data-say]');
+  if (!b) return;
+  e.preventDefault(); e.stopPropagation(); stopAll(); speak(b.dataset.say);
+}, true);
 var PHASES = [
   { k: 'wrong', n: '①看一看', t: '喬治怎麼做' }, { k: 'stop', n: '②停！想一想', t: '發生什麼事' },
   { k: 'choose', n: '③選一選', t: '可以怎麼做' }, { k: 'right', n: '④換個方式', t: '再看一次' }, { k: 'act', n: '⑤換我練', t: '口訣和演練' }
@@ -841,17 +859,19 @@ function render() {
   var m = $('#main');
   if (state.view === 'list') {
     m.innerHTML = '<div class="intro"><div class="face" aria-hidden="true"><img src="images/george.png" alt="" onerror="this.parentNode.textContent=\'🧒\'"></div>' +
-      '<p>嗨！我是<b>喬治</b>。在學校裡，有時候會遇到不知道該怎麼辦的事情。<br>我們一起看一看、想一想、練一練，找到讓自己和大家都開心的方法吧！</p></div>' +
+      '<p>嗨！我是<b>喬治</b>。在學校裡，有時候會遇到不知道該怎麼辦的事情。<br>我們一起看一看、想一想、練一練，找到讓自己和大家都開心的方法吧！</p>' + sayBtn('嗨！我是喬治。在學校裡，有時候會遇到不知道該怎麼辦的事情。我們一起看一看、想一想、練一練，找到讓自己和大家都開心的方法吧！') + '</div>' +
       '<div class="grid">' + SCENES.map(function (s, i) {
         var r = state.rate[s.id];
-        return '<button class="sc-card" data-i="' + i + '"><span class="no"><span>情境 ' + (i + 1) + '</span>' + (r ? '<span class="stars">' + '★★★'.slice(0, r) + '</span>' : '') + '</span>' +
-          '<h3>' + esc(s.title) + '</h3><p>' + esc(s.short) + '</p>' + chain(s.how.chain, 'small') + '</button>';
+        return '<div class="sc-wrap"><button class="sc-card" data-i="' + i + '"><span class="no"><span>情境 ' + (i + 1) + '</span>' + (r ? '<span class="stars">' + '★★★'.slice(0, r) + '</span>' : '') + '</span>' +
+          '<h3>' + esc(s.title) + '</h3><p>' + esc(s.short) + '</p>' + chain(s.how.chain, 'small') + '</button>' +
+          sayBtn('情境' + (i + 1) + '，' + s.title + '。' + s.short, 'corner') + '</div>';
       }).join('') + '</div>';
     m.querySelectorAll('.sc-card').forEach(function (b) { b.onclick = function () { openScene(+b.dataset.i); }; });
   } else if (state.view === 'cards') {
     m.innerHTML = '<div class="row no-print" style="margin-bottom:12px"><p class="note" style="margin:0;flex:1">把口訣卡印出來貼在教室，請學生選一張「這週最想練習」的卡片。</p><button class="btn" id="print">🖨️ 列印口訣卡</button></div>' +
       '<div class="cards">' + SCENES.map(function (s, i) {
-        return '<article class="kcard"><div class="no">情境 ' + (i + 1) + '｜' + esc(s.title) + '</div><h3>我可以怎麼做</h3>' + chain(s.how.chain) + '<p>' + esc(s.how.note) + '</p></article>';
+        return '<article class="kcard">' + sayBtn(s.title + '。我可以怎麼做：' + s.how.chain.join('，') + '。' + s.how.note, 'corner no-print') +
+          '<div class="no">情境 ' + (i + 1) + '｜' + esc(s.title) + '</div><h3>我可以怎麼做</h3>' + chain(s.how.chain) + '<p>' + esc(s.how.note) + '</p></article>';
       }).join('') + '</div>';
     $('#print').onclick = function () { window.print(); };
   } else renderPlayer();
@@ -924,7 +944,7 @@ function frameText(f) {
   if (f.cap) parts.push(f.cap);
   f.say.forEach(function (b) { parts.push(b[1]); });
   f.think.forEach(function (b) { parts.push(s.cast[b[0]].name + '心裡想：' + b[1]); });
-  return parts.join('。');
+  return parts.map(function (t) { return /[。！？…」]$/.test(t) ? t : t + '。'; }).join('');
 }
 
 function showFrames(list, badge, after) {
@@ -950,6 +970,11 @@ function nextFrame() {
   if (state.fi === state.frames.length - 1 && state.after) { var a = state.after; state.after = null; a(); }
 }
 function speakFrame(done) { speak(frameText(state.frames[state.fi]), done); }
+/* 影片播完：錯誤版接著「停！想一想」、換個方式接著「我可以怎麼做」，自動念出來（老師要求） */
+function afterVideo() {
+  var from = state.phase, sc = state.sc, next = { wrong: 'stop', right: 'act' }[from];
+  if (next) setTimeout(function () { if (!state.auto && state.phase === from && state.sc === sc && state.view === 'player') goPhase(next); }, 800);
+}
 function autoPlay() {
   stopAll(); state.fi = 0; state.stamp = null; drawFrame(state.badge);
   var run = { t: null }; state.auto = run; renderCtrl();
@@ -958,23 +983,23 @@ function autoPlay() {
       if (state.auto !== run) return;
       run.t = setTimeout(function () {
         if (state.auto !== run) return;
-        if (state.fi >= state.frames.length - 1) { state.auto = null; renderCtrl(); return; }
+        if (state.fi >= state.frames.length - 1) { state.auto = null; renderCtrl(); afterVideo(); return; }
         nextFrame(); step();
       }, 900);
     });
   })();
 }
 
-function goPhase(k) {
+function goPhase(k, quiet) {
   stopAll(); state.phase = k; state.stamp = null; renderSteps();
-  var s = SCENES[state.sc], p = $('#panel'), say = function (t) { return '<button class="say" data-say="' + esc(t) + '" aria-label="念出來">🔊</button>'; };
+  var s = SCENES[state.sc], p = $('#panel'), say = sayBtn;
   if (k === 'wrong' || k === 'stop') showFrames(s.wrong, ['喬治這樣做', 'red']);
   if (k === 'choose') { state.picked = null; showFrames(s.wrong.slice(0, 1), ['想一想', 'yellow']); }
   if (k === 'right' || k === 'act') showFrames(s.right, ['換個方式做', 'green'], k === 'right' ? function () { state.rightSeen = true; } : null);
 
   if (k === 'wrong') {
     p.className = 'panel red';
-    p.innerHTML = '<h3><span class="dot" style="background:var(--red)"></span>先看一看，喬治怎麼做</h3>' +
+    p.innerHTML = '<h3><span class="dot" style="background:var(--red)"></span><span style="flex:1">先看一看，喬治怎麼做</span>' + say('先看一看，喬治怎麼做。看的時候，注意喬治做了什麼？別人的表情怎麼樣？') + '</h3>' +
       '<p class="lead">按「下一格」一格一格看，或按「自動播放」。看的時候，注意喬治做了什麼？別人的表情怎麼樣？</p>' +
       '<div class="row"><span class="spacer"></span><button class="btn red" id="go">看完了，停下來想 →</button></div>';
     $('#go').onclick = function () { goPhase('stop'); };
@@ -982,36 +1007,37 @@ function goPhase(k) {
   } else if (k === 'stop') {
     state.fi = state.frames.length - 1; drawFrame(state.badge); renderCtrl();
     p.className = 'panel red';
-    p.innerHTML = '<h3><span class="dot" style="background:var(--red)"></span>停！想一想</h3><ol class="qs">' + s.questions.map(function (q, i) {
+    p.innerHTML = '<h3><span class="dot" style="background:var(--red)"></span><span style="flex:1">停！想一想</span>' + say('停！想一想') + '</h3><ol class="qs">' + s.questions.map(function (q, i) {
       return '<li class="q"><div class="qrow"><span class="num">' + (i + 1) + '</span><span class="txt">' + esc(q.q) + '</span>' + say(q.q) + '</div>' +
-        (state.revealed[i] ? '<p class="hint">💡 ' + esc(q.hint) + '</p>' : '<button class="hintbtn" data-i="' + i + '">看提示</button>') + '</li>';
+        (state.revealed[i] ? '<p class="hint"><span>💡 ' + esc(q.hint) + '</span>' + say(q.hint) + '</p>' : '<button class="hintbtn" data-i="' + i + '">看提示</button>') + '</li>';
     }).join('') + '</ol><div class="row"><span class="spacer"></span><button class="btn primary" id="go">我來選選看 →</button></div>';
-    p.querySelectorAll('.hintbtn').forEach(function (b) { b.onclick = function () { state.revealed[b.dataset.i] = true; goPhase('stop'); }; });
+    p.querySelectorAll('.hintbtn').forEach(function (b) { b.onclick = function () { var i = b.dataset.i; state.revealed[i] = true; goPhase('stop', true); speak(s.questions[i].hint); }; });
+    if (!quiet) speak('停！想一想。');
     $('#go').onclick = function () { goPhase('choose'); };
-  } else if (k === 'choose') renderChoose();
+  } else if (k === 'choose') { renderChoose(); speak(s.choose.q); }
   else if (k === 'right') {
     p.className = 'panel green';
-    p.innerHTML = '<h3><span class="dot" style="background:var(--green)"></span>換個方式做做看</h3><p class="lead">這次喬治怎麼做？別人的表情有什麼不一樣？</p>' +
+    p.innerHTML = '<h3><span class="dot" style="background:var(--green)"></span><span style="flex:1">換個方式做做看</span>' + say('換個方式做做看。這次喬治怎麼做？別人的表情有什麼不一樣？') + '</h3><p class="lead">這次喬治怎麼做？別人的表情有什麼不一樣？</p>' +
       '<div class="row"><span class="spacer"></span><button class="btn go" id="go">看完了，換我練 →</button></div>';
     $('#go').onclick = function () { goPhase('act'); };
     autoPlay();
   } else if (k === 'act') {
     state.fi = state.frames.length - 1; drawFrame(state.badge); renderCtrl();
     renderAct();
+    speak('我可以怎麼做：' + s.how.chain.join('，') + '。');
   }
-  p.querySelectorAll('[data-say]').forEach(function (b) { b.onclick = function () { stopAll(); speak(b.dataset.say); }; });
 }
 
 function renderChoose() {
   var s = SCENES[state.sc], c = s.choose, p = $('#panel'), pk = state.picked;
   p.className = 'panel yellow';
   var fb = '';
-  if (pk === null) fb = '<p class="note">先讓學生說說看，再按選項。選錯的話，畫面會演出「這樣做會發生什麼事」。</p>';
-  else if (c.opts[pk].ok) fb = '<p class="fb ok">⭐ ' + esc(c.opts[pk].fb) + '</p><div class="row"><span class="spacer"></span><button class="btn go" id="go">▶ 看喬治換個方式做</button></div>';
-  else fb = '<p class="fb no">' + esc(c.opts[pk].fb) + '</p><div class="row"><span class="spacer"></span><button class="btn primary" id="again">再選一次</button></div>';
-  p.innerHTML = '<h3><span class="dot" style="background:var(--yellow)"></span><span style="flex:1">' + esc(c.q) + '</span><button class="say" data-say="' + esc(c.q) + '" aria-label="念出來">🔊</button></h3>' +
+  if (pk === null) fb = '<p class="note">先讓學生說說看，再按選項。選錯的話，畫面會演出「這樣做會發生什麼事」。每個選項旁邊的 🔊 可以念出選項。</p>';
+  else if (c.opts[pk].ok) fb = '<p class="fb ok row"><span style="flex:1">⭐ ' + esc(c.opts[pk].fb) + '</span>' + sayBtn(c.opts[pk].fb) + '</p><div class="row"><span class="spacer"></span><button class="btn go" id="go">▶ 看喬治換個方式做</button></div>';
+  else fb = '<p class="fb no row"><span style="flex:1">' + esc(c.opts[pk].fb) + '</span>' + sayBtn(c.opts[pk].fb) + '</p><div class="row"><span class="spacer"></span><button class="btn primary" id="again">再選一次</button></div>';
+  p.innerHTML = '<h3><span class="dot" style="background:var(--yellow)"></span><span style="flex:1">' + esc(c.q) + '</span>' + sayBtn(c.q) + '</h3>' +
     '<div class="opts">' + c.opts.map(function (o, i) {
-      return '<button class="opt ' + (pk === i ? (o.ok ? 'ok' : 'no') : '') + '" data-i="' + i + '"><span class="ic">' + o.ic + '</span><span>' + esc(o.t) + '</span></button>';
+      return '<div class="opt-row"><button class="opt ' + (pk === i ? (o.ok ? 'ok' : 'no') : '') + '" data-i="' + i + '"><span class="ic">' + o.ic + '</span><span>' + esc(o.t) + '</span></button>' + sayBtn(o.t) + '</div>';
     }).join('') + '</div>' + fb;
   p.querySelectorAll('.opt').forEach(function (b) {
     b.onclick = function () {
@@ -1022,7 +1048,6 @@ function renderChoose() {
   });
   if ($('#go')) $('#go').onclick = function () { goPhase('right'); };
   if ($('#again')) $('#again').onclick = function () { state.picked = null; showFrames(s.wrong.slice(0, 1), ['想一想', 'yellow']); renderChoose(); };
-  p.querySelectorAll('[data-say]').forEach(function (b) { b.onclick = function () { stopAll(); speak(b.dataset.say); }; });
 }
 function autoPlayThen(cb) {
   autoPlay();
@@ -1033,14 +1058,16 @@ function autoPlayThen(cb) {
 function renderAct() {
   var s = SCENES[state.sc], p = $('#panel'), r = state.rate[s.id] || 0;
   p.className = 'panel green';
-  p.innerHTML = '<h3><span class="dot" style="background:var(--green)"></span>我可以怎麼做</h3>' + chain(s.how.chain, 'big') +
-    '<p class="lead" style="margin-top:10px">' + esc(s.how.note) + ' <button class="say" data-say="' + esc(s.how.chain.join('，') + '。' + s.how.note) + '" aria-label="念出來">🔊</button></p>' +
-    '<div class="three"><div class="b1"><h4>🔴 發生什麼問題</h4><p>' + esc(s.sum.p) + '</p></div><div class="b2"><h4>🟡 別人心裡想什麼</h4><p>' + esc(s.sum.o) + '</p></div><div class="b3"><h4>🟢 我重新選擇</h4><p>' + esc(s.sum.c) + '</p></div></div>' +
-    '<h3 style="font-size:1.15em">🎭 換我演：做到一步，就按一下</h3><ol class="practice">' + s.practice.map(function (t, i) {
-      return '<li><button class="' + (state.checks[i] ? 'on' : '') + '" data-i="' + i + '"><span class="box">' + (state.checks[i] ? '✓' : '') + '</span>' + (i + 1) + '. ' + esc(t) + '</button></li>';
+  p.innerHTML = '<h3><span class="dot" style="background:var(--green)"></span><span style="flex:1">我可以怎麼做</span>' + sayBtn('我可以怎麼做：' + s.how.chain.join('，') + '。' + s.how.note) + '</h3>' + chain(s.how.chain, 'big') +
+    '<p class="lead" style="margin-top:10px">' + esc(s.how.note) + '</p>' +
+    '<div class="three">' + [['b1', '🔴', '發生什麼問題', s.sum.p], ['b2', '🟡', '別人心裡想什麼', s.sum.o], ['b3', '🟢', '我重新選擇', s.sum.c]].map(function (x) {
+      return '<div class="' + x[0] + '"><h4><span>' + x[1] + ' ' + x[2] + '</span>' + sayBtn(x[2] + '：' + x[3]) + '</h4><p>' + esc(x[3]) + '</p></div>';
+    }).join('') + '</div>' +
+    '<h3 style="font-size:1.15em"><span style="flex:1">🎭 換我演：做到一步，就按一下</span>' + sayBtn('換我演：做到一步，就按一下') + '</h3><ol class="practice">' + s.practice.map(function (t, i) {
+      return '<li><button class="' + (state.checks[i] ? 'on' : '') + '" data-i="' + i + '"><span class="box">' + (state.checks[i] ? '✓' : '') + '</span>' + (i + 1) + '. ' + esc(t) + '</button>' + sayBtn('第' + (i + 1) + '步，' + t) + '</li>';
     }).join('') + '</ol>' +
-    '<div class="twist"><b>🤔 如果' + esc(s.twist.q) + '</b><br>→ ' + esc(s.twist.a) + '</div>' +
-    '<h3 style="font-size:1.15em">⭐ 我這次演得怎麼樣？</h3><div class="rate">' +
+    '<div class="twist"><div><b>🤔 ' + esc(s.twist.q) + '</b><br>→ ' + esc(s.twist.a) + '</div>' + sayBtn(s.twist.q + s.twist.a) + '</div>' +
+    '<h3 style="font-size:1.15em"><span style="flex:1">⭐ 我這次演得怎麼樣？</span>' + sayBtn('我這次演得怎麼樣？做到了、差一點，還是還要練？') + '</h3><div class="rate">' +
     [[3, '😀 做到了'], [2, '🙂 差一點'], [1, '😟 還要練']].map(function (x) { return '<button data-r="' + x[0] + '" aria-pressed="' + (r === x[0]) + '">' + x[1] + '</button>'; }).join('') + '</div>' +
     '<div class="row" style="margin-top:12px"><button class="btn" id="again">再看一次喬治怎麼做</button><span class="spacer"></span>' +
     (state.sc < SCENES.length - 1 ? '<button class="btn go" id="nextsc">下一個情境 →</button>' : '<button class="btn go" id="cards">看全部口訣卡 →</button>') + '</div>';
@@ -1048,9 +1075,8 @@ function renderAct() {
     b.onclick = function () { var i = b.dataset.i; state.checks[i] = !state.checks[i]; if (state.checks[i]) speak(s.practice[i]); renderAct(); };
   });
   p.querySelectorAll('.rate button').forEach(function (b) {
-    b.onclick = function () { state.rate[s.id] = +b.dataset.r; storeChecks(); renderAct(); };
+    b.onclick = function () { state.rate[s.id] = +b.dataset.r; storeChecks(); renderAct(); speak(b.textContent.replace(/^\S+\s/, '')); };
   });
-  p.querySelectorAll('[data-say]').forEach(function (b) { b.onclick = function () { stopAll(); speak(b.dataset.say); }; });
   $('#again').onclick = function () { goPhase('wrong'); };
   if ($('#nextsc')) $('#nextsc').onclick = function () { openScene(state.sc + 1); };
   if ($('#cards')) $('#cards').onclick = function () { stopAll(); state.view = 'cards'; render(); };

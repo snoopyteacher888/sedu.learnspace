@@ -46,6 +46,12 @@
     .card .sub { font-size: .8em; color: var(--ink-soft); }
     .card.soon { border-color: var(--line); background: var(--muted); box-shadow: 0 6px 0 var(--line); color: var(--ink-soft); }
     .card.soon .ic { filter: grayscale(1); opacity: .6; }
+    .cell { position: relative; display: flex; }
+    .cell .card { flex: 1; }
+    .say { min-width: 44px; min-height: 44px; border-radius: 50%; border: 2px solid var(--line); background: var(--surface); font-size: 1.05em; cursor: pointer; }
+    .say:hover { border-color: var(--brand); }
+    .cell .say { position: absolute; top: 8px; left: 8px; z-index: 1; }
+    .hero .say { vertical-align: middle; margin-left: 8px; }
     .card .tag { position: absolute; top: 10px; right: 12px; font-size: .7em; background: var(--surface); border-radius: 999px; padding: 0 10px; }
 
     /* ===== 科目頁（同一個網址裡顯示） ===== */
@@ -76,7 +82,7 @@
     <header class="hero">
       <div class="logo" aria-hidden="true">🏫</div>
       <h1><span class="brand">四德學輔班</span>學習樂園</h1>
-      <p>歡迎進入！<b>今天要學什麼呢？</b></p>
+      <p>歡迎進入！<b>今天要學什麼呢？</b><button class="say" type="button" data-say="四德學輔班學習樂園，歡迎進入！今天要學什麼呢？" aria-label="念出來">🔊</button></p>
     </header>
     <div id="groups"></div>
   </main>
@@ -129,10 +135,11 @@
 
     document.getElementById('groups').innerHTML = GROUPS.map(function (g) {
       return '<h2 class="group-title">' + esc(g.title) + '</h2><div class="grid">' + g.items.map(function (s) {
-        return '<a class="card' + (s.url ? '' : ' soon') + '" href="#/' + s.id + '" style="--c:' + s.color + ';--c-soft:' + soft(s.color) + '">' +
+        return '<div class="cell"><a class="card' + (s.url ? '' : ' soon') + '" href="#/' + s.id + '" style="--c:' + s.color + ';--c-soft:' + soft(s.color) + '">' +
           (s.url ? '' : '<span class="tag">準備中</span>') +
           '<span class="ic" aria-hidden="true">' + s.ic + '</span><span class="name">' + esc(s.name) + '</span>' +
-          (s.sub ? '<span class="sub">' + esc(s.sub) + '</span>' : '') + '</a>';
+          (s.sub ? '<span class="sub">' + esc(s.sub) + '</span>' : '') + '</a>' +
+          '<button class="say" type="button" data-say="' + esc(s.name + (s.url ? '' : '，準備中')) + '" aria-label="念出來">🔊</button></div>';
       }).join('') + '</div>';
     }).join('');
 
@@ -165,6 +172,19 @@
         document.getElementById('empty-name').textContent = s.name;
       }
     }
+    /* 班上有不識字的學生：按 🔊 念出來（老師要求） */
+    function speak(text) {
+      if (!('speechSynthesis' in window)) return;
+      speechSynthesis.cancel();
+      var u = new SpeechSynthesisUtterance(text); u.lang = 'zh-TW'; u.rate = .9;
+      var v = speechSynthesis.getVoices().filter(function (x) { return /zh[-_]TW/i.test(x.lang); })[0];
+      if (v) u.voice = v;
+      speechSynthesis.speak(u);
+    }
+    document.addEventListener('click', function (e) {
+      var b = e.target.closest && e.target.closest('[data-say]');
+      if (b) { e.preventDefault(); speak(b.dataset.say); }
+    });
     window.addEventListener('hashchange', route);
     route();
   </script>
