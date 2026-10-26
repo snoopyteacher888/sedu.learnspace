@@ -9,7 +9,7 @@
   <style>
     :root {
       --bg: #fff0f5; --surface: #FFFFFF; --ink: #2B2A28; --ink-soft: #6B6760; --line: #E4DCCB; --muted: #ECE6DA;
-      --red: #D2483C; --red-soft: #FCE6E3; --yellow: #E0A21A; --yellow-soft: #FDF2D6; --green: #2D8A57; --green-soft: #DDF2E5;
+      --red: #D2483C; --red-soft: #FCE6E3; --yellow: #E0A21A; --yellow-soft: #FDF2D6; --green: #2D8A57; --green-soft: #DDF2E5; --teal: #AFEEEE; --teal-ink: #1F5F5F;
       --brand: #E07A2E; --radius: 20px; --tap: 50px;
       --font: "LXGW WenKai TC", "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
     }
@@ -36,15 +36,15 @@
     .intro .face img { width: 76px; height: 76px; object-fit: contain; display: block; }
     .intro p { margin: 0; flex: 1; }
     .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 14px; }
-    .sc-card { text-align: left; border: 3px solid var(--line); background: var(--surface); border-radius: var(--radius); padding: 16px;
+    .sc-card { text-align: left; border: 3px solid var(--line); border-top: 10px solid var(--teal); background: var(--surface); border-radius: var(--radius); padding: 16px;
       display: flex; flex-direction: column; gap: 6px; transition: border-color .15s, transform .12s; }
-    .sc-card:hover { border-color: var(--brand); transform: translateY(-2px); }
+    .sc-card:hover { border-color: var(--brand); border-top-color: var(--teal); transform: translateY(-2px); }
     .sc-card .no { font-size: .8em; color: var(--brand); font-weight: 700; display: flex; gap: 10px; }
     .sc-card h3 { margin: 0; font-size: 1.2em; }
     .sc-card p { margin: 0; color: var(--ink-soft); font-size: .9em; }
     .stars { color: var(--yellow); letter-spacing: 2px; }
     .chain { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
-    .chain .c { background: var(--green-soft); color: var(--green); border-radius: 999px; padding: 2px 12px; font-weight: 700; }
+    .chain .c { background: var(--teal); color: var(--teal-ink); border-radius: 999px; padding: 2px 12px; font-weight: 700; }
     .chain .ar { color: var(--ink-soft); }
     .chain.small { font-size: .8em; margin-top: 4px; }
     .chain.big { font-size: 1.25em; gap: 10px; }
@@ -139,7 +139,7 @@
 
     /* 口訣卡 */
     .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 14px; }
-    .kcard { background: var(--surface); border-radius: var(--radius); padding: 16px; border-top: 10px solid var(--green); break-inside: avoid; }
+    .kcard { background: var(--surface); border-radius: var(--radius); padding: 16px; border-top: 10px solid var(--teal); break-inside: avoid; }
     .kcard .no { color: var(--ink-soft); font-size: .85em; }
     .kcard h3 { margin: 2px 0 10px; }
     .kcard p { margin: 10px 0 0; }
@@ -154,7 +154,7 @@
     @media print {
       .no-print, .top .tabs { display: none !important; }
       body { background: #fff; }
-      .kcard { border: 2px solid #ccc; border-top: 10px solid var(--green); }
+      .kcard { border: 2px solid #ccc; border-top: 10px solid var(--teal); }
     }
   </style>
 </head>
