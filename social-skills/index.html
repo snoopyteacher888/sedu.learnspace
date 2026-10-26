@@ -1055,9 +1055,10 @@ function goPhase(k, quiet) {
         (state.revealed[i] ? '<p class="hint"><span>💡 ' + esc(q.hint) + '</span>' + say(q.hint) + '</p>' : '<button class="hintbtn" data-i="' + i + '">看提示</button>') + '</li>';
     }).join('') + '</ol><div class="row"><span class="spacer"></span><button class="btn primary" id="go">我來選選看 →</button></div>';
     p.querySelectorAll('.hintbtn').forEach(function (b) { b.onclick = function () { var i = b.dataset.i; state.revealed[i] = true; goPhase('stop', true); speak(s.questions[i].hint); }; });
-    if (!quiet) speakSeq([['停！想一想。', 'm']].concat(s.questions.map(function (q, i) { return ['第' + '一二三四五'.charAt(i) + '題：' + q.q, 'm']; })));
+    /* 問題不自動念，讓老師帶著問（老師要求）；要念可以按題目旁的 🔊 */
+    if (!quiet) speak('停！想一想。');
     $('#go').onclick = function () { goPhase('choose'); };
-  } else if (k === 'choose') { renderChoose(); speak(s.choose.q); }
+  } else if (k === 'choose') renderChoose();
   else if (k === 'right') {
     p.className = 'panel green';
     p.innerHTML = '<h3><span class="dot" style="background:var(--green)"></span><span style="flex:1">換個方式做做看</span>' + say('換個方式做做看。這次喬治怎麼做？別人的表情有什麼不一樣？') + '</h3><p class="lead">這次喬治怎麼做？別人的表情有什麼不一樣？</p>' +
