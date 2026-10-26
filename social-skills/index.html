@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC:wght@400;700&display=swap">
   <style>
     :root {
-      --bg: #fff0f5; --surface: #FFFFFF; --ink: #2B2A28; --ink-soft: #6B6760; --line: #E4DCCB; --muted: #ECE6DA;
+      --bg: #5f9ea0; --surface: #FFFFFF; --ink: #2B2A28; --ink-soft: #6B6760; --line: #E4DCCB; --muted: #ECE6DA;
       --red: #D2483C; --red-soft: #FCE6E3; --yellow: #E0A21A; --yellow-soft: #FDF2D6; --green: #2D8A57; --green-soft: #DDF2E5; --teal: #AFEEEE; --teal-ink: #1F5F5F;
       --brand: #E07A2E; --radius: 20px; --tap: 50px;
       --font: "LXGW WenKai TC", "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
@@ -94,6 +94,7 @@
     .panel h3 { margin: 0 0 8px; font-size: 1.3em; display: flex; align-items: center; gap: 10px; }
     .dot { width: 22px; height: 22px; border-radius: 50%; display: inline-block; flex: none; }
     .lead { margin: 0 0 12px; color: var(--ink-soft); }
+    .on-bg { color: #fff !important; }
     .say { min-width: 44px; min-height: 44px; border-radius: 50%; border: 2px solid var(--line); background: var(--surface); flex: none; font-size: 1.05em; }
     .say:hover { border-color: var(--brand); }
     .say.corner { position: absolute; top: 10px; right: 10px; }
@@ -908,7 +909,7 @@ function render() {
       }).join('') + '</div>';
     m.querySelectorAll('.sc-card').forEach(function (b) { b.onclick = function () { openScene(+b.dataset.i); }; });
   } else if (state.view === 'cards') {
-    m.innerHTML = '<div class="row no-print" style="margin-bottom:12px"><p class="note" style="margin:0;flex:1">把口訣卡印出來貼在教室，請學生選一張「這週最想練習」的卡片。</p><button class="btn" id="print">🖨️ 列印口訣卡</button></div>' +
+    m.innerHTML = '<div class="row no-print" style="margin-bottom:12px"><p class="note on-bg" style="margin:0;flex:1">把口訣卡印出來貼在教室，請學生選一張「這週最想練習」的卡片。</p><button class="btn" id="print">🖨️ 列印口訣卡</button></div>' +
       '<div class="cards">' + SCENES.map(function (s, i) {
         return '<article class="kcard">' + sayBtn(s.title + '。我可以怎麼做：' + s.how.chain.join('，') + '。' + s.how.note, 'corner no-print') +
           '<div class="no">情境 ' + (i + 1) + '｜' + esc(s.title) + '</div><h3>我可以怎麼做</h3>' + chain(s.how.chain) + '<p>' + esc(s.how.note) + '</p></article>';
@@ -923,7 +924,7 @@ function renderPlayer() {
   var s = SCENES[state.sc];
   $('#main').innerHTML =
     '<div class="bar2"><button class="btn sm" id="back">← 情境列表</button><h2>情境 ' + (state.sc + 1) + '　' + esc(s.title) + '</h2>' +
-    '<span class="note" id="voice-note" style="margin:0">' + voiceNote() + '</span>' +
+    '<span class="note on-bg" id="voice-note" style="margin:0">' + voiceNote() + '</span>' +
     '<button class="btn sm" id="tts" aria-pressed="' + state.tts + '">' + (state.tts ? '🔊 語音：開' : '🔇 語音：關') + '</button></div>' +
     '<ol class="steps" id="steps"></ol>' +
     '<div class="stage" id="stage"></div>' +
