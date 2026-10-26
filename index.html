@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>四德學輔班學習樂園</title>
+  <meta name="description" content="四德學輔班的國語、數學、社會技巧學習網站">
+  <meta name="theme-color" content="#FAF0E6">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="學習樂園">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC:wght@400;700&display=swap">
+  <style>
+    :root {
+      --bg: #FAF0E6; --surface: #FFFFFF; --ink: #2B2A28; --ink-soft: #6B6760;
+      --brand: #E07A2E; --line: #E4DCCB; --muted: #ECE6DA;
+      --radius: 22px; --tap: 52px;
+      --font: "LXGW WenKai TC", "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; height: 100%; background: var(--bg); color: var(--ink); font-family: var(--font); }
+    body { font-size: clamp(16px, 1.3vw, 19px); line-height: 1.6; -webkit-text-size-adjust: 100%; }
+    button, a { font: inherit; color: inherit; touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
+    [hidden] { display: none !important; }
+
+    /* ===== 首頁 ===== */
+    .home { min-height: 100%; max-width: 1080px; margin: 0 auto; padding: clamp(24px, 6vh, 64px) 16px 48px; }
+    .hero { text-align: center; margin-bottom: clamp(24px, 5vh, 44px); }
+    .hero .logo { font-size: clamp(48px, 9vw, 76px); line-height: 1; }
+    .hero h1 { margin: 12px 0 4px; font-size: clamp(30px, 5.4vw, 52px); letter-spacing: .04em; }
+    .hero h1 .brand { color: var(--brand); }
+    .hero p { margin: 0; font-size: clamp(20px, 3vw, 30px); color: var(--ink-soft); }
+    .hero p b { color: var(--ink); }
+
+    .group-title { margin: 28px 4px 12px; font-size: 1.05em; color: var(--ink-soft); display: flex; align-items: center; gap: 10px; }
+    .group-title::after { content: ""; flex: 1; height: 2px; background: var(--line); }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px; }
+    .card { position: relative; min-height: 150px; border-radius: var(--radius); border: 3px solid var(--c); background: var(--surface);
+      display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; padding: 16px;
+      text-decoration: none; text-align: center; box-shadow: 0 6px 0 var(--c-soft); transition: transform .12s, box-shadow .12s; }
+    .card:hover { transform: translateY(-3px); box-shadow: 0 9px 0 var(--c-soft); }
+    .card:active { transform: translateY(3px); box-shadow: 0 2px 0 var(--c-soft); }
+    .card:focus-visible { outline: 4px solid var(--ink); outline-offset: 3px; }
+    .card .ic { font-size: 2.6em; line-height: 1.1; }
+    .card .name { font-weight: 700; font-size: 1.3em; }
+    .card .sub { font-size: .8em; color: var(--ink-soft); }
+    .card.soon { border-color: var(--line); background: var(--muted); box-shadow: 0 6px 0 var(--line); color: var(--ink-soft); }
+    .card.soon .ic { filter: grayscale(1); opacity: .6; }
+    .card .tag { position: absolute; top: 10px; right: 12px; font-size: .7em; background: var(--surface); border-radius: 999px; padding: 0 10px; }
+
+    /* ===== 科目頁（同一個網址裡顯示） ===== */
+    .view { position: fixed; inset: 0; display: flex; flex-direction: column; background: var(--bg); }
+    .bar { flex: none; display: flex; align-items: center; gap: 12px; padding: 8px 16px; padding-top: max(8px, env(safe-area-inset-top));
+      background: var(--surface); border-bottom: 3px solid var(--c, var(--line)); }
+    .home-btn { min-height: 44px; padding: 0 16px; border-radius: 14px; border: 2px solid var(--line); background: var(--bg);
+      font-weight: 700; cursor: pointer; white-space: nowrap; }
+    .home-btn:hover { border-color: var(--brand); }
+    .bar .title { flex: 1; font-weight: 700; font-size: 1.1em; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .bar .title span { margin-right: 6px; }
+    .frame { flex: 1; width: 100%; border: 0; display: block; background: var(--surface); }
+    .empty { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 24px 16px; gap: 6px; }
+    .empty .ic { font-size: 72px; }
+    .empty h2 { margin: 8px 0 0; font-size: 1.8em; }
+    .empty p { margin: 0 0 18px; color: var(--ink-soft); }
+    .big-btn { min-height: var(--tap); padding: 0 32px; border-radius: 16px; border: 0; background: var(--brand); color: #fff; font-weight: 700; cursor: pointer; }
+
+    @media (max-width: 480px) {
+      .grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+      .card { min-height: 128px; padding: 12px 8px; }
+      .card .name { font-size: 1.1em; }
+    }
+  </style>
+</head>
+<body>
+  <main class="home" id="home">
+    <header class="hero">
+      <div class="logo" aria-hidden="true">🏫</div>
+      <h1><span class="brand">四德學輔班</span>學習樂園</h1>
+      <p>歡迎進入！<b>今天要學什麼呢？</b></p>
+    </header>
+    <div id="groups"></div>
+  </main>
+
+  <section class="view" id="view" hidden>
+    <div class="bar">
+      <button class="home-btn" id="home-btn" type="button">🏠 回學習樂園</button>
+      <div class="title" id="view-title"></div>
+    </div>
+    <iframe class="frame" id="frame" title="" allow="microphone; autoplay; fullscreen" hidden></iframe>
+    <div class="empty" id="empty" hidden>
+      <div class="ic" id="empty-ic"></div>
+      <h2 id="empty-name"></h2>
+      <p>這個單元還在準備中，請老師再等等喔！</p>
+      <button class="big-btn" id="empty-back" type="button">回學習樂園</button>
+    </div>
+  </section>
+
+  <script>
+    /*
+     * 科目清單：要新增或開放一個科目，只要改這裡。
+     *   id   ：網址裡的名字，例如 #/mandarin-3a（英文、數字、減號）
+     *   url  ：要顯示的網站；還沒做好就寫 null，首頁會顯示「準備中」
+     *   color：卡片的顏色
+     */
+    var GROUPS = [
+      { title: '📖 國語', items: [
+        { id: 'mandarin-2', name: '二年級國語', ic: '✏️', color: '#E07A2E', url: null },
+        { id: 'mandarin-3a', name: '三年級國語', ic: '📗', color: '#E07A2E', sub: '翰林版 三上', url: '../hanlin-mandarin-3a/' },
+        { id: 'mandarin-4', name: '四年級國語', ic: '📘', color: '#E07A2E', url: null }
+      ] },
+      { title: '🔢 數學', items: [
+        { id: 'math-3', name: '三年級數學', ic: '🧮', color: '#2A63A8', url: null },
+        { id: 'math-5', name: '五年級數學', ic: '📐', color: '#2A63A8', url: null },
+        { id: 'math-6', name: '六年級數學', ic: '📊', color: '#2A63A8', url: null }
+      ] },
+      { title: '🤝 社會技巧', items: [
+        { id: 'social-skills', name: '社會技巧', ic: '🚦', color: '#2D8A57', sub: '阿樂的社會技巧教室', url: 'social-skills/' }
+      ] }
+    ];
+
+    var ALL = {};
+    GROUPS.forEach(function (g) { g.items.forEach(function (s) { ALL[s.id] = s; }); });
+
+    function soft(hex) { // 卡片下方的淡色陰影
+      var n = parseInt(hex.slice(1), 16), r = n >> 16, g = (n >> 8) & 255, b = n & 255;
+      return 'rgba(' + r + ',' + g + ',' + b + ',.28)';
+    }
+    function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+
+    document.getElementById('groups').innerHTML = GROUPS.map(function (g) {
+      return '<h2 class="group-title">' + esc(g.title) + '</h2><div class="grid">' + g.items.map(function (s) {
+        return '<a class="card' + (s.url ? '' : ' soon') + '" href="#/' + s.id + '" style="--c:' + s.color + ';--c-soft:' + soft(s.color) + '">' +
+          (s.url ? '' : '<span class="tag">準備中</span>') +
+          '<span class="ic" aria-hidden="true">' + s.ic + '</span><span class="name">' + esc(s.name) + '</span>' +
+          (s.sub ? '<span class="sub">' + esc(s.sub) + '</span>' : '') + '</a>';
+      }).join('') + '</div>';
+    }).join('');
+
+    var home = document.getElementById('home'), view = document.getElementById('view'),
+        frame = document.getElementById('frame'), empty = document.getElementById('empty');
+
+    function goHome() { location.hash = '#/'; }
+    document.getElementById('home-btn').onclick = goHome;
+    document.getElementById('empty-back').onclick = goHome;
+
+    function route() {
+      var id = location.hash.replace(/^#\/?/, '').split('/')[0];
+      var s = ALL[id];
+      if (!s) {
+        view.hidden = true; home.hidden = false;
+        frame.hidden = true; frame.removeAttribute('src');
+        document.title = '四德學輔班學習樂園';
+        return;
+      }
+      home.hidden = true; view.hidden = false;
+      view.style.setProperty('--c', s.color);
+      document.getElementById('view-title').innerHTML = '<span aria-hidden="true">' + s.ic + '</span>' + esc(s.name);
+      document.title = s.name + '｜四德學輔班學習樂園';
+      if (s.url) {
+        empty.hidden = true; frame.hidden = false; frame.title = s.name;
+        if (frame.getAttribute('src') !== s.url) frame.setAttribute('src', s.url);
+      } else {
+        frame.hidden = true; frame.removeAttribute('src'); empty.hidden = false;
+        document.getElementById('empty-ic').textContent = s.ic;
+        document.getElementById('empty-name').textContent = s.name;
+      }
+    }
+    window.addEventListener('hashchange', route);
+    route();
+  </script>
+</body>
+</html>
