@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>喬治的社會技巧教室</title>
+  <title>和喬治一起練習相處</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC:wght@400;700&display=swap">
   <style>
@@ -32,7 +32,8 @@
 
     /* 情境列表 */
     .intro { background: var(--surface); border-radius: var(--radius); padding: 14px 18px; margin-bottom: 16px; display: flex; gap: 14px; align-items: center; }
-    .intro .face { font-size: 44px; line-height: 1; }
+    .intro .face { font-size: 44px; line-height: 1; flex: none; }
+    .intro .face img { width: 76px; height: 76px; object-fit: contain; display: block; }
     .intro p { margin: 0; }
     .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 14px; }
     .sc-card { text-align: left; border: 3px solid var(--line); background: var(--surface); border-radius: var(--radius); padding: 16px;
@@ -149,7 +150,7 @@
 <body>
 <div class="wrap">
   <header class="top">
-    <h1><span class="lights" aria-hidden="true"><i style="background:#D2483C"></i><i style="background:#E0A21A"></i><i style="background:#2D8A57"></i></span>喬治的社會技巧教室</h1>
+    <h1><span class="lights" aria-hidden="true"><i style="background:#D2483C"></i><i style="background:#E0A21A"></i><i style="background:#2D8A57"></i></span>和喬治一起練習相處</h1>
     <nav class="tabs" aria-label="選單">
       <button class="tab" data-view="list">情境列表</button>
       <button class="tab" data-view="cards">口訣卡</button>
@@ -839,7 +840,8 @@ function render() {
   document.querySelectorAll('.tab').forEach(function (b) { b.setAttribute('aria-current', b.dataset.view === (state.view === 'player' ? 'list' : state.view)); });
   var m = $('#main');
   if (state.view === 'list') {
-    m.innerHTML = '<div class="intro"><div class="face" aria-hidden="true">🧒</div><p>我是<b>喬治</b>！有時候我會做出讓別人不開心的事。<br>跟我一起看一看、想一想，找出更好的做法吧！</p></div>' +
+    m.innerHTML = '<div class="intro"><div class="face" aria-hidden="true"><img src="images/george.png" alt="" onerror="this.parentNode.textContent=\'🧒\'"></div>' +
+      '<p>嗨！我是<b>喬治</b>。在學校裡，有時候會遇到不知道該怎麼辦的事情。<br>我們一起看一看、想一想、練一練，找到讓自己和大家都開心的方法吧！</p></div>' +
       '<div class="grid">' + SCENES.map(function (s, i) {
         var r = state.rate[s.id];
         return '<button class="sc-card" data-i="' + i + '"><span class="no"><span>情境 ' + (i + 1) + '</span>' + (r ? '<span class="stars">' + '★★★'.slice(0, r) + '</span>' : '') + '</span>' +
