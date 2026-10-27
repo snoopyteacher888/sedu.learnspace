@@ -203,7 +203,7 @@
 <body>
 <div class="wrap">
   <header class="top">
-    <h1><span class="lights" aria-hidden="true"><i style="background:#D2483C"></i><i style="background:#E0A21A"></i><i style="background:#2D8A57"></i></span>和喬治一起練習相處<button class="say" data-say="和喬治一起練習相處" aria-label="念出來">🔊</button></h1>
+    <h1><span class="lights" aria-hidden="true"><i style="background:#D2483C"></i><i style="background:#E0A21A"></i><i style="background:#2D8A57"></i></span>和喬治一起練習相處</h1>
     <nav class="tabs" aria-label="選單">
       <button class="tab" data-view="list">情境列表</button>
       <button class="tab" data-view="cards">口訣卡</button>
@@ -920,7 +920,8 @@ document.addEventListener('click', function (e) {
   e.preventDefault(); e.stopPropagation(); stopAll(); speak(b.dataset.say);
 }, true);
 /* 不識字的學生：換頁、選項這些按鈕，按下去先念出按鈕上的字，念完才換頁（老師要求） */
-var FIRST = '#go, #again, #nextsc, #cards, #back, .tab, .steps button, .opt, .sc-card';
+/* 上方標題列（情境列表、口訣卡、列印教材）是老師用的，不念 */
+var FIRST = '#go, #again, #nextsc, #cards, #back, .steps button, .opt, .sc-card';
 function labelOf(el) {
   return (el.getAttribute('data-label') || el.textContent).replace(/[①-⑨→←▶◀■↺🔁]|[\u{1F300}-\u{1FAFF}☀-➿]️?/gu, ' ').replace(/\s+/g, ' ').trim();
 }
@@ -1009,15 +1010,15 @@ function scriptPage(s, i) {
     '<div class="sc-box"><b>口訣：</b>' + s.how.chain.join(' → ') + '<br>' + esc(s.how.note) + '</div>' +
     '<div class="sc-box"><b>🤔 ' + esc(s.twist.q) + '</b><br>→ ' + esc(s.twist.a) + '</div></section>';
 }
-var PRINT_KINDS = [['check', '檢核表', checkPage], ['sheet', '學習單（問題）', worksheetPage], ['script', '台詞卡（演出喬治的做法）', scriptPage]];
+var PRINT_KINDS = [['check', '檢核表', checkPage], ['sheet', '學習單', worksheetPage], ['script', '台詞卡', scriptPage]];
 function renderPrint() {
   var kind = state.printKind || 'check', sc = state.printSc || 'all', m = $('#main');
   var list = sc === 'all' ? SCENES.map(function (s, i) { return i; }) : [+sc];
-  var kinds = kind === 'all' ? PRINT_KINDS : PRINT_KINDS.filter(function (k) { return k[0] === kind; });
+  var kinds = PRINT_KINDS.filter(function (k) { return k[0] === kind; });
   var pages = [];
   list.forEach(function (i) { kinds.forEach(function (k) { pages.push(k[2](SCENES[i], i)); }); });
   m.innerHTML = '<div class="printbar no-print"><label>要印哪些：<select id="pk">' +
-    [['check', '檢核表'], ['sheet', '學習單（問題）'], ['script', '台詞卡（演出喬治的做法）'], ['all', '三種都印']].map(function (o) { return '<option value="' + o[0] + '"' + (o[0] === kind ? ' selected' : '') + '>' + o[1] + '</option>'; }).join('') +
+    PRINT_KINDS.map(function (o) { return '<option value="' + o[0] + '"' + (o[0] === kind ? ' selected' : '') + '>' + o[1] + '</option>'; }).join('') +
     '</select></label><label>情境：<select id="ps"><option value="all">全部 13 個情境</option>' +
     SCENES.map(function (s, i) { return '<option value="' + i + '"' + (String(i) === sc ? ' selected' : '') + '>情境 ' + (i + 1) + '　' + esc(s.title) + '</option>'; }).join('') +
     '</select></label><button class="btn primary" id="doprint">🖨️ 列印</button><span class="note" style="margin:0">共 ' + pages.length + ' 頁，每一張印在不同頁。</span></div>' +
