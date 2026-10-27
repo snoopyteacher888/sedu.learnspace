@@ -152,10 +152,51 @@
       .three { grid-template-columns: 1fr; }
       .bub { max-width: 46%; }
     }
+    /* 列印教材 */
+    .printbar { background: var(--surface); border-radius: var(--radius); padding: 12px 16px; margin-bottom: 16px; display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+    .printbar select { font: inherit; min-height: 44px; border-radius: 12px; border: 2px solid var(--line); padding: 0 10px; background: #fff; }
+    .pg { background: #fff; border-radius: 18px; padding: 28px 32px; margin-bottom: 18px; color: #222; font-size: 18px; }
+    .pg-head { display: flex; align-items: baseline; gap: 14px; border-bottom: 4px solid var(--teal); padding-bottom: 8px; margin-bottom: 14px; }
+    .pg-head .n { color: var(--teal-ink); font-weight: 700; white-space: nowrap; }
+    .pg-head h2 { margin: 0; font-size: 1.6em; }
+    .pg-head .kind { margin-left: auto; font-weight: 700; white-space: nowrap; }
+    .pg-meta { display: flex; flex-wrap: wrap; gap: 8px 28px; margin-bottom: 14px; }
+    .pg-meta i { display: inline-block; width: 150px; border-bottom: 2px solid #333; }
+    .pg-meta i.s { width: 50px; }
+    .pg-pic { width: 100%; max-width: 520px; aspect-ratio: 16 / 9; display: block; margin: 0 auto 14px; border-radius: 12px; overflow: hidden; border: 2px solid #ddd; }
+    .pg-pic svg { width: 100%; height: 100%; display: block; }
+    .pg h3 { font-size: 1.15em; margin: 18px 0 8px; }
+    .pg .wl { border-bottom: 2px dashed #999; height: 40px; }
+    .pg .qopts { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+    .pg .qopts li::before { content: "○"; font-size: 1.3em; margin-right: 10px; }
+    .pg .draw { border: 2px dashed #999; border-radius: 12px; height: 150px; margin-top: 8px; color: #999; padding: 8px 12px; font-size: .85em; }
+    .ck { width: 100%; border-collapse: collapse; }
+    .ck th, .ck td { border: 2px solid #ccc; padding: 12px; text-align: center; }
+    .ck th:first-child, .ck td:first-child { text-align: left; width: 50%; }
+    .ck .o { display: inline-block; width: 30px; height: 30px; border-radius: 50%; border: 2px solid #555; }
+    .ck-lines div { display: flex; gap: 8px; margin-top: 18px; }
+    .ck-lines i { flex: 1; border-bottom: 2px solid #333; }
+    .sc-meta { background: #f3fbfb; border-radius: 12px; padding: 10px 14px; display: grid; gap: 4px; margin-bottom: 12px; }
+    .sc-steps { margin: 0; padding-left: 2.4em; display: grid; gap: 6px; }
+    .sc-steps .nar { color: #555; }
+    .sc-steps .me { color: #C2571A; font-weight: 700; }
+    .sc-steps .th { color: #555; font-style: italic; }
+    .sc-box { border: 2px solid var(--teal); border-radius: 12px; padding: 10px 14px; margin-top: 14px; }
     @media print {
-      .no-print, .top .tabs { display: none !important; }
+      .no-print, .top { display: none !important; }
       body { background: #fff; }
+      .wrap { padding: 0; max-width: none; }
       .kcard { border: 2px solid #ccc; border-top: 10px solid var(--teal); }
+      .pg { border-radius: 0; padding: 0; margin: 0; break-after: page; page-break-after: always; }
+      .pg:last-child { break-after: auto; page-break-after: auto; }
+      .pg-head, .sc-box, .chain .c, .kcard { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      .pg-pic { -webkit-print-color-adjust: exact; print-color-adjust: exact; max-width: 330px; margin-bottom: 8px; }
+      .pg { font-size: 15px; }
+      .pg h3 { margin: 12px 0 6px; }
+      .pg .wl { height: 32px; }
+      .pg .draw { height: 110px; }
+      .ck th, .ck td { padding: 9px; }
+      .sc-steps { gap: 3px; }
     }
   </style>
 </head>
@@ -166,6 +207,7 @@
     <nav class="tabs" aria-label="選單">
       <button class="tab" data-view="list">情境列表</button>
       <button class="tab" data-view="cards">口訣卡</button>
+      <button class="tab" data-view="print">列印教材</button>
     </nav>
   </header>
   <main id="main"></main>
@@ -915,7 +957,74 @@ function render() {
           '<div class="no">情境 ' + (i + 1) + '｜' + esc(s.title) + '</div><h3>我可以怎麼做</h3>' + chain(s.how.chain) + '<p>' + esc(s.how.note) + '</p></article>';
       }).join('') + '</div>';
     $('#print').onclick = function () { window.print(); };
-  } else renderPlayer();
+  } else if (state.view === 'print') renderPrint();
+  else renderPlayer();
+}
+
+/* ================= 列印教材：檢核表、學習單（問題）、台詞卡（演出喬治的做法） ================= */
+var PLACE = { hall: '走廊', class: '教室', play: '操場', shop: '商店' };
+function pgHead(s, i, kind) {
+  return '<div class="pg-head"><span class="n">情境 ' + (i + 1) + '</span><h2>' + esc(s.title) + '</h2><span class="kind">' + kind + '</span></div>';
+}
+var META = '<div class="pg-meta"><div>姓名：<i></i></div><div>日期：<i></i></div></div>';
+function checkPage(s, i) {
+  return '<section class="pg">' + pgHead(s, i, '演練檢核表') +
+    '<div class="pg-meta"><div>姓名：<i></i></div><div>日期：<i></i></div><div>第 <i class="s"></i> 次演練</div></div>' +
+    '<div class="chain" style="margin-bottom:12px"><b style="margin-right:6px">口訣：</b>' + chain(s.how.chain).replace(/^<div class="chain ">|<\/div>$/g, '') + '</div>' +
+    '<table class="ck"><thead><tr><th>我有沒有做到？</th><th>😀<br>做到了</th><th>🙂<br>差一點</th><th>😟<br>還要練</th><th>老師</th></tr></thead><tbody>' +
+    s.practice.map(function (t, k) { return '<tr><td><b>' + (k + 1) + '</b>　' + esc(t) + '</td><td><span class="o"></span></td><td><span class="o"></span></td><td><span class="o"></span></td><td></td></tr>'; }).join('') +
+    '</tbody></table>' +
+    '<div class="ck-lines"><div>我覺得自己最棒的地方：<i></i></div><div>下次我想再練習：<i></i></div><div>老師的話：<i></i></div></div></section>';
+}
+function worksheetPage(s, i) {
+  var fr = build(s.cast, s.wrong, s.props);
+  return '<section class="pg">' + pgHead(s, i, '學習單') + META +
+    '<div class="pg-pic">' + frameSvg(s, fr[fr.length - 1]) + '</div>' +
+    '<h3>一、發生什麼事？</h3><p style="margin:0">' + esc(s.short) + '</p>' +
+    '<h3>二、停！想一想</h3>' + s.questions.map(function (q, k) {
+      return '<p style="margin:10px 0 0"><b>' + (k + 1) + '.</b> ' + esc(q.q) + '</p><div class="wl"></div>';
+    }).join('') +
+    '<h3>三、選一選：' + esc(s.choose.q) + '（把對的做法圈起來）</h3><ul class="qopts">' +
+    s.choose.opts.map(function (o) { return '<li>' + o.ic + ' ' + esc(o.t) + '</li>'; }).join('') + '</ul>' +
+    '<h3>四、我可以怎麼做？（可以寫，也可以畫）</h3><div class="draw">寫一寫或畫一畫</div></section>';
+}
+function scriptPage(s, i) {
+  var fr = build(s.cast, s.right, s.props), who = {}, props = [];
+  fr.forEach(function (f) {
+    for (var id in f.ppl) if (f.ppl[id].x < 820) who[id] = f.ppl[id].name;
+    f.props.forEach(function (p) { if (props.indexOf(p[0]) < 0) props.push(p[0]); });
+  });
+  var steps = [];
+  s.right.forEach(function (f) {
+    if (f.cap) steps.push('<li class="nar">旁白：' + esc(f.cap) + '</li>');
+    (f.think || []).forEach(function (b) { steps.push('<li class="th">（' + esc(s.cast[b[0]].name) + '心裡想：' + esc(b[1]) + '）</li>'); });
+    (f.say || []).forEach(function (b) { steps.push('<li' + (b[0] === 'le' ? ' class="me"' : '') + '>' + esc(s.cast[b[0]].name) + '：「' + esc(b[1].replace(/。$/, '')) + '」</li>'); });
+  });
+  return '<section class="pg">' + pgHead(s, i, '台詞卡') +
+    '<div class="pg-pic">' + frameSvg(s, fr[fr.length - 1]) + '</div>' +
+    '<div class="sc-meta"><div><b>角色：</b>' + Object.keys(who).map(function (id) { return esc(who[id]); }).join('、') + '</div>' +
+    '<div><b>場景：</b>' + PLACE[s.bg] + (s.label ? '（' + esc(s.label) + '）' : '') + '</div>' +
+    (props.length ? '<div><b>道具：</b>' + props.join(' ') + '</div>' : '') + '</div>' +
+    '<h3>演出喬治的做法</h3><ol class="sc-steps">' + steps.join('') + '</ol>' +
+    '<div class="sc-box"><b>口訣：</b>' + s.how.chain.join(' → ') + '<br>' + esc(s.how.note) + '</div>' +
+    '<div class="sc-box"><b>🤔 ' + esc(s.twist.q) + '</b><br>→ ' + esc(s.twist.a) + '</div></section>';
+}
+var PRINT_KINDS = [['check', '檢核表', checkPage], ['sheet', '學習單（問題）', worksheetPage], ['script', '台詞卡（演出喬治的做法）', scriptPage]];
+function renderPrint() {
+  var kind = state.printKind || 'check', sc = state.printSc || 'all', m = $('#main');
+  var list = sc === 'all' ? SCENES.map(function (s, i) { return i; }) : [+sc];
+  var kinds = kind === 'all' ? PRINT_KINDS : PRINT_KINDS.filter(function (k) { return k[0] === kind; });
+  var pages = [];
+  list.forEach(function (i) { kinds.forEach(function (k) { pages.push(k[2](SCENES[i], i)); }); });
+  m.innerHTML = '<div class="printbar no-print"><label>要印哪些：<select id="pk">' +
+    [['check', '檢核表'], ['sheet', '學習單（問題）'], ['script', '台詞卡（演出喬治的做法）'], ['all', '三種都印']].map(function (o) { return '<option value="' + o[0] + '"' + (o[0] === kind ? ' selected' : '') + '>' + o[1] + '</option>'; }).join('') +
+    '</select></label><label>情境：<select id="ps"><option value="all">全部 13 個情境</option>' +
+    SCENES.map(function (s, i) { return '<option value="' + i + '"' + (String(i) === sc ? ' selected' : '') + '>情境 ' + (i + 1) + '　' + esc(s.title) + '</option>'; }).join('') +
+    '</select></label><button class="btn primary" id="doprint">🖨️ 列印</button><span class="note" style="margin:0">共 ' + pages.length + ' 頁，每一張印在不同頁。</span></div>' +
+    pages.join('');
+  $('#pk').onchange = function () { state.printKind = this.value; renderPrint(); };
+  $('#ps').onchange = function () { state.printSc = this.value; renderPrint(); };
+  $('#doprint').onclick = function () { window.print(); };
 }
 
 function openScene(i) { stopAll(); state.sc = i; state.view = 'player'; state.revealed = {}; state.checks = {}; state.picked = null; render(); goPhase('wrong'); window.scrollTo(0, 0); }
@@ -958,16 +1067,20 @@ function build(cast, list, base) {
   return out;
 }
 
-function drawFrame(badge) {
-  var s = SCENES[state.sc], f = state.frames[state.fi], st = $('#stage');
-  if (!f) return;
+/* 一格畫面（不含對話框）：播放和列印教材都用這個 */
+function frameSvg(s, f) {
   var svg = '<svg viewBox="0 0 800 450" aria-hidden="true">' + BGS[s.bg](s.label || '');
   var ids = Object.keys(f.ppl).sort(function (a, b) { return f.ppl[a].x - f.ppl[b].x; });
   ids.forEach(function (id) { if (f.ppl[id].x < 820) svg += person(f.ppl[id]); });
   (s.desks || []).forEach(function (x) { svg += desk(x); });
   if (s.counter) svg += counter();
   f.props.forEach(function (p) { svg += '<text x="' + p[1] + '" y="' + p[2] + '" font-size="' + (p[3] || 40) + '" text-anchor="middle">' + p[0] + '</text>'; });
-  svg += '</svg>';
+  return svg + '</svg>';
+}
+function drawFrame(badge) {
+  var s = SCENES[state.sc], f = state.frames[state.fi], st = $('#stage');
+  if (!f) return;
+  var svg = frameSvg(s, f);
   var html = svg + '<span class="badge ' + badge[1] + '">' + badge[0] + '</span><span class="count">' + (state.fi + 1) + ' / ' + state.frames.length + '</span>';
   var bubbles = f.say.map(function (b) { return [b, 'say']; }).concat(f.think.map(function (b) { return [b, 'think']; }));
   bubbles.forEach(function (b, k) {
