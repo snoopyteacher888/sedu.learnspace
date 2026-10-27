@@ -274,10 +274,10 @@ var SCENES = [
 { id: 'call', title: '老師叫我的時候', short: '上課在玩鉛筆，老師叫我的名字。', bg: 'class', label: '數學課', desks: [440, 640],
   cast: { tea: P(KIDS.tea, 140), le: P(LE, 440), ru: P(KIDS.ru, 640) },
   wrong: [
-    { cap: '上課了，喬治一直在轉鉛筆。', c: { le: { mood: 'happy' } }, props: [['✏️', 470, 285]], think: [['le', '轉轉轉～好好玩！']] },
-    { props: [['✏️', 470, 285]], say: [['tea', '喬治，請把鉛筆放下。']], think: [['le', '再轉一下下就好…']] },
-    { c: { tea: { mood: 'worried' }, ru: { mood: 'surprised' } }, props: [['✏️', 470, 285]], say: [['tea', '喬治，鉛筆放下，看黑板。']], think: [['ru', '老師在叫他耶…']] },
-    { c: { tea: { mood: 'angry', pose: 'hips' }, le: { mood: 'surprised' } }, props: [['✏️', 470, 285]], say: [['tea', '喬治！']], cap: '老師叫了三次，越來越生氣了。' }
+    { cap: '上課了，喬治一直在轉鉛筆。', c: { le: { mood: 'happy' } }, props: [['✏️', 474, 330]], think: [['le', '轉轉轉～好好玩！']] },
+    { props: [['✏️', 474, 330]], say: [['tea', '喬治，請把鉛筆放下。']], think: [['le', '再轉一下下就好…']] },
+    { c: { tea: { mood: 'worried' }, ru: { mood: 'surprised' } }, props: [['✏️', 474, 330]], say: [['tea', '喬治，鉛筆放下，看黑板。']], think: [['ru', '老師在叫他耶…']] },
+    { c: { tea: { mood: 'angry', pose: 'hips' }, le: { mood: 'surprised' } }, props: [['✏️', 474, 330]], say: [['tea', '喬治！']], cap: '老師叫了三次，越來越生氣了。' }
   ],
   questions: [
     { q: '老師叫了喬治幾次？老師的心情有什麼變化？', hint: '三次。老師從平靜，變成擔心，最後生氣了。' },
@@ -286,16 +286,16 @@ var SCENES = [
   ],
   choose: { q: '老師叫喬治把鉛筆放下，喬治可以怎麼做？', opts: [
     { ic: '🙉', t: '假裝沒聽到，繼續玩', fb: '假裝沒聽到，老師會越來越生氣喔，再想一想！', demo: [
-      { c: { le: { mood: 'happy' } }, props: [['✏️', 470, 285]], say: [['tea', '喬治，請把鉛筆放下。']], think: [['le', '假裝沒聽到…']] },
-      { c: { tea: { mood: 'angry', pose: 'hips' }, le: { mood: 'sad' } }, props: [['✏️', 470, 285]], say: [['tea', '喬治，下課來找老師。']], cap: '假裝沒聽到，老師更生氣，下課時間也沒了。' } ] },
+      { c: { le: { mood: 'happy' } }, props: [['✏️', 474, 330]], say: [['tea', '喬治，請把鉛筆放下。']], think: [['le', '假裝沒聽到…']] },
+      { c: { tea: { mood: 'angry', pose: 'hips' }, le: { mood: 'sad' } }, props: [['✏️', 474, 330]], say: [['tea', '喬治，下課來找老師。']], cap: '假裝沒聽到，老師更生氣，下課時間也沒了。' } ] },
     { ic: '👀', t: '看著老師，說「好」，馬上放下', ok: 1, fb: '對了！聽到名字，看老師、說好、馬上做。' },
     { ic: '😤', t: '說「我又沒有吵到別人」', fb: '頂嘴會讓事情變得更糟，再想一想！', demo: [
-      { c: { le: { mood: 'angry' } }, props: [['✏️', 470, 285]], say: [['tea', '喬治，請把鉛筆放下。'], ['le', '我又沒有吵到人！']] },
-      { c: { tea: { mood: 'angry' }, ru: { mood: 'scared' } }, props: [['✏️', 470, 285]], say: [['tea', '這樣跟老師說話，不禮貌喔。']], cap: '頂嘴會讓老師難過又生氣。' } ] }
+      { c: { le: { mood: 'angry' } }, props: [['✏️', 474, 330]], say: [['tea', '喬治，請把鉛筆放下。'], ['le', '我又沒有吵到人！']] },
+      { c: { tea: { mood: 'angry' }, ru: { mood: 'scared' } }, props: [['✏️', 474, 330]], say: [['tea', '這樣跟老師說話，不禮貌喔。']], cap: '頂嘴會讓老師難過又生氣。' } ] }
   ] },
   right: [
-    { cap: '上課了，喬治一直在轉鉛筆。', c: { le: { mood: 'happy' } }, props: [['✏️', 470, 285]], think: [['le', '轉轉轉～好好玩！']] },
-    { c: { le: { mood: 'neutral' } }, props: [['✏️', 470, 285]], say: [['tea', '喬治，請把鉛筆放下。']], think: [['le', '老師叫我了，看老師。']] },
+    { cap: '上課了，喬治一直在轉鉛筆。', c: { le: { mood: 'happy' } }, props: [['✏️', 474, 330]], think: [['le', '轉轉轉～好好玩！']] },
+    { c: { le: { mood: 'neutral' } }, props: [['✏️', 474, 330]], say: [['tea', '喬治，請把鉛筆放下。']], think: [['le', '老師叫我了，看老師。']] },
     { say: [['le', '好！']], cap: '喬治看著老師，馬上把鉛筆放下。' },
     { c: { tea: { mood: 'happy' }, le: { mood: 'happy' } }, say: [['tea', '謝謝你，我們繼續上課。']], fx: [['👍', 140, 140]] }
   ],
@@ -307,7 +307,7 @@ var SCENES = [
 { id: 'oops', title: '弄掉別人的東西', short: '美勞課伸手拿東西，撞掉同學的蠟筆盒。', bg: 'class', label: '美勞課', desks: [330, 520],
   cast: { le: P(LE, 330), wei: P(KIDS.wei, 520), tea: P(KIDS.tea, 900) },
   wrong: [
-    { cap: '美勞課，大家在畫畫。', c: { le: { mood: 'happy' }, wei: { mood: 'happy' } }, props: [['🖍️', 470, 288]], say: [['wei', '我要畫一隻大恐龍！']] },
+    { cap: '美勞課，大家在畫畫。', c: { le: { mood: 'happy' }, wei: { mood: 'happy' } }, props: [['🖍️', 470, 334]], say: [['wei', '我要畫一隻大恐龍！']] },
     { c: { le: { x: 400, pose: 'reach' }, wei: { mood: 'surprised' } }, props: [['🖍️', 470, 420]], fx: [['💥', 465, 300]], cap: '喬治伸手拿膠水，不小心把大偉的蠟筆盒撞到地上。' },
     { c: { wei: { mood: 'angry' }, le: { mood: 'worried', pose: 'down' } }, props: [['🖍️', 470, 420]], say: [['wei', '我的蠟筆斷掉了！是誰？']], think: [['le', '糟糕…不要說是我。']] },
     { c: { tea: { x: 710 } }, props: [['🖍️', 470, 420]], say: [['tea', '剛剛是誰撞到的？'], ['le', '不是我！']], think: [['wei', '明明就是他…']] }
@@ -327,11 +327,11 @@ var SCENES = [
       { c: { le: { x: 200 }, wei: { mood: 'sad' } }, props: [['🖍️', 470, 420]], think: [['wei', '他都不幫我撿…']], cap: '就算不是故意的，也要道歉、幫忙。' } ] }
   ] },
   right: [
-    { cap: '美勞課，大家在畫畫。', c: { le: { mood: 'happy' }, wei: { mood: 'happy' } }, props: [['🖍️', 470, 288]], say: [['wei', '我要畫一隻大恐龍！']] },
+    { cap: '美勞課，大家在畫畫。', c: { le: { mood: 'happy' }, wei: { mood: 'happy' } }, props: [['🖍️', 470, 334]], say: [['wei', '我要畫一隻大恐龍！']] },
     { c: { le: { x: 400, pose: 'reach' }, wei: { mood: 'surprised' } }, props: [['🖍️', 470, 420]], fx: [['💥', 465, 300]], cap: '喬治不小心把大偉的蠟筆盒撞到地上。' },
     { c: { le: { mood: 'worried', pose: 'down' } }, props: [['🖍️', 470, 420]], say: [['wei', '我的蠟筆！']], think: [['le', '是我撞到的，要說實話。']] },
     { props: [['🖍️', 470, 420]], say: [['le', '對不起，是我不小心撞到的，我幫你撿。']] },
-    { c: { wei: { mood: 'happy' }, le: { mood: 'happy' }, tea: { x: 710, mood: 'happy' } }, props: [['🖍️', 470, 288]], say: [['wei', '謝謝你幫我撿。'], ['tea', '喬治很勇敢，有說實話！']] }
+    { c: { wei: { mood: 'happy' }, le: { mood: 'happy' }, tea: { x: 710, mood: 'happy' } }, props: [['🖍️', 470, 334]], say: [['wei', '謝謝你幫我撿。'], ['tea', '喬治很勇敢，有說實話！']] }
   ],
   how: { chain: ['說實話', '說對不起', '幫忙補救'], note: '可以說：「對不起，是我不小心的，我幫你＿＿。」' },
   sum: { p: '不小心撞掉蠟筆盒，還說「不是我」。', o: '大偉覺得被騙了，更生氣。', c: '說實話、說對不起、幫忙撿起來。' },
@@ -376,8 +376,8 @@ var SCENES = [
 { id: 'laugh', title: '被笑的時候', short: '念課文卡住，被同學笑了，好生氣。', bg: 'class', label: '國語課', desks: [560, 690],
   cast: { tea: P(KIDS.tea, 120), le: P(LE, 330), wei: P(KIDS.wei, 560), ru: P(KIDS.ru, 690) },
   wrong: [
-    { cap: '國語課，喬治站起來念課文。', props: [['📖', 360, 280]], say: [['le', '小狗在草……草……']] },
-    { c: { wei: { mood: 'happy', pose: 'mouth' }, le: { mood: 'angry' } }, props: [['📖', 360, 280]], say: [['wei', '哈哈哈！他念不出來！']], think: [['le', '好丟臉！好生氣！']] },
+    { cap: '國語課，喬治站起來念課文。', props: [['📖', 368, 345]], say: [['le', '小狗在草……草……']] },
+    { c: { wei: { mood: 'happy', pose: 'mouth' }, le: { mood: 'angry' } }, props: [['📖', 368, 345]], say: [['wei', '哈哈哈！他念不出來！']], think: [['le', '好丟臉！好生氣！']] },
     { c: { le: { x: 470, pose: 'point' }, wei: { mood: 'scared', pose: 'down' }, ru: { mood: 'scared' } }, say: [['le', '你再笑！我打你喔！']] },
     { c: { tea: { mood: 'angry', pose: 'hips' }, le: { mood: 'sad', pose: 'down' } }, say: [['tea', '喬治！不可以打人！']], cap: '本來是大偉不對，現在變成喬治被罵。' }
   ],
@@ -396,10 +396,10 @@ var SCENES = [
     { ic: '🌬️', t: '先深呼吸，說「我不喜歡你這樣笑我」', ok: 1, fb: '對了！先讓自己冷靜，再把感覺說出來。' }
   ] },
   right: [
-    { cap: '國語課，喬治站起來念課文。', props: [['📖', 360, 280]], say: [['le', '小狗在草……草……']] },
-    { c: { wei: { mood: 'happy', pose: 'mouth' }, le: { mood: 'angry' } }, props: [['📖', 360, 280]], say: [['wei', '哈哈哈！他念不出來！']] },
-    { c: { le: { mood: 'worried' } }, props: [['📖', 360, 280]], think: [['le', '停！深呼吸…1、2、3、4、5。']], cap: '喬治很生氣，但是他先讓自己冷靜。' },
-    { c: { le: { mood: 'neutral' } }, props: [['📖', 360, 280]], say: [['le', '我不喜歡你這樣笑我。']] },
+    { cap: '國語課，喬治站起來念課文。', props: [['📖', 368, 345]], say: [['le', '小狗在草……草……']] },
+    { c: { wei: { mood: 'happy', pose: 'mouth' }, le: { mood: 'angry' } }, props: [['📖', 368, 345]], say: [['wei', '哈哈哈！他念不出來！']] },
+    { c: { le: { mood: 'worried' } }, props: [['📖', 368, 345]], think: [['le', '停！深呼吸…1、2、3、4、5。']], cap: '喬治很生氣，但是他先讓自己冷靜。' },
+    { c: { le: { mood: 'neutral' } }, props: [['📖', 368, 345]], say: [['le', '我不喜歡你這樣笑我。']] },
     { c: { wei: { mood: 'sad', pose: 'down' }, le: { mood: 'happy' }, tea: { mood: 'happy' } }, say: [['tea', '喬治，你處理得很好！'], ['wei', '對不起。']] }
   ],
   how: { chain: ['停', '深呼吸', '說「我不喜歡」', '找老師'], note: '如果他還是一直笑，就去告訴老師，不要自己動手。' },
@@ -410,8 +410,8 @@ var SCENES = [
 { id: 'help', title: '不會的時候', short: '學習單有一題看不懂，好想放棄。', bg: 'class', label: '學習單時間', desks: [420, 640],
   cast: { tea: P(KIDS.tea, 140), le: P(LE, 420), ru: P(KIDS.ru, 640) },
   wrong: [
-    { cap: '大家在寫學習單，喬治看不懂第三題。', c: { le: { mood: 'worried' } }, props: [['📄', 450, 288]], think: [['le', '這題是什麼意思啊？']] },
-    { c: { le: { mood: 'angry', pose: 'cross' } }, props: [['📄', 450, 288]], think: [['le', '不會！不寫了！']], cap: '喬治把學習單推到旁邊。' },
+    { cap: '大家在寫學習單，喬治看不懂第三題。', c: { le: { mood: 'worried' } }, props: [['📄', 452, 334]], think: [['le', '這題是什麼意思啊？']] },
+    { c: { le: { mood: 'angry', pose: 'cross' } }, props: [['📄', 452, 334]], think: [['le', '不會！不寫了！']], cap: '喬治把學習單推到旁邊。' },
     { c: { le: { mood: 'sad' }, tea: { mood: 'worried' } }, think: [['tea', '喬治怎麼了？']], cap: '喬治趴在桌上，什麼都不寫。' },
     { c: { ru: { mood: 'happy' } }, say: [['ru', '我寫完了！']], cap: '下課了，只有喬治還沒寫。' }
   ],
@@ -426,15 +426,15 @@ var SCENES = [
       { cap: '趴著不寫，老師不知道你哪裡不會，學習單也沒寫完。' } ] },
     { ic: '🙋', t: '舉手說「老師，這題我看不懂」', ok: 1, fb: '對了！舉手說出來，老師就可以幫你。' },
     { ic: '👀', t: '偷看同學的答案', fb: '偷看答案，自己還是沒學會喔，再想一想！', demo: [
-      { c: { le: { x: 520, mood: 'worried' } }, props: [['📄', 670, 288]], think: [['le', '看他的就好…']] },
-      { c: { ru: { mood: 'angry' } }, props: [['📄', 670, 288]], say: [['ru', '不要偷看我的啦！']], cap: '偷看答案，自己沒學會，同學也不高興。' } ] }
+      { c: { le: { x: 520, mood: 'worried' } }, props: [['📄', 672, 334]], think: [['le', '看他的就好…']] },
+      { c: { ru: { mood: 'angry' } }, props: [['📄', 672, 334]], say: [['ru', '不要偷看我的啦！']], cap: '偷看答案，自己沒學會，同學也不高興。' } ] }
   ] },
   right: [
-    { cap: '大家在寫學習單，喬治看不懂第三題。', c: { le: { mood: 'worried' } }, props: [['📄', 450, 288]], think: [['le', '這題是什麼意思啊？']] },
-    { props: [['📄', 450, 288]], think: [['le', '我不會，可以舉手問。']] },
-    { c: { le: { pose: 'raise', mood: 'neutral' } }, props: [['📄', 450, 288]], say: [['le', '老師，這題我看不懂。']] },
-    { c: { tea: { x: 300, mood: 'happy' }, le: { pose: 'down' } }, props: [['📄', 450, 288]], say: [['tea', '我們一起看，先找找題目在問什麼。']] },
-    { c: { le: { mood: 'happy' } }, props: [['📄', 450, 288]], say: [['le', '我知道了！謝謝老師。']], cap: '舉手問問題，是很棒的學習方法！' }
+    { cap: '大家在寫學習單，喬治看不懂第三題。', c: { le: { mood: 'worried' } }, props: [['📄', 452, 334]], think: [['le', '這題是什麼意思啊？']] },
+    { props: [['📄', 452, 334]], think: [['le', '我不會，可以舉手問。']] },
+    { c: { le: { pose: 'raise', mood: 'neutral' } }, props: [['📄', 452, 334]], say: [['le', '老師，這題我看不懂。']] },
+    { c: { tea: { x: 300, mood: 'happy' }, le: { pose: 'down' } }, props: [['📄', 452, 334]], say: [['tea', '我們一起看，先找找題目在問什麼。']] },
+    { c: { le: { mood: 'happy' } }, props: [['📄', 452, 334]], say: [['le', '我知道了！謝謝老師。']], cap: '舉手問問題，是很棒的學習方法！' }
   ],
   how: { chain: ['先試試看', '舉手', '說「我看不懂」', '說謝謝'], note: '可以說：「老師，第＿題我看不懂，可以教我嗎？」' },
   sum: { p: '看不懂題目，就放棄不寫了。', o: '老師不知道喬治哪裡不會，沒辦法幫忙。', c: '先試試看，不會就舉手說出來。' },
@@ -465,8 +465,8 @@ var SCENES = [
   ] },
   right: [
     { cap: '上課時，喬治覺得鼻子好癢。', c: { le: { mood: 'worried' } }, think: [['le', '鼻子好癢，好不舒服…']] },
-    { props: [['🧻', 455, 288]], think: [['le', '用手挖不衛生，我要拿衛生紙。']] },
-    { c: { le: { pose: 'mouth', mood: 'neutral' } }, props: [['🧻', 436, 268, 34]], cap: '喬治拿衛生紙，把頭轉到旁邊，輕輕擦一擦。' },
+    { props: [['🧻', 456, 334]], think: [['le', '用手挖不衛生，我要拿衛生紙。']] },
+    { c: { le: { pose: 'mouth', mood: 'neutral' } }, props: [['🧻', 433, 292, 30]], cap: '喬治拿衛生紙，把頭轉到旁邊，輕輕擦一擦。' },
     { c: { le: { pose: 'down', mood: 'happy' } }, props: [['🗑️', 290, 430, 44]], say: [['le', '好舒服了！我去洗手。']], cap: '擦完把衛生紙丟進垃圾桶，再去洗手。' },
     { c: { qing: { mood: 'happy' }, tea: { mood: 'happy' } }, say: [['qing', '喬治好愛乾淨！']], fx: [['👍', 140, 140]] }
   ],
@@ -503,7 +503,7 @@ var SCENES = [
     { c: { tea: { mood: 'happy' } }, say: [['tea', '喬治想說什麼？說一件事就好喔。']] },
     { c: { le: { pose: 'down', mood: 'happy' } }, say: [['le', '我家的小狗也會用鼻子聞東西！']] },
     { say: [['tea', '謝謝分享！其他的想法，下課再跟老師說。']] },
-    { props: [['📒', 480, 288]], think: [['le', '我先記下來：旺旺會握手！']], cap: '還有好多話想說？先記在小本子上，下課再分享。' }
+    { props: [['📒', 482, 334]], think: [['le', '我先記下來：旺旺會握手！']], cap: '還有好多話想說？先記在小本子上，下課再分享。' }
   ],
   how: { chain: ['舉手', '等老師叫', '說一件就好', '其他的先記下來'], note: '沒叫到也沒關係，可以說：「老師，我下課再跟你說。」' },
   sum: { p: '想到就說，一直打斷老師上課。', o: '老師課上不完，同學也聽不到。', c: '舉手等待，說一件就好，其他的記下來下課說。' },
@@ -513,10 +513,10 @@ var SCENES = [
 { id: 'prank', title: '想捉弄同學', short: '想讓同學出糗，覺得大家一定會笑。', bg: 'class', label: '下課時間',
   cast: { le: P(LE, 200), ming: P(KIDS.ming, 430), qing: P(KIDS.qing, 590), wei: P(KIDS.wei, 720) },
   wrong: [
-    { cap: '下課了，喬治想捉弄阿明。', c: { le: { mood: 'happy' } }, props: [['📝', 250, 330, 34]], think: [['le', '在他背上貼「我是小笨豬」，一定很好笑！']] },
-    { c: { le: { x: 340, pose: 'reach' } }, props: [['📝', 425, 330, 34]], cap: '喬治偷偷把紙條貼在阿明的背上。' },
-    { c: { le: { pose: 'mouth' }, qing: { mood: 'happy', pose: 'mouth' }, wei: { mood: 'happy' } }, props: [['📝', 425, 330, 34]], say: [['wei', '哈哈哈！你看他背上！']] },
-    { c: { ming: { mood: 'sad' }, le: { mood: 'surprised', pose: 'down' }, qing: { pose: 'down' } }, props: [['📝', 425, 330, 34]], say: [['ming', '你們為什麼笑我？嗚嗚…']], think: [['le', '咦？他怎麼哭了…']], cap: '阿明覺得好丟臉，哭了。' }
+    { cap: '下課了，喬治想捉弄阿明。', c: { le: { mood: 'happy' } }, props: [['📝', 240, 352, 34]], think: [['le', '在他背上貼「我是小笨豬」，一定很好笑！']] },
+    { c: { le: { x: 340, pose: 'reach' } }, props: [['📝', 428, 348, 34]], cap: '喬治偷偷把紙條貼在阿明的背上。' },
+    { c: { le: { pose: 'mouth' }, qing: { mood: 'happy', pose: 'mouth' }, wei: { mood: 'happy' } }, props: [['📝', 428, 348, 34]], say: [['wei', '哈哈哈！你看他背上！']] },
+    { c: { ming: { mood: 'sad' }, le: { mood: 'surprised', pose: 'down' }, qing: { pose: 'down' } }, props: [['📝', 428, 348, 34]], say: [['ming', '你們為什麼笑我？嗚嗚…']], think: [['le', '咦？他怎麼哭了…']], cap: '阿明覺得好丟臉，哭了。' }
   ],
   questions: [
     { q: '喬治做了什麼？', hint: '偷偷在阿明背上貼紙條，讓大家笑他。' },
@@ -525,16 +525,16 @@ var SCENES = [
   ],
   choose: { q: '喬治想讓大家笑，可以怎麼做？', opts: [
     { ic: '📝', t: '偷貼紙條在他背上', fb: '別人會覺得丟臉、難過，這是捉弄喔，再想一想！', demo: [
-      { c: { le: { x: 340, pose: 'reach', mood: 'happy' } }, props: [['📝', 425, 330, 34]], cap: '喬治偷偷貼上紙條。' },
-      { c: { le: { pose: 'down' }, ming: { mood: 'sad' }, wei: { mood: 'happy', pose: 'mouth' } }, props: [['📝', 425, 330, 34]], say: [['ming', '你們都在笑我…']], cap: '阿明好難過，覺得被欺負。' } ] },
+      { c: { le: { x: 340, pose: 'reach', mood: 'happy' } }, props: [['📝', 428, 348, 34]], cap: '喬治偷偷貼上紙條。' },
+      { c: { le: { pose: 'down' }, ming: { mood: 'sad' }, wei: { mood: 'happy', pose: 'mouth' } }, props: [['📝', 428, 348, 34]], say: [['ming', '你們都在笑我…']], cap: '阿明好難過，覺得被欺負。' } ] },
     { ic: '🪑', t: '趁他要坐下，把椅子拉走', fb: '拉椅子會讓人跌倒受傷，非常危險，再想一想！', demo: [
       { c: { le: { x: 340, pose: 'reach', mood: 'happy' } }, props: [['🪑', 440, 400, 64]], think: [['le', '把椅子拉走！']] },
       { c: { ming: { rot: 80, mood: 'sad' }, qing: { x: 710, mood: 'scared' }, wei: { x: 900 }, le: { mood: 'scared', pose: 'down', x: 200 } }, props: [['🪑', 300, 420, 64]], fx: [['💥', 470, 390]], say: [['ming', '好痛！我的屁股…']], cap: '阿明跌倒受傷了，非常危險！' } ] },
     { ic: '😄', t: '想一想他會不會開心，改成一起玩、一起笑', ok: 1, fb: '對了！大家都笑，才是好玩的玩笑。' }
   ] },
   right: [
-    { cap: '下課了，喬治想捉弄阿明。', c: { le: { mood: 'happy' } }, props: [['📝', 250, 330, 34]], think: [['le', '在他背上貼「我是小笨豬」，一定很好笑！']] },
-    { c: { le: { mood: 'worried' } }, props: [['📝', 250, 330, 34]], think: [['le', '等一下…如果是我被貼，我會開心嗎？']] },
+    { cap: '下課了，喬治想捉弄阿明。', c: { le: { mood: 'happy' } }, props: [['📝', 240, 352, 34]], think: [['le', '在他背上貼「我是小笨豬」，一定很好笑！']] },
+    { c: { le: { mood: 'worried' } }, props: [['📝', 240, 352, 34]], think: [['le', '等一下…如果是我被貼，我會開心嗎？']] },
     { c: { le: { mood: 'neutral' } }, props: [['🗑️', 90, 430, 44]], think: [['le', '我會覺得很丟臉。不要這樣做。']], cap: '喬治把紙條丟掉了。' },
     { c: { le: { x: 330, mood: 'happy', pose: 'wave' } }, say: [['le', '阿明，我們來猜拳，輸的人要學小豬叫！']] },
     { c: { le: { pose: 'down' }, ming: { mood: 'happy' }, qing: { mood: 'happy' }, wei: { mood: 'happy' } }, fx: [['✌️', 370, 160], ['✊', 470, 160]], say: [['ming', '好啊！剪刀石頭布！']], cap: '大家一起玩、一起笑，才是真正好玩。' }
@@ -547,9 +547,9 @@ var SCENES = [
 { id: 'friend', title: '同學不理我', short: '想跟同學做朋友，可是他不理我。', bg: 'play',
   cast: { le: P(LE, 150), ru: P(KIDS.ru, 480), ming: P(KIDS.ming, 900) },
   wrong: [
-    { cap: '下課時，小如在看書。', c: { le: { mood: 'happy' } }, props: [['📖', 512, 330, 40]], think: [['le', '我想跟小如做朋友！']] },
-    { c: { le: { x: 340, pose: 'wave' } }, props: [['📖', 512, 330, 40]], say: [['le', '小如！小如！']], think: [['ru', '這本書好好看…']] },
-    { c: { le: { pose: 'reach', mood: 'angry' }, ru: { mood: 'scared' } }, props: [['📖', 440, 330, 40]], say: [['le', '你為什麼不理我！']], cap: '喬治生氣了，把書拉走。' },
+    { cap: '下課時，小如在看書。', c: { le: { mood: 'happy' } }, props: [['📖', 514, 352, 36]], think: [['le', '我想跟小如做朋友！']] },
+    { c: { le: { x: 340, pose: 'wave' } }, props: [['📖', 514, 352, 36]], say: [['le', '小如！小如！']], think: [['ru', '這本書好好看…']] },
+    { c: { le: { pose: 'reach', mood: 'angry' }, ru: { mood: 'scared' } }, props: [['📖', 418, 335, 36]], say: [['le', '你為什麼不理我！']], cap: '喬治生氣了，把書拉走。' },
     { c: { ru: { x: 620, mood: 'sad' }, le: { mood: 'sad', pose: 'down' } }, props: [['📖', 380, 430, 40]], say: [['ru', '你好兇，我不要跟你玩。']], cap: '喬治想交朋友，結果小如更不想理他了。' }
   ],
   questions: [
@@ -559,21 +559,21 @@ var SCENES = [
   ],
   choose: { q: '同學沒有理喬治，喬治可以怎麼做？', opts: [
     { ic: '📢', t: '一直叫他，拉他的東西', fb: '拉別人的東西，別人會害怕，更不想跟你玩喔，再想一想！', demo: [
-      { c: { le: { x: 340, pose: 'reach', mood: 'angry' }, ru: { mood: 'scared' } }, props: [['📖', 440, 330, 40]], say: [['le', '你為什麼不理我！']] },
+      { c: { le: { x: 340, pose: 'reach', mood: 'angry' }, ru: { mood: 'scared' } }, props: [['📖', 418, 335, 36]], say: [['le', '你為什麼不理我！']] },
       { c: { ru: { x: 620, mood: 'sad' }, le: { pose: 'down' } }, props: [['📖', 380, 430, 40]], say: [['ru', '你好兇喔…']], cap: '小如嚇到了，更不想跟喬治玩。' } ] },
     { ic: '⏳', t: '等他看完書，聊他喜歡的事；他不想聊，就找別人', ok: 1, fb: '對了！看時機、找話題；他還是不想聊，也可以找別人。' },
     { ic: '😡', t: '生氣說「我再也不理你了！」', fb: '生氣說狠話，就交不到朋友了，再想一想！', demo: [
-      { c: { le: { x: 340, mood: 'angry', pose: 'cross' } }, props: [['📖', 512, 330, 40]], say: [['le', '哼！我再也不理你了！']] },
-      { c: { ru: { mood: 'surprised' } }, props: [['📖', 512, 330, 40]], think: [['ru', '我只是沒聽到啊…']], cap: '小如其實只是沒聽到，現在誤會變大了。' } ] }
+      { c: { le: { x: 340, mood: 'angry', pose: 'cross' } }, props: [['📖', 514, 352, 36]], say: [['le', '哼！我再也不理你了！']] },
+      { c: { ru: { mood: 'surprised' } }, props: [['📖', 514, 352, 36]], think: [['ru', '我只是沒聽到啊…']], cap: '小如其實只是沒聽到，現在誤會變大了。' } ] }
   ] },
   right: [
-    { cap: '下課時，小如在看書。', c: { le: { mood: 'happy' } }, props: [['📖', 512, 330, 40]], think: [['le', '我想跟小如做朋友！']] },
-    { c: { le: { x: 300, mood: 'neutral' } }, props: [['📖', 512, 330, 40]], think: [['le', '她在看書，等她看完再去。']] },
+    { cap: '下課時，小如在看書。', c: { le: { mood: 'happy' } }, props: [['📖', 514, 352, 36]], think: [['le', '我想跟小如做朋友！']] },
+    { c: { le: { x: 300, mood: 'neutral' } }, props: [['📖', 514, 352, 36]], think: [['le', '她在看書，等她看完再去。']] },
     { c: { le: { x: 360, mood: 'happy', pose: 'wave' } }, props: [['📖', 535, 380, 36]], say: [['le', '小如，你在看什麼書？']], cap: '小如把書看完了。' },
     { c: { ru: { mood: 'happy' }, le: { pose: 'down' } }, props: [['📖', 535, 380, 36]], say: [['ru', '恐龍的書！你也喜歡恐龍嗎？']] },
     { props: [['📖', 535, 380, 36]], say: [['le', '喜歡！我最喜歡暴龍！']], cap: '找到一樣喜歡的東西，就可以聊得很開心。' },
-    { cap: '如果同學還是不想聊呢？', c: { ru: { mood: 'neutral' }, le: { mood: 'neutral' } }, props: [['📖', 512, 330, 40]], say: [['ru', '我想自己看書。']] },
-    { c: { le: { x: 640, mood: 'happy' }, ming: { x: 740, mood: 'happy', pose: 'wave' } }, props: [['📖', 512, 330, 40]], say: [['le', '好，那我去找阿明玩。'], ['ming', '喬治，一起來玩吧！']] }
+    { cap: '如果同學還是不想聊呢？', c: { ru: { mood: 'neutral' }, le: { mood: 'neutral' } }, props: [['📖', 514, 352, 36]], say: [['ru', '我想自己看書。']] },
+    { c: { le: { x: 640, mood: 'happy' }, ming: { x: 740, mood: 'happy', pose: 'wave' } }, props: [['📖', 514, 352, 36]], say: [['le', '好，那我去找阿明玩。'], ['ming', '喬治，一起來玩吧！']] }
   ],
   how: { chain: ['看時機', '打招呼', '聊他喜歡的', '不想聊就找別人'], note: '別人不理你，不一定是討厭你。可以下次再試，或找其他同學。' },
   sum: { p: '同學沒回應，就生氣把書拉走。', o: '小如嚇到了，覺得喬治很兇。', c: '等對方有空，聊他喜歡的；不想聊就找別人。' },
@@ -583,10 +583,10 @@ var SCENES = [
 { id: 'busy', title: '老師在忙的時候', short: '有問題想問，可是老師正在忙。', bg: 'class', label: '國語課',
   cast: { tea: P(KIDS.tea, 220), wei: P(KIDS.wei, 360), le: P(LE, 640) },
   wrong: [
-    { cap: '老師正在幫大偉看作業。', c: { le: { mood: 'worried' } }, props: [['📄', 290, 290, 34]], say: [['tea', '大偉，這個字要這樣寫……']], think: [['le', '我有問題想問老師！']] },
-    { c: { le: { x: 470, pose: 'reach' }, tea: { mood: 'surprised' } }, props: [['📄', 290, 290, 34]], say: [['le', '老師！老師！老師！']], cap: '喬治一直拉老師的衣服。' },
-    { c: { tea: { mood: 'neutral' }, le: { mood: 'angry' }, wei: { mood: 'angry' } }, props: [['📄', 290, 290, 34]], say: [['tea', '喬治，等一下喔。'], ['le', '可是我現在就要問！']] },
-    { c: { tea: { mood: 'worried' } }, props: [['📄', 290, 290, 34]], say: [['wei', '你插嘴啦！']], cap: '老師被打斷，大偉也不高興。' }
+    { cap: '老師正在幫大偉看作業。', c: { le: { mood: 'worried' } }, props: [['📄', 290, 335, 34]], say: [['tea', '大偉，這個字要這樣寫……']], think: [['le', '我有問題想問老師！']] },
+    { c: { le: { x: 470, pose: 'reach' }, tea: { mood: 'surprised' } }, props: [['📄', 290, 335, 34]], say: [['le', '老師！老師！老師！']], cap: '喬治一直拉老師的衣服。' },
+    { c: { tea: { mood: 'neutral' }, le: { mood: 'angry' }, wei: { mood: 'angry' } }, props: [['📄', 290, 335, 34]], say: [['tea', '喬治，等一下喔。'], ['le', '可是我現在就要問！']] },
+    { c: { tea: { mood: 'worried' } }, props: [['📄', 290, 335, 34]], say: [['wei', '你插嘴啦！']], cap: '老師被打斷，大偉也不高興。' }
   ],
   questions: [
     { q: '老師正在做什麼？', hint: '老師正在幫大偉看作業。' },
@@ -595,20 +595,20 @@ var SCENES = [
   ],
   choose: { q: '老師在忙，喬治想問問題，可以怎麼做？', opts: [
     { ic: '👋', t: '一直拉老師的衣服叫老師', fb: '一直拉、一直叫，會打斷老師和同學喔，再想一想！', demo: [
-      { c: { le: { x: 470, pose: 'reach', mood: 'worried' } }, props: [['📄', 290, 290, 34]], say: [['le', '老師！老師！老師！']] },
-      { c: { tea: { mood: 'worried' }, wei: { mood: 'angry' } }, props: [['📄', 290, 290, 34]], say: [['wei', '你插嘴啦！']], cap: '一直拉老師，老師和大偉都被打斷了。' } ] },
+      { c: { le: { x: 470, pose: 'reach', mood: 'worried' } }, props: [['📄', 290, 335, 34]], say: [['le', '老師！老師！老師！']] },
+      { c: { tea: { mood: 'worried' }, wei: { mood: 'angry' } }, props: [['📄', 290, 335, 34]], say: [['wei', '你插嘴啦！']], cap: '一直拉老師，老師和大偉都被打斷了。' } ] },
     { ic: '🧍', t: '站在旁邊等，老師看我時再說「老師，請問…」', ok: 1, fb: '對了！安靜等一下，老師有空時再問，大家都舒服。' },
     { ic: '😔', t: '算了，不問了', fb: '不問的話，問題還是不會喔，再想一想！', demo: [
-      { c: { le: { mood: 'sad' } }, props: [['📄', 290, 290, 34]], think: [['le', '算了，不問了…']] },
+      { c: { le: { mood: 'sad' } }, props: [['📄', 290, 335, 34]], think: [['le', '算了，不問了…']] },
       { c: { le: { mood: 'worried' } }, cap: '不問，作業還是不會寫，最後寫不完。' } ] }
   ] },
   right: [
-    { cap: '老師正在幫大偉看作業。', c: { le: { mood: 'worried' } }, props: [['📄', 290, 290, 34]], say: [['tea', '大偉，這個字要這樣寫……']], think: [['le', '我有問題想問老師！']] },
-    { c: { le: { x: 500, mood: 'neutral' } }, props: [['📄', 290, 290, 34]], think: [['le', '老師在忙，我在旁邊等一下。']] },
-    { c: { wei: { mood: 'happy' } }, props: [['📄', 290, 290, 34]], say: [['wei', '我會了！謝謝老師。']], cap: '喬治安靜地站在旁邊等。' },
+    { cap: '老師正在幫大偉看作業。', c: { le: { mood: 'worried' } }, props: [['📄', 290, 335, 34]], say: [['tea', '大偉，這個字要這樣寫……']], think: [['le', '我有問題想問老師！']] },
+    { c: { le: { x: 500, mood: 'neutral' } }, props: [['📄', 290, 335, 34]], think: [['le', '老師在忙，我在旁邊等一下。']] },
+    { c: { wei: { mood: 'happy' } }, props: [['📄', 290, 335, 34]], say: [['wei', '我會了！謝謝老師。']], cap: '喬治安靜地站在旁邊等。' },
     { c: { tea: { mood: 'happy' } }, say: [['tea', '喬治，你等很久了，有什麼事嗎？']] },
-    { c: { le: { mood: 'happy', pose: 'point' } }, props: [['📄', 530, 250, 34]], say: [['le', '老師，請問這一題要怎麼寫？']] },
-    { c: { le: { pose: 'down' } }, props: [['📄', 530, 250, 34]], say: [['tea', '謝謝你耐心等，我們一起來看。']], cap: '等老師有空再問，老師也會更專心幫你。' }
+    { c: { le: { mood: 'happy', pose: 'point' } }, props: [['📄', 588, 300, 34]], say: [['le', '老師，請問這一題要怎麼寫？']] },
+    { c: { le: { pose: 'down' } }, props: [['📄', 588, 300, 34]], say: [['tea', '謝謝你耐心等，我們一起來看。']], cap: '等老師有空再問，老師也會更專心幫你。' }
   ],
   how: { chain: ['看老師在忙', '站旁邊等', '老師看我', '說「老師，請問」'], note: '等很久的話，可以先回座位寫會的題目，等一下再來。' },
   sum: { p: '老師在忙，一直拉老師、叫老師。', o: '老師被打斷，大偉也不高興。', c: '安靜站旁邊等，老師看我時再說「請問」。' },
@@ -660,7 +660,7 @@ var SCENES = [
     { c: { le: { x: 360, pose: 'reach', mood: 'neutral' } }, think: [['le', '偷偷放進口袋，沒有人會發現。']] },
     { c: { le: { pose: 'back', mood: 'worried' } }, props: [], say: [['mom', '喬治，我們要走囉。']], cap: '喬治把小熊藏進口袋。' },
     { c: { le: { x: 260, mood: 'scared' }, clerk: { mood: 'surprised' }, mom: { mood: 'surprised' } }, props: [], say: [['clerk', '小朋友，口袋裡的東西還沒付錢喔！']] },
-    { c: { mom: { mood: 'worried' }, le: { mood: 'sad', pose: 'down' }, clerk: { mood: 'neutral' } }, props: [['🧸', 290, 330, 36]], say: [['mom', '喬治，不可以這樣！']], cap: '沒付錢就拿走東西是偷竊，是不對的事。' }
+    { c: { mom: { mood: 'worried' }, le: { mood: 'sad', pose: 'down' }, clerk: { mood: 'neutral' } }, props: [['🧸', 292, 352, 34]], say: [['mom', '喬治，不可以這樣！']], cap: '沒付錢就拿走東西是偷竊，是不對的事。' }
   ],
   questions: [
     { q: '喬治為什麼想拿小熊？', hint: '他覺得小熊很可愛，想送給弟弟妹妹。' },
@@ -739,119 +739,145 @@ var BGS = {
       '<path d="M0,320 H800 M0,390 H800 M140,250 V450 M300,250 V450 M460,250 V450 M620,250 V450" stroke="#E2D0AE" stroke-width="2"/>';
   }
 };
+/* 桌子比較矮，小朋友站在後面時看得到上半身和手 */
 function desk(x) {
-  return '<g transform="translate(' + x + ',400)"><rect x="-62" y="-86" width="124" height="13" rx="3" fill="#C99A63"/>' +
-    '<rect x="-56" y="-73" width="112" height="44" rx="3" fill="#B5824D"/><rect x="-50" y="-29" width="8" height="29" fill="#7D5A36"/><rect x="42" y="-29" width="8" height="29" fill="#7D5A36"/></g>';
+  return '<g transform="translate(' + x + ',400)"><rect x="-60" y="-62" width="120" height="11" rx="4" fill="#D4A56E" stroke="#A97A48" stroke-width="2"/>' +
+    '<rect x="-54" y="-51" width="108" height="32" rx="3" fill="#B98552"/><rect x="-54" y="-51" width="108" height="5" fill="#A06F40"/>' +
+    '<rect x="-48" y="-19" width="7" height="19" rx="2" fill="#7D5A36"/><rect x="41" y="-19" width="7" height="19" rx="2" fill="#7D5A36"/></g>';
 }
 function counter() {
   return '<g><rect x="600" y="290" width="200" height="16" rx="4" fill="#E0B07A"/><rect x="610" y="306" width="190" height="100" fill="#C98F5A"/>' +
     '<rect x="610" y="306" width="190" height="8" fill="#B07A48"/><text x="760" y="286" font-size="40" text-anchor="middle">🧾</text></g>';
 }
+/* ================= 人物（Q 版：頭大身小） =================
+ * 腳底在 (0,0)；頭的中心在 (0,-138)，半徑約 48；肩膀在 (±27,-78)。大人整個人再放大一點、身體拉高。 */
 var MOUTH = {
-  happy: '<path d="M-12,-128 Q0,-110 12,-128 Z" fill="#B5473A" stroke="' + OL + '" stroke-width="2" stroke-linejoin="round"/><path d="M-6,-118 Q0,-114 6,-118" stroke="#F28B7A" stroke-width="3" fill="none"/>',
-  neutral: '<path d="M-7,-124 Q0,-121 7,-124" stroke="' + OL + '" stroke-width="3" fill="none" stroke-linecap="round"/>',
-  sad: '<path d="M-10,-117 Q0,-127 10,-117" stroke="' + OL + '" stroke-width="3.5" fill="none" stroke-linecap="round"/>',
-  angry: '<path d="M-11,-117 Q0,-128 11,-117 Z" fill="#B5473A" stroke="' + OL + '" stroke-width="2"/>',
-  surprised: '<ellipse cx="0" cy="-121" rx="6" ry="8" fill="#B5473A" stroke="' + OL + '" stroke-width="2"/>',
-  scared: '<path d="M-11,-121 q2.75,-4 5.5,0 q2.75,4 5.5,0 q2.75,-4 5.5,0 q2.75,4 5.5,0" stroke="' + OL + '" stroke-width="3" fill="none"/>',
-  worried: '<path d="M-9,-119 Q0,-124 9,-119" stroke="' + OL + '" stroke-width="3.5" fill="none" stroke-linecap="round"/>',
-  gross: '<path d="M-11,-120 q5.5,-5 11,0 q5.5,5 11,0" stroke="' + OL + '" stroke-width="3" fill="none"/><path d="M2,-118 q4,8 8,0" fill="#F28B7A"/>'
+  happy: '<path d="M-10,-116 Q0,-100 10,-116 Z" fill="#C2483C" stroke="' + OL + '" stroke-width="2" stroke-linejoin="round"/><path d="M-5,-107 Q0,-104 5,-107" stroke="#F49A8A" stroke-width="3" fill="none" stroke-linecap="round"/>',
+  neutral: '<path d="M-6,-112 Q0,-108 6,-112" stroke="' + OL + '" stroke-width="2.6" fill="none" stroke-linecap="round"/>',
+  sad: '<path d="M-8,-106 Q0,-114 8,-106" stroke="' + OL + '" stroke-width="2.8" fill="none" stroke-linecap="round"/>',
+  angry: '<path d="M-9,-106 Q0,-116 9,-106 Z" fill="#C2483C" stroke="' + OL + '" stroke-width="2" stroke-linejoin="round"/>',
+  surprised: '<ellipse cx="0" cy="-109" rx="5" ry="6.5" fill="#C2483C" stroke="' + OL + '" stroke-width="2"/>',
+  scared: '<path d="M-9,-109 q2.25,-3.5 4.5,0 q2.25,3.5 4.5,0 q2.25,-3.5 4.5,0 q2.25,3.5 4.5,0" stroke="' + OL + '" stroke-width="2.6" fill="none" stroke-linecap="round"/>',
+  worried: '<path d="M-7,-108 Q0,-112 7,-108" stroke="' + OL + '" stroke-width="2.8" fill="none" stroke-linecap="round"/>',
+  gross: '<path d="M-9,-109 q4.5,-4 9,0 q4.5,4 9,0" stroke="' + OL + '" stroke-width="2.6" fill="none" stroke-linecap="round"/><path d="M1,-107 q3.5,7 7,0" fill="#F28B7A"/>'
 };
 var BROW = {
-  angry: 'M-26,-166 L-9,-158 M9,-158 L26,-166', sad: 'M-26,-158 L-9,-164 M9,-164 L26,-158', worried: 'M-26,-159 L-9,-164 M9,-164 L26,-159',
-  scared: 'M-26,-158 L-9,-165 M9,-165 L26,-158', surprised: 'M-25,-168 Q-17,-173 -9,-168 M9,-168 Q17,-173 25,-168', gross: 'M-26,-159 L-9,-163 M9,-163 L26,-159'
+  angry: 'M-27,-156 L-10,-149 M10,-149 L27,-156', sad: 'M-26,-149 L-10,-155 M10,-155 L26,-149', worried: 'M-26,-150 L-10,-155 M10,-155 L26,-150',
+  scared: 'M-26,-149 L-10,-156 M10,-156 L26,-149', surprised: 'M-25,-160 Q-17,-165 -9,-160 M9,-160 Q17,-165 25,-160', gross: 'M-26,-151 L-10,-154 M10,-154 L26,-151'
 };
-var DEF_BROW = 'M-25,-164 Q-17,-167 -9,-164 M9,-164 Q17,-167 25,-164';
+var DEF_BROW = 'M-25,-155 Q-17,-159 -9,-156 M9,-156 Q17,-159 25,-155';
 var POSES = {
   down:  {},
-  raise: { R: ['M30,-96 Q52,-124 46,-166', [46, -172]] },
-  wave:  { R: ['M30,-96 Q64,-104 62,-138', [62, -144]] },
-  reach: { R: ['M30,-96 Q58,-98 82,-88', [88, -86]] },
-  point: { R: ['M30,-96 Q60,-104 84,-114', [90, -116]] },
-  nose:  { R: ['M30,-96 Q48,-108 16,-122', [9, -130]], front: 1 },
-  mouth: { R: ['M30,-96 Q48,-102 18,-112', [11, -117]], front: 1 },
-  back:  { R: ['M30,-96 Q40,-80 22,-62', null], behind: 1 },
-  cross: { L: ['M-30,-96 Q-40,-68 12,-74', [14, -74]], R: ['M30,-96 Q40,-64 -10,-68', [-12, -68]] },
-  hips:  { L: ['M-30,-96 Q-60,-82 -34,-62', [-34, -62]], R: ['M30,-96 Q60,-82 34,-62', [34, -62]] }
+  raise: { R: ['M27,-78 Q46,-110 40,-152', [40, -158]] },
+  wave:  { R: ['M27,-78 Q54,-86 52,-118', [52, -124]] },
+  reach: { R: ['M27,-78 Q50,-80 70,-70', [75, -68]] },
+  point: { R: ['M27,-78 Q52,-86 72,-96', [77, -98]] },
+  nose:  { R: ['M27,-78 Q44,-96 13,-111', [8, -119]], front: 1 },
+  mouth: { R: ['M27,-78 Q44,-92 15,-102', [9, -108]], front: 1 },
+  back:  { R: ['M27,-78 Q36,-62 20,-48', null], behind: 1 },
+  cross: { L: ['M-27,-78 Q-34,-56 10,-58', [12, -58]], R: ['M27,-78 Q34,-52 -8,-54', [-10, -54]] },
+  hips:  { L: ['M-27,-78 Q-50,-66 -30,-48', [-30, -48]], R: ['M27,-78 Q50,-66 30,-48', [30, -48]] }
 };
-var ARM_DOWN = { L: ['M-30,-96 Q-46,-78 -43,-56', [-43, -50]], R: ['M30,-96 Q46,-78 43,-56', [43, -50]] };
+var ARM_DOWN = { L: ['M-27,-78 Q-39,-62 -36,-44', [-36, -40]], R: ['M27,-78 Q39,-62 36,-44', [36, -40]] };
 function arm(a, color) {
-  var o = '<path d="' + a[0] + '" stroke="' + shade(color, .72) + '" stroke-width="19" stroke-linecap="round" fill="none"/>' +
-    '<path d="' + a[0] + '" stroke="' + color + '" stroke-width="14" stroke-linecap="round" fill="none"/>';
-  if (a[1]) o += '<circle cx="' + a[1][0] + '" cy="' + a[1][1] + '" r="9" fill="' + SKIN + '" stroke="' + SKIN_LINE + '" stroke-width="2"/>';
+  var o = '<path d="' + a[0] + '" stroke="' + shade(color, .7) + '" stroke-width="14" stroke-linecap="round" fill="none"/>' +
+    '<path d="' + a[0] + '" stroke="' + color + '" stroke-width="10" stroke-linecap="round" fill="none"/>';
+  if (a[1]) o += '<circle cx="' + a[1][0] + '" cy="' + a[1][1] + '" r="7.5" fill="' + SKIN + '" stroke="' + SKIN_LINE + '" stroke-width="1.8"/>';
   return o;
 }
 var ADULT = { teacher: 1, mom: 1, man: 1 };
-function person(p) {
-  var kind = p.kind, s = ADULT[kind] ? 1.14 : 1, mood = p.mood || 'neutral', col = p.color, line = shade(col, .72);
-  var pose = POSES[p.pose || 'down'] || {}, L = pose.L || ARM_DOWN.L, R = pose.R || ARM_DOWN.R;
-  var girlish = kind === 'girl' || kind === 'mom' || kind === 'teacher';
+var IRIS = { kid: '#5B3A26', girl: '#6B3E2A', teacher: '#3E2C22', mom: '#5B3A26', man: '#3E2C22' };
+function eye(x, mood, girlish, iris) {
   var o = '';
-  // 後面的頭髮
-  if (kind === 'girl' && p.tails) o += '<ellipse cx="-50" cy="-126" rx="13" ry="24" fill="' + p.hair + '"/><ellipse cx="50" cy="-126" rx="13" ry="24" fill="' + p.hair + '"/>';
-  else if (kind === 'girl' || kind === 'mom') o += '<path d="M-49,-152 Q-58,-88 -40,-80 L40,-80 Q58,-88 49,-152 Z" fill="' + p.hair + '"/>';
-  else if (kind === 'teacher') o += '<path d="M-51,-150 Q-56,-102 -40,-104 L40,-104 Q56,-102 51,-150 Z" fill="' + p.hair + '"/>';
-  if (pose.behind) o += arm(R, col);
-  // 腳
+  if (mood === 'happy') return '<path d="M' + (x - 9) + ',-132 Q' + x + ',-143 ' + (x + 9) + ',-132" stroke="' + OL + '" stroke-width="3.2" fill="none" stroke-linecap="round"/>';
+  if (mood === 'gross') return '<path d="M' + (x < 0 ? x - 8 : x + 8) + ',-140 L' + (x < 0 ? x + 6 : x - 6) + ',-134 L' + (x < 0 ? x - 8 : x + 8) + ',-128" stroke="' + OL + '" stroke-width="3.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>';
+  var big = mood === 'surprised' || mood === 'scared', rx = big ? 8.5 : 7.5, ry = big ? 10.5 : 9.5;
+  o += '<ellipse cx="' + x + '" cy="-134" rx="' + rx + '" ry="' + ry + '" fill="#fff"/>' +
+    '<ellipse cx="' + x + '" cy="-132.5" rx="' + (rx - 1.2) + '" ry="' + (ry - 1.4) + '" fill="' + iris + '"/>' +
+    '<ellipse cx="' + x + '" cy="-131.5" rx="' + (big ? 2.6 : 3.6) + '" ry="' + (big ? 3.4 : 4.6) + '" fill="#1E1410"/>' +
+    '<circle cx="' + (x + 2.6) + '" cy="-137" r="' + (big ? 2.4 : 2.9) + '" fill="#fff"/><circle cx="' + (x - 2.4) + '" cy="-128" r="1.3" fill="#fff" opacity=".9"/>' +
+    '<path d="M' + (x - rx - 1) + ',-136 Q' + x + ',' + (-134 - ry - 4) + ' ' + (x + rx + 1) + ',-136" stroke="' + OL + '" stroke-width="3" fill="none" stroke-linecap="round"/>';
+  if (mood === 'angry') o += '<path d="M' + (x - 10) + ',' + (x < 0 ? -148 : -141) + ' L' + (x + 10) + ',' + (x < 0 ? -141 : -148) + ' L' + (x + 10) + ',-150 L' + (x - 10) + ',-150 Z" fill="' + SKIN + '"/>' +
+    '<path d="M' + (x - 9) + ',' + (x < 0 ? -146 : -139.5) + ' L' + (x + 9) + ',' + (x < 0 ? -139.5 : -146) + '" stroke="' + OL + '" stroke-width="3" stroke-linecap="round"/>';
+  if (mood === 'sad' || mood === 'worried') o += '<path d="M' + (x - 9) + ',-139 Q' + x + ',-141 ' + (x + 9) + ',-139" stroke="' + SKIN + '" stroke-width="4" fill="none"/>';
+  if (girlish) o += '<path d="M' + (x < 0 ? x - 8 : x + 8) + ',-139 l' + (x < 0 ? -5 : 5) + ',-4" stroke="' + OL + '" stroke-width="2.4" stroke-linecap="round"/>';
+  return o;
+}
+function person(p) {
+  var kind = p.kind, adult = ADULT[kind], s = adult ? 1.1 : 1, lift = adult ? 16 : 0, mood = p.mood || 'neutral', col = p.color, line = shade(col, .68);
+  var pose = POSES[p.pose || 'down'] || {}, L = pose.L || ARM_DOWN.L, R = pose.R || ARM_DOWN.R;
+  var girlish = kind === 'girl' || kind === 'mom' || kind === 'teacher', hl = shade(p.hair, .75);
+  var o = '';
+  /* 腳和鞋子（大人的腳比較長） */
   if (kind === 'girl') {
-    o += '<rect x="-15" y="-42" width="11" height="36" rx="5" fill="' + SKIN + '"/><rect x="4" y="-42" width="11" height="36" rx="5" fill="' + SKIN + '"/>' +
-      '<rect x="-16" y="-20" width="13" height="14" rx="3" fill="#fff"/><rect x="3" y="-20" width="13" height="14" rx="3" fill="#fff"/>';
+    o += '<rect x="-13" y="-34" width="10" height="28" rx="4.5" fill="' + SKIN + '" stroke="' + SKIN_LINE + '" stroke-width="1.5"/><rect x="3" y="-34" width="10" height="28" rx="4.5" fill="' + SKIN + '" stroke="' + SKIN_LINE + '" stroke-width="1.5"/>' +
+      '<rect x="-14" y="-17" width="12" height="11" rx="3" fill="#fff"/><rect x="2" y="-17" width="12" height="11" rx="3" fill="#fff"/>';
   } else {
-    var pants = kind === 'man' ? '#4A4A4A' : kind === 'mom' ? '#5A4A6A' : kind === 'teacher' ? '#3F4E6E' : '#3D4A66';
-    o += '<rect x="-19" y="-48" width="17" height="42" rx="6" fill="' + pants + '"/><rect x="2" y="-48" width="17" height="42" rx="6" fill="' + pants + '"/>';
+    var pants = kind === 'man' ? '#4A4A52' : kind === 'mom' ? '#5A4A6A' : kind === 'teacher' ? '#3F4E6E' : '#3D4A66';
+    o += '<rect x="-16" y="' + (-36 - lift) + '" width="14" height="' + (31 + lift) + '" rx="5" fill="' + pants + '"/><rect x="2" y="' + (-36 - lift) + '" width="14" height="' + (31 + lift) + '" rx="5" fill="' + pants + '"/>' +
+      '<path d="M0,' + (-34 - lift) + ' V-12" stroke="' + shade(pants, .7) + '" stroke-width="1.5"/>';
   }
-  var shoe = kind === 'girl' ? '#C2405A' : ADULT[kind] ? '#4A3A30' : '#5B4636';
-  o += '<ellipse cx="-12" cy="-5" rx="13" ry="7" fill="' + shoe + '"/><ellipse cx="12" cy="-5" rx="13" ry="7" fill="' + shoe + '"/>' +
-    '<path d="M-24,-1 H-1 M1,-1 H24" stroke="#fff" stroke-width="2.5" opacity=".7"/>';
-  // 身體
-  if (kind === 'girl') o += '<path d="M-33,-62 L-44,-30 Q0,-24 44,-30 L33,-62 Z" fill="' + shade(col, .82) + '" stroke="' + line + '" stroke-width="2"/>';
-  if (kind === 'teacher') o += '<path d="M-34,-62 L-40,-26 Q0,-22 40,-26 L34,-62 Z" fill="#3F4E6E"/>';
-  var bottom = kind === 'girl' || kind === 'teacher' ? -58 : -42;
-  o += '<path d="M-30,-106 Q-36,-106 -36,-98 L-36,' + bottom + ' Q-36,' + (bottom + 6) + ' -30,' + (bottom + 6) + ' L30,' + (bottom + 6) + ' Q36,' + (bottom + 6) + ' 36,' + bottom + ' L36,-98 Q36,-106 30,-106 Z" fill="' + col + '" stroke="' + line + '" stroke-width="2.5"/>';
-  if (kind === 'teacher') o += '<path d="M-10,-106 L-10,' + bottom + ' L10,' + bottom + ' L10,-106 Z" fill="#F4F1E8"/><circle cx="-16" cy="-84" r="2.5" fill="' + line + '"/><circle cx="-16" cy="-70" r="2.5" fill="' + line + '"/>';
-  else if (kind === 'girl') o += '<ellipse cx="-9" cy="-103" rx="10" ry="5" fill="#fff" stroke="' + line + '" stroke-width="1.5"/><ellipse cx="9" cy="-103" rx="10" ry="5" fill="#fff" stroke="' + line + '" stroke-width="1.5"/>';
-  else o += '<path d="M-14,-106 L0,-92 L14,-106" stroke="#fff" stroke-width="5" fill="none" stroke-linejoin="round"/>';
-  if (kind === 'kid') o += '<path d="M-35,-70 H35" stroke="#fff" stroke-opacity=".35" stroke-width="7"/>';
-  if (p.apron) o += '<path d="M-24,-94 H24 V-44 Q24,-38 18,-38 H-18 Q-24,-38 -24,-44 Z" fill="#F4F1E8" stroke="#CFC8B6" stroke-width="2"/><rect x="-10" y="-74" width="20" height="14" rx="3" fill="none" stroke="#CFC8B6" stroke-width="2"/>';
-  // 手
+  var shoe = kind === 'girl' ? '#E0607A' : adult ? '#4A3A30' : '#E8723A';
+  o += '<path d="M-21,0 Q-21,-10 -10,-10 Q-2,-10 -2,-4 V0 Z" fill="' + shoe + '" stroke="' + shade(shoe, .7) + '" stroke-width="1.5"/>' +
+    '<path d="M21,0 Q21,-10 10,-10 Q2,-10 2,-4 V0 Z" fill="' + shoe + '" stroke="' + shade(shoe, .7) + '" stroke-width="1.5"/>' +
+    '<path d="M-19,-1 H-3 M3,-1 H19" stroke="#fff" stroke-width="2" opacity=".75"/>';
+  /* 上半身往上移（大人） */
+  o += '<g transform="translate(0,' + (-lift) + ')">';
+  /* 後面的頭髮 */
+  if (kind === 'girl' && p.tails) o += '<path d="M-44,-150 C-70,-140 -70,-96 -56,-84 C-50,-100 -48,-118 -40,-130 Z M44,-150 C70,-140 70,-96 56,-84 C50,-100 48,-118 40,-130 Z" fill="' + p.hair + '" stroke="' + hl + '" stroke-width="1.5"/>';
+  else if (kind === 'girl') o += '<path d="M-50,-146 C-62,-100 -56,-66 -40,-60 L40,-60 C56,-66 62,-100 50,-146 Z" fill="' + p.hair + '" stroke="' + hl + '" stroke-width="1.5"/>';
+  else if (kind === 'mom') o += '<path d="M-50,-146 C-64,-104 -58,-70 -38,-64 L38,-64 C58,-70 64,-104 50,-146 Z" fill="' + p.hair + '" stroke="' + hl + '" stroke-width="1.5"/>';
+  else if (kind === 'teacher') o += '<path d="M-53,-140 C-58,-104 -52,-94 -40,-96 L40,-96 C52,-94 58,-104 53,-140 Z" fill="' + p.hair + '" stroke="' + hl + '" stroke-width="1.5"/>';
+  if (pose.behind) o += arm(R, col);
+  /* 身體 */
+  if (kind === 'girl') o += '<path d="M-27,-50 L-36,-26 Q0,-20 36,-26 L27,-50 Z" fill="' + shade(col, .85) + '" stroke="' + line + '" stroke-width="2"/><path d="M-14,-48 L-18,-25 M14,-48 L18,-25" stroke="' + line + '" stroke-width="1.5" opacity=".6"/>';
+  if (kind === 'teacher') o += '<path d="M-28,-50 L-33,-18 Q0,-14 33,-18 L28,-50 Z" fill="#3F4E6E"/>';
+  var bottom = kind === 'girl' || kind === 'teacher' ? -46 : -32;
+  o += '<path d="M-24,-86 Q-31,-86 -32,-78 L-33,' + (bottom - 4) + ' Q-33,' + bottom + ' -28,' + bottom + ' L28,' + bottom + ' Q33,' + bottom + ' 33,' + (bottom - 4) + ' L32,-78 Q31,-86 24,-86 Z" fill="' + col + '" stroke="' + line + '" stroke-width="2.4"/>' +
+    '<path d="M14,-84 Q30,-82 31,-70 L32,' + (bottom - 3) + ' L20,' + (bottom - 1) + ' Q24,-60 14,-84 Z" fill="#000" opacity=".08"/>';
+  if (kind === 'teacher') o += '<path d="M-8,-86 L-8,' + bottom + ' L8,' + bottom + ' L8,-86 Z" fill="#F7F4EC"/><path d="M-8,-86 L-8,' + bottom + ' M8,-86 L8,' + bottom + '" stroke="' + line + '" stroke-width="1.8"/><circle cx="-14" cy="-70" r="2" fill="' + line + '"/><circle cx="-14" cy="-58" r="2" fill="' + line + '"/>';
+  else if (kind === 'girl') o += '<path d="M-14,-86 Q-8,-76 0,-82 Q8,-76 14,-86" fill="#fff" stroke="' + line + '" stroke-width="1.6"/><circle cx="0" cy="-74" r="2.6" fill="#fff" stroke="' + line + '" stroke-width="1.2"/>';
+  else if (kind === 'mom') o += '<path d="M-12,-86 Q0,-74 12,-86" fill="none" stroke="#fff" stroke-width="3.5"/>';
+  else o += '<path d="M-12,-86 L0,-74 L12,-86" stroke="#fff" stroke-width="4" fill="none" stroke-linejoin="round"/>';
+  if (kind === 'kid') o += '<circle cx="-15" cy="-58" r="5" fill="#fff" opacity=".35"/>';
+  if (p.apron) o += '<path d="M-20,-78 H20 V-38 Q20,-33 15,-33 H-15 Q-20,-33 -20,-38 Z" fill="#F7F4EC" stroke="#CFC8B6" stroke-width="1.8"/><rect x="-9" y="-62" width="18" height="11" rx="3" fill="none" stroke="#CFC8B6" stroke-width="1.8"/>';
+  /* 手 */
   o += arm(L, col);
   if (!pose.behind && !pose.front) o += arm(R, col);
-  // 頭
-  o += '<rect x="-8" y="-112" width="16" height="10" fill="' + shade('#FFDCC0', .92) + '"/>' +
-    '<circle cx="-45" cy="-146" r="9" fill="' + SKIN + '" stroke="' + SKIN_LINE + '" stroke-width="2"/><circle cx="45" cy="-146" r="9" fill="' + SKIN + '" stroke="' + SKIN_LINE + '" stroke-width="2"/>' +
-    '<circle cx="0" cy="-150" r="46" fill="' + SKIN + '" stroke="' + SKIN_LINE + '" stroke-width="2"/>';
-  // 前面的頭髮
-  var hair = kind === 'kid' ? 'M-47,-146 Q-50,-202 0,-200 Q50,-202 47,-146 Q42,-172 26,-172 L28,-186 L12,-174 L6,-188 L-6,-174 L-14,-186 L-20,-172 Q-38,-172 -47,-146Z' :
-    kind === 'man' ? 'M-47,-146 Q-50,-200 0,-200 Q48,-200 47,-146 Q44,-178 10,-180 Q-30,-182 -47,-146Z' :
-    kind === 'teacher' ? 'M-49,-140 Q-52,-202 4,-200 Q52,-200 49,-140 Q42,-178 -4,-174 Q-30,-172 -49,-140Z' :
-    'M-47,-146 Q-50,-204 2,-200 Q50,-202 47,-146 Q42,-178 20,-180 Q4,-170 -14,-178 Q-38,-176 -47,-146Z';
-  o += '<path d="' + hair + '" fill="' + p.hair + '"/><path d="M-26,-188 Q-8,-196 12,-192" stroke="#fff" stroke-opacity=".28" stroke-width="5" fill="none" stroke-linecap="round"/>';
-  if (kind === 'girl' && !p.tails) o += '<g transform="translate(30,-190)"><path d="M0,0 L-14,-9 L-14,9 Z M0,0 L14,-9 L14,9 Z" fill="#F25C7A" stroke="#C2405A" stroke-width="1.5" stroke-linejoin="round"/><circle r="4" fill="#C2405A"/></g>';
-  if (kind === 'girl' && p.tails) o += '<circle cx="-40" cy="-172" r="5" fill="#F2C94C"/><circle cx="40" cy="-172" r="5" fill="#F2C94C"/>';
-  // 臉
-  o += '<path d="' + (BROW[mood] || DEF_BROW) + '" stroke="' + OL + '" stroke-width="3.5" stroke-linecap="round" fill="none"/>';
-  if (mood === 'happy') o += '<path d="M-23,-146 Q-16,-155 -9,-146 M9,-146 Q16,-155 23,-146" stroke="' + OL + '" stroke-width="3.5" fill="none" stroke-linecap="round"/>';
-  else if (mood === 'gross') o += '<path d="M-23,-153 L-11,-147 L-23,-141 M23,-153 L11,-147 L23,-141" stroke="' + OL + '" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>';
-  else {
-    var big = mood === 'surprised' || mood === 'scared', rx = big ? 7 : 5.5, ry = big ? 8.5 : 7;
-    [-16, 16].forEach(function (x) {
-      o += '<ellipse cx="' + x + '" cy="-148" rx="' + rx + '" ry="' + ry + '" fill="' + OL + '"/><circle cx="' + (x + 2) + '" cy="-151" r="2.3" fill="#fff"/><circle cx="' + (x - 1.5) + '" cy="-145" r="1.1" fill="#fff"/>';
-    });
-    if (girlish && kind !== 'teacher') o += '<path d="M-21,-153 L-25,-157 M21,-153 L25,-157" stroke="' + OL + '" stroke-width="2.5" stroke-linecap="round"/>';
-  }
-  if (kind === 'teacher') o += '<rect x="-27" y="-157" width="22" height="17" rx="6" fill="none" stroke="' + OL + '" stroke-width="2.5"/><rect x="5" y="-157" width="22" height="17" rx="6" fill="none" stroke="' + OL + '" stroke-width="2.5"/><path d="M-5,-150 H5" stroke="' + OL + '" stroke-width="2.5"/>';
-  o += '<path d="M-2.5,-135 Q0,-132 2.5,-135" stroke="' + SKIN_LINE + '" stroke-width="2.5" fill="none" stroke-linecap="round"/>' +
-    '<ellipse cx="-28" cy="-131" rx="8" ry="5" fill="' + (mood === 'angry' ? '#F07C6C' : '#F7A99A') + '" opacity="' + (mood === 'angry' ? .85 : .55) + '"/>' +
-    '<ellipse cx="28" cy="-131" rx="8" ry="5" fill="' + (mood === 'angry' ? '#F07C6C' : '#F7A99A') + '" opacity="' + (mood === 'angry' ? .85 : .55) + '"/>' +
+  /* 脖子、耳朵、臉 */
+  o += '<rect x="-7" y="-94" width="14" height="10" rx="3" fill="' + shade(SKIN, .9) + '"/>' +
+    '<ellipse cx="-47" cy="-132" rx="8" ry="9" fill="' + SKIN + '" stroke="' + SKIN_LINE + '" stroke-width="1.8"/><ellipse cx="47" cy="-132" rx="8" ry="9" fill="' + SKIN + '" stroke="' + SKIN_LINE + '" stroke-width="1.8"/>' +
+    '<path d="M-48,-132 q3,-3 4,1 M48,-132 q-3,-3 -4,1" stroke="' + SKIN_LINE + '" stroke-width="1.6" fill="none"/>' +
+    '<ellipse cx="0" cy="-136" rx="48" ry="45" fill="' + SKIN + '" stroke="' + SKIN_LINE + '" stroke-width="2"/>';
+  /* 前面的頭髮 */
+  var hair = kind === 'kid' ? 'M-50,-130 C-56,-182 -22,-194 2,-192 C34,-192 58,-176 50,-128 C47,-146 41,-156 32,-158 C31,-148 24,-143 15,-145 C17,-153 14,-160 7,-163 C3,-152 -6,-146 -17,-148 C-13,-156 -15,-161 -20,-164 C-28,-154 -38,-146 -50,-130 Z' :
+    kind === 'man' ? 'M-50,-128 C-55,-182 -16,-194 3,-192 C38,-192 57,-178 50,-128 C46,-154 30,-166 2,-165 C-24,-165 -44,-154 -50,-128 Z' :
+    kind === 'teacher' || kind === 'mom' ? 'M-51,-122 C-57,-184 -12,-196 6,-193 C42,-190 60,-170 51,-122 C47,-146 38,-164 10,-164 C-14,-162 -38,-150 -51,-122 Z' :
+    'M-51,-124 C-58,-184 -18,-196 2,-194 C30,-194 60,-182 51,-124 C47,-146 38,-160 24,-162 Q12,-150 0,-158 Q-14,-146 -26,-158 Q-40,-148 -51,-124 Z';
+  o += '<path d="' + hair + '" fill="' + p.hair + '" stroke="' + hl + '" stroke-width="1.6" stroke-linejoin="round"/>';
+  if (kind === 'kid') o += '<path d="M4,-191 C8,-206 22,-208 26,-200 C18,-202 12,-198 12,-190 Z" fill="' + p.hair + '" stroke="' + hl + '" stroke-width="1.5"/>';
+  o += '<path d="M-30,-178 Q-12,-188 10,-185" stroke="#fff" stroke-opacity=".32" stroke-width="5" fill="none" stroke-linecap="round"/>' +
+    '<path d="M18,-182 Q28,-178 34,-170" stroke="#fff" stroke-opacity=".22" stroke-width="3.5" fill="none" stroke-linecap="round"/>';
+  if (kind === 'girl' && !p.tails) o += '<g transform="translate(30,-182)"><path d="M0,0 C-6,-12 -18,-10 -16,0 C-18,10 -6,12 0,0 Z M0,0 C6,-12 18,-10 16,0 C18,10 6,12 0,0 Z" fill="#F25C7A" stroke="#C2405A" stroke-width="1.5"/><circle r="4" fill="#C2405A"/></g>';
+  if (kind === 'girl' && p.tails) o += '<circle cx="-44" cy="-150" r="5.5" fill="#F2C94C" stroke="#C99A1E" stroke-width="1.4"/><circle cx="44" cy="-150" r="5.5" fill="#F2C94C" stroke="#C99A1E" stroke-width="1.4"/>';
+  if (kind === 'mom') o += '<circle cx="-46" cy="-118" r="3" fill="#F2C94C"/><circle cx="46" cy="-118" r="3" fill="#F2C94C"/>';
+  /* 臉 */
+  o += '<path d="' + (BROW[mood] || DEF_BROW) + '" stroke="' + shade(p.hair, .85) + '" stroke-width="3.2" stroke-linecap="round" fill="none"/>';
+  o += eye(-17, mood, girlish, IRIS[kind]) + eye(17, mood, girlish, IRIS[kind]);
+  if (kind === 'teacher') o += '<circle cx="-17" cy="-134" r="13" fill="#fff" fill-opacity=".12" stroke="' + OL + '" stroke-width="2.4"/><circle cx="17" cy="-134" r="13" fill="#fff" fill-opacity=".12" stroke="' + OL + '" stroke-width="2.4"/><path d="M-4,-135 Q0,-138 4,-135" stroke="' + OL + '" stroke-width="2.4" fill="none"/>';
+  o += '<path d="M-2,-121 Q0,-119 2,-121" stroke="' + SKIN_LINE + '" stroke-width="2.2" fill="none" stroke-linecap="round"/>' +
+    '<ellipse cx="-29" cy="-117" rx="8" ry="4.5" fill="' + (mood === 'angry' ? '#F07C6C' : '#F7A1A0') + '" opacity="' + (mood === 'angry' ? .8 : .5) + '"/>' +
+    '<ellipse cx="29" cy="-117" rx="8" ry="4.5" fill="' + (mood === 'angry' ? '#F07C6C' : '#F7A1A0') + '" opacity="' + (mood === 'angry' ? .8 : .5) + '"/>' +
     (MOUTH[mood] || MOUTH.neutral);
   if (pose.front) o += arm(R, col);
-  // 心情的小記號
-  if (mood === 'sad') o += '<path d="M-20,-140 q-5,9 0,13 q5,-4 0,-13Z" fill="#7CC3F0"/>';
-  if (mood === 'worried' || mood === 'scared') o += '<path d="M46,-186 q-8,11 0,16 q8,-5 0,-16Z" fill="#9AD6F7" stroke="#5BA9D6" stroke-width="1.5"/>';
-  if (mood === 'angry') o += '<g transform="translate(36,-192)" stroke="#E0453A" stroke-width="4" fill="none" stroke-linecap="round"><path d="M-9,-2 Q-3,-3 -2,-9 M2,-9 Q3,-3 9,-2 M9,2 Q3,3 2,9 M-2,9 Q-3,3 -9,2"/></g>';
-  if (mood === 'gross') o += '<path d="M-22,-184 V-172 M-10,-187 V-173 M2,-187 V-173" stroke="#6FAE6E" stroke-width="3.5" stroke-linecap="round" opacity=".85"/>';
-  var label = p.name ? '<g><rect x="-32" y="8" width="64" height="26" rx="13" fill="' + col + '"/><text x="0" y="27" text-anchor="middle" font-size="17" font-weight="700" font-family="LXGW WenKai TC, sans-serif" fill="#fff">' + p.name + '</text></g>' : '';
-  return '<g class="ch" style="transform:translate(' + p.x + 'px,400px)"><ellipse cx="0" cy="2" rx="' + 40 * s + '" ry="8" fill="rgba(0,0,0,.12)"/>' +
+  /* 心情的小記號 */
+  if (mood === 'sad') o += '<path d="M-21,-124 q-5,9 0,13 q5,-4 0,-13Z" fill="#7CC3F0" stroke="#5BA9D6" stroke-width="1"/>';
+  if (mood === 'worried' || mood === 'scared') o += '<path d="M46,-176 q-8,11 0,16 q8,-5 0,-16Z" fill="#9AD6F7" stroke="#5BA9D6" stroke-width="1.5"/>';
+  if (mood === 'angry') o += '<g transform="translate(38,-178)" stroke="#E0453A" stroke-width="3.6" fill="none" stroke-linecap="round"><path d="M-8,-2 Q-3,-3 -2,-8 M2,-8 Q3,-3 8,-2 M8,2 Q3,3 2,8 M-2,8 Q-3,3 -8,2"/></g>';
+  if (mood === 'gross') o += '<path d="M-22,-172 V-162 M-11,-175 V-163 M0,-175 V-163" stroke="#6FAE6E" stroke-width="3.2" stroke-linecap="round" opacity=".85"/>';
+  o += '</g>';
+  var label = p.name ? '<g><rect x="-32" y="8" width="64" height="26" rx="13" fill="' + col + '" stroke="' + line + '" stroke-width="1.5"/><text x="0" y="27" text-anchor="middle" font-size="17" font-weight="700" font-family="LXGW WenKai TC, sans-serif" fill="#fff">' + p.name + '</text></g>' : '';
+  return '<g class="ch" style="transform:translate(' + p.x + 'px,400px)"><ellipse cx="0" cy="2" rx="' + 32 * s + '" ry="7" fill="rgba(0,0,0,.13)"/>' +
     '<g transform="rotate(' + (p.rot || 0) + ') scale(' + s + ')">' + o + '</g>' + label + '</g>';
 }
 
@@ -1085,7 +1111,7 @@ function drawFrame(badge) {
   var html = svg + '<span class="badge ' + badge[1] + '">' + badge[0] + '</span><span class="count">' + (state.fi + 1) + ' / ' + state.frames.length + '</span>';
   var bubbles = f.say.map(function (b) { return [b, 'say']; }).concat(f.think.map(function (b) { return [b, 'think']; }));
   bubbles.forEach(function (b, k) {
-    var p = f.ppl[b[0][0]], top = ADULT[p.kind] ? 400 - 232 : 400 - 208;
+    var p = f.ppl[b[0][0]], top = ADULT[p.kind] ? 400 - 236 : 400 - 206;
     var bottom = (450 - top) / 450 * 100 + 2 + k * 15, left = p.x / 800 * 100, right = p.x >= 400;
     var pos = right ? 'right:' + Math.max(1, 100 - left - 6) + '%;--tail:calc(100% - 46px)' : 'left:' + Math.max(1, left - 6) + '%';
     html += '<div class="bub ' + b[1] + '" style="bottom:' + bottom + '%;' + pos + '"><span class="who">' + esc(p.name) + (b[1] === 'think' ? ' 心裡想' : '') + '</span>' + esc(b[0][1]) + '</div>';
