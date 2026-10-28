@@ -233,6 +233,7 @@
     .kcard .chain { font-size: 1.3em; gap: 8px; }
     .kcard .chain .c { padding: 4px 16px; }
     .kcard p { margin: 12px 0 0; font-size: 1.1em; }
+    .kcard.dup { display: none; }
     .kbar select { font: inherit; min-height: 44px; border-radius: 12px; border: 1.5px solid var(--line); padding: 0 10px; background: var(--surface); }
 
     @media (max-width: 640px) {
@@ -277,15 +278,21 @@
       html, body { background: #fff; }
       .wrap { padding: 0; max-width: none; }
       .cards { display: block; }
-      .kcard { border: 0; border-top: 16px solid var(--teal); border-radius: 0; box-shadow: none; padding: 8mm 6mm 10mm; break-after: page; page-break-after: always; break-inside: avoid;
-        height: 268mm; display: flex; flex-direction: column; overflow: hidden; }
+      /* 口訣卡：半張 A4，一頁上下兩張，中間有剪裁虛線 */
+      .kcard { border: 0; border-top: 10px solid var(--teal); border-radius: 0; box-shadow: none; padding: 5mm 5mm 4mm; height: 128mm; overflow: hidden; break-inside: avoid;
+        display: grid; grid-template-columns: 92mm 1fr; grid-template-rows: auto 1fr auto; column-gap: 7mm; }
+      .kcard:nth-child(odd) { margin-bottom: 17mm; position: relative; }
+      .kcard:nth-child(odd)::after { content: ""; position: absolute; left: -12mm; right: -12mm; bottom: -9mm; border-bottom: 1px dashed #9A8B80; }
+      .kcard:nth-child(even) { break-after: page; page-break-after: always; }
       .kcard:last-child { break-after: auto; page-break-after: auto; }
-      .kcard .no { font-size: 18pt; padding: 0; }
-      .kcard .kpic { margin: 6mm 0 10mm; border-radius: 4mm; }
-      .kcard h3 { font-size: 34pt; margin-bottom: 8mm; }
-      .kcard .chain { font-size: 28pt; gap: 5mm 4mm; }
-      .kcard .chain .c { padding: 2.5mm 7mm; }
-      .kcard p { font-size: 21pt; margin-top: auto; line-height: 1.6; padding-top: 8mm; border-top: 2px dashed rgba(91, 74, 66, .25); }
+      .kcard .no { grid-column: 1 / -1; font-size: 13pt; padding: 0; margin-bottom: 3mm; }
+      .kcard .kpic { margin: 0; border-radius: 3mm; align-self: start; }
+      .kcard .ktext { align-self: center; }
+      .kcard h3 { font-size: 22pt; margin-bottom: 4mm; }
+      .kcard .chain { font-size: 18pt; gap: 3mm 2.5mm; }
+      .kcard .chain .c { padding: 1.5mm 4.5mm; }
+      .kcard p { grid-column: 1 / -1; font-size: 14pt; margin: 4mm 0 0; line-height: 1.5; padding-top: 3mm; border-top: 2px dashed rgba(91, 74, 66, .25); }
+      .kcard.dup { display: grid !important; }
       .pg { border-radius: 0; padding: 0; margin: 0; break-after: page; page-break-after: always; }
       .pg:last-child { break-after: auto; page-break-after: auto; }
       .pg-head, .sc-box, .chain .c, .kcard, .kpic { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
@@ -1352,20 +1359,25 @@ function render() {
       }).join('') + '</div>';
     m.querySelectorAll('.sc-card').forEach(function (b) { b.onclick = function () { openScene(+b.dataset.i); }; });
   } else if (state.view === 'cards') {
-    var cs = state.cardSc || 'all';
-    m.innerHTML = '<div class="row no-print kbar" style="margin-bottom:12px"><p class="note on-bg" style="margin:0;flex:1">把口訣卡印出來貼在教室，請學生選一張「這週最想練習」的卡片。列印時一張口訣印一張 A4。</p>' +
+    var cs = state.cardSc || 'all', copies = state.cardCopies || (cs === 'all' ? 1 : 2);
+    m.innerHTML = '<div class="row no-print kbar" style="margin-bottom:12px"><p class="note on-bg" style="margin:0;flex:1">口訣卡是半張 A4，一頁印上下兩張，沿虛線剪開。</p>' +
       '<select id="ksc" aria-label="要印哪一張"><option value="all">全部 13 張</option>' +
       SCENES.map(function (s, i) { return '<option value="' + i + '"' + (String(i) === cs ? ' selected' : '') + '>情境 ' + (i + 1) + '　' + esc(s.title) + '</option>'; }).join('') +
+      '</select><select id="kcp" aria-label="每張印幾份">' + [1, 2, 4, 6, 8, 10].map(function (n) { return '<option value="' + n + '"' + (n === copies ? ' selected' : '') + '>每張 ' + n + ' 份</option>'; }).join('') +
       '</select><button class="btn" id="print">🖨️ 列印口訣卡</button></div>' +
       '<div class="cards">' + SCENES.map(function (s, i) {
         if (cs !== 'all' && String(i) !== cs) return '';
         /* 圖：喬治「換個方式做」的最後一格 */
-        var fr = build(s.cast, s.right, s.props);
-        return '<article class="kcard">' + sayBtn(s.title + '。我可以怎麼做：' + s.how.chain.join('，') + '。' + s.how.note, 'corner no-print') +
-          '<div class="no">情境 ' + (i + 1) + '｜' + esc(s.title) + '</div><div class="kpic">' + frameSvg(s, fr[fr.length - 1]) + '</div>' +
-          '<h3>我可以怎麼做</h3>' + chain(s.how.chain) + '<p>' + esc(s.how.note) + '</p></article>';
+        var fr = build(s.cast, s.right, s.props), out = '';
+        for (var c = 0; c < copies; c++) {
+          out += '<article class="kcard' + (c ? ' dup' : '') + '">' + (c ? '' : sayBtn(s.title + '。我可以怎麼做：' + s.how.chain.join('，') + '。' + s.how.note, 'corner no-print')) +
+            '<div class="no">情境 ' + (i + 1) + '｜' + esc(s.title) + '</div><div class="kpic">' + frameSvg(s, fr[fr.length - 1]) + '</div>' +
+            '<div class="ktext"><h3>我可以怎麼做</h3>' + chain(s.how.chain) + '</div><p>' + esc(s.how.note) + '</p></article>';
+        }
+        return out;
       }).join('') + '</div>';
-    $('#ksc').onchange = function () { state.cardSc = this.value; render(); };
+    $('#ksc').onchange = function () { state.cardSc = this.value; state.cardCopies = 0; render(); };
+    $('#kcp').onchange = function () { state.cardCopies = +this.value; render(); };
     $('#print').onclick = function () { window.print(); };
   } else if (state.view === 'print') renderPrint();
   else renderPlayer();
