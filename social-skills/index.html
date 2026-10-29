@@ -42,6 +42,11 @@
     .sc-card:hover { border-color: var(--brand); border-top-color: var(--teal); transform: translateY(-2px); }
     .sc-card .no { font-size: .8em; color: var(--brand); font-weight: 700; display: flex; gap: 10px; }
     .sc-card h3 { margin: 0; font-size: 1.2em; }
+    .scene-art { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: contain; border-radius: 12px; }
+    .sc-card .scene-art { margin: 4px 0 8px; }
+    .scene-photo { position: absolute; inset: 0; }
+    .scene-name { position: absolute; z-index: 2; bottom: 1%; transform: translateX(-50%); background: #fff8eb; color: #493b31; padding: 0 8px; border-radius: 8px; font-size: clamp(10px, 2cqw, 18px); }
+    .scene-dialogue { position: absolute; z-index: 2; top: 5%; left: 40%; right: 20%; text-align: center; padding: 6px 12px; border-radius: 12px; background: #fff8ebed; font-size: clamp(12px, 2.4cqw, 23px); }
     .sc-card p { margin: 0; color: var(--ink-soft); font-size: .9em; }
     .stars { color: var(--yellow); letter-spacing: 2px; }
     .chain { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
@@ -368,7 +373,7 @@ var SCENES = [
   right: [
     { cap: '下課了，喬治想去上廁所。', c: { qing: { mood: 'happy' }, ming: { mood: 'happy' } }, say: [['qing', '你看我的新卡片！']] },
     { c: { le: { x: 320 } }, think: [['le', '停！前面有人，看一看。']] },
-    { c: { le: { pose: 'wave' } }, say: [['le', '請借過一下。']] },
+    { illustration: true, c: { le: { pose: 'wave' } }, say: [['le', '請借過一下。']] },
     { c: { ming: { x: 620 } }, say: [['ming', '好，你先過。']] },
     { c: { le: { x: 720, mood: 'happy', pose: 'down' } }, say: [['le', '謝謝！']], cap: '喬治從旁邊走過去，誰都沒有撞到。' },
     { cap: '如果不小心撞到人呢？', c: { le: { x: 510, mood: 'neutral' }, ming: { x: 600, mood: 'surprised', rot: 10 } }, fx: [['💥', 555, 290]] },
@@ -404,7 +409,7 @@ var SCENES = [
   right: [
     { cap: '上課了，喬治一直在轉鉛筆。', c: { le: { mood: 'happy' } }, props: [['✏️', 462, 330, 30]], think: [['le', '轉轉轉～好好玩！']] },
     { c: { le: { mood: 'neutral' } }, props: [['✏️', 462, 330, 30]], say: [['tea', '喬治，請把鉛筆放下。']], think: [['le', '老師叫我了，看老師。']] },
-    { say: [['le', '好！']], cap: '喬治看著老師，馬上把鉛筆放下。' },
+    { illustration: true, say: [['le', '好！']], cap: '喬治看著老師，馬上把鉛筆放下。' },
     { c: { tea: { mood: 'happy' }, le: { mood: 'happy' } }, say: [['tea', '謝謝你，我們繼續上課。']], fx: [['👍', 140, 140]] }
   ],
   how: { chain: ['聽到名字', '看老師', '說「好」', '馬上做'], note: '如果真的有原因，先做到，再舉手跟老師說。' },
@@ -1354,7 +1359,7 @@ function render() {
       '<div class="grid">' + SCENES.map(function (s, i) {
         var r = state.rate[s.id];
         return '<div class="sc-wrap"><button class="sc-card" data-i="' + i + '" data-label="情境' + (i + 1) + '，' + esc(s.title) + '"><span class="no"><span>情境 ' + (i + 1) + '</span>' + (r ? '<span class="stars">' + '★★★'.slice(0, r) + '</span>' : '') + '</span>' +
-          '<h3>' + esc(s.title) + '</h3><p>' + esc(s.short) + '</p>' + chain(s.how.chain, 'small') + '</button>' +
+          (SCENE_ART[s.id] ? sceneImage(s) : '') + '<h3>' + esc(s.title) + '</h3><p>' + esc(s.short) + '</p>' + chain(s.how.chain, 'small') + '</button>' +
           sayBtn('情境' + (i + 1) + '，' + s.title + '。' + s.short, 'corner') + '</div>';
       }).join('') + '</div>';
     m.querySelectorAll('.sc-card').forEach(function (b) { b.onclick = function () { openScene(+b.dataset.i); }; });
@@ -1484,7 +1489,7 @@ function build(cast, list, base) {
   list.forEach(function (f) {
     for (var id in (f.c || {})) for (var k in f.c[id]) cur[id][k] = f.c[id][k];
     var snap = {}; for (id in cur) { snap[id] = {}; for (k in cur[id]) snap[id][k] = cur[id][k]; }
-    out.push({ ppl: snap, props: f.props || base || [], say: f.say || [], think: f.think || [], fx: f.fx || [], cap: f.cap || '' });
+    out.push({ illustration: f.illustration || false, ppl: snap, props: f.props || base || [], say: f.say || [], think: f.think || [], fx: f.fx || [], cap: f.cap || '' });
   });
   return out;
 }
@@ -1509,6 +1514,24 @@ function computeFaces(f, prev) {
   return out;
 }
 var NERVOUS = { worried: 1, scared: 1, sad: 1 };
+/* 新繪情境圖只用於對應的示範畫格，避免和其他動作的台詞不一致。 */
+var SCENE_ART = {
+  hall: { file: 'scene1_hallway.png', alt: '小晴和阿明面對面聊天擋住走廊，橘衣喬治停下來，溫和舉手說借過。', names: [['喬治', 30], ['小晴', 55], ['阿明', 72]] },
+  call: { file: 'scene2_classroom.png', alt: '左側老師微笑叫喬治，橘衣喬治坐正看著老師，準備舉手回應，小如也看著老師。', names: [['老師', 24], ['喬治', 54], ['小如', 77]] }
+};
+function sceneImage(s) {
+  var art = SCENE_ART[s.id];
+  return '<img class="scene-art" src="images/' + art.file + '" alt="' + esc(art.alt) + '" width="1600" height="900">';
+}
+function showSceneImage(s, f, badge) {
+  var st = $('#stage'), art = SCENE_ART[s.id];
+  st.innerHTML = '<div class="scene-photo">' + sceneImage(s) + '</div>' +
+    art.names.map(function (n) { return '<span class="scene-name" style="left:' + n[1] + '%">' + esc(n[0]) + '</span>'; }).join('') +
+    '<div class="scene-dialogue">' + f.say.map(function (b) { return esc(s.cast[b[0]].name + '：「' + b[1] + '」'); }).join('　') + '</div>' +
+    '<span class="tag"></span><span class="count"></span>';
+  st.querySelector('.tag').textContent = badge[0];
+  st.querySelector('.count').textContent = (state.fi + 1) + ' / ' + state.frames.length;
+}
 function sceneLayers(s) {
   var L = BGS[s.bg](s.label || ''), desks = (s.desks || []).map(desk).join('');
   return { bg: L.bg, mid: L.mid + (L.sign || ''), fg: desks + L.fg, light: L.light };
@@ -1621,6 +1644,11 @@ function applyFrame(s, f, badge, instant) {
 function drawFrame(badge) {
   var s = SCENES[state.sc], f = state.frames[state.fi];
   if (!f) return;
+  if (f.illustration && SCENE_ART[s.id]) {
+    showSceneImage(s, f, badge);
+    state.instant = false;
+    return;
+  }
   var fresh = ensureStage(s);
   applyFrame(s, f, badge, fresh || state.instant);
   state.instant = false;
