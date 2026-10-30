@@ -1,0 +1,902 @@
+{
+  "note": "A/B/C are parallel alternatives; never play all numbered files as one story.",
+  "scenes": [
+    {
+      "scene": 1,
+      "title": "走廊上有人擋路",
+      "decision_frame": 10,
+      "correct_option": "B",
+      "background": "S01_hall/S01_hall_Frame_01.png",
+      "intro": [
+        "S01_hall/S01_hall_Frame_02.png",
+        "S01_hall/S01_hall_Frame_03.png",
+        "S01_hall/S01_hall_Frame_04.png",
+        "S01_hall/S01_hall_Frame_05.png",
+        "S01_hall/S01_hall_Frame_06.png",
+        "S01_hall/S01_hall_Frame_07.png",
+        "S01_hall/S01_hall_Frame_08.png",
+        "S01_hall/S01_hall_Frame_09.png",
+        "S01_hall/S01_hall_Frame_10.png"
+      ],
+      "correct_demonstration": [
+        "S01_hall/S01_hall_Frame_02.png",
+        "S01_hall/S01_hall_Frame_03.png",
+        "S01_hall/S01_hall_Frame_04.png",
+        "S01_hall/S01_hall_Frame_05.png",
+        "S01_hall/S01_hall_Frame_06.png",
+        "S01_hall/S01_hall_Frame_07.png",
+        "S01_hall/S01_hall_Frame_08.png",
+        "S01_hall/S01_hall_Frame_09.png",
+        "S01_hall/S01_hall_Frame_10.png",
+        "S01_hall/S01_hall_Frame_11.png",
+        "S01_hall/S01_hall_Frame_12.png",
+        "S01_hall/S01_hall_Frame_13.png",
+        "S01_hall/S01_hall_Frame_14.png",
+        "S01_hall/S01_hall_Frame_15.png",
+        "S01_hall/S01_hall_Frame_16.png",
+        "S01_hall/S01_hall_Frame_17.png",
+        "S01_hall/S01_hall_Frame_30.png",
+        "S01_hall/S01_hall_Frame_31.png"
+      ],
+      "branches": {
+        "A": [
+          "S01_hall/S01_hall_Frame_18.png",
+          "S01_hall/S01_hall_Frame_19.png",
+          "S01_hall/S01_hall_Frame_20.png",
+          "S01_hall/S01_hall_Frame_21.png"
+        ],
+        "B": [
+          "S01_hall/S01_hall_Frame_22.png",
+          "S01_hall/S01_hall_Frame_23.png",
+          "S01_hall/S01_hall_Frame_24.png",
+          "S01_hall/S01_hall_Frame_25.png"
+        ],
+        "C": [
+          "S01_hall/S01_hall_Frame_26.png",
+          "S01_hall/S01_hall_Frame_27.png",
+          "S01_hall/S01_hall_Frame_28.png",
+          "S01_hall/S01_hall_Frame_29.png"
+        ]
+      },
+      "correct_replay_after_decision": [
+        "S01_hall/S01_hall_Frame_11.png",
+        "S01_hall/S01_hall_Frame_12.png",
+        "S01_hall/S01_hall_Frame_13.png",
+        "S01_hall/S01_hall_Frame_14.png",
+        "S01_hall/S01_hall_Frame_15.png",
+        "S01_hall/S01_hall_Frame_16.png",
+        "S01_hall/S01_hall_Frame_17.png"
+      ],
+      "ending": "S01_hall/S01_hall_Frame_30.png",
+      "summary": "S01_hall/S01_hall_Frame_31.png"
+    },
+    {
+      "scene": 2,
+      "title": "老師叫我的時候",
+      "decision_frame": 5,
+      "correct_option": "B",
+      "background": "S02_call/S02_call_Frame_01.png",
+      "intro": [
+        "S02_call/S02_call_Frame_02.png",
+        "S02_call/S02_call_Frame_03.png",
+        "S02_call/S02_call_Frame_04.png",
+        "S02_call/S02_call_Frame_05.png"
+      ],
+      "correct_demonstration": [
+        "S02_call/S02_call_Frame_02.png",
+        "S02_call/S02_call_Frame_03.png",
+        "S02_call/S02_call_Frame_04.png",
+        "S02_call/S02_call_Frame_05.png",
+        "S02_call/S02_call_Frame_06.png",
+        "S02_call/S02_call_Frame_07.png",
+        "S02_call/S02_call_Frame_08.png",
+        "S02_call/S02_call_Frame_09.png",
+        "S02_call/S02_call_Frame_10.png",
+        "S02_call/S02_call_Frame_11.png",
+        "S02_call/S02_call_Frame_12.png",
+        "S02_call/S02_call_Frame_13.png",
+        "S02_call/S02_call_Frame_14.png",
+        "S02_call/S02_call_Frame_15.png",
+        "S02_call/S02_call_Frame_16.png",
+        "S02_call/S02_call_Frame_17.png",
+        "S02_call/S02_call_Frame_30.png",
+        "S02_call/S02_call_Frame_31.png"
+      ],
+      "branches": {
+        "A": [
+          "S02_call/S02_call_Frame_18.png",
+          "S02_call/S02_call_Frame_19.png",
+          "S02_call/S02_call_Frame_20.png",
+          "S02_call/S02_call_Frame_21.png"
+        ],
+        "B": [
+          "S02_call/S02_call_Frame_22.png",
+          "S02_call/S02_call_Frame_23.png",
+          "S02_call/S02_call_Frame_24.png",
+          "S02_call/S02_call_Frame_25.png"
+        ],
+        "C": [
+          "S02_call/S02_call_Frame_26.png",
+          "S02_call/S02_call_Frame_27.png",
+          "S02_call/S02_call_Frame_28.png",
+          "S02_call/S02_call_Frame_29.png"
+        ]
+      },
+      "correct_replay_after_decision": [
+        "S02_call/S02_call_Frame_06.png",
+        "S02_call/S02_call_Frame_07.png",
+        "S02_call/S02_call_Frame_08.png",
+        "S02_call/S02_call_Frame_09.png",
+        "S02_call/S02_call_Frame_10.png",
+        "S02_call/S02_call_Frame_11.png",
+        "S02_call/S02_call_Frame_12.png",
+        "S02_call/S02_call_Frame_13.png",
+        "S02_call/S02_call_Frame_14.png",
+        "S02_call/S02_call_Frame_15.png",
+        "S02_call/S02_call_Frame_16.png",
+        "S02_call/S02_call_Frame_17.png"
+      ],
+      "ending": "S02_call/S02_call_Frame_30.png",
+      "summary": "S02_call/S02_call_Frame_31.png"
+    },
+    {
+      "scene": 3,
+      "title": "弄掉別人的東西",
+      "decision_frame": 12,
+      "correct_option": "B",
+      "background": "S03_oops/S03_oops_Frame_01.png",
+      "intro": [
+        "S03_oops/S03_oops_Frame_02.png",
+        "S03_oops/S03_oops_Frame_03.png",
+        "S03_oops/S03_oops_Frame_04.png",
+        "S03_oops/S03_oops_Frame_05.png",
+        "S03_oops/S03_oops_Frame_06.png",
+        "S03_oops/S03_oops_Frame_07.png",
+        "S03_oops/S03_oops_Frame_08.png",
+        "S03_oops/S03_oops_Frame_09.png",
+        "S03_oops/S03_oops_Frame_10.png",
+        "S03_oops/S03_oops_Frame_11.png",
+        "S03_oops/S03_oops_Frame_12.png"
+      ],
+      "correct_demonstration": [
+        "S03_oops/S03_oops_Frame_02.png",
+        "S03_oops/S03_oops_Frame_03.png",
+        "S03_oops/S03_oops_Frame_04.png",
+        "S03_oops/S03_oops_Frame_05.png",
+        "S03_oops/S03_oops_Frame_06.png",
+        "S03_oops/S03_oops_Frame_07.png",
+        "S03_oops/S03_oops_Frame_08.png",
+        "S03_oops/S03_oops_Frame_09.png",
+        "S03_oops/S03_oops_Frame_10.png",
+        "S03_oops/S03_oops_Frame_11.png",
+        "S03_oops/S03_oops_Frame_12.png",
+        "S03_oops/S03_oops_Frame_13.png",
+        "S03_oops/S03_oops_Frame_14.png",
+        "S03_oops/S03_oops_Frame_15.png",
+        "S03_oops/S03_oops_Frame_16.png",
+        "S03_oops/S03_oops_Frame_17.png",
+        "S03_oops/S03_oops_Frame_30.png",
+        "S03_oops/S03_oops_Frame_31.png"
+      ],
+      "branches": {
+        "A": [
+          "S03_oops/S03_oops_Frame_18.png",
+          "S03_oops/S03_oops_Frame_19.png",
+          "S03_oops/S03_oops_Frame_20.png",
+          "S03_oops/S03_oops_Frame_21.png"
+        ],
+        "B": [
+          "S03_oops/S03_oops_Frame_22.png",
+          "S03_oops/S03_oops_Frame_23.png",
+          "S03_oops/S03_oops_Frame_24.png",
+          "S03_oops/S03_oops_Frame_25.png"
+        ],
+        "C": [
+          "S03_oops/S03_oops_Frame_26.png",
+          "S03_oops/S03_oops_Frame_27.png",
+          "S03_oops/S03_oops_Frame_28.png",
+          "S03_oops/S03_oops_Frame_29.png"
+        ]
+      },
+      "correct_replay_after_decision": [
+        "S03_oops/S03_oops_Frame_13.png",
+        "S03_oops/S03_oops_Frame_14.png",
+        "S03_oops/S03_oops_Frame_15.png",
+        "S03_oops/S03_oops_Frame_16.png",
+        "S03_oops/S03_oops_Frame_17.png"
+      ],
+      "ending": "S03_oops/S03_oops_Frame_30.png",
+      "summary": "S03_oops/S03_oops_Frame_31.png"
+    },
+    {
+      "scene": 4,
+      "title": "我也想一起玩",
+      "decision_frame": 9,
+      "correct_option": "B",
+      "background": "S04_join/S04_join_Frame_01.png",
+      "intro": [
+        "S04_join/S04_join_Frame_02.png",
+        "S04_join/S04_join_Frame_03.png",
+        "S04_join/S04_join_Frame_04.png",
+        "S04_join/S04_join_Frame_05.png",
+        "S04_join/S04_join_Frame_06.png",
+        "S04_join/S04_join_Frame_07.png",
+        "S04_join/S04_join_Frame_08.png",
+        "S04_join/S04_join_Frame_09.png"
+      ],
+      "correct_demonstration": [
+        "S04_join/S04_join_Frame_02.png",
+        "S04_join/S04_join_Frame_03.png",
+        "S04_join/S04_join_Frame_04.png",
+        "S04_join/S04_join_Frame_05.png",
+        "S04_join/S04_join_Frame_06.png",
+        "S04_join/S04_join_Frame_07.png",
+        "S04_join/S04_join_Frame_08.png",
+        "S04_join/S04_join_Frame_09.png",
+        "S04_join/S04_join_Frame_10.png",
+        "S04_join/S04_join_Frame_11.png",
+        "S04_join/S04_join_Frame_12.png",
+        "S04_join/S04_join_Frame_13.png",
+        "S04_join/S04_join_Frame_14.png",
+        "S04_join/S04_join_Frame_15.png",
+        "S04_join/S04_join_Frame_16.png",
+        "S04_join/S04_join_Frame_17.png",
+        "S04_join/S04_join_Frame_30.png",
+        "S04_join/S04_join_Frame_31.png"
+      ],
+      "branches": {
+        "A": [
+          "S04_join/S04_join_Frame_18.png",
+          "S04_join/S04_join_Frame_19.png",
+          "S04_join/S04_join_Frame_20.png",
+          "S04_join/S04_join_Frame_21.png"
+        ],
+        "B": [
+          "S04_join/S04_join_Frame_22.png",
+          "S04_join/S04_join_Frame_23.png",
+          "S04_join/S04_join_Frame_24.png",
+          "S04_join/S04_join_Frame_25.png"
+        ],
+        "C": [
+          "S04_join/S04_join_Frame_26.png",
+          "S04_join/S04_join_Frame_27.png",
+          "S04_join/S04_join_Frame_28.png",
+          "S04_join/S04_join_Frame_29.png"
+        ]
+      },
+      "correct_replay_after_decision": [
+        "S04_join/S04_join_Frame_10.png",
+        "S04_join/S04_join_Frame_11.png",
+        "S04_join/S04_join_Frame_12.png",
+        "S04_join/S04_join_Frame_13.png",
+        "S04_join/S04_join_Frame_14.png",
+        "S04_join/S04_join_Frame_15.png",
+        "S04_join/S04_join_Frame_16.png",
+        "S04_join/S04_join_Frame_17.png"
+      ],
+      "ending": "S04_join/S04_join_Frame_30.png",
+      "summary": "S04_join/S04_join_Frame_31.png"
+    },
+    {
+      "scene": 5,
+      "title": "被笑的時候",
+      "decision_frame": 7,
+      "correct_option": "C",
+      "background": "S05_laugh/S05_laugh_Frame_01.png",
+      "intro": [
+        "S05_laugh/S05_laugh_Frame_02.png",
+        "S05_laugh/S05_laugh_Frame_03.png",
+        "S05_laugh/S05_laugh_Frame_04.png",
+        "S05_laugh/S05_laugh_Frame_05.png",
+        "S05_laugh/S05_laugh_Frame_06.png",
+        "S05_laugh/S05_laugh_Frame_07.png"
+      ],
+      "correct_demonstration": [
+        "S05_laugh/S05_laugh_Frame_02.png",
+        "S05_laugh/S05_laugh_Frame_03.png",
+        "S05_laugh/S05_laugh_Frame_04.png",
+        "S05_laugh/S05_laugh_Frame_05.png",
+        "S05_laugh/S05_laugh_Frame_06.png",
+        "S05_laugh/S05_laugh_Frame_07.png",
+        "S05_laugh/S05_laugh_Frame_08.png",
+        "S05_laugh/S05_laugh_Frame_09.png",
+        "S05_laugh/S05_laugh_Frame_10.png",
+        "S05_laugh/S05_laugh_Frame_11.png",
+        "S05_laugh/S05_laugh_Frame_12.png",
+        "S05_laugh/S05_laugh_Frame_13.png",
+        "S05_laugh/S05_laugh_Frame_14.png",
+        "S05_laugh/S05_laugh_Frame_15.png",
+        "S05_laugh/S05_laugh_Frame_16.png",
+        "S05_laugh/S05_laugh_Frame_17.png",
+        "S05_laugh/S05_laugh_Frame_30.png",
+        "S05_laugh/S05_laugh_Frame_31.png"
+      ],
+      "branches": {
+        "A": [
+          "S05_laugh/S05_laugh_Frame_18.png",
+          "S05_laugh/S05_laugh_Frame_19.png",
+          "S05_laugh/S05_laugh_Frame_20.png",
+          "S05_laugh/S05_laugh_Frame_21.png"
+        ],
+        "B": [
+          "S05_laugh/S05_laugh_Frame_22.png",
+          "S05_laugh/S05_laugh_Frame_23.png",
+          "S05_laugh/S05_laugh_Frame_24.png",
+          "S05_laugh/S05_laugh_Frame_25.png"
+        ],
+        "C": [
+          "S05_laugh/S05_laugh_Frame_26.png",
+          "S05_laugh/S05_laugh_Frame_27.png",
+          "S05_laugh/S05_laugh_Frame_28.png",
+          "S05_laugh/S05_laugh_Frame_29.png"
+        ]
+      },
+      "correct_replay_after_decision": [
+        "S05_laugh/S05_laugh_Frame_08.png",
+        "S05_laugh/S05_laugh_Frame_09.png",
+        "S05_laugh/S05_laugh_Frame_10.png",
+        "S05_laugh/S05_laugh_Frame_11.png",
+        "S05_laugh/S05_laugh_Frame_12.png",
+        "S05_laugh/S05_laugh_Frame_13.png",
+        "S05_laugh/S05_laugh_Frame_14.png",
+        "S05_laugh/S05_laugh_Frame_15.png",
+        "S05_laugh/S05_laugh_Frame_16.png",
+        "S05_laugh/S05_laugh_Frame_17.png"
+      ],
+      "ending": "S05_laugh/S05_laugh_Frame_30.png",
+      "summary": "S05_laugh/S05_laugh_Frame_31.png"
+    },
+    {
+      "scene": 6,
+      "title": "不會的時候",
+      "decision_frame": 8,
+      "correct_option": "B",
+      "background": "S06_help/S06_help_Frame_01.png",
+      "intro": [
+        "S06_help/S06_help_Frame_02.png",
+        "S06_help/S06_help_Frame_03.png",
+        "S06_help/S06_help_Frame_04.png",
+        "S06_help/S06_help_Frame_05.png",
+        "S06_help/S06_help_Frame_06.png",
+        "S06_help/S06_help_Frame_07.png",
+        "S06_help/S06_help_Frame_08.png"
+      ],
+      "correct_demonstration": [
+        "S06_help/S06_help_Frame_02.png",
+        "S06_help/S06_help_Frame_03.png",
+        "S06_help/S06_help_Frame_04.png",
+        "S06_help/S06_help_Frame_05.png",
+        "S06_help/S06_help_Frame_06.png",
+        "S06_help/S06_help_Frame_07.png",
+        "S06_help/S06_help_Frame_08.png",
+        "S06_help/S06_help_Frame_09.png",
+        "S06_help/S06_help_Frame_10.png",
+        "S06_help/S06_help_Frame_11.png",
+        "S06_help/S06_help_Frame_12.png",
+        "S06_help/S06_help_Frame_13.png",
+        "S06_help/S06_help_Frame_14.png",
+        "S06_help/S06_help_Frame_15.png",
+        "S06_help/S06_help_Frame_16.png",
+        "S06_help/S06_help_Frame_17.png",
+        "S06_help/S06_help_Frame_30.png",
+        "S06_help/S06_help_Frame_31.png"
+      ],
+      "branches": {
+        "A": [
+          "S06_help/S06_help_Frame_18.png",
+          "S06_help/S06_help_Frame_19.png",
+          "S06_help/S06_help_Frame_20.png",
+          "S06_help/S06_help_Frame_21.png"
+        ],
+        "B": [
+          "S06_help/S06_help_Frame_22.png",
+          "S06_help/S06_help_Frame_23.png",
+          "S06_help/S06_help_Frame_24.png",
+          "S06_help/S06_help_Frame_25.png"
+        ],
+        "C": [
+          "S06_help/S06_help_Frame_26.png",
+          "S06_help/S06_help_Frame_27.png",
+          "S06_help/S06_help_Frame_28.png",
+          "S06_help/S06_help_Frame_29.png"
+        ]
+      },
+      "correct_replay_after_decision": [
+        "S06_help/S06_help_Frame_09.png",
+        "S06_help/S06_help_Frame_10.png",
+        "S06_help/S06_help_Frame_11.png",
+        "S06_help/S06_help_Frame_12.png",
+        "S06_help/S06_help_Frame_13.png",
+        "S06_help/S06_help_Frame_14.png",
+        "S06_help/S06_help_Frame_15.png",
+        "S06_help/S06_help_Frame_16.png",
+        "S06_help/S06_help_Frame_17.png"
+      ],
+      "ending": "S06_help/S06_help_Frame_30.png",
+      "summary": "S06_help/S06_help_Frame_31.png"
+    },
+    {
+      "scene": 7,
+      "title": "鼻子不舒服",
+      "decision_frame": 4,
+      "correct_option": "B",
+      "background": "S07_nose/S07_nose_Frame_01.png",
+      "intro": [
+        "S07_nose/S07_nose_Frame_02.png",
+        "S07_nose/S07_nose_Frame_03.png",
+        "S07_nose/S07_nose_Frame_04.png"
+      ],
+      "correct_demonstration": [
+        "S07_nose/S07_nose_Frame_02.png",
+        "S07_nose/S07_nose_Frame_03.png",
+        "S07_nose/S07_nose_Frame_04.png",
+        "S07_nose/S07_nose_Frame_05.png",
+        "S07_nose/S07_nose_Frame_06.png",
+        "S07_nose/S07_nose_Frame_07.png",
+        "S07_nose/S07_nose_Frame_08.png",
+        "S07_nose/S07_nose_Frame_09.png",
+        "S07_nose/S07_nose_Frame_10.png",
+        "S07_nose/S07_nose_Frame_11.png",
+        "S07_nose/S07_nose_Frame_12.png",
+        "S07_nose/S07_nose_Frame_13.png",
+        "S07_nose/S07_nose_Frame_14.png",
+        "S07_nose/S07_nose_Frame_15.png",
+        "S07_nose/S07_nose_Frame_16.png",
+        "S07_nose/S07_nose_Frame_17.png",
+        "S07_nose/S07_nose_Frame_30.png",
+        "S07_nose/S07_nose_Frame_31.png"
+      ],
+      "branches": {
+        "A": [
+          "S07_nose/S07_nose_Frame_18.png",
+          "S07_nose/S07_nose_Frame_19.png",
+          "S07_nose/S07_nose_Frame_20.png",
+          "S07_nose/S07_nose_Frame_21.png"
+        ],
+        "B": [
+          "S07_nose/S07_nose_Frame_22.png",
+          "S07_nose/S07_nose_Frame_23.png",
+          "S07_nose/S07_nose_Frame_24.png",
+          "S07_nose/S07_nose_Frame_25.png"
+        ],
+        "C": [
+          "S07_nose/S07_nose_Frame_26.png",
+          "S07_nose/S07_nose_Frame_27.png",
+          "S07_nose/S07_nose_Frame_28.png",
+          "S07_nose/S07_nose_Frame_29.png"
+        ]
+      },
+      "correct_replay_after_decision": [
+        "S07_nose/S07_nose_Frame_05.png",
+        "S07_nose/S07_nose_Frame_06.png",
+        "S07_nose/S07_nose_Frame_07.png",
+        "S07_nose/S07_nose_Frame_08.png",
+        "S07_nose/S07_nose_Frame_09.png",
+        "S07_nose/S07_nose_Frame_10.png",
+        "S07_nose/S07_nose_Frame_11.png",
+        "S07_nose/S07_nose_Frame_12.png",
+        "S07_nose/S07_nose_Frame_13.png",
+        "S07_nose/S07_nose_Frame_14.png",
+        "S07_nose/S07_nose_Frame_15.png",
+        "S07_nose/S07_nose_Frame_16.png",
+        "S07_nose/S07_nose_Frame_17.png"
+      ],
+      "ending": "S07_nose/S07_nose_Frame_30.png",
+      "summary": "S07_nose/S07_nose_Frame_31.png"
+    },
+    {
+      "scene": 8,
+      "title": "好多話想說",
+      "decision_frame": 4,
+      "correct_option": "B",
+      "background": "S08_share/S08_share_Frame_01.png",
+      "intro": [
+        "S08_share/S08_share_Frame_02.png",
+        "S08_share/S08_share_Frame_03.png",
+        "S08_share/S08_share_Frame_04.png"
+      ],
+      "correct_demonstration": [
+        "S08_share/S08_share_Frame_02.png",
+        "S08_share/S08_share_Frame_03.png",
+        "S08_share/S08_share_Frame_04.png",
+        "S08_share/S08_share_Frame_05.png",
+        "S08_share/S08_share_Frame_06.png",
+        "S08_share/S08_share_Frame_07.png",
+        "S08_share/S08_share_Frame_08.png",
+        "S08_share/S08_share_Frame_09.png",
+        "S08_share/S08_share_Frame_10.png",
+        "S08_share/S08_share_Frame_11.png",
+        "S08_share/S08_share_Frame_12.png",
+        "S08_share/S08_share_Frame_13.png",
+        "S08_share/S08_share_Frame_14.png",
+        "S08_share/S08_share_Frame_15.png",
+        "S08_share/S08_share_Frame_16.png",
+        "S08_share/S08_share_Frame_17.png",
+        "S08_share/S08_share_Frame_30.png",
+        "S08_share/S08_share_Frame_31.png"
+      ],
+      "branches": {
+        "A": [
+          "S08_share/S08_share_Frame_18.png",
+          "S08_share/S08_share_Frame_19.png",
+          "S08_share/S08_share_Frame_20.png",
+          "S08_share/S08_share_Frame_21.png"
+        ],
+        "B": [
+          "S08_share/S08_share_Frame_22.png",
+          "S08_share/S08_share_Frame_23.png",
+          "S08_share/S08_share_Frame_24.png",
+          "S08_share/S08_share_Frame_25.png"
+        ],
+        "C": [
+          "S08_share/S08_share_Frame_26.png",
+          "S08_share/S08_share_Frame_27.png",
+          "S08_share/S08_share_Frame_28.png",
+          "S08_share/S08_share_Frame_29.png"
+        ]
+      },
+      "correct_replay_after_decision": [
+        "S08_share/S08_share_Frame_05.png",
+        "S08_share/S08_share_Frame_06.png",
+        "S08_share/S08_share_Frame_07.png",
+        "S08_share/S08_share_Frame_08.png",
+        "S08_share/S08_share_Frame_09.png",
+        "S08_share/S08_share_Frame_10.png",
+        "S08_share/S08_share_Frame_11.png",
+        "S08_share/S08_share_Frame_12.png",
+        "S08_share/S08_share_Frame_13.png",
+        "S08_share/S08_share_Frame_14.png",
+        "S08_share/S08_share_Frame_15.png",
+        "S08_share/S08_share_Frame_16.png",
+        "S08_share/S08_share_Frame_17.png"
+      ],
+      "ending": "S08_share/S08_share_Frame_30.png",
+      "summary": "S08_share/S08_share_Frame_31.png"
+    },
+    {
+      "scene": 9,
+      "title": "想捉弄同學",
+      "decision_frame": 6,
+      "correct_option": "C",
+      "background": "S09_prank/S09_prank_Frame_01.png",
+      "intro": [
+        "S09_prank/S09_prank_Frame_02.png",
+        "S09_prank/S09_prank_Frame_03.png",
+        "S09_prank/S09_prank_Frame_04.png",
+        "S09_prank/S09_prank_Frame_05.png",
+        "S09_prank/S09_prank_Frame_06.png"
+      ],
+      "correct_demonstration": [
+        "S09_prank/S09_prank_Frame_02.png",
+        "S09_prank/S09_prank_Frame_03.png",
+        "S09_prank/S09_prank_Frame_04.png",
+        "S09_prank/S09_prank_Frame_05.png",
+        "S09_prank/S09_prank_Frame_06.png",
+        "S09_prank/S09_prank_Frame_07.png",
+        "S09_prank/S09_prank_Frame_08.png",
+        "S09_prank/S09_prank_Frame_09.png",
+        "S09_prank/S09_prank_Frame_10.png",
+        "S09_prank/S09_prank_Frame_11.png",
+        "S09_prank/S09_prank_Frame_12.png",
+        "S09_prank/S09_prank_Frame_13.png",
+        "S09_prank/S09_prank_Frame_14.png",
+        "S09_prank/S09_prank_Frame_15.png",
+        "S09_prank/S09_prank_Frame_16.png",
+        "S09_prank/S09_prank_Frame_17.png",
+        "S09_prank/S09_prank_Frame_30.png",
+        "S09_prank/S09_prank_Frame_31.png"
+      ],
+      "branches": {
+        "A": [
+          "S09_prank/S09_prank_Frame_18.png",
+          "S09_prank/S09_prank_Frame_19.png",
+          "S09_prank/S09_prank_Frame_20.png",
+          "S09_prank/S09_prank_Frame_21.png"
+        ],
+        "B": [
+          "S09_prank/S09_prank_Frame_22.png",
+          "S09_prank/S09_prank_Frame_23.png",
+          "S09_prank/S09_prank_Frame_24.png",
+          "S09_prank/S09_prank_Frame_25.png"
+        ],
+        "C": [
+          "S09_prank/S09_prank_Frame_26.png",
+          "S09_prank/S09_prank_Frame_27.png",
+          "S09_prank/S09_prank_Frame_28.png",
+          "S09_prank/S09_prank_Frame_29.png"
+        ]
+      },
+      "correct_replay_after_decision": [
+        "S09_prank/S09_prank_Frame_07.png",
+        "S09_prank/S09_prank_Frame_08.png",
+        "S09_prank/S09_prank_Frame_09.png",
+        "S09_prank/S09_prank_Frame_10.png",
+        "S09_prank/S09_prank_Frame_11.png",
+        "S09_prank/S09_prank_Frame_12.png",
+        "S09_prank/S09_prank_Frame_13.png",
+        "S09_prank/S09_prank_Frame_14.png",
+        "S09_prank/S09_prank_Frame_15.png",
+        "S09_prank/S09_prank_Frame_16.png",
+        "S09_prank/S09_prank_Frame_17.png"
+      ],
+      "ending": "S09_prank/S09_prank_Frame_30.png",
+      "summary": "S09_prank/S09_prank_Frame_31.png"
+    },
+    {
+      "scene": 10,
+      "title": "同學不理我",
+      "decision_frame": 7,
+      "correct_option": "B",
+      "background": "S10_friend/S10_friend_Frame_01.png",
+      "intro": [
+        "S10_friend/S10_friend_Frame_02.png",
+        "S10_friend/S10_friend_Frame_03.png",
+        "S10_friend/S10_friend_Frame_04.png",
+        "S10_friend/S10_friend_Frame_05.png",
+        "S10_friend/S10_friend_Frame_06.png",
+        "S10_friend/S10_friend_Frame_07.png"
+      ],
+      "correct_demonstration": [
+        "S10_friend/S10_friend_Frame_02.png",
+        "S10_friend/S10_friend_Frame_03.png",
+        "S10_friend/S10_friend_Frame_04.png",
+        "S10_friend/S10_friend_Frame_05.png",
+        "S10_friend/S10_friend_Frame_06.png",
+        "S10_friend/S10_friend_Frame_07.png",
+        "S10_friend/S10_friend_Frame_08.png",
+        "S10_friend/S10_friend_Frame_09.png",
+        "S10_friend/S10_friend_Frame_10.png",
+        "S10_friend/S10_friend_Frame_11.png",
+        "S10_friend/S10_friend_Frame_12.png",
+        "S10_friend/S10_friend_Frame_13.png",
+        "S10_friend/S10_friend_Frame_14.png",
+        "S10_friend/S10_friend_Frame_15.png",
+        "S10_friend/S10_friend_Frame_16.png",
+        "S10_friend/S10_friend_Frame_17.png",
+        "S10_friend/S10_friend_Frame_30.png",
+        "S10_friend/S10_friend_Frame_31.png"
+      ],
+      "branches": {
+        "A": [
+          "S10_friend/S10_friend_Frame_18.png",
+          "S10_friend/S10_friend_Frame_19.png",
+          "S10_friend/S10_friend_Frame_20.png",
+          "S10_friend/S10_friend_Frame_21.png"
+        ],
+        "B": [
+          "S10_friend/S10_friend_Frame_22.png",
+          "S10_friend/S10_friend_Frame_23.png",
+          "S10_friend/S10_friend_Frame_24.png",
+          "S10_friend/S10_friend_Frame_25.png"
+        ],
+        "C": [
+          "S10_friend/S10_friend_Frame_26.png",
+          "S10_friend/S10_friend_Frame_27.png",
+          "S10_friend/S10_friend_Frame_28.png",
+          "S10_friend/S10_friend_Frame_29.png"
+        ]
+      },
+      "correct_replay_after_decision": [
+        "S10_friend/S10_friend_Frame_08.png",
+        "S10_friend/S10_friend_Frame_09.png",
+        "S10_friend/S10_friend_Frame_10.png",
+        "S10_friend/S10_friend_Frame_11.png",
+        "S10_friend/S10_friend_Frame_12.png",
+        "S10_friend/S10_friend_Frame_13.png",
+        "S10_friend/S10_friend_Frame_14.png",
+        "S10_friend/S10_friend_Frame_15.png",
+        "S10_friend/S10_friend_Frame_16.png",
+        "S10_friend/S10_friend_Frame_17.png"
+      ],
+      "ending": "S10_friend/S10_friend_Frame_30.png",
+      "summary": "S10_friend/S10_friend_Frame_31.png"
+    },
+    {
+      "scene": 11,
+      "title": "老師在忙的時候",
+      "decision_frame": 5,
+      "correct_option": "B",
+      "background": "S11_busy/S11_busy_Frame_01.png",
+      "intro": [
+        "S11_busy/S11_busy_Frame_02.png",
+        "S11_busy/S11_busy_Frame_03.png",
+        "S11_busy/S11_busy_Frame_04.png",
+        "S11_busy/S11_busy_Frame_05.png"
+      ],
+      "correct_demonstration": [
+        "S11_busy/S11_busy_Frame_02.png",
+        "S11_busy/S11_busy_Frame_03.png",
+        "S11_busy/S11_busy_Frame_04.png",
+        "S11_busy/S11_busy_Frame_05.png",
+        "S11_busy/S11_busy_Frame_06.png",
+        "S11_busy/S11_busy_Frame_07.png",
+        "S11_busy/S11_busy_Frame_08.png",
+        "S11_busy/S11_busy_Frame_09.png",
+        "S11_busy/S11_busy_Frame_10.png",
+        "S11_busy/S11_busy_Frame_11.png",
+        "S11_busy/S11_busy_Frame_12.png",
+        "S11_busy/S11_busy_Frame_13.png",
+        "S11_busy/S11_busy_Frame_14.png",
+        "S11_busy/S11_busy_Frame_15.png",
+        "S11_busy/S11_busy_Frame_16.png",
+        "S11_busy/S11_busy_Frame_17.png",
+        "S11_busy/S11_busy_Frame_30.png",
+        "S11_busy/S11_busy_Frame_31.png"
+      ],
+      "branches": {
+        "A": [
+          "S11_busy/S11_busy_Frame_18.png",
+          "S11_busy/S11_busy_Frame_19.png",
+          "S11_busy/S11_busy_Frame_20.png",
+          "S11_busy/S11_busy_Frame_21.png"
+        ],
+        "B": [
+          "S11_busy/S11_busy_Frame_22.png",
+          "S11_busy/S11_busy_Frame_23.png",
+          "S11_busy/S11_busy_Frame_24.png",
+          "S11_busy/S11_busy_Frame_25.png"
+        ],
+        "C": [
+          "S11_busy/S11_busy_Frame_26.png",
+          "S11_busy/S11_busy_Frame_27.png",
+          "S11_busy/S11_busy_Frame_28.png",
+          "S11_busy/S11_busy_Frame_29.png"
+        ]
+      },
+      "correct_replay_after_decision": [
+        "S11_busy/S11_busy_Frame_06.png",
+        "S11_busy/S11_busy_Frame_07.png",
+        "S11_busy/S11_busy_Frame_08.png",
+        "S11_busy/S11_busy_Frame_09.png",
+        "S11_busy/S11_busy_Frame_10.png",
+        "S11_busy/S11_busy_Frame_11.png",
+        "S11_busy/S11_busy_Frame_12.png",
+        "S11_busy/S11_busy_Frame_13.png",
+        "S11_busy/S11_busy_Frame_14.png",
+        "S11_busy/S11_busy_Frame_15.png",
+        "S11_busy/S11_busy_Frame_16.png",
+        "S11_busy/S11_busy_Frame_17.png"
+      ],
+      "ending": "S11_busy/S11_busy_Frame_30.png",
+      "summary": "S11_busy/S11_busy_Frame_31.png"
+    },
+    {
+      "scene": 12,
+      "title": "說實話",
+      "decision_frame": 8,
+      "correct_option": "C",
+      "background": "S12_truth/S12_truth_Frame_01.png",
+      "intro": [
+        "S12_truth/S12_truth_Frame_02.png",
+        "S12_truth/S12_truth_Frame_03.png",
+        "S12_truth/S12_truth_Frame_04.png",
+        "S12_truth/S12_truth_Frame_05.png",
+        "S12_truth/S12_truth_Frame_06.png",
+        "S12_truth/S12_truth_Frame_07.png",
+        "S12_truth/S12_truth_Frame_08.png"
+      ],
+      "correct_demonstration": [
+        "S12_truth/S12_truth_Frame_02.png",
+        "S12_truth/S12_truth_Frame_03.png",
+        "S12_truth/S12_truth_Frame_04.png",
+        "S12_truth/S12_truth_Frame_05.png",
+        "S12_truth/S12_truth_Frame_06.png",
+        "S12_truth/S12_truth_Frame_07.png",
+        "S12_truth/S12_truth_Frame_08.png",
+        "S12_truth/S12_truth_Frame_09.png",
+        "S12_truth/S12_truth_Frame_10.png",
+        "S12_truth/S12_truth_Frame_11.png",
+        "S12_truth/S12_truth_Frame_12.png",
+        "S12_truth/S12_truth_Frame_13.png",
+        "S12_truth/S12_truth_Frame_14.png",
+        "S12_truth/S12_truth_Frame_15.png",
+        "S12_truth/S12_truth_Frame_16.png",
+        "S12_truth/S12_truth_Frame_17.png",
+        "S12_truth/S12_truth_Frame_30.png",
+        "S12_truth/S12_truth_Frame_31.png"
+      ],
+      "branches": {
+        "A": [
+          "S12_truth/S12_truth_Frame_18.png",
+          "S12_truth/S12_truth_Frame_19.png",
+          "S12_truth/S12_truth_Frame_20.png",
+          "S12_truth/S12_truth_Frame_21.png"
+        ],
+        "B": [
+          "S12_truth/S12_truth_Frame_22.png",
+          "S12_truth/S12_truth_Frame_23.png",
+          "S12_truth/S12_truth_Frame_24.png",
+          "S12_truth/S12_truth_Frame_25.png"
+        ],
+        "C": [
+          "S12_truth/S12_truth_Frame_26.png",
+          "S12_truth/S12_truth_Frame_27.png",
+          "S12_truth/S12_truth_Frame_28.png",
+          "S12_truth/S12_truth_Frame_29.png"
+        ]
+      },
+      "correct_replay_after_decision": [
+        "S12_truth/S12_truth_Frame_09.png",
+        "S12_truth/S12_truth_Frame_10.png",
+        "S12_truth/S12_truth_Frame_11.png",
+        "S12_truth/S12_truth_Frame_12.png",
+        "S12_truth/S12_truth_Frame_13.png",
+        "S12_truth/S12_truth_Frame_14.png",
+        "S12_truth/S12_truth_Frame_15.png",
+        "S12_truth/S12_truth_Frame_16.png",
+        "S12_truth/S12_truth_Frame_17.png"
+      ],
+      "ending": "S12_truth/S12_truth_Frame_30.png",
+      "summary": "S12_truth/S12_truth_Frame_31.png"
+    },
+    {
+      "scene": 13,
+      "title": "東西要付錢",
+      "decision_frame": 8,
+      "correct_option": "B",
+      "background": "S13_shop/S13_shop_Frame_01.png",
+      "intro": [
+        "S13_shop/S13_shop_Frame_02.png",
+        "S13_shop/S13_shop_Frame_03.png",
+        "S13_shop/S13_shop_Frame_04.png",
+        "S13_shop/S13_shop_Frame_05.png",
+        "S13_shop/S13_shop_Frame_06.png",
+        "S13_shop/S13_shop_Frame_07.png",
+        "S13_shop/S13_shop_Frame_08.png"
+      ],
+      "correct_demonstration": [
+        "S13_shop/S13_shop_Frame_02.png",
+        "S13_shop/S13_shop_Frame_03.png",
+        "S13_shop/S13_shop_Frame_04.png",
+        "S13_shop/S13_shop_Frame_05.png",
+        "S13_shop/S13_shop_Frame_06.png",
+        "S13_shop/S13_shop_Frame_07.png",
+        "S13_shop/S13_shop_Frame_08.png",
+        "S13_shop/S13_shop_Frame_09.png",
+        "S13_shop/S13_shop_Frame_10.png",
+        "S13_shop/S13_shop_Frame_11.png",
+        "S13_shop/S13_shop_Frame_12.png",
+        "S13_shop/S13_shop_Frame_13.png",
+        "S13_shop/S13_shop_Frame_14.png",
+        "S13_shop/S13_shop_Frame_15.png",
+        "S13_shop/S13_shop_Frame_16.png",
+        "S13_shop/S13_shop_Frame_17.png",
+        "S13_shop/S13_shop_Frame_30.png",
+        "S13_shop/S13_shop_Frame_31.png"
+      ],
+      "branches": {
+        "A": [
+          "S13_shop/S13_shop_Frame_18.png",
+          "S13_shop/S13_shop_Frame_19.png",
+          "S13_shop/S13_shop_Frame_20.png",
+          "S13_shop/S13_shop_Frame_21.png"
+        ],
+        "B": [
+          "S13_shop/S13_shop_Frame_22.png",
+          "S13_shop/S13_shop_Frame_23.png",
+          "S13_shop/S13_shop_Frame_24.png",
+          "S13_shop/S13_shop_Frame_25.png"
+        ],
+        "C": [
+          "S13_shop/S13_shop_Frame_26.png",
+          "S13_shop/S13_shop_Frame_27.png",
+          "S13_shop/S13_shop_Frame_28.png",
+          "S13_shop/S13_shop_Frame_29.png"
+        ]
+      },
+      "correct_replay_after_decision": [
+        "S13_shop/S13_shop_Frame_09.png",
+        "S13_shop/S13_shop_Frame_10.png",
+        "S13_shop/S13_shop_Frame_11.png",
+        "S13_shop/S13_shop_Frame_12.png",
+        "S13_shop/S13_shop_Frame_13.png",
+        "S13_shop/S13_shop_Frame_14.png",
+        "S13_shop/S13_shop_Frame_15.png",
+        "S13_shop/S13_shop_Frame_16.png",
+        "S13_shop/S13_shop_Frame_17.png"
+      ],
+      "ending": "S13_shop/S13_shop_Frame_30.png",
+      "summary": "S13_shop/S13_shop_Frame_31.png"
+    }
+  ]
+}

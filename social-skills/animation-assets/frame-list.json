@@ -1,0 +1,4043 @@
+{
+  "cast": {
+    "喬治": "11–12歲台灣男孩，約6頭身；深棕短髮、暖橘色上衣、灰藍長褲、米白球鞋。",
+    "小晴": "11–12歲，棕色及肩髮、鼠尾草綠髮夾，粉色上衣、灰藍及膝裙。",
+    "阿明": "11–12歲，黑色短髮，鼠尾草綠上衣、深灰長褲。",
+    "小如": "11–12歲，深棕低雙馬尾，淺藍上衣、灰紫及膝裙。",
+    "大偉": "11–12歲，栗棕短髮，霧藍上衣、卡其長褲。",
+    "導師": "約35歲女性，深棕鮑伯短髮、細框眼鏡，灰綠開襟衫、米白內搭、深藍長裙。",
+    "店員": "約30歲女性，深棕丸子髮髻，米白上衣、灰綠圍裙、炭灰長褲。"
+  },
+  "frames": [
+    {
+      "scene": 1,
+      "scene_id": "hall",
+      "title": "走廊上有人擋路",
+      "frame": 1,
+      "kind": "background",
+      "setting": "校園走廊；左側採光窗、右側教室門、遠端轉角；喬治從左向右行走，小晴與阿明在右中景聊天。",
+      "action": "無人物主背景；校園走廊；左側採光窗、右側教室門、遠端轉角；喬治從左向右行走，小晴與阿明在右中景聊天。",
+      "filename": "S01_hall_Frame_01.png"
+    },
+    {
+      "scene": 1,
+      "scene_id": "hall",
+      "title": "走廊上有人擋路",
+      "frame": 2,
+      "kind": "main",
+      "setting": "校園走廊；左側採光窗、右側教室門、遠端轉角；喬治從左向右行走，小晴與阿明在右中景聊天。",
+      "action": "喬治左腳踏入畫面",
+      "filename": "S01_hall_Frame_02.png"
+    },
+    {
+      "scene": 1,
+      "scene_id": "hall",
+      "title": "走廊上有人擋路",
+      "frame": 3,
+      "kind": "main",
+      "setting": "校園走廊；左側採光窗、右側教室門、遠端轉角；喬治從左向右行走，小晴與阿明在右中景聊天。",
+      "action": "右腳跟進，視線朝前",
+      "filename": "S01_hall_Frame_03.png"
+    },
+    {
+      "scene": 1,
+      "scene_id": "hall",
+      "title": "走廊上有人擋路",
+      "frame": 4,
+      "kind": "main",
+      "setting": "校園走廊；左側採光窗、右側教室門、遠端轉角；喬治從左向右行走，小晴與阿明在右中景聊天。",
+      "action": "小晴向阿明展示卡片",
+      "filename": "S01_hall_Frame_04.png"
+    },
+    {
+      "scene": 1,
+      "scene_id": "hall",
+      "title": "走廊上有人擋路",
+      "frame": 5,
+      "kind": "main",
+      "setting": "校園走廊；左側採光窗、右側教室門、遠端轉角；喬治從左向右行走，小晴與阿明在右中景聊天。",
+      "action": "喬治走近半步，看見兩人",
+      "filename": "S01_hall_Frame_05.png"
+    },
+    {
+      "scene": 1,
+      "scene_id": "hall",
+      "title": "走廊上有人擋路",
+      "frame": 6,
+      "kind": "main",
+      "setting": "校園走廊；左側採光窗、右側教室門、遠端轉角；喬治從左向右行走，小晴與阿明在右中景聊天。",
+      "action": "前腳落地，步伐放慢",
+      "filename": "S01_hall_Frame_06.png"
+    },
+    {
+      "scene": 1,
+      "scene_id": "hall",
+      "title": "走廊上有人擋路",
+      "frame": 7,
+      "kind": "main",
+      "setting": "校園走廊；左側採光窗、右側教室門、遠端轉角；喬治從左向右行走，小晴與阿明在右中景聊天。",
+      "action": "重心後移，雙腳停穩",
+      "filename": "S01_hall_Frame_07.png"
+    },
+    {
+      "scene": 1,
+      "scene_id": "hall",
+      "title": "走廊上有人擋路",
+      "frame": 8,
+      "kind": "main",
+      "setting": "校園走廊；左側採光窗、右側教室門、遠端轉角；喬治從左向右行走，小晴與阿明在右中景聊天。",
+      "action": "眼睛先看兩人",
+      "filename": "S01_hall_Frame_08.png"
+    },
+    {
+      "scene": 1,
+      "scene_id": "hall",
+      "title": "走廊上有人擋路",
+      "frame": 9,
+      "kind": "main",
+      "setting": "校園走廊；左側採光窗、右側教室門、遠端轉角；喬治從左向右行走，小晴與阿明在右中景聊天。",
+      "action": "頭轉向旁邊通道",
+      "filename": "S01_hall_Frame_09.png"
+    },
+    {
+      "scene": 1,
+      "scene_id": "hall",
+      "title": "走廊上有人擋路",
+      "frame": 10,
+      "kind": "main",
+      "setting": "校園走廊；左側採光窗、右側教室門、遠端轉角；喬治從左向右行走，小晴與阿明在右中景聊天。",
+      "action": "視線回到阿明",
+      "filename": "S01_hall_Frame_10.png"
+    },
+    {
+      "scene": 1,
+      "scene_id": "hall",
+      "title": "走廊上有人擋路",
+      "frame": 11,
+      "kind": "main",
+      "setting": "校園走廊；左側採光窗、右側教室門、遠端轉角；喬治從左向右行走，小晴與阿明在右中景聊天。",
+      "action": "手掌略抬，準備示意",
+      "filename": "S01_hall_Frame_11.png"
+    },
+    {
+      "scene": 1,
+      "scene_id": "hall",
+      "title": "走廊上有人擋路",
+      "frame": 12,
+      "kind": "main",
+      "setting": "校園走廊；左側採光窗、右側教室門、遠端轉角；喬治從左向右行走，小晴與阿明在右中景聊天。",
+      "action": "嘴微張，禮貌請借過",
+      "filename": "S01_hall_Frame_12.png"
+    },
+    {
+      "scene": 1,
+      "scene_id": "hall",
+      "title": "走廊上有人擋路",
+      "frame": 13,
+      "kind": "main",
+      "setting": "校園走廊；左側採光窗、右側教室門、遠端轉角；喬治從左向右行走，小晴與阿明在右中景聊天。",
+      "action": "兩位同學轉頭聆聽",
+      "filename": "S01_hall_Frame_13.png"
+    },
+    {
+      "scene": 1,
+      "scene_id": "hall",
+      "title": "走廊上有人擋路",
+      "frame": 14,
+      "kind": "main",
+      "setting": "校園走廊；左側採光窗、右側教室門、遠端轉角；喬治從左向右行走，小晴與阿明在右中景聊天。",
+      "action": "阿明側移半步留出通道",
+      "filename": "S01_hall_Frame_14.png"
+    },
+    {
+      "scene": 1,
+      "scene_id": "hall",
+      "title": "走廊上有人擋路",
+      "frame": 15,
+      "kind": "main",
+      "setting": "校園走廊；左側採光窗、右側教室門、遠端轉角；喬治從左向右行走，小晴與阿明在右中景聊天。",
+      "action": "喬治轉肩，踏向旁邊空間",
+      "filename": "S01_hall_Frame_15.png"
+    },
+    {
+      "scene": 1,
+      "scene_id": "hall",
+      "title": "走廊上有人擋路",
+      "frame": 16,
+      "kind": "main",
+      "setting": "校園走廊；左側採光窗、右側教室門、遠端轉角；喬治從左向右行走，小晴與阿明在右中景聊天。",
+      "action": "第二步通過，保持距離",
+      "filename": "S01_hall_Frame_16.png"
+    },
+    {
+      "scene": 1,
+      "scene_id": "hall",
+      "title": "走廊上有人擋路",
+      "frame": 17,
+      "kind": "main",
+      "setting": "校園走廊；左側採光窗、右側教室門、遠端轉角；喬治從左向右行走，小晴與阿明在右中景聊天。",
+      "action": "喬治回頭輕點頭，同學平靜回應",
+      "filename": "S01_hall_Frame_17.png"
+    },
+    {
+      "scene": 1,
+      "scene_id": "hall",
+      "title": "走廊上有人擋路",
+      "frame": 18,
+      "kind": "option-A",
+      "setting": "校園走廊；左側採光窗、右側教室門、遠端轉角；喬治從左向右行走，小晴與阿明在右中景聊天。",
+      "action": "從中間衝過去：身體前傾加快一步",
+      "filename": "S01_hall_Frame_18.png"
+    },
+    {
+      "scene": 1,
+      "scene_id": "hall",
+      "title": "走廊上有人擋路",
+      "frame": 19,
+      "kind": "option-A",
+      "setting": "校園走廊；左側採光窗、右側教室門、遠端轉角；喬治從左向右行走，小晴與阿明在右中景聊天。",
+      "action": "從中間衝過去：肩膀接近阿明，阿明來不及避開",
+      "filename": "S01_hall_Frame_19.png"
+    },
+    {
+      "scene": 1,
+      "scene_id": "hall",
+      "title": "走廊上有人擋路",
+      "frame": 20,
+      "kind": "option-A",
+      "setting": "校園走廊；左側採光窗、右側教室門、遠端轉角；喬治從左向右行走，小晴與阿明在右中景聊天。",
+      "action": "從中間衝過去：輕微碰撞後兩人站穩，阿明扶肩",
+      "filename": "S01_hall_Frame_20.png"
+    },
+    {
+      "scene": 1,
+      "scene_id": "hall",
+      "title": "走廊上有人擋路",
+      "frame": 21,
+      "kind": "option-A",
+      "setting": "校園走廊；左側採光窗、右側教室門、遠端轉角；喬治從左向右行走，小晴與阿明在右中景聊天。",
+      "action": "從中間衝過去：喬治停下回頭，看見阿明不舒服",
+      "filename": "S01_hall_Frame_21.png"
+    },
+    {
+      "scene": 1,
+      "scene_id": "hall",
+      "title": "走廊上有人擋路",
+      "frame": 22,
+      "kind": "option-B",
+      "setting": "校園走廊；左側採光窗、右側教室門、遠端轉角；喬治從左向右行走，小晴與阿明在右中景聊天。",
+      "action": "停下說借過再繞行：雙腳停穩，保持距離",
+      "filename": "S01_hall_Frame_22.png"
+    },
+    {
+      "scene": 1,
+      "scene_id": "hall",
+      "title": "走廊上有人擋路",
+      "frame": 23,
+      "kind": "option-B",
+      "setting": "校園走廊；左側採光窗、右側教室門、遠端轉角；喬治從左向右行走，小晴與阿明在右中景聊天。",
+      "action": "停下說借過再繞行：轉頭觀察通道，手掌微抬示意",
+      "filename": "S01_hall_Frame_23.png"
+    },
+    {
+      "scene": 1,
+      "scene_id": "hall",
+      "title": "走廊上有人擋路",
+      "frame": 24,
+      "kind": "option-B",
+      "setting": "校園走廊；左側採光窗、右側教室門、遠端轉角；喬治從左向右行走，小晴與阿明在右中景聊天。",
+      "action": "停下說借過再繞行：同學讓開，喬治側身慢走",
+      "filename": "S01_hall_Frame_24.png"
+    },
+    {
+      "scene": 1,
+      "scene_id": "hall",
+      "title": "走廊上有人擋路",
+      "frame": 25,
+      "kind": "option-B",
+      "setting": "校園走廊；左側採光窗、右側教室門、遠端轉角；喬治從左向右行走，小晴與阿明在右中景聊天。",
+      "action": "停下說借過再繞行：安全通過，互相點頭",
+      "filename": "S01_hall_Frame_25.png"
+    },
+    {
+      "scene": 1,
+      "scene_id": "hall",
+      "title": "走廊上有人擋路",
+      "frame": 26,
+      "kind": "option-C",
+      "setting": "校園走廊；左側採光窗、右側教室門、遠端轉角；喬治從左向右行走，小晴與阿明在右中景聊天。",
+      "action": "大聲叫同學讓開：喬治眉頭收緊，肩膀抬起",
+      "filename": "S01_hall_Frame_26.png"
+    },
+    {
+      "scene": 1,
+      "scene_id": "hall",
+      "title": "走廊上有人擋路",
+      "frame": 27,
+      "kind": "option-C",
+      "setting": "校園走廊；左側採光窗、右側教室門、遠端轉角；喬治從左向右行走，小晴與阿明在右中景聊天。",
+      "action": "大聲叫同學讓開：嘴張大、雙手僵硬，同學轉頭驚訝",
+      "filename": "S01_hall_Frame_27.png"
+    },
+    {
+      "scene": 1,
+      "scene_id": "hall",
+      "title": "走廊上有人擋路",
+      "frame": 28,
+      "kind": "option-C",
+      "setting": "校園走廊；左側採光窗、右側教室門、遠端轉角；喬治從左向右行走，小晴與阿明在右中景聊天。",
+      "action": "大聲叫同學讓開：小晴後退半步，阿明表情不舒服",
+      "filename": "S01_hall_Frame_28.png"
+    },
+    {
+      "scene": 1,
+      "scene_id": "hall",
+      "title": "走廊上有人擋路",
+      "frame": 29,
+      "kind": "option-C",
+      "setting": "校園走廊；左側採光窗、右側教室門、遠端轉角；喬治從左向右行走，小晴與阿明在右中景聊天。",
+      "action": "大聲叫同學讓開：喬治看見反應，降低手臂停下",
+      "filename": "S01_hall_Frame_29.png"
+    },
+    {
+      "scene": 1,
+      "scene_id": "hall",
+      "title": "走廊上有人擋路",
+      "frame": 30,
+      "kind": "ending",
+      "setting": "校園走廊；左側採光窗、右側教室門、遠端轉角；喬治從左向右行走，小晴與阿明在右中景聊天。",
+      "action": "喬治面向阿明輕微低頭致歉並關心，阿明站穩回應；旁側通道清楚。",
+      "filename": "S01_hall_Frame_30.png"
+    },
+    {
+      "scene": 1,
+      "scene_id": "hall",
+      "title": "走廊上有人擋路",
+      "frame": 31,
+      "kind": "summary",
+      "setting": "校園走廊；左側採光窗、右側教室門、遠端轉角；喬治從左向右行走，小晴與阿明在右中景聊天。",
+      "action": "同一場景的平靜收尾構圖，角色自然站在畫面左半部；右半部保留乾淨牆面或背景供後製整理「停、觀察、禮貌示意、保持距離」，不畫文字、圖示或框線。",
+      "filename": "S01_hall_Frame_31.png"
+    },
+    {
+      "scene": 2,
+      "scene_id": "call",
+      "title": "老師叫我的時候",
+      "frame": 1,
+      "kind": "background",
+      "setting": "同一間高年級教室；窗在左、黑板在後，老師在左前方，喬治中景座位，小如右側。",
+      "action": "無人物主背景；同一間高年級教室；窗在左、黑板在後，老師在左前方，喬治中景座位，小如右側。",
+      "filename": "S02_call_Frame_01.png"
+    },
+    {
+      "scene": 2,
+      "scene_id": "call",
+      "title": "老師叫我的時候",
+      "frame": 2,
+      "kind": "main",
+      "setting": "同一間高年級教室；窗在左、黑板在後，老師在左前方，喬治中景座位，小如右側。",
+      "action": "喬治低頭看鉛筆",
+      "filename": "S02_call_Frame_02.png"
+    },
+    {
+      "scene": 2,
+      "scene_id": "call",
+      "title": "老師叫我的時候",
+      "frame": 3,
+      "kind": "main",
+      "setting": "同一間高年級教室；窗在左、黑板在後，老師在左前方，喬治中景座位，小如右側。",
+      "action": "拇指推動鉛筆輕轉",
+      "filename": "S02_call_Frame_03.png"
+    },
+    {
+      "scene": 2,
+      "scene_id": "call",
+      "title": "老師叫我的時候",
+      "frame": 4,
+      "kind": "main",
+      "setting": "同一間高年級教室；窗在左、黑板在後，老師在左前方，喬治中景座位，小如右側。",
+      "action": "老師轉向喬治",
+      "filename": "S02_call_Frame_04.png"
+    },
+    {
+      "scene": 2,
+      "scene_id": "call",
+      "title": "老師叫我的時候",
+      "frame": 5,
+      "kind": "main",
+      "setting": "同一間高年級教室；窗在左、黑板在後，老師在左前方，喬治中景座位，小如右側。",
+      "action": "老師手掌微抬，嘴微張呼喚",
+      "filename": "S02_call_Frame_05.png"
+    },
+    {
+      "scene": 2,
+      "scene_id": "call",
+      "title": "老師叫我的時候",
+      "frame": 6,
+      "kind": "main",
+      "setting": "同一間高年級教室；窗在左、黑板在後，老師在左前方，喬治中景座位，小如右側。",
+      "action": "喬治手指短暫停頓",
+      "filename": "S02_call_Frame_06.png"
+    },
+    {
+      "scene": 2,
+      "scene_id": "call",
+      "title": "老師叫我的時候",
+      "frame": 7,
+      "kind": "main",
+      "setting": "同一間高年級教室；窗在左、黑板在後，老師在左前方，喬治中景座位，小如右側。",
+      "action": "眼睛從鉛筆移向老師",
+      "filename": "S02_call_Frame_07.png"
+    },
+    {
+      "scene": 2,
+      "scene_id": "call",
+      "title": "老師叫我的時候",
+      "frame": 8,
+      "kind": "main",
+      "setting": "同一間高年級教室；窗在左、黑板在後，老師在左前方，喬治中景座位，小如右側。",
+      "action": "頭抬起一半",
+      "filename": "S02_call_Frame_08.png"
+    },
+    {
+      "scene": 2,
+      "scene_id": "call",
+      "title": "老師叫我的時候",
+      "frame": 9,
+      "kind": "main",
+      "setting": "同一間高年級教室；窗在左、黑板在後，老師在左前方，喬治中景座位，小如右側。",
+      "action": "身體轉正面向老師",
+      "filename": "S02_call_Frame_09.png"
+    },
+    {
+      "scene": 2,
+      "scene_id": "call",
+      "title": "老師叫我的時候",
+      "frame": 10,
+      "kind": "main",
+      "setting": "同一間高年級教室；窗在左、黑板在後，老師在左前方，喬治中景座位，小如右側。",
+      "action": "與老師眼神接觸",
+      "filename": "S02_call_Frame_10.png"
+    },
+    {
+      "scene": 2,
+      "scene_id": "call",
+      "title": "老師叫我的時候",
+      "frame": 11,
+      "kind": "main",
+      "setting": "同一間高年級教室；窗在左、黑板在後，老師在左前方，喬治中景座位，小如右側。",
+      "action": "輕點頭，嘴微張回應",
+      "filename": "S02_call_Frame_11.png"
+    },
+    {
+      "scene": 2,
+      "scene_id": "call",
+      "title": "老師叫我的時候",
+      "frame": 12,
+      "kind": "main",
+      "setting": "同一間高年級教室；窗在左、黑板在後，老師在左前方，喬治中景座位，小如右側。",
+      "action": "手腕轉向桌面",
+      "filename": "S02_call_Frame_12.png"
+    },
+    {
+      "scene": 2,
+      "scene_id": "call",
+      "title": "老師叫我的時候",
+      "frame": 13,
+      "kind": "main",
+      "setting": "同一間高年級教室；窗在左、黑板在後，老師在左前方，喬治中景座位，小如右側。",
+      "action": "鉛筆緩慢放低",
+      "filename": "S02_call_Frame_13.png"
+    },
+    {
+      "scene": 2,
+      "scene_id": "call",
+      "title": "老師叫我的時候",
+      "frame": 14,
+      "kind": "main",
+      "setting": "同一間高年級教室；窗在左、黑板在後，老師在左前方，喬治中景座位，小如右側。",
+      "action": "筆身碰到桌面",
+      "filename": "S02_call_Frame_14.png"
+    },
+    {
+      "scene": 2,
+      "scene_id": "call",
+      "title": "老師叫我的時候",
+      "frame": 15,
+      "kind": "main",
+      "setting": "同一間高年級教室；窗在左、黑板在後，老師在左前方，喬治中景座位，小如右側。",
+      "action": "手指鬆開筆",
+      "filename": "S02_call_Frame_15.png"
+    },
+    {
+      "scene": 2,
+      "scene_id": "call",
+      "title": "老師叫我的時候",
+      "frame": 16,
+      "kind": "main",
+      "setting": "同一間高年級教室；窗在左、黑板在後，老師在左前方，喬治中景座位，小如右側。",
+      "action": "手收回，背部坐正",
+      "filename": "S02_call_Frame_16.png"
+    },
+    {
+      "scene": 2,
+      "scene_id": "call",
+      "title": "老師叫我的時候",
+      "frame": 17,
+      "kind": "main",
+      "setting": "同一間高年級教室；窗在左、黑板在後，老師在左前方，喬治中景座位，小如右側。",
+      "action": "視線跟隨老師，恢復聆聽",
+      "filename": "S02_call_Frame_17.png"
+    },
+    {
+      "scene": 2,
+      "scene_id": "call",
+      "title": "老師叫我的時候",
+      "frame": 18,
+      "kind": "option-A",
+      "setting": "同一間高年級教室；窗在左、黑板在後，老師在左前方，喬治中景座位，小如右側。",
+      "action": "假裝沒聽到繼續玩：老師注視，喬治仍看鉛筆",
+      "filename": "S02_call_Frame_18.png"
+    },
+    {
+      "scene": 2,
+      "scene_id": "call",
+      "title": "老師叫我的時候",
+      "frame": 19,
+      "kind": "option-A",
+      "setting": "同一間高年級教室；窗在左、黑板在後，老師在左前方，喬治中景座位，小如右側。",
+      "action": "假裝沒聽到繼續玩：喬治手指繼續轉筆",
+      "filename": "S02_call_Frame_19.png"
+    },
+    {
+      "scene": 2,
+      "scene_id": "call",
+      "title": "老師叫我的時候",
+      "frame": 20,
+      "kind": "option-A",
+      "setting": "同一間高年級教室；窗在左、黑板在後，老師在左前方，喬治中景座位，小如右側。",
+      "action": "假裝沒聽到繼續玩：小如轉頭，老師走近半步",
+      "filename": "S02_call_Frame_20.png"
+    },
+    {
+      "scene": 2,
+      "scene_id": "call",
+      "title": "老師叫我的時候",
+      "frame": 21,
+      "kind": "option-A",
+      "setting": "同一間高年級教室；窗在左、黑板在後，老師在左前方，喬治中景座位，小如右側。",
+      "action": "假裝沒聽到繼續玩：喬治終於停手，看見大家正在等待",
+      "filename": "S02_call_Frame_21.png"
+    },
+    {
+      "scene": 2,
+      "scene_id": "call",
+      "title": "老師叫我的時候",
+      "frame": 22,
+      "kind": "option-B",
+      "setting": "同一間高年級教室；窗在左、黑板在後，老師在左前方，喬治中景座位，小如右側。",
+      "action": "看老師、回應並放下：抬頭看向老師",
+      "filename": "S02_call_Frame_22.png"
+    },
+    {
+      "scene": 2,
+      "scene_id": "call",
+      "title": "老師叫我的時候",
+      "frame": 23,
+      "kind": "option-B",
+      "setting": "同一間高年級教室；窗在左、黑板在後，老師在左前方，喬治中景座位，小如右側。",
+      "action": "看老師、回應並放下：點頭回應，鉛筆開始放低",
+      "filename": "S02_call_Frame_23.png"
+    },
+    {
+      "scene": 2,
+      "scene_id": "call",
+      "title": "老師叫我的時候",
+      "frame": 24,
+      "kind": "option-B",
+      "setting": "同一間高年級教室；窗在左、黑板在後，老師在左前方，喬治中景座位，小如右側。",
+      "action": "看老師、回應並放下：鉛筆平放桌上，手指鬆開",
+      "filename": "S02_call_Frame_24.png"
+    },
+    {
+      "scene": 2,
+      "scene_id": "call",
+      "title": "老師叫我的時候",
+      "frame": 25,
+      "kind": "option-B",
+      "setting": "同一間高年級教室；窗在左、黑板在後，老師在左前方，喬治中景座位，小如右側。",
+      "action": "看老師、回應並放下：端坐聆聽，老師點頭",
+      "filename": "S02_call_Frame_25.png"
+    },
+    {
+      "scene": 2,
+      "scene_id": "call",
+      "title": "老師叫我的時候",
+      "frame": 26,
+      "kind": "option-C",
+      "setting": "同一間高年級教室；窗在左、黑板在後，老師在左前方，喬治中景座位，小如右側。",
+      "action": "反駁自己沒有吵別人：喬治抬頭皺眉",
+      "filename": "S02_call_Frame_26.png"
+    },
+    {
+      "scene": 2,
+      "scene_id": "call",
+      "title": "老師叫我的時候",
+      "frame": 27,
+      "kind": "option-C",
+      "setting": "同一間高年級教室；窗在左、黑板在後，老師在左前方，喬治中景座位，小如右側。",
+      "action": "反駁自己沒有吵別人：嘴微張反駁，手仍握筆",
+      "filename": "S02_call_Frame_27.png"
+    },
+    {
+      "scene": 2,
+      "scene_id": "call",
+      "title": "老師叫我的時候",
+      "frame": 28,
+      "kind": "option-C",
+      "setting": "同一間高年級教室；窗在左、黑板在後，老師在左前方，喬治中景座位，小如右側。",
+      "action": "反駁自己沒有吵別人：老師保持平靜手掌向下，小如停筆",
+      "filename": "S02_call_Frame_28.png"
+    },
+    {
+      "scene": 2,
+      "scene_id": "call",
+      "title": "老師叫我的時候",
+      "frame": 29,
+      "kind": "option-C",
+      "setting": "同一間高年級教室；窗在左、黑板在後，老師在左前方，喬治中景座位，小如右側。",
+      "action": "反駁自己沒有吵別人：喬治注意到課程中斷，表情轉為思考",
+      "filename": "S02_call_Frame_29.png"
+    },
+    {
+      "scene": 2,
+      "scene_id": "call",
+      "title": "老師叫我的時候",
+      "frame": 30,
+      "kind": "ending",
+      "setting": "同一間高年級教室；窗在左、黑板在後，老師在左前方，喬治中景座位，小如右側。",
+      "action": "喬治鉛筆放妥、坐正看老師，老師以溫和表情繼續教學。",
+      "filename": "S02_call_Frame_30.png"
+    },
+    {
+      "scene": 2,
+      "scene_id": "call",
+      "title": "老師叫我的時候",
+      "frame": 31,
+      "kind": "summary",
+      "setting": "同一間高年級教室；窗在左、黑板在後，老師在左前方，喬治中景座位，小如右側。",
+      "action": "同一場景的平靜收尾構圖，角色自然站在畫面左半部；右半部保留乾淨牆面或背景供後製整理「聽到名字、看老師、回應、執行」，不畫文字、圖示或框線。",
+      "filename": "S02_call_Frame_31.png"
+    },
+    {
+      "scene": 3,
+      "scene_id": "oops",
+      "title": "弄掉別人的東西",
+      "frame": 1,
+      "kind": "background",
+      "setting": "同一教室美勞桌；喬治在左、大偉在右，蠟筆盒放在兩人之間桌邊。",
+      "action": "無人物主背景；同一教室美勞桌；喬治在左、大偉在右，蠟筆盒放在兩人之間桌邊。",
+      "filename": "S03_oops_Frame_01.png"
+    },
+    {
+      "scene": 3,
+      "scene_id": "oops",
+      "title": "弄掉別人的東西",
+      "frame": 2,
+      "kind": "main",
+      "setting": "同一教室美勞桌；喬治在左、大偉在右，蠟筆盒放在兩人之間桌邊。",
+      "action": "喬治看向桌上用品",
+      "filename": "S03_oops_Frame_02.png"
+    },
+    {
+      "scene": 3,
+      "scene_id": "oops",
+      "title": "弄掉別人的東西",
+      "frame": 3,
+      "kind": "main",
+      "setting": "同一教室美勞桌；喬治在左、大偉在右，蠟筆盒放在兩人之間桌邊。",
+      "action": "右手離開桌面",
+      "filename": "S03_oops_Frame_03.png"
+    },
+    {
+      "scene": 3,
+      "scene_id": "oops",
+      "title": "弄掉別人的東西",
+      "frame": 4,
+      "kind": "main",
+      "setting": "同一教室美勞桌；喬治在左、大偉在右，蠟筆盒放在兩人之間桌邊。",
+      "action": "手臂伸向遠處用品",
+      "filename": "S03_oops_Frame_04.png"
+    },
+    {
+      "scene": 3,
+      "scene_id": "oops",
+      "title": "弄掉別人的東西",
+      "frame": 5,
+      "kind": "main",
+      "setting": "同一教室美勞桌；喬治在左、大偉在右，蠟筆盒放在兩人之間桌邊。",
+      "action": "手肘靠近蠟筆盒",
+      "filename": "S03_oops_Frame_05.png"
+    },
+    {
+      "scene": 3,
+      "scene_id": "oops",
+      "title": "弄掉別人的東西",
+      "frame": 6,
+      "kind": "main",
+      "setting": "同一教室美勞桌；喬治在左、大偉在右，蠟筆盒放在兩人之間桌邊。",
+      "action": "盒子被碰到向桌邊滑動",
+      "filename": "S03_oops_Frame_06.png"
+    },
+    {
+      "scene": 3,
+      "scene_id": "oops",
+      "title": "弄掉別人的東西",
+      "frame": 7,
+      "kind": "main",
+      "setting": "同一教室美勞桌；喬治在左、大偉在右，蠟筆盒放在兩人之間桌邊。",
+      "action": "盒子越過桌邊開始傾斜",
+      "filename": "S03_oops_Frame_07.png"
+    },
+    {
+      "scene": 3,
+      "scene_id": "oops",
+      "title": "弄掉別人的東西",
+      "frame": 8,
+      "kind": "main",
+      "setting": "同一教室美勞桌；喬治在左、大偉在右，蠟筆盒放在兩人之間桌邊。",
+      "action": "蠟筆盒落下，少量蠟筆散落",
+      "filename": "S03_oops_Frame_08.png"
+    },
+    {
+      "scene": 3,
+      "scene_id": "oops",
+      "title": "弄掉別人的東西",
+      "frame": 9,
+      "kind": "main",
+      "setting": "同一教室美勞桌；喬治在左、大偉在右，蠟筆盒放在兩人之間桌邊。",
+      "action": "喬治的手停在半空",
+      "filename": "S03_oops_Frame_09.png"
+    },
+    {
+      "scene": 3,
+      "scene_id": "oops",
+      "title": "弄掉別人的東西",
+      "frame": 10,
+      "kind": "main",
+      "setting": "同一教室美勞桌；喬治在左、大偉在右，蠟筆盒放在兩人之間桌邊。",
+      "action": "喬治低頭看地面",
+      "filename": "S03_oops_Frame_10.png"
+    },
+    {
+      "scene": 3,
+      "scene_id": "oops",
+      "title": "弄掉別人的東西",
+      "frame": 11,
+      "kind": "main",
+      "setting": "同一教室美勞桌；喬治在左、大偉在右，蠟筆盒放在兩人之間桌邊。",
+      "action": "轉頭看大偉的表情",
+      "filename": "S03_oops_Frame_11.png"
+    },
+    {
+      "scene": 3,
+      "scene_id": "oops",
+      "title": "弄掉別人的東西",
+      "frame": 12,
+      "kind": "main",
+      "setting": "同一教室美勞桌；喬治在左、大偉在右，蠟筆盒放在兩人之間桌邊。",
+      "action": "手收回，坦承並道歉",
+      "filename": "S03_oops_Frame_12.png"
+    },
+    {
+      "scene": 3,
+      "scene_id": "oops",
+      "title": "弄掉別人的東西",
+      "frame": 13,
+      "kind": "main",
+      "setting": "同一教室美勞桌；喬治在左、大偉在右，蠟筆盒放在兩人之間桌邊。",
+      "action": "雙膝彎曲開始蹲下",
+      "filename": "S03_oops_Frame_13.png"
+    },
+    {
+      "scene": 3,
+      "scene_id": "oops",
+      "title": "弄掉別人的東西",
+      "frame": 14,
+      "kind": "main",
+      "setting": "同一教室美勞桌；喬治在左、大偉在右，蠟筆盒放在兩人之間桌邊。",
+      "action": "一手扶盒，一手拾起蠟筆",
+      "filename": "S03_oops_Frame_14.png"
+    },
+    {
+      "scene": 3,
+      "scene_id": "oops",
+      "title": "弄掉別人的東西",
+      "frame": 15,
+      "kind": "main",
+      "setting": "同一教室美勞桌；喬治在左、大偉在右，蠟筆盒放在兩人之間桌邊。",
+      "action": "最後一支放回盒內",
+      "filename": "S03_oops_Frame_15.png"
+    },
+    {
+      "scene": 3,
+      "scene_id": "oops",
+      "title": "弄掉別人的東西",
+      "frame": 16,
+      "kind": "main",
+      "setting": "同一教室美勞桌；喬治在左、大偉在右，蠟筆盒放在兩人之間桌邊。",
+      "action": "雙手捧盒站起，放回桌面內側",
+      "filename": "S03_oops_Frame_16.png"
+    },
+    {
+      "scene": 3,
+      "scene_id": "oops",
+      "title": "弄掉別人的東西",
+      "frame": 17,
+      "kind": "main",
+      "setting": "同一教室美勞桌；喬治在左、大偉在右，蠟筆盒放在兩人之間桌邊。",
+      "action": "喬治與大偉看見收整完成，表情放鬆",
+      "filename": "S03_oops_Frame_17.png"
+    },
+    {
+      "scene": 3,
+      "scene_id": "oops",
+      "title": "弄掉別人的東西",
+      "frame": 18,
+      "kind": "option-A",
+      "setting": "同一教室美勞桌；喬治在左、大偉在右，蠟筆盒放在兩人之間桌邊。",
+      "action": "假裝不是自己：喬治看見散落蠟筆",
+      "filename": "S03_oops_Frame_18.png"
+    },
+    {
+      "scene": 3,
+      "scene_id": "oops",
+      "title": "弄掉別人的東西",
+      "frame": 19,
+      "kind": "option-A",
+      "setting": "同一教室美勞桌；喬治在左、大偉在右，蠟筆盒放在兩人之間桌邊。",
+      "action": "假裝不是自己：手收回，轉開目光否認",
+      "filename": "S03_oops_Frame_19.png"
+    },
+    {
+      "scene": 3,
+      "scene_id": "oops",
+      "title": "弄掉別人的東西",
+      "frame": 20,
+      "kind": "option-A",
+      "setting": "同一教室美勞桌；喬治在左、大偉在右，蠟筆盒放在兩人之間桌邊。",
+      "action": "假裝不是自己：大偉望向喬治又看地面，失望",
+      "filename": "S03_oops_Frame_20.png"
+    },
+    {
+      "scene": 3,
+      "scene_id": "oops",
+      "title": "弄掉別人的東西",
+      "frame": 21,
+      "kind": "option-A",
+      "setting": "同一教室美勞桌；喬治在左、大偉在右，蠟筆盒放在兩人之間桌邊。",
+      "action": "假裝不是自己：喬治發現大偉的不信任，低頭停頓",
+      "filename": "S03_oops_Frame_21.png"
+    },
+    {
+      "scene": 3,
+      "scene_id": "oops",
+      "title": "弄掉別人的東西",
+      "frame": 22,
+      "kind": "option-B",
+      "setting": "同一教室美勞桌；喬治在左、大偉在右，蠟筆盒放在兩人之間桌邊。",
+      "action": "說實話、道歉並補救：喬治面向大偉，手掌自然攤開承認",
+      "filename": "S03_oops_Frame_22.png"
+    },
+    {
+      "scene": 3,
+      "scene_id": "oops",
+      "title": "弄掉別人的東西",
+      "frame": 23,
+      "kind": "option-B",
+      "setting": "同一教室美勞桌；喬治在左、大偉在右，蠟筆盒放在兩人之間桌邊。",
+      "action": "說實話、道歉並補救：低頭致歉後彎膝",
+      "filename": "S03_oops_Frame_23.png"
+    },
+    {
+      "scene": 3,
+      "scene_id": "oops",
+      "title": "弄掉別人的東西",
+      "frame": 24,
+      "kind": "option-B",
+      "setting": "同一教室美勞桌；喬治在左、大偉在右，蠟筆盒放在兩人之間桌邊。",
+      "action": "說實話、道歉並補救：蹲下拾起蠟筆放入盒內",
+      "filename": "S03_oops_Frame_24.png"
+    },
+    {
+      "scene": 3,
+      "scene_id": "oops",
+      "title": "弄掉別人的東西",
+      "frame": 25,
+      "kind": "option-B",
+      "setting": "同一教室美勞桌；喬治在左、大偉在右，蠟筆盒放在兩人之間桌邊。",
+      "action": "說實話、道歉並補救：起身雙手把盒子放回安全位置",
+      "filename": "S03_oops_Frame_25.png"
+    },
+    {
+      "scene": 3,
+      "scene_id": "oops",
+      "title": "弄掉別人的東西",
+      "frame": 26,
+      "kind": "option-C",
+      "setting": "同一教室美勞桌；喬治在左、大偉在右，蠟筆盒放在兩人之間桌邊。",
+      "action": "說不是故意就走開：喬治攤手，沒有蹲下",
+      "filename": "S03_oops_Frame_26.png"
+    },
+    {
+      "scene": 3,
+      "scene_id": "oops",
+      "title": "弄掉別人的東西",
+      "frame": 27,
+      "kind": "option-C",
+      "setting": "同一教室美勞桌；喬治在左、大偉在右，蠟筆盒放在兩人之間桌邊。",
+      "action": "說不是故意就走開：身體轉向離開方向",
+      "filename": "S03_oops_Frame_27.png"
+    },
+    {
+      "scene": 3,
+      "scene_id": "oops",
+      "title": "弄掉別人的東西",
+      "frame": 28,
+      "kind": "option-C",
+      "setting": "同一教室美勞桌；喬治在左、大偉在右，蠟筆盒放在兩人之間桌邊。",
+      "action": "說不是故意就走開：踏出半步，大偉仍在獨自蹲下撿拾",
+      "filename": "S03_oops_Frame_28.png"
+    },
+    {
+      "scene": 3,
+      "scene_id": "oops",
+      "title": "弄掉別人的東西",
+      "frame": 29,
+      "kind": "option-C",
+      "setting": "同一教室美勞桌；喬治在左、大偉在右，蠟筆盒放在兩人之間桌邊。",
+      "action": "說不是故意就走開：喬治回頭，看到大偉需要幫忙",
+      "filename": "S03_oops_Frame_29.png"
+    },
+    {
+      "scene": 3,
+      "scene_id": "oops",
+      "title": "弄掉別人的東西",
+      "frame": 30,
+      "kind": "ending",
+      "setting": "同一教室美勞桌；喬治在左、大偉在右，蠟筆盒放在兩人之間桌邊。",
+      "action": "完整蠟筆盒已放妥，喬治詢問是否還需要協助，大偉平靜點頭。",
+      "filename": "S03_oops_Frame_30.png"
+    },
+    {
+      "scene": 3,
+      "scene_id": "oops",
+      "title": "弄掉別人的東西",
+      "frame": 31,
+      "kind": "summary",
+      "setting": "同一教室美勞桌；喬治在左、大偉在右，蠟筆盒放在兩人之間桌邊。",
+      "action": "同一場景的平靜收尾構圖，角色自然站在畫面左半部；右半部保留乾淨牆面或背景供後製整理「承認、道歉、補救」，不畫文字、圖示或框線。",
+      "filename": "S03_oops_Frame_31.png"
+    },
+    {
+      "scene": 4,
+      "scene_id": "join",
+      "title": "我也想一起玩",
+      "frame": 1,
+      "kind": "background",
+      "setting": "校園操場邊；左側步道、中景空曠球場、右側小晴與阿明傳球。",
+      "action": "無人物主背景；校園操場邊；左側步道、中景空曠球場、右側小晴與阿明傳球。",
+      "filename": "S04_join_Frame_01.png"
+    },
+    {
+      "scene": 4,
+      "scene_id": "join",
+      "title": "我也想一起玩",
+      "frame": 2,
+      "kind": "main",
+      "setting": "校園操場邊；左側步道、中景空曠球場、右側小晴與阿明傳球。",
+      "action": "喬治從步道走近",
+      "filename": "S04_join_Frame_02.png"
+    },
+    {
+      "scene": 4,
+      "scene_id": "join",
+      "title": "我也想一起玩",
+      "frame": 3,
+      "kind": "main",
+      "setting": "校園操場邊；左側步道、中景空曠球場、右側小晴與阿明傳球。",
+      "action": "下一步腳跟落地",
+      "filename": "S04_join_Frame_03.png"
+    },
+    {
+      "scene": 4,
+      "scene_id": "join",
+      "title": "我也想一起玩",
+      "frame": 4,
+      "kind": "main",
+      "setting": "校園操場邊；左側步道、中景空曠球場、右側小晴與阿明傳球。",
+      "action": "視線移向小晴手中球",
+      "filename": "S04_join_Frame_04.png"
+    },
+    {
+      "scene": 4,
+      "scene_id": "join",
+      "title": "我也想一起玩",
+      "frame": 5,
+      "kind": "main",
+      "setting": "校園操場邊；左側步道、中景空曠球場、右側小晴與阿明傳球。",
+      "action": "停在球場邊保持距離",
+      "filename": "S04_join_Frame_05.png"
+    },
+    {
+      "scene": 4,
+      "scene_id": "join",
+      "title": "我也想一起玩",
+      "frame": 6,
+      "kind": "main",
+      "setting": "校園操場邊；左側步道、中景空曠球場、右側小晴與阿明傳球。",
+      "action": "小晴把球傳向阿明",
+      "filename": "S04_join_Frame_06.png"
+    },
+    {
+      "scene": 4,
+      "scene_id": "join",
+      "title": "我也想一起玩",
+      "frame": 7,
+      "kind": "main",
+      "setting": "校園操場邊；左側步道、中景空曠球場、右側小晴與阿明傳球。",
+      "action": "喬治頭部隨球轉動",
+      "filename": "S04_join_Frame_07.png"
+    },
+    {
+      "scene": 4,
+      "scene_id": "join",
+      "title": "我也想一起玩",
+      "frame": 8,
+      "kind": "main",
+      "setting": "校園操場邊；左側步道、中景空曠球場、右側小晴與阿明傳球。",
+      "action": "阿明接住球",
+      "filename": "S04_join_Frame_08.png"
+    },
+    {
+      "scene": 4,
+      "scene_id": "join",
+      "title": "我也想一起玩",
+      "frame": 9,
+      "kind": "main",
+      "setting": "校園操場邊；左側步道、中景空曠球場、右側小晴與阿明傳球。",
+      "action": "喬治確認球已停穩",
+      "filename": "S04_join_Frame_09.png"
+    },
+    {
+      "scene": 4,
+      "scene_id": "join",
+      "title": "我也想一起玩",
+      "frame": 10,
+      "kind": "main",
+      "setting": "校園操場邊；左側步道、中景空曠球場、右側小晴與阿明傳球。",
+      "action": "肩膀放鬆、手掌略抬",
+      "filename": "S04_join_Frame_10.png"
+    },
+    {
+      "scene": 4,
+      "scene_id": "join",
+      "title": "我也想一起玩",
+      "frame": 11,
+      "kind": "main",
+      "setting": "校園操場邊；左側步道、中景空曠球場、右側小晴與阿明傳球。",
+      "action": "嘴微張，詢問能否加入",
+      "filename": "S04_join_Frame_11.png"
+    },
+    {
+      "scene": 4,
+      "scene_id": "join",
+      "title": "我也想一起玩",
+      "frame": 12,
+      "kind": "main",
+      "setting": "校園操場邊；左側步道、中景空曠球場、右側小晴與阿明傳球。",
+      "action": "小晴轉頭看他",
+      "filename": "S04_join_Frame_12.png"
+    },
+    {
+      "scene": 4,
+      "scene_id": "join",
+      "title": "我也想一起玩",
+      "frame": 13,
+      "kind": "main",
+      "setting": "校園操場邊；左側步道、中景空曠球場、右側小晴與阿明傳球。",
+      "action": "阿明點頭並移出空位",
+      "filename": "S04_join_Frame_13.png"
+    },
+    {
+      "scene": 4,
+      "scene_id": "join",
+      "title": "我也想一起玩",
+      "frame": 14,
+      "kind": "main",
+      "setting": "校園操場邊；左側步道、中景空曠球場、右側小晴與阿明傳球。",
+      "action": "喬治向空位踏一步",
+      "filename": "S04_join_Frame_14.png"
+    },
+    {
+      "scene": 4,
+      "scene_id": "join",
+      "title": "我也想一起玩",
+      "frame": 15,
+      "kind": "main",
+      "setting": "校園操場邊；左側步道、中景空曠球場、右側小晴與阿明傳球。",
+      "action": "第二步站定位，雙手準備接球",
+      "filename": "S04_join_Frame_15.png"
+    },
+    {
+      "scene": 4,
+      "scene_id": "join",
+      "title": "我也想一起玩",
+      "frame": 16,
+      "kind": "main",
+      "setting": "校園操場邊；左側步道、中景空曠球場、右側小晴與阿明傳球。",
+      "action": "阿明把球輕傳向他",
+      "filename": "S04_join_Frame_16.png"
+    },
+    {
+      "scene": 4,
+      "scene_id": "join",
+      "title": "我也想一起玩",
+      "frame": 17,
+      "kind": "main",
+      "setting": "校園操場邊；左側步道、中景空曠球場、右側小晴與阿明傳球。",
+      "action": "喬治接穩球，三人自然微笑",
+      "filename": "S04_join_Frame_17.png"
+    },
+    {
+      "scene": 4,
+      "scene_id": "join",
+      "title": "我也想一起玩",
+      "frame": 18,
+      "kind": "option-A",
+      "setting": "校園操場邊；左側步道、中景空曠球場、右側小晴與阿明傳球。",
+      "action": "直接搶球：喬治快步靠近阿明",
+      "filename": "S04_join_Frame_18.png"
+    },
+    {
+      "scene": 4,
+      "scene_id": "join",
+      "title": "我也想一起玩",
+      "frame": 19,
+      "kind": "option-A",
+      "setting": "校園操場邊；左側步道、中景空曠球場、右側小晴與阿明傳球。",
+      "action": "直接搶球：手伸向阿明手中的球",
+      "filename": "S04_join_Frame_19.png"
+    },
+    {
+      "scene": 4,
+      "scene_id": "join",
+      "title": "我也想一起玩",
+      "frame": 20,
+      "kind": "option-A",
+      "setting": "校園操場邊；左側步道、中景空曠球場、右側小晴與阿明傳球。",
+      "action": "直接搶球：阿明抱緊球退半步，小晴停止動作",
+      "filename": "S04_join_Frame_20.png"
+    },
+    {
+      "scene": 4,
+      "scene_id": "join",
+      "title": "我也想一起玩",
+      "frame": 21,
+      "kind": "option-A",
+      "setting": "校園操場邊；左側步道、中景空曠球場、右側小晴與阿明傳球。",
+      "action": "直接搶球：喬治停下，看見同學不舒服",
+      "filename": "S04_join_Frame_21.png"
+    },
+    {
+      "scene": 4,
+      "scene_id": "join",
+      "title": "我也想一起玩",
+      "frame": 22,
+      "kind": "option-B",
+      "setting": "校園操場邊；左側步道、中景空曠球場、右側小晴與阿明傳球。",
+      "action": "等待並詢問加入：喬治站在邊線等球停下",
+      "filename": "S04_join_Frame_22.png"
+    },
+    {
+      "scene": 4,
+      "scene_id": "join",
+      "title": "我也想一起玩",
+      "frame": 23,
+      "kind": "option-B",
+      "setting": "校園操場邊；左側步道、中景空曠球場、右側小晴與阿明傳球。",
+      "action": "等待並詢問加入：抬手示意，平靜詢問",
+      "filename": "S04_join_Frame_23.png"
+    },
+    {
+      "scene": 4,
+      "scene_id": "join",
+      "title": "我也想一起玩",
+      "frame": 24,
+      "kind": "option-B",
+      "setting": "校園操場邊；左側步道、中景空曠球場、右側小晴與阿明傳球。",
+      "action": "等待並詢問加入：同學點頭並指向空位",
+      "filename": "S04_join_Frame_24.png"
+    },
+    {
+      "scene": 4,
+      "scene_id": "join",
+      "title": "我也想一起玩",
+      "frame": 25,
+      "kind": "option-B",
+      "setting": "校園操場邊；左側步道、中景空曠球場、右側小晴與阿明傳球。",
+      "action": "等待並詢問加入：喬治慢步加入，準備接球",
+      "filename": "S04_join_Frame_25.png"
+    },
+    {
+      "scene": 4,
+      "scene_id": "join",
+      "title": "我也想一起玩",
+      "frame": 26,
+      "kind": "option-C",
+      "setting": "校園操場邊；左側步道、中景空曠球場、右側小晴與阿明傳球。",
+      "action": "一直等卻不表達：喬治站在球場外",
+      "filename": "S04_join_Frame_26.png"
+    },
+    {
+      "scene": 4,
+      "scene_id": "join",
+      "title": "我也想一起玩",
+      "frame": 27,
+      "kind": "option-C",
+      "setting": "校園操場邊；左側步道、中景空曠球場、右側小晴與阿明傳球。",
+      "action": "一直等卻不表達：手略抬又放下",
+      "filename": "S04_join_Frame_27.png"
+    },
+    {
+      "scene": 4,
+      "scene_id": "join",
+      "title": "我也想一起玩",
+      "frame": 28,
+      "kind": "option-C",
+      "setting": "校園操場邊；左側步道、中景空曠球場、右側小晴與阿明傳球。",
+      "action": "一直等卻不表達：同學繼續傳球沒有注意到他",
+      "filename": "S04_join_Frame_28.png"
+    },
+    {
+      "scene": 4,
+      "scene_id": "join",
+      "title": "我也想一起玩",
+      "frame": 29,
+      "kind": "option-C",
+      "setting": "校園操場邊；左側步道、中景空曠球場、右側小晴與阿明傳球。",
+      "action": "一直等卻不表達：喬治表情猶豫，深呼吸準備開口",
+      "filename": "S04_join_Frame_29.png"
+    },
+    {
+      "scene": 4,
+      "scene_id": "join",
+      "title": "我也想一起玩",
+      "frame": 30,
+      "kind": "ending",
+      "setting": "校園操場邊；左側步道、中景空曠球場、右側小晴與阿明傳球。",
+      "action": "三人保持安全間距輕鬆傳球，喬治自然融入活動。",
+      "filename": "S04_join_Frame_30.png"
+    },
+    {
+      "scene": 4,
+      "scene_id": "join",
+      "title": "我也想一起玩",
+      "frame": 31,
+      "kind": "summary",
+      "setting": "校園操場邊；左側步道、中景空曠球場、右側小晴與阿明傳球。",
+      "action": "同一場景的平靜收尾構圖，角色自然站在畫面左半部；右半部保留乾淨牆面或背景供後製整理「觀察、等待、詢問、尊重回應」，不畫文字、圖示或框線。",
+      "filename": "S04_join_Frame_31.png"
+    },
+    {
+      "scene": 5,
+      "scene_id": "laugh",
+      "title": "被笑的時候",
+      "frame": 1,
+      "kind": "background",
+      "setting": "同一教室；喬治站在座位旁拿課本，大偉右後方、小如更右側、老師在前方。",
+      "action": "無人物主背景；同一教室；喬治站在座位旁拿課本，大偉右後方、小如更右側、老師在前方。",
+      "filename": "S05_laugh_Frame_01.png"
+    },
+    {
+      "scene": 5,
+      "scene_id": "laugh",
+      "title": "被笑的時候",
+      "frame": 2,
+      "kind": "main",
+      "setting": "同一教室；喬治站在座位旁拿課本，大偉右後方、小如更右側、老師在前方。",
+      "action": "喬治雙手持課本讀課文",
+      "filename": "S05_laugh_Frame_02.png"
+    },
+    {
+      "scene": 5,
+      "scene_id": "laugh",
+      "title": "被笑的時候",
+      "frame": 3,
+      "kind": "main",
+      "setting": "同一教室；喬治站在座位旁拿課本，大偉右後方、小如更右側、老師在前方。",
+      "action": "目光停在書頁，嘴停住",
+      "filename": "S05_laugh_Frame_03.png"
+    },
+    {
+      "scene": 5,
+      "scene_id": "laugh",
+      "title": "被笑的時候",
+      "frame": 4,
+      "kind": "main",
+      "setting": "同一教室；喬治站在座位旁拿課本，大偉右後方、小如更右側、老師在前方。",
+      "action": "大偉露出短暫嘲笑表情",
+      "filename": "S05_laugh_Frame_04.png"
+    },
+    {
+      "scene": 5,
+      "scene_id": "laugh",
+      "title": "被笑的時候",
+      "frame": 5,
+      "kind": "main",
+      "setting": "同一教室；喬治站在座位旁拿課本，大偉右後方、小如更右側、老師在前方。",
+      "action": "喬治眼睛抬起注意到",
+      "filename": "S05_laugh_Frame_05.png"
+    },
+    {
+      "scene": 5,
+      "scene_id": "laugh",
+      "title": "被笑的時候",
+      "frame": 6,
+      "kind": "main",
+      "setting": "同一教室；喬治站在座位旁拿課本，大偉右後方、小如更右側、老師在前方。",
+      "action": "眉間收緊，手抓緊書緣",
+      "filename": "S05_laugh_Frame_06.png"
+    },
+    {
+      "scene": 5,
+      "scene_id": "laugh",
+      "title": "被笑的時候",
+      "frame": 7,
+      "kind": "main",
+      "setting": "同一教室；喬治站在座位旁拿課本，大偉右後方、小如更右側、老師在前方。",
+      "action": "肩膀繃起但雙腳留在原地",
+      "filename": "S05_laugh_Frame_07.png"
+    },
+    {
+      "scene": 5,
+      "scene_id": "laugh",
+      "title": "被笑的時候",
+      "frame": 8,
+      "kind": "main",
+      "setting": "同一教室；喬治站在座位旁拿課本，大偉右後方、小如更右側、老師在前方。",
+      "action": "喬治把課本放低",
+      "filename": "S05_laugh_Frame_08.png"
+    },
+    {
+      "scene": 5,
+      "scene_id": "laugh",
+      "title": "被笑的時候",
+      "frame": 9,
+      "kind": "main",
+      "setting": "同一教室；喬治站在座位旁拿課本，大偉右後方、小如更右側、老師在前方。",
+      "action": "手指逐漸放鬆",
+      "filename": "S05_laugh_Frame_09.png"
+    },
+    {
+      "scene": 5,
+      "scene_id": "laugh",
+      "title": "被笑的時候",
+      "frame": 10,
+      "kind": "main",
+      "setting": "同一教室；喬治站在座位旁拿課本，大偉右後方、小如更右側、老師在前方。",
+      "action": "胸口緩慢吸氣",
+      "filename": "S05_laugh_Frame_10.png"
+    },
+    {
+      "scene": 5,
+      "scene_id": "laugh",
+      "title": "被笑的時候",
+      "frame": 11,
+      "kind": "main",
+      "setting": "同一教室；喬治站在座位旁拿課本，大偉右後方、小如更右側、老師在前方。",
+      "action": "肩膀隨呼氣下降",
+      "filename": "S05_laugh_Frame_11.png"
+    },
+    {
+      "scene": 5,
+      "scene_id": "laugh",
+      "title": "被笑的時候",
+      "frame": 12,
+      "kind": "main",
+      "setting": "同一教室；喬治站在座位旁拿課本，大偉右後方、小如更右側、老師在前方。",
+      "action": "轉身面向大偉，保持距離",
+      "filename": "S05_laugh_Frame_12.png"
+    },
+    {
+      "scene": 5,
+      "scene_id": "laugh",
+      "title": "被笑的時候",
+      "frame": 13,
+      "kind": "main",
+      "setting": "同一教室；喬治站在座位旁拿課本，大偉右後方、小如更右側、老師在前方。",
+      "action": "以平穩眼神表達不喜歡",
+      "filename": "S05_laugh_Frame_13.png"
+    },
+    {
+      "scene": 5,
+      "scene_id": "laugh",
+      "title": "被笑的時候",
+      "frame": 14,
+      "kind": "main",
+      "setting": "同一教室；喬治站在座位旁拿課本，大偉右後方、小如更右側、老師在前方。",
+      "action": "大偉笑容收起，認真看他",
+      "filename": "S05_laugh_Frame_14.png"
+    },
+    {
+      "scene": 5,
+      "scene_id": "laugh",
+      "title": "被笑的時候",
+      "frame": 15,
+      "kind": "main",
+      "setting": "同一教室；喬治站在座位旁拿課本，大偉右後方、小如更右側、老師在前方。",
+      "action": "喬治轉頭看老師尋求支持",
+      "filename": "S05_laugh_Frame_15.png"
+    },
+    {
+      "scene": 5,
+      "scene_id": "laugh",
+      "title": "被笑的時候",
+      "frame": 16,
+      "kind": "main",
+      "setting": "同一教室；喬治站在座位旁拿課本，大偉右後方、小如更右側、老師在前方。",
+      "action": "老師靠近並傾聽",
+      "filename": "S05_laugh_Frame_16.png"
+    },
+    {
+      "scene": 5,
+      "scene_id": "laugh",
+      "title": "被笑的時候",
+      "frame": 17,
+      "kind": "main",
+      "setting": "同一教室；喬治站在座位旁拿課本，大偉右後方、小如更右側、老師在前方。",
+      "action": "喬治肩膀放鬆，重新拿穩課本",
+      "filename": "S05_laugh_Frame_17.png"
+    },
+    {
+      "scene": 5,
+      "scene_id": "laugh",
+      "title": "被笑的時候",
+      "frame": 18,
+      "kind": "option-A",
+      "setting": "同一教室；喬治站在座位旁拿課本，大偉右後方、小如更右側、老師在前方。",
+      "action": "衝過去想打人：喬治身體前傾，手臂繃緊",
+      "filename": "S05_laugh_Frame_18.png"
+    },
+    {
+      "scene": 5,
+      "scene_id": "laugh",
+      "title": "被笑的時候",
+      "frame": 19,
+      "kind": "option-A",
+      "setting": "同一教室；喬治站在座位旁拿課本，大偉右後方、小如更右側、老師在前方。",
+      "action": "衝過去想打人：向大偉跨步，雙方表情緊張",
+      "filename": "S05_laugh_Frame_19.png"
+    },
+    {
+      "scene": 5,
+      "scene_id": "laugh",
+      "title": "被笑的時候",
+      "frame": 20,
+      "kind": "option-A",
+      "setting": "同一教室；喬治站在座位旁拿課本，大偉右後方、小如更右側、老師在前方。",
+      "action": "衝過去想打人：老師在安全距離以開掌示意停下，未發生毆打",
+      "filename": "S05_laugh_Frame_20.png"
+    },
+    {
+      "scene": 5,
+      "scene_id": "laugh",
+      "title": "被笑的時候",
+      "frame": 21,
+      "kind": "option-A",
+      "setting": "同一教室；喬治站在座位旁拿課本，大偉右後方、小如更右側、老師在前方。",
+      "action": "衝過去想打人：喬治停步放低手臂，同學拉開距離",
+      "filename": "S05_laugh_Frame_21.png"
+    },
+    {
+      "scene": 5,
+      "scene_id": "laugh",
+      "title": "被笑的時候",
+      "frame": 22,
+      "kind": "option-B",
+      "setting": "同一教室；喬治站在座位旁拿課本，大偉右後方、小如更右側、老師在前方。",
+      "action": "罵回去：喬治轉頭，眉頭緊皺",
+      "filename": "S05_laugh_Frame_22.png"
+    },
+    {
+      "scene": 5,
+      "scene_id": "laugh",
+      "title": "被笑的時候",
+      "frame": 23,
+      "kind": "option-B",
+      "setting": "同一教室；喬治站在座位旁拿課本，大偉右後方、小如更右側、老師在前方。",
+      "action": "罵回去：嘴張開爭辯，大偉也繃起肩膀",
+      "filename": "S05_laugh_Frame_23.png"
+    },
+    {
+      "scene": 5,
+      "scene_id": "laugh",
+      "title": "被笑的時候",
+      "frame": 24,
+      "kind": "option-B",
+      "setting": "同一教室；喬治站在座位旁拿課本，大偉右後方、小如更右側、老師在前方。",
+      "action": "罵回去：兩人保持距離但互不相讓",
+      "filename": "S05_laugh_Frame_24.png"
+    },
+    {
+      "scene": 5,
+      "scene_id": "laugh",
+      "title": "被笑的時候",
+      "frame": 25,
+      "kind": "option-B",
+      "setting": "同一教室；喬治站在座位旁拿課本，大偉右後方、小如更右側、老師在前方。",
+      "action": "罵回去：老師走近協助，兩人停止說話",
+      "filename": "S05_laugh_Frame_25.png"
+    },
+    {
+      "scene": 5,
+      "scene_id": "laugh",
+      "title": "被笑的時候",
+      "frame": 26,
+      "kind": "option-C",
+      "setting": "同一教室；喬治站在座位旁拿課本，大偉右後方、小如更右側、老師在前方。",
+      "action": "呼吸、表達界線並求助：雙腳停穩，手掌放鬆",
+      "filename": "S05_laugh_Frame_26.png"
+    },
+    {
+      "scene": 5,
+      "scene_id": "laugh",
+      "title": "被笑的時候",
+      "frame": 27,
+      "kind": "option-C",
+      "setting": "同一教室；喬治站在座位旁拿課本，大偉右後方、小如更右側、老師在前方。",
+      "action": "呼吸、表達界線並求助：緩慢吸氣呼氣，肩膀下降",
+      "filename": "S05_laugh_Frame_27.png"
+    },
+    {
+      "scene": 5,
+      "scene_id": "laugh",
+      "title": "被笑的時候",
+      "frame": 28,
+      "kind": "option-C",
+      "setting": "同一教室；喬治站在座位旁拿課本，大偉右後方、小如更右側、老師在前方。",
+      "action": "呼吸、表達界線並求助：平靜看向大偉，表達自己的感受",
+      "filename": "S05_laugh_Frame_28.png"
+    },
+    {
+      "scene": 5,
+      "scene_id": "laugh",
+      "title": "被笑的時候",
+      "frame": 29,
+      "kind": "option-C",
+      "setting": "同一教室；喬治站在座位旁拿課本，大偉右後方、小如更右側、老師在前方。",
+      "action": "呼吸、表達界線並求助：轉向老師，老師專注傾聽",
+      "filename": "S05_laugh_Frame_29.png"
+    },
+    {
+      "scene": 5,
+      "scene_id": "laugh",
+      "title": "被笑的時候",
+      "frame": 30,
+      "kind": "ending",
+      "setting": "同一教室；喬治站在座位旁拿課本，大偉右後方、小如更右側、老師在前方。",
+      "action": "老師支持地站在旁側，喬治恢復平穩，大偉停止嘲笑並聆聽。",
+      "filename": "S05_laugh_Frame_30.png"
+    },
+    {
+      "scene": 5,
+      "scene_id": "laugh",
+      "title": "被笑的時候",
+      "frame": 31,
+      "kind": "summary",
+      "setting": "同一教室；喬治站在座位旁拿課本，大偉右後方、小如更右側、老師在前方。",
+      "action": "同一場景的平靜收尾構圖，角色自然站在畫面左半部；右半部保留乾淨牆面或背景供後製整理「停下、深呼吸、表達界線、尋求支持」，不畫文字、圖示或框線。",
+      "filename": "S05_laugh_Frame_31.png"
+    },
+    {
+      "scene": 6,
+      "scene_id": "help",
+      "title": "不會的時候",
+      "frame": 1,
+      "kind": "background",
+      "setting": "同一教室；喬治坐中景書桌，小如右側，老師左前方；學習單不出現可讀文字。",
+      "action": "無人物主背景；同一教室；喬治坐中景書桌，小如右側，老師左前方；學習單不出現可讀文字。",
+      "filename": "S06_help_Frame_01.png"
+    },
+    {
+      "scene": 6,
+      "scene_id": "help",
+      "title": "不會的時候",
+      "frame": 2,
+      "kind": "main",
+      "setting": "同一教室；喬治坐中景書桌，小如右側，老師左前方；學習單不出現可讀文字。",
+      "action": "喬治看向學習單",
+      "filename": "S06_help_Frame_02.png"
+    },
+    {
+      "scene": 6,
+      "scene_id": "help",
+      "title": "不會的時候",
+      "frame": 3,
+      "kind": "main",
+      "setting": "同一教室；喬治坐中景書桌，小如右側，老師左前方；學習單不出現可讀文字。",
+      "action": "筆尖移到困難題目",
+      "filename": "S06_help_Frame_03.png"
+    },
+    {
+      "scene": 6,
+      "scene_id": "help",
+      "title": "不會的時候",
+      "frame": 4,
+      "kind": "main",
+      "setting": "同一教室；喬治坐中景書桌，小如右側，老師左前方；學習單不出現可讀文字。",
+      "action": "眼睛沿題目來回觀察",
+      "filename": "S06_help_Frame_04.png"
+    },
+    {
+      "scene": 6,
+      "scene_id": "help",
+      "title": "不會的時候",
+      "frame": 5,
+      "kind": "main",
+      "setting": "同一教室；喬治坐中景書桌，小如右側，老師左前方；學習單不出現可讀文字。",
+      "action": "鉛筆停在紙面上方",
+      "filename": "S06_help_Frame_05.png"
+    },
+    {
+      "scene": 6,
+      "scene_id": "help",
+      "title": "不會的時候",
+      "frame": 6,
+      "kind": "main",
+      "setting": "同一教室；喬治坐中景書桌，小如右側，老師左前方；學習單不出現可讀文字。",
+      "action": "眉頭微皺，呼氣停頓",
+      "filename": "S06_help_Frame_06.png"
+    },
+    {
+      "scene": 6,
+      "scene_id": "help",
+      "title": "不會的時候",
+      "frame": 7,
+      "kind": "main",
+      "setting": "同一教室；喬治坐中景書桌，小如右側，老師左前方；學習單不出現可讀文字。",
+      "action": "喬治先試著在草稿區畫記號",
+      "filename": "S06_help_Frame_07.png"
+    },
+    {
+      "scene": 6,
+      "scene_id": "help",
+      "title": "不會的時候",
+      "frame": 8,
+      "kind": "main",
+      "setting": "同一教室；喬治坐中景書桌，小如右側，老師左前方；學習單不出現可讀文字。",
+      "action": "再看題目，仍感疑惑",
+      "filename": "S06_help_Frame_08.png"
+    },
+    {
+      "scene": 6,
+      "scene_id": "help",
+      "title": "不會的時候",
+      "frame": 9,
+      "kind": "main",
+      "setting": "同一教室；喬治坐中景書桌，小如右側，老師左前方；學習單不出現可讀文字。",
+      "action": "筆平放桌面",
+      "filename": "S06_help_Frame_09.png"
+    },
+    {
+      "scene": 6,
+      "scene_id": "help",
+      "title": "不會的時候",
+      "frame": 10,
+      "kind": "main",
+      "setting": "同一教室；喬治坐中景書桌，小如右側，老師左前方；學習單不出現可讀文字。",
+      "action": "右手從桌邊抬起",
+      "filename": "S06_help_Frame_10.png"
+    },
+    {
+      "scene": 6,
+      "scene_id": "help",
+      "title": "不會的時候",
+      "frame": 11,
+      "kind": "main",
+      "setting": "同一教室；喬治坐中景書桌，小如右側，老師左前方；學習單不出現可讀文字。",
+      "action": "手舉至肩膀高度",
+      "filename": "S06_help_Frame_11.png"
+    },
+    {
+      "scene": 6,
+      "scene_id": "help",
+      "title": "不會的時候",
+      "frame": 12,
+      "kind": "main",
+      "setting": "同一教室；喬治坐中景書桌，小如右側，老師左前方；學習單不出現可讀文字。",
+      "action": "老師注意並轉身",
+      "filename": "S06_help_Frame_12.png"
+    },
+    {
+      "scene": 6,
+      "scene_id": "help",
+      "title": "不會的時候",
+      "frame": 13,
+      "kind": "main",
+      "setting": "同一教室；喬治坐中景書桌，小如右側，老師左前方；學習單不出現可讀文字。",
+      "action": "老師走近喬治桌邊",
+      "filename": "S06_help_Frame_13.png"
+    },
+    {
+      "scene": 6,
+      "scene_id": "help",
+      "title": "不會的時候",
+      "frame": 14,
+      "kind": "main",
+      "setting": "同一教室；喬治坐中景書桌，小如右側，老師左前方；學習單不出現可讀文字。",
+      "action": "喬治指向不理解的地方",
+      "filename": "S06_help_Frame_14.png"
+    },
+    {
+      "scene": 6,
+      "scene_id": "help",
+      "title": "不會的時候",
+      "frame": 15,
+      "kind": "main",
+      "setting": "同一教室；喬治坐中景書桌，小如右側，老師左前方；學習單不出現可讀文字。",
+      "action": "老師蹲低視線，用手指示意步驟",
+      "filename": "S06_help_Frame_15.png"
+    },
+    {
+      "scene": 6,
+      "scene_id": "help",
+      "title": "不會的時候",
+      "frame": 16,
+      "kind": "main",
+      "setting": "同一教室；喬治坐中景書桌，小如右側，老師左前方；學習單不出現可讀文字。",
+      "action": "喬治點頭，重新握筆嘗試",
+      "filename": "S06_help_Frame_16.png"
+    },
+    {
+      "scene": 6,
+      "scene_id": "help",
+      "title": "不會的時候",
+      "frame": 17,
+      "kind": "main",
+      "setting": "同一教室；喬治坐中景書桌，小如右側，老師左前方；學習單不出現可讀文字。",
+      "action": "喬治抬頭致謝，老師溫和回應",
+      "filename": "S06_help_Frame_17.png"
+    },
+    {
+      "scene": 6,
+      "scene_id": "help",
+      "title": "不會的時候",
+      "frame": 18,
+      "kind": "option-A",
+      "setting": "同一教室；喬治坐中景書桌，小如右側，老師左前方；學習單不出現可讀文字。",
+      "action": "趴著放棄：喬治推遠鉛筆少許",
+      "filename": "S06_help_Frame_18.png"
+    },
+    {
+      "scene": 6,
+      "scene_id": "help",
+      "title": "不會的時候",
+      "frame": 19,
+      "kind": "option-A",
+      "setting": "同一教室；喬治坐中景書桌，小如右側，老師左前方；學習單不出現可讀文字。",
+      "action": "趴著放棄：雙臂放到桌面",
+      "filename": "S06_help_Frame_19.png"
+    },
+    {
+      "scene": 6,
+      "scene_id": "help",
+      "title": "不會的時候",
+      "frame": 20,
+      "kind": "option-A",
+      "setting": "同一教室；喬治坐中景書桌，小如右側，老師左前方；學習單不出現可讀文字。",
+      "action": "趴著放棄：慢慢把額頭靠在手臂上",
+      "filename": "S06_help_Frame_20.png"
+    },
+    {
+      "scene": 6,
+      "scene_id": "help",
+      "title": "不會的時候",
+      "frame": 21,
+      "kind": "option-A",
+      "setting": "同一教室；喬治坐中景書桌，小如右側，老師左前方；學習單不出現可讀文字。",
+      "action": "趴著放棄：老師遠處無法看見他困難在哪裡，喬治仍困擾",
+      "filename": "S06_help_Frame_21.png"
+    },
+    {
+      "scene": 6,
+      "scene_id": "help",
+      "title": "不會的時候",
+      "frame": 22,
+      "kind": "option-B",
+      "setting": "同一教室；喬治坐中景書桌，小如右側，老師左前方；學習單不出現可讀文字。",
+      "action": "舉手說明困難：喬治放下筆並舉手",
+      "filename": "S06_help_Frame_22.png"
+    },
+    {
+      "scene": 6,
+      "scene_id": "help",
+      "title": "不會的時候",
+      "frame": 23,
+      "kind": "option-B",
+      "setting": "同一教室；喬治坐中景書桌，小如右側，老師左前方；學習單不出現可讀文字。",
+      "action": "舉手說明困難：老師走近，喬治看向老師",
+      "filename": "S06_help_Frame_23.png"
+    },
+    {
+      "scene": 6,
+      "scene_id": "help",
+      "title": "不會的時候",
+      "frame": 24,
+      "kind": "option-B",
+      "setting": "同一教室；喬治坐中景書桌，小如右側，老師左前方；學習單不出現可讀文字。",
+      "action": "舉手說明困難：手指指出具體問題",
+      "filename": "S06_help_Frame_24.png"
+    },
+    {
+      "scene": 6,
+      "scene_id": "help",
+      "title": "不會的時候",
+      "frame": 25,
+      "kind": "option-B",
+      "setting": "同一教室；喬治坐中景書桌，小如右側，老師左前方；學習單不出現可讀文字。",
+      "action": "舉手說明困難：老師指引，喬治重新下筆",
+      "filename": "S06_help_Frame_25.png"
+    },
+    {
+      "scene": 6,
+      "scene_id": "help",
+      "title": "不會的時候",
+      "frame": 26,
+      "kind": "option-C",
+      "setting": "同一教室；喬治坐中景書桌，小如右側，老師左前方；學習單不出現可讀文字。",
+      "action": "偷看答案：喬治眼睛轉向小如的紙",
+      "filename": "S06_help_Frame_26.png"
+    },
+    {
+      "scene": 6,
+      "scene_id": "help",
+      "title": "不會的時候",
+      "frame": 27,
+      "kind": "option-C",
+      "setting": "同一教室；喬治坐中景書桌，小如右側，老師左前方；學習單不出現可讀文字。",
+      "action": "偷看答案：上身微傾靠近旁桌",
+      "filename": "S06_help_Frame_27.png"
+    },
+    {
+      "scene": 6,
+      "scene_id": "help",
+      "title": "不會的時候",
+      "frame": 28,
+      "kind": "option-C",
+      "setting": "同一教室；喬治坐中景書桌，小如右側，老師左前方；學習單不出現可讀文字。",
+      "action": "偷看答案：小如用手護住學習單、表情不自在",
+      "filename": "S06_help_Frame_28.png"
+    },
+    {
+      "scene": 6,
+      "scene_id": "help",
+      "title": "不會的時候",
+      "frame": 29,
+      "kind": "option-C",
+      "setting": "同一教室；喬治坐中景書桌，小如右側，老師左前方；學習單不出現可讀文字。",
+      "action": "偷看答案：喬治回正身體，看見自己仍不理解",
+      "filename": "S06_help_Frame_29.png"
+    },
+    {
+      "scene": 6,
+      "scene_id": "help",
+      "title": "不會的時候",
+      "frame": 30,
+      "kind": "ending",
+      "setting": "同一教室；喬治坐中景書桌，小如右側，老師左前方；學習單不出現可讀文字。",
+      "action": "喬治自己完成一步，抬頭感謝老師，桌上學習單與工具整齊。",
+      "filename": "S06_help_Frame_30.png"
+    },
+    {
+      "scene": 6,
+      "scene_id": "help",
+      "title": "不會的時候",
+      "frame": 31,
+      "kind": "summary",
+      "setting": "同一教室；喬治坐中景書桌，小如右側，老師左前方；學習單不出現可讀文字。",
+      "action": "同一場景的平靜收尾構圖，角色自然站在畫面左半部；右半部保留乾淨牆面或背景供後製整理「先嘗試、舉手、說明困難、致謝」，不畫文字、圖示或框線。",
+      "filename": "S06_help_Frame_31.png"
+    },
+    {
+      "scene": 7,
+      "scene_id": "nose",
+      "title": "鼻子不舒服",
+      "frame": 1,
+      "kind": "background",
+      "setting": "同一教室及相鄰洗手台；喬治中景、小晴右側；左側柔光一致。",
+      "action": "無人物主背景；同一教室及相鄰洗手台；喬治中景、小晴右側；左側柔光一致。",
+      "filename": "S07_nose_Frame_01.png"
+    },
+    {
+      "scene": 7,
+      "scene_id": "nose",
+      "title": "鼻子不舒服",
+      "frame": 2,
+      "kind": "main",
+      "setting": "同一教室及相鄰洗手台；喬治中景、小晴右側；左側柔光一致。",
+      "action": "喬治聽課時鼻翼微動",
+      "filename": "S07_nose_Frame_02.png"
+    },
+    {
+      "scene": 7,
+      "scene_id": "nose",
+      "title": "鼻子不舒服",
+      "frame": 3,
+      "kind": "main",
+      "setting": "同一教室及相鄰洗手台；喬治中景、小晴右側；左側柔光一致。",
+      "action": "眉頭略皺、身體停頓",
+      "filename": "S07_nose_Frame_03.png"
+    },
+    {
+      "scene": 7,
+      "scene_id": "nose",
+      "title": "鼻子不舒服",
+      "frame": 4,
+      "kind": "main",
+      "setting": "同一教室及相鄰洗手台；喬治中景、小晴右側；左側柔光一致。",
+      "action": "手抬到胸口高度但沒有碰鼻孔",
+      "filename": "S07_nose_Frame_04.png"
+    },
+    {
+      "scene": 7,
+      "scene_id": "nose",
+      "title": "鼻子不舒服",
+      "frame": 5,
+      "kind": "main",
+      "setting": "同一教室及相鄰洗手台；喬治中景、小晴右側；左側柔光一致。",
+      "action": "看向桌角的衛生紙",
+      "filename": "S07_nose_Frame_05.png"
+    },
+    {
+      "scene": 7,
+      "scene_id": "nose",
+      "title": "鼻子不舒服",
+      "frame": 6,
+      "kind": "main",
+      "setting": "同一教室及相鄰洗手台；喬治中景、小晴右側；左側柔光一致。",
+      "action": "手臂伸向紙盒",
+      "filename": "S07_nose_Frame_06.png"
+    },
+    {
+      "scene": 7,
+      "scene_id": "nose",
+      "title": "鼻子不舒服",
+      "frame": 7,
+      "kind": "main",
+      "setting": "同一教室及相鄰洗手台；喬治中景、小晴右側；左側柔光一致。",
+      "action": "手指捏住一張紙",
+      "filename": "S07_nose_Frame_07.png"
+    },
+    {
+      "scene": 7,
+      "scene_id": "nose",
+      "title": "鼻子不舒服",
+      "frame": 8,
+      "kind": "main",
+      "setting": "同一教室及相鄰洗手台；喬治中景、小晴右側；左側柔光一致。",
+      "action": "緩慢抽出衛生紙",
+      "filename": "S07_nose_Frame_08.png"
+    },
+    {
+      "scene": 7,
+      "scene_id": "nose",
+      "title": "鼻子不舒服",
+      "frame": 9,
+      "kind": "main",
+      "setting": "同一教室及相鄰洗手台；喬治中景、小晴右側；左側柔光一致。",
+      "action": "頭與肩轉向無人的旁側",
+      "filename": "S07_nose_Frame_09.png"
+    },
+    {
+      "scene": 7,
+      "scene_id": "nose",
+      "title": "鼻子不舒服",
+      "frame": 10,
+      "kind": "main",
+      "setting": "同一教室及相鄰洗手台；喬治中景、小晴右側；左側柔光一致。",
+      "action": "衛生紙靠近鼻子",
+      "filename": "S07_nose_Frame_10.png"
+    },
+    {
+      "scene": 7,
+      "scene_id": "nose",
+      "title": "鼻子不舒服",
+      "frame": 11,
+      "kind": "main",
+      "setting": "同一教室及相鄰洗手台；喬治中景、小晴右側；左側柔光一致。",
+      "action": "輕輕擦拭，動作克制",
+      "filename": "S07_nose_Frame_11.png"
+    },
+    {
+      "scene": 7,
+      "scene_id": "nose",
+      "title": "鼻子不舒服",
+      "frame": 12,
+      "kind": "main",
+      "setting": "同一教室及相鄰洗手台；喬治中景、小晴右側；左側柔光一致。",
+      "action": "紙張折起放入垃圾桶",
+      "filename": "S07_nose_Frame_12.png"
+    },
+    {
+      "scene": 7,
+      "scene_id": "nose",
+      "title": "鼻子不舒服",
+      "frame": 13,
+      "kind": "main",
+      "setting": "同一教室及相鄰洗手台；喬治中景、小晴右側；左側柔光一致。",
+      "action": "起身，椅子移動少許",
+      "filename": "S07_nose_Frame_13.png"
+    },
+    {
+      "scene": 7,
+      "scene_id": "nose",
+      "title": "鼻子不舒服",
+      "frame": 14,
+      "kind": "main",
+      "setting": "同一教室及相鄰洗手台；喬治中景、小晴右側；左側柔光一致。",
+      "action": "走到洗手台，雙手靠近水流",
+      "filename": "S07_nose_Frame_14.png"
+    },
+    {
+      "scene": 7,
+      "scene_id": "nose",
+      "title": "鼻子不舒服",
+      "frame": 15,
+      "kind": "main",
+      "setting": "同一教室及相鄰洗手台；喬治中景、小晴右側；左側柔光一致。",
+      "action": "手心手背交替清洗",
+      "filename": "S07_nose_Frame_15.png"
+    },
+    {
+      "scene": 7,
+      "scene_id": "nose",
+      "title": "鼻子不舒服",
+      "frame": 16,
+      "kind": "main",
+      "setting": "同一教室及相鄰洗手台；喬治中景、小晴右側；左側柔光一致。",
+      "action": "擦乾雙手，轉身離開洗手台",
+      "filename": "S07_nose_Frame_16.png"
+    },
+    {
+      "scene": 7,
+      "scene_id": "nose",
+      "title": "鼻子不舒服",
+      "frame": 17,
+      "kind": "main",
+      "setting": "同一教室及相鄰洗手台；喬治中景、小晴右側；左側柔光一致。",
+      "action": "回到座位，小晴繼續安心聽課",
+      "filename": "S07_nose_Frame_17.png"
+    },
+    {
+      "scene": 7,
+      "scene_id": "nose",
+      "title": "鼻子不舒服",
+      "frame": 18,
+      "kind": "option-A",
+      "setting": "同一教室及相鄰洗手台；喬治中景、小晴右側；左側柔光一致。",
+      "action": "直接用手挖鼻子：喬治手指抬近鼻子",
+      "filename": "S07_nose_Frame_18.png"
+    },
+    {
+      "scene": 7,
+      "scene_id": "nose",
+      "title": "鼻子不舒服",
+      "frame": 19,
+      "kind": "option-A",
+      "setting": "同一教室及相鄰洗手台；喬治中景、小晴右側；左側柔光一致。",
+      "action": "直接用手挖鼻子：指尖靠近鼻孔，鏡頭維持中景不呈現分泌物",
+      "filename": "S07_nose_Frame_19.png"
+    },
+    {
+      "scene": 7,
+      "scene_id": "nose",
+      "title": "鼻子不舒服",
+      "frame": 20,
+      "kind": "option-A",
+      "setting": "同一教室及相鄰洗手台；喬治中景、小晴右側；左側柔光一致。",
+      "action": "直接用手挖鼻子：小晴看見後移開目光、略感不自在",
+      "filename": "S07_nose_Frame_20.png"
+    },
+    {
+      "scene": 7,
+      "scene_id": "nose",
+      "title": "鼻子不舒服",
+      "frame": 21,
+      "kind": "option-A",
+      "setting": "同一教室及相鄰洗手台；喬治中景、小晴右側；左側柔光一致。",
+      "action": "直接用手挖鼻子：喬治注意到反應，放下手準備拿紙",
+      "filename": "S07_nose_Frame_21.png"
+    },
+    {
+      "scene": 7,
+      "scene_id": "nose",
+      "title": "鼻子不舒服",
+      "frame": 22,
+      "kind": "option-B",
+      "setting": "同一教室及相鄰洗手台；喬治中景、小晴右側；左側柔光一致。",
+      "action": "用紙、側身擦拭並洗手：喬治抽出一張紙",
+      "filename": "S07_nose_Frame_22.png"
+    },
+    {
+      "scene": 7,
+      "scene_id": "nose",
+      "title": "鼻子不舒服",
+      "frame": 23,
+      "kind": "option-B",
+      "setting": "同一教室及相鄰洗手台；喬治中景、小晴右側；左側柔光一致。",
+      "action": "用紙、側身擦拭並洗手：轉向無人一側輕擦",
+      "filename": "S07_nose_Frame_23.png"
+    },
+    {
+      "scene": 7,
+      "scene_id": "nose",
+      "title": "鼻子不舒服",
+      "frame": 24,
+      "kind": "option-B",
+      "setting": "同一教室及相鄰洗手台；喬治中景、小晴右側；左側柔光一致。",
+      "action": "用紙、側身擦拭並洗手：折好紙投入垃圾桶",
+      "filename": "S07_nose_Frame_24.png"
+    },
+    {
+      "scene": 7,
+      "scene_id": "nose",
+      "title": "鼻子不舒服",
+      "frame": 25,
+      "kind": "option-B",
+      "setting": "同一教室及相鄰洗手台；喬治中景、小晴右側；左側柔光一致。",
+      "action": "用紙、側身擦拭並洗手：洗手台前認真洗手",
+      "filename": "S07_nose_Frame_25.png"
+    },
+    {
+      "scene": 7,
+      "scene_id": "nose",
+      "title": "鼻子不舒服",
+      "frame": 26,
+      "kind": "option-C",
+      "setting": "同一教室及相鄰洗手台；喬治中景、小晴右側；左側柔光一致。",
+      "action": "擦在衣服上：喬治手從鼻子附近放低",
+      "filename": "S07_nose_Frame_26.png"
+    },
+    {
+      "scene": 7,
+      "scene_id": "nose",
+      "title": "鼻子不舒服",
+      "frame": 27,
+      "kind": "option-C",
+      "setting": "同一教室及相鄰洗手台；喬治中景、小晴右側；左側柔光一致。",
+      "action": "擦在衣服上：手指接近衣襬",
+      "filename": "S07_nose_Frame_27.png"
+    },
+    {
+      "scene": 7,
+      "scene_id": "nose",
+      "title": "鼻子不舒服",
+      "frame": 28,
+      "kind": "option-C",
+      "setting": "同一教室及相鄰洗手台；喬治中景、小晴右側；左側柔光一致。",
+      "action": "擦在衣服上：在衣襬停留，小晴表情擔憂，不呈現髒污特寫",
+      "filename": "S07_nose_Frame_28.png"
+    },
+    {
+      "scene": 7,
+      "scene_id": "nose",
+      "title": "鼻子不舒服",
+      "frame": 29,
+      "kind": "option-C",
+      "setting": "同一教室及相鄰洗手台；喬治中景、小晴右側；左側柔光一致。",
+      "action": "擦在衣服上：喬治看向衛生紙與洗手台，準備改正",
+      "filename": "S07_nose_Frame_29.png"
+    },
+    {
+      "scene": 7,
+      "scene_id": "nose",
+      "title": "鼻子不舒服",
+      "frame": 30,
+      "kind": "ending",
+      "setting": "同一教室及相鄰洗手台；喬治中景、小晴右側；左側柔光一致。",
+      "action": "喬治雙手乾淨回座位，衣物整潔、衛生紙收好，小晴自在聽課。",
+      "filename": "S07_nose_Frame_30.png"
+    },
+    {
+      "scene": 7,
+      "scene_id": "nose",
+      "title": "鼻子不舒服",
+      "frame": 31,
+      "kind": "summary",
+      "setting": "同一教室及相鄰洗手台；喬治中景、小晴右側；左側柔光一致。",
+      "action": "同一場景的平靜收尾構圖，角色自然站在畫面左半部；右半部保留乾淨牆面或背景供後製整理「拿紙、側身、輕擦、洗手」，不畫文字、圖示或框線。",
+      "filename": "S07_nose_Frame_31.png"
+    },
+    {
+      "scene": 8,
+      "scene_id": "share",
+      "title": "好多話想說",
+      "frame": 1,
+      "kind": "background",
+      "setting": "同一教室自然課；老師左前方、喬治中景、小如右側；桌上便條紙。",
+      "action": "無人物主背景；同一教室自然課；老師左前方、喬治中景、小如右側；桌上便條紙。",
+      "filename": "S08_share_Frame_01.png"
+    },
+    {
+      "scene": 8,
+      "scene_id": "share",
+      "title": "好多話想說",
+      "frame": 2,
+      "kind": "main",
+      "setting": "同一教室自然課；老師左前方、喬治中景、小如右側；桌上便條紙。",
+      "action": "喬治看向老師示意的動物圖形",
+      "filename": "S08_share_Frame_02.png"
+    },
+    {
+      "scene": 8,
+      "scene_id": "share",
+      "title": "好多話想說",
+      "frame": 3,
+      "kind": "main",
+      "setting": "同一教室自然課；老師左前方、喬治中景、小如右側；桌上便條紙。",
+      "action": "眼神變亮，身體略前傾",
+      "filename": "S08_share_Frame_03.png"
+    },
+    {
+      "scene": 8,
+      "scene_id": "share",
+      "title": "好多話想說",
+      "frame": 4,
+      "kind": "main",
+      "setting": "同一教室自然課；老師左前方、喬治中景、小如右側；桌上便條紙。",
+      "action": "嘴將開口又停住",
+      "filename": "S08_share_Frame_04.png"
+    },
+    {
+      "scene": 8,
+      "scene_id": "share",
+      "title": "好多話想說",
+      "frame": 5,
+      "kind": "main",
+      "setting": "同一教室自然課；老師左前方、喬治中景、小如右側；桌上便條紙。",
+      "action": "雙唇合上，先吸氣",
+      "filename": "S08_share_Frame_05.png"
+    },
+    {
+      "scene": 8,
+      "scene_id": "share",
+      "title": "好多話想說",
+      "frame": 6,
+      "kind": "main",
+      "setting": "同一教室自然課；老師左前方、喬治中景、小如右側；桌上便條紙。",
+      "action": "右手從桌面抬起",
+      "filename": "S08_share_Frame_06.png"
+    },
+    {
+      "scene": 8,
+      "scene_id": "share",
+      "title": "好多話想說",
+      "frame": 7,
+      "kind": "main",
+      "setting": "同一教室自然課；老師左前方、喬治中景、小如右側；桌上便條紙。",
+      "action": "手舉到肩膀高度",
+      "filename": "S08_share_Frame_07.png"
+    },
+    {
+      "scene": 8,
+      "scene_id": "share",
+      "title": "好多話想說",
+      "frame": 8,
+      "kind": "main",
+      "setting": "同一教室自然課；老師左前方、喬治中景、小如右側；桌上便條紙。",
+      "action": "視線維持看老師",
+      "filename": "S08_share_Frame_08.png"
+    },
+    {
+      "scene": 8,
+      "scene_id": "share",
+      "title": "好多話想說",
+      "frame": 9,
+      "kind": "main",
+      "setting": "同一教室自然課；老師左前方、喬治中景、小如右側；桌上便條紙。",
+      "action": "老師正在回應其他同學",
+      "filename": "S08_share_Frame_09.png"
+    },
+    {
+      "scene": 8,
+      "scene_id": "share",
+      "title": "好多話想說",
+      "frame": 10,
+      "kind": "main",
+      "setting": "同一教室自然課；老師左前方、喬治中景、小如右側；桌上便條紙。",
+      "action": "喬治等待一拍",
+      "filename": "S08_share_Frame_10.png"
+    },
+    {
+      "scene": 8,
+      "scene_id": "share",
+      "title": "好多話想說",
+      "frame": 11,
+      "kind": "main",
+      "setting": "同一教室自然課；老師左前方、喬治中景、小如右側；桌上便條紙。",
+      "action": "手臂緩慢放下",
+      "filename": "S08_share_Frame_11.png"
+    },
+    {
+      "scene": 8,
+      "scene_id": "share",
+      "title": "好多話想說",
+      "frame": 12,
+      "kind": "main",
+      "setting": "同一教室自然課；老師左前方、喬治中景、小如右側；桌上便條紙。",
+      "action": "拿起鉛筆",
+      "filename": "S08_share_Frame_12.png"
+    },
+    {
+      "scene": 8,
+      "scene_id": "share",
+      "title": "好多話想說",
+      "frame": 13,
+      "kind": "main",
+      "setting": "同一教室自然課；老師左前方、喬治中景、小如右側；桌上便條紙。",
+      "action": "在便條紙畫簡單記號",
+      "filename": "S08_share_Frame_13.png"
+    },
+    {
+      "scene": 8,
+      "scene_id": "share",
+      "title": "好多話想說",
+      "frame": 14,
+      "kind": "main",
+      "setting": "同一教室自然課；老師左前方、喬治中景、小如右側；桌上便條紙。",
+      "action": "老師看向喬治並點頭",
+      "filename": "S08_share_Frame_14.png"
+    },
+    {
+      "scene": 8,
+      "scene_id": "share",
+      "title": "好多話想說",
+      "frame": 15,
+      "kind": "main",
+      "setting": "同一教室自然課；老師左前方、喬治中景、小如右側；桌上便條紙。",
+      "action": "喬治抬頭簡短分享",
+      "filename": "S08_share_Frame_15.png"
+    },
+    {
+      "scene": 8,
+      "scene_id": "share",
+      "title": "好多話想說",
+      "frame": 16,
+      "kind": "main",
+      "setting": "同一教室自然課；老師左前方、喬治中景、小如右側；桌上便條紙。",
+      "action": "話說完收回手、看向老師",
+      "filename": "S08_share_Frame_16.png"
+    },
+    {
+      "scene": 8,
+      "scene_id": "share",
+      "title": "好多話想說",
+      "frame": 17,
+      "kind": "main",
+      "setting": "同一教室自然課；老師左前方、喬治中景、小如右側；桌上便條紙。",
+      "action": "把其他想法留在紙上，平靜聆聽",
+      "filename": "S08_share_Frame_17.png"
+    },
+    {
+      "scene": 8,
+      "scene_id": "share",
+      "title": "好多話想說",
+      "frame": 18,
+      "kind": "option-A",
+      "setting": "同一教室自然課；老師左前方、喬治中景、小如右側；桌上便條紙。",
+      "action": "想到就立即插話：喬治興奮前傾",
+      "filename": "S08_share_Frame_18.png"
+    },
+    {
+      "scene": 8,
+      "scene_id": "share",
+      "title": "好多話想說",
+      "frame": 19,
+      "kind": "option-A",
+      "setting": "同一教室自然課；老師左前方、喬治中景、小如右側；桌上便條紙。",
+      "action": "想到就立即插話：沒舉手便開口，老師停下",
+      "filename": "S08_share_Frame_19.png"
+    },
+    {
+      "scene": 8,
+      "scene_id": "share",
+      "title": "好多話想說",
+      "frame": 20,
+      "kind": "option-A",
+      "setting": "同一教室自然課；老師左前方、喬治中景、小如右側；桌上便條紙。",
+      "action": "想到就立即插話：小如抬頭，原本學習被打斷",
+      "filename": "S08_share_Frame_20.png"
+    },
+    {
+      "scene": 8,
+      "scene_id": "share",
+      "title": "好多話想說",
+      "frame": 21,
+      "kind": "option-A",
+      "setting": "同一教室自然課；老師左前方、喬治中景、小如右側；桌上便條紙。",
+      "action": "想到就立即插話：喬治注意到大家等待，暫停發言",
+      "filename": "S08_share_Frame_21.png"
+    },
+    {
+      "scene": 8,
+      "scene_id": "share",
+      "title": "好多話想說",
+      "frame": 22,
+      "kind": "option-B",
+      "setting": "同一教室自然課；老師左前方、喬治中景、小如右側；桌上便條紙。",
+      "action": "舉手等待，先記下想法：喬治舉手等待",
+      "filename": "S08_share_Frame_22.png"
+    },
+    {
+      "scene": 8,
+      "scene_id": "share",
+      "title": "好多話想說",
+      "frame": 23,
+      "kind": "option-B",
+      "setting": "同一教室自然課；老師左前方、喬治中景、小如右側；桌上便條紙。",
+      "action": "舉手等待，先記下想法：老師忙碌，喬治緩慢放下手",
+      "filename": "S08_share_Frame_23.png"
+    },
+    {
+      "scene": 8,
+      "scene_id": "share",
+      "title": "好多話想說",
+      "frame": 24,
+      "kind": "option-B",
+      "setting": "同一教室自然課；老師左前方、喬治中景、小如右側；桌上便條紙。",
+      "action": "舉手等待，先記下想法：拿筆在便條紙作簡單記號",
+      "filename": "S08_share_Frame_24.png"
+    },
+    {
+      "scene": 8,
+      "scene_id": "share",
+      "title": "好多話想說",
+      "frame": 25,
+      "kind": "option-B",
+      "setting": "同一教室自然課；老師左前方、喬治中景、小如右側；桌上便條紙。",
+      "action": "舉手等待，先記下想法：老師示意後，喬治抬頭簡短分享",
+      "filename": "S08_share_Frame_25.png"
+    },
+    {
+      "scene": 8,
+      "scene_id": "share",
+      "title": "好多話想說",
+      "frame": 26,
+      "kind": "option-C",
+      "setting": "同一教室自然課；老師左前方、喬治中景、小如右側；桌上便條紙。",
+      "action": "一直和旁邊同學說話：喬治轉向小如輕聲說話",
+      "filename": "S08_share_Frame_26.png"
+    },
+    {
+      "scene": 8,
+      "scene_id": "share",
+      "title": "好多話想說",
+      "frame": 27,
+      "kind": "option-C",
+      "setting": "同一教室自然課；老師左前方、喬治中景、小如右側；桌上便條紙。",
+      "action": "一直和旁邊同學說話：小如先轉頭聽他",
+      "filename": "S08_share_Frame_27.png"
+    },
+    {
+      "scene": 8,
+      "scene_id": "share",
+      "title": "好多話想說",
+      "frame": 28,
+      "kind": "option-C",
+      "setting": "同一教室自然課；老師左前方、喬治中景、小如右側；桌上便條紙。",
+      "action": "一直和旁邊同學說話：老師繼續教學，小如來回看老師與喬治",
+      "filename": "S08_share_Frame_28.png"
+    },
+    {
+      "scene": 8,
+      "scene_id": "share",
+      "title": "好多話想說",
+      "frame": 29,
+      "kind": "option-C",
+      "setting": "同一教室自然課；老師左前方、喬治中景、小如右側；桌上便條紙。",
+      "action": "一直和旁邊同學說話：喬治注意到小如為難，停止說話轉正",
+      "filename": "S08_share_Frame_29.png"
+    },
+    {
+      "scene": 8,
+      "scene_id": "share",
+      "title": "好多話想說",
+      "frame": 30,
+      "kind": "ending",
+      "setting": "同一教室自然課；老師左前方、喬治中景、小如右側；桌上便條紙。",
+      "action": "喬治與小如都面向老師，便條紙保留想法，課程順利繼續。",
+      "filename": "S08_share_Frame_30.png"
+    },
+    {
+      "scene": 8,
+      "scene_id": "share",
+      "title": "好多話想說",
+      "frame": 31,
+      "kind": "summary",
+      "setting": "同一教室自然課；老師左前方、喬治中景、小如右側；桌上便條紙。",
+      "action": "同一場景的平靜收尾構圖，角色自然站在畫面左半部；右半部保留乾淨牆面或背景供後製整理「舉手、等待、簡短分享、記下其他想法」，不畫文字、圖示或框線。",
+      "filename": "S08_share_Frame_31.png"
+    },
+    {
+      "scene": 9,
+      "scene_id": "prank",
+      "title": "想捉弄同學",
+      "frame": 1,
+      "kind": "background",
+      "setting": "同一教室下課；喬治左側、阿明中景、小晴與大偉右側，椅子保持穩定。",
+      "action": "無人物主背景；同一教室下課；喬治左側、阿明中景、小晴與大偉右側，椅子保持穩定。",
+      "filename": "S09_prank_Frame_01.png"
+    },
+    {
+      "scene": 9,
+      "scene_id": "prank",
+      "title": "想捉弄同學",
+      "frame": 2,
+      "kind": "main",
+      "setting": "同一教室下課；喬治左側、阿明中景、小晴與大偉右側，椅子保持穩定。",
+      "action": "喬治看向正在整理桌面的阿明",
+      "filename": "S09_prank_Frame_02.png"
+    },
+    {
+      "scene": 9,
+      "scene_id": "prank",
+      "title": "想捉弄同學",
+      "frame": 3,
+      "kind": "main",
+      "setting": "同一教室下課；喬治左側、阿明中景、小晴與大偉右側，椅子保持穩定。",
+      "action": "看見手邊空白便條紙",
+      "filename": "S09_prank_Frame_03.png"
+    },
+    {
+      "scene": 9,
+      "scene_id": "prank",
+      "title": "想捉弄同學",
+      "frame": 4,
+      "kind": "main",
+      "setting": "同一教室下課；喬治左側、阿明中景、小晴與大偉右側，椅子保持穩定。",
+      "action": "指尖碰到便條紙邊緣",
+      "filename": "S09_prank_Frame_04.png"
+    },
+    {
+      "scene": 9,
+      "scene_id": "prank",
+      "title": "想捉弄同學",
+      "frame": 5,
+      "kind": "main",
+      "setting": "同一教室下課；喬治左側、阿明中景、小晴與大偉右側，椅子保持穩定。",
+      "action": "拿起紙張，目光轉向阿明背部",
+      "filename": "S09_prank_Frame_05.png"
+    },
+    {
+      "scene": 9,
+      "scene_id": "prank",
+      "title": "想捉弄同學",
+      "frame": 6,
+      "kind": "main",
+      "setting": "同一教室下課；喬治左側、阿明中景、小晴與大偉右側，椅子保持穩定。",
+      "action": "手抬到胸口高度後停住",
+      "filename": "S09_prank_Frame_06.png"
+    },
+    {
+      "scene": 9,
+      "scene_id": "prank",
+      "title": "想捉弄同學",
+      "frame": 7,
+      "kind": "main",
+      "setting": "同一教室下課；喬治左側、阿明中景、小晴與大偉右側，椅子保持穩定。",
+      "action": "喬治看見阿明專注表情",
+      "filename": "S09_prank_Frame_07.png"
+    },
+    {
+      "scene": 9,
+      "scene_id": "prank",
+      "title": "想捉弄同學",
+      "frame": 8,
+      "kind": "main",
+      "setting": "同一教室下課；喬治左側、阿明中景、小晴與大偉右側，椅子保持穩定。",
+      "action": "眉眼由得意轉為思考",
+      "filename": "S09_prank_Frame_08.png"
+    },
+    {
+      "scene": 9,
+      "scene_id": "prank",
+      "title": "想捉弄同學",
+      "frame": 9,
+      "kind": "main",
+      "setting": "同一教室下課；喬治左側、阿明中景、小晴與大偉右側，椅子保持穩定。",
+      "action": "手指鬆開，把紙放回桌上",
+      "filename": "S09_prank_Frame_09.png"
+    },
+    {
+      "scene": 9,
+      "scene_id": "prank",
+      "title": "想捉弄同學",
+      "frame": 10,
+      "kind": "main",
+      "setting": "同一教室下課；喬治左側、阿明中景、小晴與大偉右側，椅子保持穩定。",
+      "action": "肩膀轉向阿明側前方",
+      "filename": "S09_prank_Frame_10.png"
+    },
+    {
+      "scene": 9,
+      "scene_id": "prank",
+      "title": "想捉弄同學",
+      "frame": 11,
+      "kind": "main",
+      "setting": "同一教室下課；喬治左側、阿明中景、小晴與大偉右側，椅子保持穩定。",
+      "action": "走近一步，保持空間",
+      "filename": "S09_prank_Frame_11.png"
+    },
+    {
+      "scene": 9,
+      "scene_id": "prank",
+      "title": "想捉弄同學",
+      "frame": 12,
+      "kind": "main",
+      "setting": "同一教室下課；喬治左側、阿明中景、小晴與大偉右側，椅子保持穩定。",
+      "action": "阿明轉頭看他",
+      "filename": "S09_prank_Frame_12.png"
+    },
+    {
+      "scene": 9,
+      "scene_id": "prank",
+      "title": "想捉弄同學",
+      "frame": 13,
+      "kind": "main",
+      "setting": "同一教室下課；喬治左側、阿明中景、小晴與大偉右側，椅子保持穩定。",
+      "action": "喬治以開掌動作邀請一起玩",
+      "filename": "S09_prank_Frame_13.png"
+    },
+    {
+      "scene": 9,
+      "scene_id": "prank",
+      "title": "想捉弄同學",
+      "frame": 14,
+      "kind": "main",
+      "setting": "同一教室下課；喬治左側、阿明中景、小晴與大偉右側，椅子保持穩定。",
+      "action": "阿明先看他再點頭",
+      "filename": "S09_prank_Frame_14.png"
+    },
+    {
+      "scene": 9,
+      "scene_id": "prank",
+      "title": "想捉弄同學",
+      "frame": 15,
+      "kind": "main",
+      "setting": "同一教室下課；喬治左側、阿明中景、小晴與大偉右側，椅子保持穩定。",
+      "action": "兩人轉身面向同學",
+      "filename": "S09_prank_Frame_15.png"
+    },
+    {
+      "scene": 9,
+      "scene_id": "prank",
+      "title": "想捉弄同學",
+      "frame": 16,
+      "kind": "main",
+      "setting": "同一教室下課；喬治左側、阿明中景、小晴與大偉右側，椅子保持穩定。",
+      "action": "喬治分享無傷人的有趣小動作",
+      "filename": "S09_prank_Frame_16.png"
+    },
+    {
+      "scene": 9,
+      "scene_id": "prank",
+      "title": "想捉弄同學",
+      "frame": 17,
+      "kind": "main",
+      "setting": "同一教室下課；喬治左側、阿明中景、小晴與大偉右側，椅子保持穩定。",
+      "action": "所有人自然微笑，阿明也自在參與",
+      "filename": "S09_prank_Frame_17.png"
+    },
+    {
+      "scene": 9,
+      "scene_id": "prank",
+      "title": "想捉弄同學",
+      "frame": 18,
+      "kind": "option-A",
+      "setting": "同一教室下課；喬治左側、阿明中景、小晴與大偉右側，椅子保持穩定。",
+      "action": "背上貼紙條：喬治拿著無字便條紙靠近",
+      "filename": "S09_prank_Frame_18.png"
+    },
+    {
+      "scene": 9,
+      "scene_id": "prank",
+      "title": "想捉弄同學",
+      "frame": 19,
+      "kind": "option-A",
+      "setting": "同一教室下課；喬治左側、阿明中景、小晴與大偉右側，椅子保持穩定。",
+      "action": "背上貼紙條：手伸到阿明背後貼上紙張",
+      "filename": "S09_prank_Frame_19.png"
+    },
+    {
+      "scene": 9,
+      "scene_id": "prank",
+      "title": "想捉弄同學",
+      "frame": 20,
+      "kind": "option-A",
+      "setting": "同一教室下課；喬治左側、阿明中景、小晴與大偉右側，椅子保持穩定。",
+      "action": "背上貼紙條：阿明轉頭疑惑，其他同學表情變得不自在",
+      "filename": "S09_prank_Frame_20.png"
+    },
+    {
+      "scene": 9,
+      "scene_id": "prank",
+      "title": "想捉弄同學",
+      "frame": 21,
+      "kind": "option-A",
+      "setting": "同一教室下課；喬治左側、阿明中景、小晴與大偉右側，椅子保持穩定。",
+      "action": "背上貼紙條：喬治看見阿明難過，停止並準備取下紙張",
+      "filename": "S09_prank_Frame_21.png"
+    },
+    {
+      "scene": 9,
+      "scene_id": "prank",
+      "title": "想捉弄同學",
+      "frame": 22,
+      "kind": "option-B",
+      "setting": "同一教室下課；喬治左側、阿明中景、小晴與大偉右側，椅子保持穩定。",
+      "action": "拉走椅子：喬治看向椅背，手靠近",
+      "filename": "S09_prank_Frame_22.png"
+    },
+    {
+      "scene": 9,
+      "scene_id": "prank",
+      "title": "想捉弄同學",
+      "frame": 23,
+      "kind": "option-B",
+      "setting": "同一教室下課；喬治左側、阿明中景、小晴與大偉右側，椅子保持穩定。",
+      "action": "拉走椅子：手指剛碰椅背，阿明準備坐下",
+      "filename": "S09_prank_Frame_23.png"
+    },
+    {
+      "scene": 9,
+      "scene_id": "prank",
+      "title": "想捉弄同學",
+      "frame": 24,
+      "kind": "option-B",
+      "setting": "同一教室下課；喬治左側、阿明中景、小晴與大偉右側，椅子保持穩定。",
+      "action": "拉走椅子：小晴以開掌示意停止，椅子不移位、不呈現跌落",
+      "filename": "S09_prank_Frame_24.png"
+    },
+    {
+      "scene": 9,
+      "scene_id": "prank",
+      "title": "想捉弄同學",
+      "frame": 25,
+      "kind": "option-B",
+      "setting": "同一教室下課；喬治左側、阿明中景、小晴與大偉右側，椅子保持穩定。",
+      "action": "拉走椅子：喬治立即鬆手，確認椅子穩定並退開",
+      "filename": "S09_prank_Frame_25.png"
+    },
+    {
+      "scene": 9,
+      "scene_id": "prank",
+      "title": "想捉弄同學",
+      "frame": 26,
+      "kind": "option-C",
+      "setting": "同一教室下課；喬治左側、阿明中景、小晴與大偉右側，椅子保持穩定。",
+      "action": "改成一起玩一起笑：喬治把便條紙放回",
+      "filename": "S09_prank_Frame_26.png"
+    },
+    {
+      "scene": 9,
+      "scene_id": "prank",
+      "title": "想捉弄同學",
+      "frame": 27,
+      "kind": "option-C",
+      "setting": "同一教室下課；喬治左側、阿明中景、小晴與大偉右側，椅子保持穩定。",
+      "action": "改成一起玩一起笑：走到阿明看得到的側前方",
+      "filename": "S09_prank_Frame_27.png"
+    },
+    {
+      "scene": 9,
+      "scene_id": "prank",
+      "title": "想捉弄同學",
+      "frame": 28,
+      "kind": "option-C",
+      "setting": "同一教室下課；喬治左側、阿明中景、小晴與大偉右側，椅子保持穩定。",
+      "action": "改成一起玩一起笑：以自然手勢邀請一起活動",
+      "filename": "S09_prank_Frame_28.png"
+    },
+    {
+      "scene": 9,
+      "scene_id": "prank",
+      "title": "想捉弄同學",
+      "frame": 29,
+      "kind": "option-C",
+      "setting": "同一教室下課；喬治左側、阿明中景、小晴與大偉右側，椅子保持穩定。",
+      "action": "改成一起玩一起笑：大家都願意參與，彼此微笑",
+      "filename": "S09_prank_Frame_29.png"
+    },
+    {
+      "scene": 9,
+      "scene_id": "prank",
+      "title": "想捉弄同學",
+      "frame": 30,
+      "kind": "ending",
+      "setting": "同一教室下課；喬治左側、阿明中景、小晴與大偉右側，椅子保持穩定。",
+      "action": "阿明和喬治同樣自在地參與遊戲，無人被圍觀或取笑。",
+      "filename": "S09_prank_Frame_30.png"
+    },
+    {
+      "scene": 9,
+      "scene_id": "prank",
+      "title": "想捉弄同學",
+      "frame": 31,
+      "kind": "summary",
+      "setting": "同一教室下課；喬治左側、阿明中景、小晴與大偉右側，椅子保持穩定。",
+      "action": "同一場景的平靜收尾構圖，角色自然站在畫面左半部；右半部保留乾淨牆面或背景供後製整理「先停、考慮感受、尊重安全、一起開心」，不畫文字、圖示或框線。",
+      "filename": "S09_prank_Frame_31.png"
+    },
+    {
+      "scene": 10,
+      "scene_id": "friend",
+      "title": "同學不理我",
+      "frame": 1,
+      "kind": "background",
+      "setting": "操場旁樹蔭長椅；小如在右中景看書、喬治從左側步道接近，阿明遠景。",
+      "action": "無人物主背景；操場旁樹蔭長椅；小如在右中景看書、喬治從左側步道接近，阿明遠景。",
+      "filename": "S10_friend_Frame_01.png"
+    },
+    {
+      "scene": 10,
+      "scene_id": "friend",
+      "title": "同學不理我",
+      "frame": 2,
+      "kind": "main",
+      "setting": "操場旁樹蔭長椅；小如在右中景看書、喬治從左側步道接近，阿明遠景。",
+      "action": "喬治沿步道走近長椅",
+      "filename": "S10_friend_Frame_02.png"
+    },
+    {
+      "scene": 10,
+      "scene_id": "friend",
+      "title": "同學不理我",
+      "frame": 3,
+      "kind": "main",
+      "setting": "操場旁樹蔭長椅；小如在右中景看書、喬治從左側步道接近，阿明遠景。",
+      "action": "步伐放慢，看到小如看書",
+      "filename": "S10_friend_Frame_03.png"
+    },
+    {
+      "scene": 10,
+      "scene_id": "friend",
+      "title": "同學不理我",
+      "frame": 4,
+      "kind": "main",
+      "setting": "操場旁樹蔭長椅；小如在右中景看書、喬治從左側步道接近，阿明遠景。",
+      "action": "停在不遮擋光線的位置",
+      "filename": "S10_friend_Frame_04.png"
+    },
+    {
+      "scene": 10,
+      "scene_id": "friend",
+      "title": "同學不理我",
+      "frame": 5,
+      "kind": "main",
+      "setting": "操場旁樹蔭長椅；小如在右中景看書、喬治從左側步道接近，阿明遠景。",
+      "action": "輕抬手打招呼",
+      "filename": "S10_friend_Frame_05.png"
+    },
+    {
+      "scene": 10,
+      "scene_id": "friend",
+      "title": "同學不理我",
+      "frame": 6,
+      "kind": "main",
+      "setting": "操場旁樹蔭長椅；小如在右中景看書、喬治從左側步道接近，阿明遠景。",
+      "action": "小如專心看書未抬頭",
+      "filename": "S10_friend_Frame_06.png"
+    },
+    {
+      "scene": 10,
+      "scene_id": "friend",
+      "title": "同學不理我",
+      "frame": 7,
+      "kind": "main",
+      "setting": "操場旁樹蔭長椅；小如在右中景看書、喬治從左側步道接近，阿明遠景。",
+      "action": "喬治手在半空停頓",
+      "filename": "S10_friend_Frame_07.png"
+    },
+    {
+      "scene": 10,
+      "scene_id": "friend",
+      "title": "同學不理我",
+      "frame": 8,
+      "kind": "main",
+      "setting": "操場旁樹蔭長椅；小如在右中景看書、喬治從左側步道接近，阿明遠景。",
+      "action": "手慢慢放下，眉眼思考",
+      "filename": "S10_friend_Frame_08.png"
+    },
+    {
+      "scene": 10,
+      "scene_id": "friend",
+      "title": "同學不理我",
+      "frame": 9,
+      "kind": "main",
+      "setting": "操場旁樹蔭長椅；小如在右中景看書、喬治從左側步道接近，阿明遠景。",
+      "action": "看向小如正在閱讀的書",
+      "filename": "S10_friend_Frame_09.png"
+    },
+    {
+      "scene": 10,
+      "scene_id": "friend",
+      "title": "同學不理我",
+      "frame": 10,
+      "kind": "main",
+      "setting": "操場旁樹蔭長椅；小如在右中景看書、喬治從左側步道接近，阿明遠景。",
+      "action": "後退半步，留出空間",
+      "filename": "S10_friend_Frame_10.png"
+    },
+    {
+      "scene": 10,
+      "scene_id": "friend",
+      "title": "同學不理我",
+      "frame": 11,
+      "kind": "main",
+      "setting": "操場旁樹蔭長椅；小如在右中景看書、喬治從左側步道接近，阿明遠景。",
+      "action": "雙手自然垂下耐心等待",
+      "filename": "S10_friend_Frame_11.png"
+    },
+    {
+      "scene": 10,
+      "scene_id": "friend",
+      "title": "同學不理我",
+      "frame": 12,
+      "kind": "main",
+      "setting": "操場旁樹蔭長椅；小如在右中景看書、喬治從左側步道接近，阿明遠景。",
+      "action": "小如翻完一頁並抬頭",
+      "filename": "S10_friend_Frame_12.png"
+    },
+    {
+      "scene": 10,
+      "scene_id": "friend",
+      "title": "同學不理我",
+      "frame": 13,
+      "kind": "main",
+      "setting": "操場旁樹蔭長椅；小如在右中景看書、喬治從左側步道接近，阿明遠景。",
+      "action": "兩人眼神接觸",
+      "filename": "S10_friend_Frame_13.png"
+    },
+    {
+      "scene": 10,
+      "scene_id": "friend",
+      "title": "同學不理我",
+      "frame": 14,
+      "kind": "main",
+      "setting": "操場旁樹蔭長椅；小如在右中景看書、喬治從左側步道接近，阿明遠景。",
+      "action": "喬治以輕微手勢談書的話題",
+      "filename": "S10_friend_Frame_14.png"
+    },
+    {
+      "scene": 10,
+      "scene_id": "friend",
+      "title": "同學不理我",
+      "frame": 15,
+      "kind": "main",
+      "setting": "操場旁樹蔭長椅；小如在右中景看書、喬治從左側步道接近，阿明遠景。",
+      "action": "小如把書合起一半回應",
+      "filename": "S10_friend_Frame_15.png"
+    },
+    {
+      "scene": 10,
+      "scene_id": "friend",
+      "title": "同學不理我",
+      "frame": 16,
+      "kind": "main",
+      "setting": "操場旁樹蔭長椅；小如在右中景看書、喬治從左側步道接近，阿明遠景。",
+      "action": "喬治點頭聆聽，保持適當距離",
+      "filename": "S10_friend_Frame_16.png"
+    },
+    {
+      "scene": 10,
+      "scene_id": "friend",
+      "title": "同學不理我",
+      "frame": 17,
+      "kind": "main",
+      "setting": "操場旁樹蔭長椅；小如在右中景看書、喬治從左側步道接近，阿明遠景。",
+      "action": "兩人在長椅旁輕鬆交流",
+      "filename": "S10_friend_Frame_17.png"
+    },
+    {
+      "scene": 10,
+      "scene_id": "friend",
+      "title": "同學不理我",
+      "frame": 18,
+      "kind": "option-A",
+      "setting": "操場旁樹蔭長椅；小如在右中景看書、喬治從左側步道接近，阿明遠景。",
+      "action": "一直叫並拉書：喬治重複招手、嘴微張",
+      "filename": "S10_friend_Frame_18.png"
+    },
+    {
+      "scene": 10,
+      "scene_id": "friend",
+      "title": "同學不理我",
+      "frame": 19,
+      "kind": "option-A",
+      "setting": "操場旁樹蔭長椅；小如在右中景看書、喬治從左側步道接近，阿明遠景。",
+      "action": "一直叫並拉書：手伸近小如的書",
+      "filename": "S10_friend_Frame_19.png"
+    },
+    {
+      "scene": 10,
+      "scene_id": "friend",
+      "title": "同學不理我",
+      "frame": 20,
+      "kind": "option-A",
+      "setting": "操場旁樹蔭長椅；小如在右中景看書、喬治從左側步道接近，阿明遠景。",
+      "action": "一直叫並拉書：手碰書緣，小如驚訝把書收回",
+      "filename": "S10_friend_Frame_20.png"
+    },
+    {
+      "scene": 10,
+      "scene_id": "friend",
+      "title": "同學不理我",
+      "frame": 21,
+      "kind": "option-A",
+      "setting": "操場旁樹蔭長椅；小如在右中景看書、喬治從左側步道接近，阿明遠景。",
+      "action": "一直叫並拉書：喬治停住手，看見小如需要空間",
+      "filename": "S10_friend_Frame_21.png"
+    },
+    {
+      "scene": 10,
+      "scene_id": "friend",
+      "title": "同學不理我",
+      "frame": 22,
+      "kind": "option-B",
+      "setting": "操場旁樹蔭長椅；小如在右中景看書、喬治從左側步道接近，阿明遠景。",
+      "action": "等待時機再打招呼：喬治安靜等候小如閱讀",
+      "filename": "S10_friend_Frame_22.png"
+    },
+    {
+      "scene": 10,
+      "scene_id": "friend",
+      "title": "同學不理我",
+      "frame": 23,
+      "kind": "option-B",
+      "setting": "操場旁樹蔭長椅；小如在右中景看書、喬治從左側步道接近，阿明遠景。",
+      "action": "等待時機再打招呼：小如抬頭，喬治輕揮手",
+      "filename": "S10_friend_Frame_23.png"
+    },
+    {
+      "scene": 10,
+      "scene_id": "friend",
+      "title": "同學不理我",
+      "frame": 24,
+      "kind": "option-B",
+      "setting": "操場旁樹蔭長椅；小如在右中景看書、喬治從左側步道接近，阿明遠景。",
+      "action": "等待時機再打招呼：喬治以開掌手勢談書的話題",
+      "filename": "S10_friend_Frame_24.png"
+    },
+    {
+      "scene": 10,
+      "scene_id": "friend",
+      "title": "同學不理我",
+      "frame": 25,
+      "kind": "option-B",
+      "setting": "操場旁樹蔭長椅；小如在右中景看書、喬治從左側步道接近，阿明遠景。",
+      "action": "等待時機再打招呼：小如微笑回應，喬治專注聆聽",
+      "filename": "S10_friend_Frame_25.png"
+    },
+    {
+      "scene": 10,
+      "scene_id": "friend",
+      "title": "同學不理我",
+      "frame": 26,
+      "kind": "option-C",
+      "setting": "操場旁樹蔭長椅；小如在右中景看書、喬治從左側步道接近，阿明遠景。",
+      "action": "生氣說不再理她：喬治眉頭緊起",
+      "filename": "S10_friend_Frame_26.png"
+    },
+    {
+      "scene": 10,
+      "scene_id": "friend",
+      "title": "同學不理我",
+      "frame": 27,
+      "kind": "option-C",
+      "setting": "操場旁樹蔭長椅；小如在右中景看書、喬治從左側步道接近，阿明遠景。",
+      "action": "生氣說不再理她：轉身半步，嘴微張說氣話",
+      "filename": "S10_friend_Frame_27.png"
+    },
+    {
+      "scene": 10,
+      "scene_id": "friend",
+      "title": "同學不理我",
+      "frame": 28,
+      "kind": "option-C",
+      "setting": "操場旁樹蔭長椅；小如在右中景看書、喬治從左側步道接近，阿明遠景。",
+      "action": "生氣說不再理她：小如抬頭驚訝，抱著書",
+      "filename": "S10_friend_Frame_28.png"
+    },
+    {
+      "scene": 10,
+      "scene_id": "friend",
+      "title": "同學不理我",
+      "frame": 29,
+      "kind": "option-C",
+      "setting": "操場旁樹蔭長椅；小如在右中景看書、喬治從左側步道接近，阿明遠景。",
+      "action": "生氣說不再理她：喬治停步回頭，神情轉為思考",
+      "filename": "S10_friend_Frame_29.png"
+    },
+    {
+      "scene": 10,
+      "scene_id": "friend",
+      "title": "同學不理我",
+      "frame": 30,
+      "kind": "ending",
+      "setting": "操場旁樹蔭長椅；小如在右中景看書、喬治從左側步道接近，阿明遠景。",
+      "action": "喬治與小如自在交流；旁側留出離開的空間，呈現自願互動。",
+      "filename": "S10_friend_Frame_30.png"
+    },
+    {
+      "scene": 10,
+      "scene_id": "friend",
+      "title": "同學不理我",
+      "frame": 31,
+      "kind": "summary",
+      "setting": "操場旁樹蔭長椅；小如在右中景看書、喬治從左側步道接近，阿明遠景。",
+      "action": "同一場景的平靜收尾構圖，角色自然站在畫面左半部；右半部保留乾淨牆面或背景供後製整理「看時機、打招呼、找共同話題、尊重意願」，不畫文字、圖示或框線。",
+      "filename": "S10_friend_Frame_31.png"
+    },
+    {
+      "scene": 11,
+      "scene_id": "busy",
+      "title": "老師在忙的時候",
+      "frame": 1,
+      "kind": "background",
+      "setting": "同一教室；老師在左中景協助大偉，喬治從右側拿學習單走近。",
+      "action": "無人物主背景；同一教室；老師在左中景協助大偉，喬治從右側拿學習單走近。",
+      "filename": "S11_busy_Frame_01.png"
+    },
+    {
+      "scene": 11,
+      "scene_id": "busy",
+      "title": "老師在忙的時候",
+      "frame": 2,
+      "kind": "main",
+      "setting": "同一教室；老師在左中景協助大偉，喬治從右側拿學習單走近。",
+      "action": "老師低頭查看大偉作業",
+      "filename": "S11_busy_Frame_02.png"
+    },
+    {
+      "scene": 11,
+      "scene_id": "busy",
+      "title": "老師在忙的時候",
+      "frame": 3,
+      "kind": "main",
+      "setting": "同一教室；老師在左中景協助大偉，喬治從右側拿學習單走近。",
+      "action": "喬治拿著學習單走近",
+      "filename": "S11_busy_Frame_03.png"
+    },
+    {
+      "scene": 11,
+      "scene_id": "busy",
+      "title": "老師在忙的時候",
+      "frame": 4,
+      "kind": "main",
+      "setting": "同一教室；老師在左中景協助大偉，喬治從右側拿學習單走近。",
+      "action": "前腳放慢，看到老師正在說明",
+      "filename": "S11_busy_Frame_04.png"
+    },
+    {
+      "scene": 11,
+      "scene_id": "busy",
+      "title": "老師在忙的時候",
+      "frame": 5,
+      "kind": "main",
+      "setting": "同一教室；老師在左中景協助大偉，喬治從右側拿學習單走近。",
+      "action": "喬治停在旁側一步外",
+      "filename": "S11_busy_Frame_05.png"
+    },
+    {
+      "scene": 11,
+      "scene_id": "busy",
+      "title": "老師在忙的時候",
+      "frame": 6,
+      "kind": "main",
+      "setting": "同一教室；老師在左中景協助大偉，喬治從右側拿學習單走近。",
+      "action": "手放低，不觸碰老師衣服",
+      "filename": "S11_busy_Frame_06.png"
+    },
+    {
+      "scene": 11,
+      "scene_id": "busy",
+      "title": "老師在忙的時候",
+      "frame": 7,
+      "kind": "main",
+      "setting": "同一教室；老師在左中景協助大偉，喬治從右側拿學習單走近。",
+      "action": "眼睛看向老師與大偉",
+      "filename": "S11_busy_Frame_07.png"
+    },
+    {
+      "scene": 11,
+      "scene_id": "busy",
+      "title": "老師在忙的時候",
+      "frame": 8,
+      "kind": "main",
+      "setting": "同一教室；老師在左中景協助大偉，喬治從右側拿學習單走近。",
+      "action": "嘴閉合，耐心等候",
+      "filename": "S11_busy_Frame_08.png"
+    },
+    {
+      "scene": 11,
+      "scene_id": "busy",
+      "title": "老師在忙的時候",
+      "frame": 9,
+      "kind": "main",
+      "setting": "同一教室；老師在左中景協助大偉，喬治從右側拿學習單走近。",
+      "action": "雙腳換重心保持放鬆",
+      "filename": "S11_busy_Frame_09.png"
+    },
+    {
+      "scene": 11,
+      "scene_id": "busy",
+      "title": "老師在忙的時候",
+      "frame": 10,
+      "kind": "main",
+      "setting": "同一教室；老師在左中景協助大偉，喬治從右側拿學習單走近。",
+      "action": "低頭先看自己的題目",
+      "filename": "S11_busy_Frame_10.png"
+    },
+    {
+      "scene": 11,
+      "scene_id": "busy",
+      "title": "老師在忙的時候",
+      "frame": 11,
+      "kind": "main",
+      "setting": "同一教室；老師在左中景協助大偉，喬治從右側拿學習單走近。",
+      "action": "手指標記不會的位置",
+      "filename": "S11_busy_Frame_11.png"
+    },
+    {
+      "scene": 11,
+      "scene_id": "busy",
+      "title": "老師在忙的時候",
+      "frame": 12,
+      "kind": "main",
+      "setting": "同一教室；老師在左中景協助大偉，喬治從右側拿學習單走近。",
+      "action": "老師完成對大偉的說明",
+      "filename": "S11_busy_Frame_12.png"
+    },
+    {
+      "scene": 11,
+      "scene_id": "busy",
+      "title": "老師在忙的時候",
+      "frame": 13,
+      "kind": "main",
+      "setting": "同一教室；老師在左中景協助大偉，喬治從右側拿學習單走近。",
+      "action": "老師抬頭轉向喬治",
+      "filename": "S11_busy_Frame_13.png"
+    },
+    {
+      "scene": 11,
+      "scene_id": "busy",
+      "title": "老師在忙的時候",
+      "frame": 14,
+      "kind": "main",
+      "setting": "同一教室；老師在左中景協助大偉，喬治從右側拿學習單走近。",
+      "action": "喬治與老師眼神接觸",
+      "filename": "S11_busy_Frame_14.png"
+    },
+    {
+      "scene": 11,
+      "scene_id": "busy",
+      "title": "老師在忙的時候",
+      "frame": 15,
+      "kind": "main",
+      "setting": "同一教室；老師在左中景協助大偉，喬治從右側拿學習單走近。",
+      "action": "手把學習單抬到適當高度",
+      "filename": "S11_busy_Frame_15.png"
+    },
+    {
+      "scene": 11,
+      "scene_id": "busy",
+      "title": "老師在忙的時候",
+      "frame": 16,
+      "kind": "main",
+      "setting": "同一教室；老師在左中景協助大偉，喬治從右側拿學習單走近。",
+      "action": "指向問題，禮貌開口",
+      "filename": "S11_busy_Frame_16.png"
+    },
+    {
+      "scene": 11,
+      "scene_id": "busy",
+      "title": "老師在忙的時候",
+      "frame": 17,
+      "kind": "main",
+      "setting": "同一教室；老師在左中景協助大偉，喬治從右側拿學習單走近。",
+      "action": "老師專注回應，大偉繼續做作業",
+      "filename": "S11_busy_Frame_17.png"
+    },
+    {
+      "scene": 11,
+      "scene_id": "busy",
+      "title": "老師在忙的時候",
+      "frame": 18,
+      "kind": "option-A",
+      "setting": "同一教室；老師在左中景協助大偉，喬治從右側拿學習單走近。",
+      "action": "一直拉老師衣服：喬治急著走近",
+      "filename": "S11_busy_Frame_18.png"
+    },
+    {
+      "scene": 11,
+      "scene_id": "busy",
+      "title": "老師在忙的時候",
+      "frame": 19,
+      "kind": "option-A",
+      "setting": "同一教室；老師在左中景協助大偉，喬治從右側拿學習單走近。",
+      "action": "一直拉老師衣服：手指輕拉老師衣角",
+      "filename": "S11_busy_Frame_19.png"
+    },
+    {
+      "scene": 11,
+      "scene_id": "busy",
+      "title": "老師在忙的時候",
+      "frame": 20,
+      "kind": "option-A",
+      "setting": "同一教室；老師在左中景協助大偉，喬治從右側拿學習單走近。",
+      "action": "一直拉老師衣服：老師中斷說明轉頭，大偉停筆",
+      "filename": "S11_busy_Frame_20.png"
+    },
+    {
+      "scene": 11,
+      "scene_id": "busy",
+      "title": "老師在忙的時候",
+      "frame": 21,
+      "kind": "option-A",
+      "setting": "同一教室；老師在左中景協助大偉，喬治從右側拿學習單走近。",
+      "action": "一直拉老師衣服：喬治鬆手，看見兩人被打斷",
+      "filename": "S11_busy_Frame_21.png"
+    },
+    {
+      "scene": 11,
+      "scene_id": "busy",
+      "title": "老師在忙的時候",
+      "frame": 22,
+      "kind": "option-B",
+      "setting": "同一教室；老師在左中景協助大偉，喬治從右側拿學習單走近。",
+      "action": "旁側等待再詢問：喬治停在一步外",
+      "filename": "S11_busy_Frame_22.png"
+    },
+    {
+      "scene": 11,
+      "scene_id": "busy",
+      "title": "老師在忙的時候",
+      "frame": 23,
+      "kind": "option-B",
+      "setting": "同一教室；老師在左中景協助大偉，喬治從右側拿學習單走近。",
+      "action": "旁側等待再詢問：手指先標記學習單問題",
+      "filename": "S11_busy_Frame_23.png"
+    },
+    {
+      "scene": 11,
+      "scene_id": "busy",
+      "title": "老師在忙的時候",
+      "frame": 24,
+      "kind": "option-B",
+      "setting": "同一教室；老師在左中景協助大偉，喬治從右側拿學習單走近。",
+      "action": "旁側等待再詢問：老師抬頭示意，喬治看向老師",
+      "filename": "S11_busy_Frame_24.png"
+    },
+    {
+      "scene": 11,
+      "scene_id": "busy",
+      "title": "老師在忙的時候",
+      "frame": 25,
+      "kind": "option-B",
+      "setting": "同一教室；老師在左中景協助大偉，喬治從右側拿學習單走近。",
+      "action": "旁側等待再詢問：抬起學習單具體詢問",
+      "filename": "S11_busy_Frame_25.png"
+    },
+    {
+      "scene": 11,
+      "scene_id": "busy",
+      "title": "老師在忙的時候",
+      "frame": 26,
+      "kind": "option-C",
+      "setting": "同一教室；老師在左中景協助大偉，喬治從右側拿學習單走近。",
+      "action": "直接放棄不問：喬治低頭把學習單收低",
+      "filename": "S11_busy_Frame_26.png"
+    },
+    {
+      "scene": 11,
+      "scene_id": "busy",
+      "title": "老師在忙的時候",
+      "frame": 27,
+      "kind": "option-C",
+      "setting": "同一教室；老師在左中景協助大偉，喬治從右側拿學習單走近。",
+      "action": "直接放棄不問：轉身走回座位",
+      "filename": "S11_busy_Frame_27.png"
+    },
+    {
+      "scene": 11,
+      "scene_id": "busy",
+      "title": "老師在忙的時候",
+      "frame": 28,
+      "kind": "option-C",
+      "setting": "同一教室；老師在左中景協助大偉，喬治從右側拿學習單走近。",
+      "action": "直接放棄不問：坐下看著原本不懂的題目",
+      "filename": "S11_busy_Frame_28.png"
+    },
+    {
+      "scene": 11,
+      "scene_id": "busy",
+      "title": "老師在忙的時候",
+      "frame": 29,
+      "kind": "option-C",
+      "setting": "同一教室；老師在左中景協助大偉，喬治從右側拿學習單走近。",
+      "action": "直接放棄不問：抬頭看老師，仍需要協助",
+      "filename": "S11_busy_Frame_29.png"
+    },
+    {
+      "scene": 11,
+      "scene_id": "busy",
+      "title": "老師在忙的時候",
+      "frame": 30,
+      "kind": "ending",
+      "setting": "同一教室；老師在左中景協助大偉，喬治從右側拿學習單走近。",
+      "action": "老師正在回應喬治的問題，大偉已繼續作業，彼此都有空間。",
+      "filename": "S11_busy_Frame_30.png"
+    },
+    {
+      "scene": 11,
+      "scene_id": "busy",
+      "title": "老師在忙的時候",
+      "frame": 31,
+      "kind": "summary",
+      "setting": "同一教室；老師在左中景協助大偉，喬治從右側拿學習單走近。",
+      "action": "同一場景的平靜收尾構圖，角色自然站在畫面左半部；右半部保留乾淨牆面或背景供後製整理「觀察、等待、眼神示意、清楚詢問」，不畫文字、圖示或框線。",
+      "filename": "S11_busy_Frame_31.png"
+    },
+    {
+      "scene": 12,
+      "scene_id": "truth",
+      "title": "說實話",
+      "frame": 1,
+      "kind": "background",
+      "setting": "操場邊安全空地；喬治左中景、大偉右中景，老師從左後側接近，小如遠處目擊。",
+      "action": "無人物主背景；操場邊安全空地；喬治左中景、大偉右中景，老師從左後側接近，小如遠處目擊。",
+      "filename": "S12_truth_Frame_01.png"
+    },
+    {
+      "scene": 12,
+      "scene_id": "truth",
+      "title": "說實話",
+      "frame": 2,
+      "kind": "main",
+      "setting": "操場邊安全空地；喬治左中景、大偉右中景，老師從左後側接近，小如遠處目擊。",
+      "action": "喬治與大偉站在操場邊",
+      "filename": "S12_truth_Frame_02.png"
+    },
+    {
+      "scene": 12,
+      "scene_id": "truth",
+      "title": "說實話",
+      "frame": 3,
+      "kind": "main",
+      "setting": "操場邊安全空地；喬治左中景、大偉右中景，老師從左後側接近，小如遠處目擊。",
+      "action": "喬治皺眉、手臂向前",
+      "filename": "S12_truth_Frame_03.png"
+    },
+    {
+      "scene": 12,
+      "scene_id": "truth",
+      "title": "說實話",
+      "frame": 4,
+      "kind": "main",
+      "setting": "操場邊安全空地；喬治左中景、大偉右中景，老師從左後側接近，小如遠處目擊。",
+      "action": "手掌輕碰大偉上臂，大偉退半步站穩",
+      "filename": "S12_truth_Frame_04.png"
+    },
+    {
+      "scene": 12,
+      "scene_id": "truth",
+      "title": "說實話",
+      "frame": 5,
+      "kind": "main",
+      "setting": "操場邊安全空地；喬治左中景、大偉右中景，老師從左後側接近，小如遠處目擊。",
+      "action": "喬治收回手，看見大偉不舒服",
+      "filename": "S12_truth_Frame_05.png"
+    },
+    {
+      "scene": 12,
+      "scene_id": "truth",
+      "title": "說實話",
+      "frame": 6,
+      "kind": "main",
+      "setting": "操場邊安全空地；喬治左中景、大偉右中景，老師從左後側接近，小如遠處目擊。",
+      "action": "老師走近兩人",
+      "filename": "S12_truth_Frame_06.png"
+    },
+    {
+      "scene": 12,
+      "scene_id": "truth",
+      "title": "說實話",
+      "frame": 7,
+      "kind": "main",
+      "setting": "操場邊安全空地；喬治左中景、大偉右中景，老師從左後側接近，小如遠處目擊。",
+      "action": "老師屈膝平視、開掌詢問",
+      "filename": "S12_truth_Frame_07.png"
+    },
+    {
+      "scene": 12,
+      "scene_id": "truth",
+      "title": "說實話",
+      "frame": 8,
+      "kind": "main",
+      "setting": "操場邊安全空地；喬治左中景、大偉右中景，老師從左後側接近，小如遠處目擊。",
+      "action": "喬治目光下垂猶豫",
+      "filename": "S12_truth_Frame_08.png"
+    },
+    {
+      "scene": 12,
+      "scene_id": "truth",
+      "title": "說實話",
+      "frame": 9,
+      "kind": "main",
+      "setting": "操場邊安全空地；喬治左中景、大偉右中景，老師從左後側接近，小如遠處目擊。",
+      "action": "視線看向自己的手",
+      "filename": "S12_truth_Frame_09.png"
+    },
+    {
+      "scene": 12,
+      "scene_id": "truth",
+      "title": "說實話",
+      "frame": 10,
+      "kind": "main",
+      "setting": "操場邊安全空地；喬治左中景、大偉右中景，老師從左後側接近，小如遠處目擊。",
+      "action": "緩慢吸氣，肩膀放低",
+      "filename": "S12_truth_Frame_10.png"
+    },
+    {
+      "scene": 12,
+      "scene_id": "truth",
+      "title": "說實話",
+      "frame": 11,
+      "kind": "main",
+      "setting": "操場邊安全空地；喬治左中景、大偉右中景，老師從左後側接近，小如遠處目擊。",
+      "action": "重新抬頭看老師",
+      "filename": "S12_truth_Frame_11.png"
+    },
+    {
+      "scene": 12,
+      "scene_id": "truth",
+      "title": "說實話",
+      "frame": 12,
+      "kind": "main",
+      "setting": "操場邊安全空地；喬治左中景、大偉右中景，老師從左後側接近，小如遠處目擊。",
+      "action": "以手掌朝自己胸口的動作承認",
+      "filename": "S12_truth_Frame_12.png"
+    },
+    {
+      "scene": 12,
+      "scene_id": "truth",
+      "title": "說實話",
+      "frame": 13,
+      "kind": "main",
+      "setting": "操場邊安全空地；喬治左中景、大偉右中景，老師從左後側接近，小如遠處目擊。",
+      "action": "轉頭面向大偉",
+      "filename": "S12_truth_Frame_13.png"
+    },
+    {
+      "scene": 12,
+      "scene_id": "truth",
+      "title": "說實話",
+      "frame": 14,
+      "kind": "main",
+      "setting": "操場邊安全空地；喬治左中景、大偉右中景，老師從左後側接近，小如遠處目擊。",
+      "action": "輕微低頭道歉",
+      "filename": "S12_truth_Frame_14.png"
+    },
+    {
+      "scene": 12,
+      "scene_id": "truth",
+      "title": "說實話",
+      "frame": 15,
+      "kind": "main",
+      "setting": "操場邊安全空地；喬治左中景、大偉右中景，老師從左後側接近，小如遠處目擊。",
+      "action": "老師平靜傾聽並示意輪流說",
+      "filename": "S12_truth_Frame_15.png"
+    },
+    {
+      "scene": 12,
+      "scene_id": "truth",
+      "title": "說實話",
+      "frame": 16,
+      "kind": "main",
+      "setting": "操場邊安全空地；喬治左中景、大偉右中景，老師從左後側接近，小如遠處目擊。",
+      "action": "大偉表達感受，喬治專注聽",
+      "filename": "S12_truth_Frame_16.png"
+    },
+    {
+      "scene": 12,
+      "scene_id": "truth",
+      "title": "說實話",
+      "frame": 17,
+      "kind": "main",
+      "setting": "操場邊安全空地；喬治左中景、大偉右中景，老師從左後側接近，小如遠處目擊。",
+      "action": "兩人同意保持距離、改用說話處理",
+      "filename": "S12_truth_Frame_17.png"
+    },
+    {
+      "scene": 12,
+      "scene_id": "truth",
+      "title": "說實話",
+      "frame": 18,
+      "kind": "option-A",
+      "setting": "操場邊安全空地；喬治左中景、大偉右中景，老師從左後側接近，小如遠處目擊。",
+      "action": "改編故事怪別人：喬治眼神閃躲",
+      "filename": "S12_truth_Frame_18.png"
+    },
+    {
+      "scene": 12,
+      "scene_id": "truth",
+      "title": "說實話",
+      "frame": 19,
+      "kind": "option-A",
+      "setting": "操場邊安全空地；喬治左中景、大偉右中景，老師從左後側接近，小如遠處目擊。",
+      "action": "改編故事怪別人：手指向大偉，試著歸咎對方",
+      "filename": "S12_truth_Frame_19.png"
+    },
+    {
+      "scene": 12,
+      "scene_id": "truth",
+      "title": "說實話",
+      "frame": 20,
+      "kind": "option-A",
+      "setting": "操場邊安全空地；喬治左中景、大偉右中景，老師從左後側接近，小如遠處目擊。",
+      "action": "改編故事怪別人：小如走近老師，平靜說明目擊情況",
+      "filename": "S12_truth_Frame_20.png"
+    },
+    {
+      "scene": 12,
+      "scene_id": "truth",
+      "title": "說實話",
+      "frame": 21,
+      "kind": "option-A",
+      "setting": "操場邊安全空地；喬治左中景、大偉右中景，老師從左後側接近，小如遠處目擊。",
+      "action": "改編故事怪別人：喬治放低手，看到大家困惑與失望",
+      "filename": "S12_truth_Frame_21.png"
+    },
+    {
+      "scene": 12,
+      "scene_id": "truth",
+      "title": "說實話",
+      "frame": 22,
+      "kind": "option-B",
+      "setting": "操場邊安全空地；喬治左中景、大偉右中景，老師從左後側接近，小如遠處目擊。",
+      "action": "完全沉默：老師蹲低詢問",
+      "filename": "S12_truth_Frame_22.png"
+    },
+    {
+      "scene": 12,
+      "scene_id": "truth",
+      "title": "說實話",
+      "frame": 23,
+      "kind": "option-B",
+      "setting": "操場邊安全空地；喬治左中景、大偉右中景，老師從左後側接近，小如遠處目擊。",
+      "action": "完全沉默：喬治低頭、雙手緊握",
+      "filename": "S12_truth_Frame_23.png"
+    },
+    {
+      "scene": 12,
+      "scene_id": "truth",
+      "title": "說實話",
+      "frame": 24,
+      "kind": "option-B",
+      "setting": "操場邊安全空地；喬治左中景、大偉右中景，老師從左後側接近，小如遠處目擊。",
+      "action": "完全沉默：大偉看著老師，事情仍未釐清",
+      "filename": "S12_truth_Frame_24.png"
+    },
+    {
+      "scene": 12,
+      "scene_id": "truth",
+      "title": "說實話",
+      "frame": 25,
+      "kind": "option-B",
+      "setting": "操場邊安全空地；喬治左中景、大偉右中景，老師從左後側接近，小如遠處目擊。",
+      "action": "完全沉默：老師耐心留出時間，喬治準備開口",
+      "filename": "S12_truth_Frame_25.png"
+    },
+    {
+      "scene": 12,
+      "scene_id": "truth",
+      "title": "說實話",
+      "frame": 26,
+      "kind": "option-C",
+      "setting": "操場邊安全空地；喬治左中景、大偉右中景，老師從左後側接近，小如遠處目擊。",
+      "action": "承認事實、道歉與修復：喬治緩慢呼氣",
+      "filename": "S12_truth_Frame_26.png"
+    },
+    {
+      "scene": 12,
+      "scene_id": "truth",
+      "title": "說實話",
+      "frame": 27,
+      "kind": "option-C",
+      "setting": "操場邊安全空地；喬治左中景、大偉右中景，老師從左後側接近，小如遠處目擊。",
+      "action": "承認事實、道歉與修復：看向老師，以手掌朝自己表示承認",
+      "filename": "S12_truth_Frame_27.png"
+    },
+    {
+      "scene": 12,
+      "scene_id": "truth",
+      "title": "說實話",
+      "frame": 28,
+      "kind": "option-C",
+      "setting": "操場邊安全空地；喬治左中景、大偉右中景，老師從左後側接近，小如遠處目擊。",
+      "action": "承認事實、道歉與修復：轉身向大偉低頭致歉",
+      "filename": "S12_truth_Frame_28.png"
+    },
+    {
+      "scene": 12,
+      "scene_id": "truth",
+      "title": "說實話",
+      "frame": 29,
+      "kind": "option-C",
+      "setting": "操場邊安全空地；喬治左中景、大偉右中景，老師從左後側接近，小如遠處目擊。",
+      "action": "承認事實、道歉與修復：三人平靜商量下次的做法",
+      "filename": "S12_truth_Frame_29.png"
+    },
+    {
+      "scene": 12,
+      "scene_id": "truth",
+      "title": "說實話",
+      "frame": 30,
+      "kind": "ending",
+      "setting": "操場邊安全空地；喬治左中景、大偉右中景，老師從左後側接近，小如遠處目擊。",
+      "action": "喬治與大偉保持舒適距離，老師支持地聆聽，兩人準備以說話解決。",
+      "filename": "S12_truth_Frame_30.png"
+    },
+    {
+      "scene": 12,
+      "scene_id": "truth",
+      "title": "說實話",
+      "frame": 31,
+      "kind": "summary",
+      "setting": "操場邊安全空地；喬治左中景、大偉右中景，老師從左後側接近，小如遠處目擊。",
+      "action": "同一場景的平靜收尾構圖，角色自然站在畫面左半部；右半部保留乾淨牆面或背景供後製整理「回想事實、誠實表達、道歉、共同修復」，不畫文字、圖示或框線。",
+      "filename": "S12_truth_Frame_31.png"
+    },
+    {
+      "scene": 13,
+      "scene_id": "shop",
+      "title": "東西要付錢",
+      "frame": 1,
+      "kind": "background",
+      "setting": "文具店；左側展示架、中景通道、右側收銀櫃台；喬治左中景、老師左後、小如中後、店員右。",
+      "action": "無人物主背景；文具店；左側展示架、中景通道、右側收銀櫃台；喬治左中景、老師左後、小如中後、店員右。",
+      "filename": "S13_shop_Frame_01.png"
+    },
+    {
+      "scene": 13,
+      "scene_id": "shop",
+      "title": "東西要付錢",
+      "frame": 2,
+      "kind": "main",
+      "setting": "文具店；左側展示架、中景通道、右側收銀櫃台；喬治左中景、老師左後、小如中後、店員右。",
+      "action": "喬治跟老師走進文具店",
+      "filename": "S13_shop_Frame_02.png"
+    },
+    {
+      "scene": 13,
+      "scene_id": "shop",
+      "title": "東西要付錢",
+      "frame": 3,
+      "kind": "main",
+      "setting": "文具店；左側展示架、中景通道、右側收銀櫃台；喬治左中景、老師左後、小如中後、店員右。",
+      "action": "步伐放慢看展示架",
+      "filename": "S13_shop_Frame_03.png"
+    },
+    {
+      "scene": 13,
+      "scene_id": "shop",
+      "title": "東西要付錢",
+      "frame": 4,
+      "kind": "main",
+      "setting": "文具店；左側展示架、中景通道、右側收銀櫃台；喬治左中景、老師左後、小如中後、店員右。",
+      "action": "眼睛看見一枚房屋造型鑰匙圈",
+      "filename": "S13_shop_Frame_04.png"
+    },
+    {
+      "scene": 13,
+      "scene_id": "shop",
+      "title": "東西要付錢",
+      "frame": 5,
+      "kind": "main",
+      "setting": "文具店；左側展示架、中景通道、右側收銀櫃台；喬治左中景、老師左後、小如中後、店員右。",
+      "action": "手從身側抬起",
+      "filename": "S13_shop_Frame_05.png"
+    },
+    {
+      "scene": 13,
+      "scene_id": "shop",
+      "title": "東西要付錢",
+      "frame": 6,
+      "kind": "main",
+      "setting": "文具店；左側展示架、中景通道、右側收銀櫃台；喬治左中景、老師左後、小如中後、店員右。",
+      "action": "指尖輕拿鑰匙圈",
+      "filename": "S13_shop_Frame_06.png"
+    },
+    {
+      "scene": 13,
+      "scene_id": "shop",
+      "title": "東西要付錢",
+      "frame": 7,
+      "kind": "main",
+      "setting": "文具店；左側展示架、中景通道、右側收銀櫃台；喬治左中景、老師左後、小如中後、店員右。",
+      "action": "抬到胸口仔細看，表情喜歡",
+      "filename": "S13_shop_Frame_07.png"
+    },
+    {
+      "scene": 13,
+      "scene_id": "shop",
+      "title": "東西要付錢",
+      "frame": 8,
+      "kind": "main",
+      "setting": "文具店；左側展示架、中景通道、右側收銀櫃台；喬治左中景、老師左後、小如中後、店員右。",
+      "action": "手停在原位，沒有收入口袋",
+      "filename": "S13_shop_Frame_08.png"
+    },
+    {
+      "scene": 13,
+      "scene_id": "shop",
+      "title": "東西要付錢",
+      "frame": 9,
+      "kind": "main",
+      "setting": "文具店；左側展示架、中景通道、右側收銀櫃台；喬治左中景、老師左後、小如中後、店員右。",
+      "action": "喬治轉頭找老師",
+      "filename": "S13_shop_Frame_09.png"
+    },
+    {
+      "scene": 13,
+      "scene_id": "shop",
+      "title": "東西要付錢",
+      "frame": 10,
+      "kind": "main",
+      "setting": "文具店；左側展示架、中景通道、右側收銀櫃台；喬治左中景、老師左後、小如中後、店員右。",
+      "action": "把鑰匙圈展示給老師詢問",
+      "filename": "S13_shop_Frame_10.png"
+    },
+    {
+      "scene": 13,
+      "scene_id": "shop",
+      "title": "東西要付錢",
+      "frame": 11,
+      "kind": "main",
+      "setting": "文具店；左側展示架、中景通道、右側收銀櫃台；喬治左中景、老師左後、小如中後、店員右。",
+      "action": "老師看向物品並點頭",
+      "filename": "S13_shop_Frame_11.png"
+    },
+    {
+      "scene": 13,
+      "scene_id": "shop",
+      "title": "東西要付錢",
+      "frame": 12,
+      "kind": "main",
+      "setting": "文具店；左側展示架、中景通道、右側收銀櫃台；喬治左中景、老師左後、小如中後、店員右。",
+      "action": "喬治取出自己的零錢包",
+      "filename": "S13_shop_Frame_12.png"
+    },
+    {
+      "scene": 13,
+      "scene_id": "shop",
+      "title": "東西要付錢",
+      "frame": 13,
+      "kind": "main",
+      "setting": "文具店；左側展示架、中景通道、右側收銀櫃台；喬治左中景、老師左後、小如中後、店員右。",
+      "action": "看一眼硬幣確認足夠",
+      "filename": "S13_shop_Frame_13.png"
+    },
+    {
+      "scene": 13,
+      "scene_id": "shop",
+      "title": "東西要付錢",
+      "frame": 14,
+      "kind": "main",
+      "setting": "文具店；左側展示架、中景通道、右側收銀櫃台；喬治左中景、老師左後、小如中後、店員右。",
+      "action": "轉身朝櫃台走一步",
+      "filename": "S13_shop_Frame_14.png"
+    },
+    {
+      "scene": 13,
+      "scene_id": "shop",
+      "title": "東西要付錢",
+      "frame": 15,
+      "kind": "main",
+      "setting": "文具店；左側展示架、中景通道、右側收銀櫃台；喬治左中景、老師左後、小如中後、店員右。",
+      "action": "走到櫃台，把物品放到檯面",
+      "filename": "S13_shop_Frame_15.png"
+    },
+    {
+      "scene": 13,
+      "scene_id": "shop",
+      "title": "東西要付錢",
+      "frame": 16,
+      "kind": "main",
+      "setting": "文具店；左側展示架、中景通道、右側收銀櫃台；喬治左中景、老師左後、小如中後、店員右。",
+      "action": "伸手支付，店員收款",
+      "filename": "S13_shop_Frame_16.png"
+    },
+    {
+      "scene": 13,
+      "scene_id": "shop",
+      "title": "東西要付錢",
+      "frame": 17,
+      "kind": "main",
+      "setting": "文具店；左側展示架、中景通道、右側收銀櫃台；喬治左中景、老師左後、小如中後、店員右。",
+      "action": "店員把已結帳物品交給喬治，喬治致謝",
+      "filename": "S13_shop_Frame_17.png"
+    },
+    {
+      "scene": 13,
+      "scene_id": "shop",
+      "title": "東西要付錢",
+      "frame": 18,
+      "kind": "option-A",
+      "setting": "文具店；左側展示架、中景通道、右側收銀櫃台；喬治左中景、老師左後、小如中後、店員右。",
+      "action": "沒結帳放口袋帶走：喬治拿起鑰匙圈看向周圍",
+      "filename": "S13_shop_Frame_18.png"
+    },
+    {
+      "scene": 13,
+      "scene_id": "shop",
+      "title": "東西要付錢",
+      "frame": 19,
+      "kind": "option-A",
+      "setting": "文具店；左側展示架、中景通道、右側收銀櫃台；喬治左中景、老師左後、小如中後、店員右。",
+      "action": "沒結帳放口袋帶走：手把物品放近口袋，尚未離店",
+      "filename": "S13_shop_Frame_19.png"
+    },
+    {
+      "scene": 13,
+      "scene_id": "shop",
+      "title": "東西要付錢",
+      "frame": 20,
+      "kind": "option-A",
+      "setting": "文具店；左側展示架、中景通道、右側收銀櫃台；喬治左中景、老師左後、小如中後、店員右。",
+      "action": "沒結帳放口袋帶走：店員開掌平靜提醒，老師轉頭關心",
+      "filename": "S13_shop_Frame_20.png"
+    },
+    {
+      "scene": 13,
+      "scene_id": "shop",
+      "title": "東西要付錢",
+      "frame": 21,
+      "kind": "option-A",
+      "setting": "文具店；左側展示架、中景通道、右側收銀櫃台；喬治左中景、老師左後、小如中後、店員右。",
+      "action": "沒結帳放口袋帶走：喬治停步取出物品，放回可見處",
+      "filename": "S13_shop_Frame_21.png"
+    },
+    {
+      "scene": 13,
+      "scene_id": "shop",
+      "title": "東西要付錢",
+      "frame": 22,
+      "kind": "option-B",
+      "setting": "文具店；左側展示架、中景通道、右側收銀櫃台；喬治左中景、老師左後、小如中後、店員右。",
+      "action": "先問老師再結帳：喬治拿物品詢問老師",
+      "filename": "S13_shop_Frame_22.png"
+    },
+    {
+      "scene": 13,
+      "scene_id": "shop",
+      "title": "東西要付錢",
+      "frame": 23,
+      "kind": "option-B",
+      "setting": "文具店；左側展示架、中景通道、右側收銀櫃台；喬治左中景、老師左後、小如中後、店員右。",
+      "action": "先問老師再結帳：看自己的零錢確認足夠",
+      "filename": "S13_shop_Frame_23.png"
+    },
+    {
+      "scene": 13,
+      "scene_id": "shop",
+      "title": "東西要付錢",
+      "frame": 24,
+      "kind": "option-B",
+      "setting": "文具店；左側展示架、中景通道、右側收銀櫃台；喬治左中景、老師左後、小如中後、店員右。",
+      "action": "先問老師再結帳：走到櫃台放下物品並付款",
+      "filename": "S13_shop_Frame_24.png"
+    },
+    {
+      "scene": 13,
+      "scene_id": "shop",
+      "title": "東西要付錢",
+      "frame": 25,
+      "kind": "option-B",
+      "setting": "文具店；左側展示架、中景通道、右側收銀櫃台；喬治左中景、老師左後、小如中後、店員右。",
+      "action": "先問老師再結帳：店員交付已結帳物品，喬治致謝",
+      "filename": "S13_shop_Frame_25.png"
+    },
+    {
+      "scene": 13,
+      "scene_id": "shop",
+      "title": "東西要付錢",
+      "frame": 26,
+      "kind": "option-C",
+      "setting": "文具店；左側展示架、中景通道、右側收銀櫃台；喬治左中景、老師左後、小如中後、店員右。",
+      "action": "要求老師一定要買：喬治把物品舉向老師",
+      "filename": "S13_shop_Frame_26.png"
+    },
+    {
+      "scene": 13,
+      "scene_id": "shop",
+      "title": "東西要付錢",
+      "frame": 27,
+      "kind": "option-C",
+      "setting": "文具店；左側展示架、中景通道、右側收銀櫃台；喬治左中景、老師左後、小如中後、店員右。",
+      "action": "要求老師一定要買：眉頭緊起、反覆比向鑰匙圈",
+      "filename": "S13_shop_Frame_27.png"
+    },
+    {
+      "scene": 13,
+      "scene_id": "shop",
+      "title": "東西要付錢",
+      "frame": 28,
+      "kind": "option-C",
+      "setting": "文具店；左側展示架、中景通道、右側收銀櫃台；喬治左中景、老師左後、小如中後、店員右。",
+      "action": "要求老師一定要買：老師開掌說明界線，店員安靜等待",
+      "filename": "S13_shop_Frame_28.png"
+    },
+    {
+      "scene": 13,
+      "scene_id": "shop",
+      "title": "東西要付錢",
+      "frame": 29,
+      "kind": "option-C",
+      "setting": "文具店；左側展示架、中景通道、右側收銀櫃台；喬治左中景、老師左後、小如中後、店員右。",
+      "action": "要求老師一定要買：喬治手臂放低，轉頭看向展示架",
+      "filename": "S13_shop_Frame_29.png"
+    },
+    {
+      "scene": 13,
+      "scene_id": "shop",
+      "title": "東西要付錢",
+      "frame": 30,
+      "kind": "ending",
+      "setting": "文具店；左側展示架、中景通道、右側收銀櫃台；喬治左中景、老師左後、小如中後、店員右。",
+      "action": "喬治雙手接過已付款的鑰匙圈，店員與老師平靜微笑，錢包已收妥。",
+      "filename": "S13_shop_Frame_30.png"
+    },
+    {
+      "scene": 13,
+      "scene_id": "shop",
+      "title": "東西要付錢",
+      "frame": 31,
+      "kind": "summary",
+      "setting": "文具店；左側展示架、中景通道、右側收銀櫃台；喬治左中景、老師左後、小如中後、店員右。",
+      "action": "同一場景的平靜收尾構圖，角色自然站在畫面左半部；右半部保留乾淨牆面或背景供後製整理「先詢問、確認預算、付款、再帶走」，不畫文字、圖示或框線。",
+      "filename": "S13_shop_Frame_31.png"
+    }
+  ]
+}
