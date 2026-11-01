@@ -174,6 +174,27 @@
     .enter .bub { animation: bubIn .4s .95s ease both; }
     .enter .tag, .enter .count { animation: inFade .4s .85s ease both; }
     .swap .L-chars, .swap .L-props { animation: inFade .35s ease both; }
+    /* 動畫關鍵畫面（animation-assets） */
+    .stage.anim::after { opacity: .1; }
+    .stage.anim::before { background: radial-gradient(ellipse at 50% 45%, transparent 65%, rgba(84, 60, 40, .16) 100%); }
+    .aframe { position: absolute; inset: 0; background: #EFE6D6; }
+    .aframe img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity .3s ease; }
+    .aframe img.on { opacity: 1; }
+    .subs { position: absolute; left: 50%; bottom: 5%; transform: translateX(-50%); z-index: 3; width: max-content; max-width: 84%; display: grid; gap: 6px; justify-items: center; }
+    .subs .ln { margin: 0; background: rgba(251, 247, 238, .95); color: #4A3B33; border: 1.5px solid rgba(91, 74, 66, .22); border-radius: 16px 20px 18px 14px / 16px 14px 20px 18px;
+      padding: .3em .95em .36em; box-shadow: 0 5px 14px rgba(80, 58, 40, .2); font-size: clamp(10px, 2.2vw, 21px); font-size: clamp(10px, 2.15cqw, 21px); line-height: 1.4; animation: bubIn .42s ease both; }
+    .subs .ln:nth-child(2) { animation-delay: .15s; }
+    .subs .ln b { color: #9A5E3C; margin-right: .5em; }
+    .subs .ln.think { background: rgba(255, 253, 248, .86); border-style: dashed; color: #6B5A50; }
+    .subs .ln.think b { color: #7A6A60; font-weight: 400; }
+    .scene-art { background: #EFE6D6; }
+    .sumcard { position: absolute; z-index: 3; right: 3%; top: 50%; transform: translateY(-50%) rotate(.6deg); width: 33%; background: rgba(251, 247, 238, .95); color: #4A3B33;
+      border-radius: 6px 12px 8px 10px; padding: 1em 1.2em 1.1em; box-shadow: 0 6px 18px rgba(80, 58, 40, .22); display: grid; gap: .55em; font-size: clamp(10px, 2.2cqw, 22px); animation: capIn .5s ease both; }
+    .sumcard::before { content: ""; position: absolute; top: -9px; left: 50%; width: 62px; height: 17px; margin-left: -31px; background: rgba(157, 181, 154, .62); transform: rotate(-3deg); }
+    .sumcard b { font-size: 1.15em; margin-bottom: .2em; }
+    .sumcard span { display: flex; gap: .6em; align-items: center; }
+    .sumcard i { font-style: normal; width: 1.6em; height: 1.6em; border-radius: 50%; background: var(--teal); color: var(--teal-ink); display: inline-flex; align-items: center; justify-content: center; font-weight: 700; flex: none; font-size: .85em; }
+    .pg-pic img, .kpic img { width: 100%; height: 100%; object-fit: cover; display: block; }
     @media (prefers-reduced-motion: reduce) {
       .stage *, .stage *::before, .stage *::after { animation: none !important; transition: none !important; }
     }
@@ -324,6 +345,7 @@
   <main id="main"></main>
 </div>
 
+<script src="anim-data.js"></script>
 <script>
 /* ================= 人物 =================
  * 每個情境的 cast 寫角色，畫面（frame）只寫「這一格有什麼改變」。
@@ -806,6 +828,24 @@ var SCENES = [
   twist: { q: '如果錢不夠？', a: '說「好，那下次再買」，把東西放回架子上。' }
 }
 ];
+
+/* 有動畫關鍵畫面的情境：錯誤版、換個方式、選錯後的演出都改用畫面 */
+SCENES.forEach(function (s) {
+  var a = window.ANIM && window.ANIM[s.id];
+  if (!a) return;
+  s.anim = a; s.wrong = a.wrong; s.right = a.right;
+  s.choose.opts.forEach(function (o, i) { if (!o.ok && a.opts[i]) o.demo = a.opts[i]; });
+});
+/* 配合新畫面的內容 */
+(function () {
+  var by = {}; SCENES.forEach(function (s) { by[s.id] = s; });
+  by.hall.questions[0].hint = '從兩個人中間衝過去，撞到了阿明。';
+  by.hall.sum.p = '從中間衝過去，撞到了阿明。';
+  by.laugh.questions[1].hint = '老師趕快叫他停下來。差一點就有人受傷，喬治也會被處罰。';
+  by.laugh.sum.o = '大偉嚇到了，老師趕快來阻止。';
+  by.nose.questions[0].hint = '直接用手指挖鼻孔。';
+  by.nose.sum.p = '鼻子癢，直接用手指挖鼻孔。';
+})();
 
 /* ================= 美術設計系統 =================
  * 溫暖手繪繪本風：奶油米色、鼠尾草綠、柔和天空藍、木質棕、暖黃色，少量磚紅與橘色當重點色。
@@ -1359,7 +1399,7 @@ function render() {
       '<div class="grid">' + SCENES.map(function (s, i) {
         var r = state.rate[s.id];
         return '<div class="sc-wrap"><button class="sc-card" data-i="' + i + '" data-label="情境' + (i + 1) + '，' + esc(s.title) + '"><span class="no"><span>情境 ' + (i + 1) + '</span>' + (r ? '<span class="stars">' + '★★★'.slice(0, r) + '</span>' : '') + '</span>' +
-          (SCENE_ART[s.id] ? sceneImage(s) : '') + '<h3>' + esc(s.title) + '</h3><p>' + esc(s.short) + '</p>' + chain(s.how.chain, 'small') + '</button>' +
+          (s.anim ? '<img class="scene-art" src="anim/' + s.anim.dir + '/thumb.webp" alt="" loading="lazy">' : SCENE_ART[s.id] ? sceneImage(s) : '') + '<h3>' + esc(s.title) + '</h3><p>' + esc(s.short) + '</p>' + chain(s.how.chain, 'small') + '</button>' +
           sayBtn('情境' + (i + 1) + '，' + s.title + '。' + s.short, 'corner') + '</div>';
       }).join('') + '</div>';
     m.querySelectorAll('.sc-card').forEach(function (b) { b.onclick = function () { openScene(+b.dataset.i); }; });
@@ -1489,7 +1529,7 @@ function build(cast, list, base) {
   list.forEach(function (f) {
     for (var id in (f.c || {})) for (var k in f.c[id]) cur[id][k] = f.c[id][k];
     var snap = {}; for (id in cur) { snap[id] = {}; for (k in cur[id]) snap[id][k] = cur[id][k]; }
-    out.push({ illustration: f.illustration || false, ppl: snap, props: f.props || base || [], say: f.say || [], think: f.think || [], fx: f.fx || [], cap: f.cap || '' });
+    out.push({ sum: f.sum || 0, img: f.img || null, illustration: f.illustration || false, ppl: snap, props: f.props || base || [], say: f.say || [], think: f.think || [], fx: f.fx || [], cap: f.cap || '' });
   });
   return out;
 }
@@ -1538,6 +1578,7 @@ function sceneLayers(s) {
 }
 /* 列印教材用：一格靜態畫面 */
 function frameSvg(s, f) {
+  if (s.anim && f.img) return '<img src="anim/' + s.anim.dir + '/' + ('0' + f.img[f.img.length - 1]).slice(-2) + '.webp" alt="">';
   var L = sceneLayers(s), faces = computeFaces(f, {});
   var ids = Object.keys(f.ppl).filter(function (id) { return f.ppl[id].x < 820; }).sort(function (a, b) { return f.ppl[a].x - f.ppl[b].x; });
   return '<svg viewBox="0 0 800 450" aria-hidden="true">' + svgDefs() + L.bg + L.mid +
@@ -1641,14 +1682,61 @@ function applyFrame(s, f, badge, instant) {
   st.querySelector('#cnt').textContent = (state.fi + 1) + ' / ' + state.frames.length;
   if (instant) { void st.offsetWidth; st.classList.remove('no-tr'); }
 }
+/* ===== 動畫關鍵畫面播放：一拍裡的畫格依序淡入，最後一格停住 ===== */
+var IMG_MS = 520;
+function animSrc(s, n) { return 'anim/' + s.anim.dir + '/' + ('0' + n).slice(-2) + '.webp'; }
+function preloadAnim(s) {
+  if (s._pre) return; s._pre = 1;
+  for (var n = 1; n <= 31; n++) { var im = new Image(); im.src = animSrc(s, n); }
+}
+function showAnimImg(st, src, instant) {
+  var box = st.querySelector('.aframe'), last = box.lastElementChild;
+  if (last && last.getAttribute('src') === src) return;
+  var im = document.createElement('img'); im.alt = ''; im.src = src;
+  if (instant) im.className = 'on';
+  box.appendChild(im);
+  if (!instant) requestAnimationFrame(function () { requestAnimationFrame(function () { im.className = 'on'; }); });
+  setTimeout(function () { while (box.children.length > 2) box.removeChild(box.firstElementChild); }, 450);
+}
+function drawAnim(s, f, badge) {
+  var st = $('#stage'), key = 'anim-' + s.id, fresh = false;
+  if (st.dataset.sc !== key) {
+    st.innerHTML = '<div class="aframe"></div><span class="tag" id="tag"></span><span class="count" id="cnt"></span>';
+    st.dataset.sc = key; st.classList.add('anim'); fresh = true; preloadAnim(s);
+  }
+  st.querySelectorAll('.ov').forEach(function (x) { x.remove(); });
+  var html = '';
+  if (f.cap) html += '<div class="cap ov">' + esc(f.cap) + '</div>';
+  var lines = f.say.map(function (b) { return '<p class="ln"><b>' + esc(s.cast[b[0]].name) + '</b>' + esc(b[1]) + '</p>'; })
+    .concat(f.think.map(function (b) { return '<p class="ln think"><b>' + esc(s.cast[b[0]].name) + '心裡想</b>' + esc(b[1]) + '</p>'; }));
+  if (lines.length) html += '<div class="subs ov">' + lines.join('') + '</div>';
+  /* 第 31 格右半邊留白：放口訣 */
+  if (f.sum) html += '<div class="sumcard ov"><b>我可以怎麼做</b>' + s.how.chain.map(function (c, i) { return '<span><i>' + (i + 1) + '</i>' + esc(c) + '</span>'; }).join('') + '</div>';
+  if (state.stamp) html += '<div class="stamp ov"><svg viewBox="0 0 100 100" aria-hidden="true">' + (STAMP[state.stamp] || '') + '</svg></div>';
+  st.insertAdjacentHTML('beforeend', html);
+  var tag = st.querySelector('#tag'); tag.className = 'tag ' + badge[1]; tag.textContent = badge[0];
+  st.querySelector('#cnt').textContent = (state.fi + 1) + ' / ' + state.frames.length;
+  /* 同一拍重畫（例如蓋上 ⭕❌）時，不重播畫格 */
+  var beatKey = state.frames.length + ':' + state.fi + ':' + f.img.join(',');
+  if (st._beat === beatKey && !fresh && !state.instant) return;
+  st._beat = beatKey;
+  clearTimeout(st._t);
+  var imgs = f.img, k = 0, instant = fresh || state.instant;
+  (function step() {
+    showAnimImg(st, animSrc(s, imgs[k]), instant && k === 0);
+    if (++k < imgs.length) st._t = setTimeout(step, IMG_MS);
+  })();
+}
 function drawFrame(badge) {
   var s = SCENES[state.sc], f = state.frames[state.fi];
   if (!f) return;
+  if (s.anim && f.img) { drawAnim(s, f, badge); state.instant = false; return; }
   if (f.illustration && SCENE_ART[s.id]) {
     showSceneImage(s, f, badge);
     state.instant = false;
     return;
   }
+  $('#stage').classList.remove('anim');
   var fresh = ensureStage(s);
   applyFrame(s, f, badge, fresh || state.instant);
   state.instant = false;
@@ -1688,7 +1776,12 @@ function nextFrame() {
   if (state.fi < state.frames.length - 1) { state.fi++; drawFrame(state.badge); renderCtrl(); }
   if (state.fi === state.frames.length - 1 && state.after) { var a = state.after; state.after = null; a(); }
 }
-function speakFrame(done) { speakSeq(frameSegs(state.frames[state.fi]), done); }
+function speakFrame(done) {
+  var f = state.frames[state.fi], s = SCENES[state.sc];
+  if (!(s.anim && f && f.img)) { speakSeq(frameSegs(f), done); return; }
+  var need = (f.img.length - 1) * IMG_MS + 500, t0 = Date.now();
+  speakSeq(frameSegs(f), function () { if (done) setTimeout(done, Math.max(0, need - (Date.now() - t0))); });
+}
 /* 影片播完：錯誤版接著「停！想一想」、換個方式接著「我可以怎麼做」，自動念出來（老師要求） */
 function afterVideo() {
   var from = state.phase, sc = state.sc, next = { wrong: 'stop', right: 'act' }[from];
@@ -1713,8 +1806,9 @@ function goPhase(k, quiet) {
   stopAll(); state.phase = k; state.stamp = null; renderSteps();
   var s = SCENES[state.sc], p = $('#panel'), say = sayBtn;
   if (k === 'wrong' || k === 'stop') showFrames(s.wrong, ['喬治這樣做', 'red']);
-  if (k === 'choose') { state.picked = null; showFrames(s.wrong.slice(0, 1), ['想一想', 'yellow']); }
-  if (k === 'right' || k === 'act') showFrames(s.right, ['換個方式做', 'green'], k === 'right' ? function () { state.rightSeen = true; } : null);
+  if (k === 'choose') { state.picked = null; showFrames(introView(s), ['想一想', 'yellow']); }
+  if (k === 'right') showFrames(s.right, ['換個方式做', 'green'], function () { state.rightSeen = true; });
+  if (k === 'act') showFrames(s.anim ? [{ img: [31], sum: 1 }] : s.right, ['我可以怎麼做', 'green']);
 
   if (k === 'wrong') {
     p.className = 'panel red';
@@ -1748,6 +1842,8 @@ function goPhase(k, quiet) {
   }
 }
 
+/* 選一選時的畫面：動畫用選擇點那一格 */
+function introView(s) { return s.anim ? [{ img: [s.anim.dec] }] : s.wrong.slice(0, 1); }
 function renderChoose() {
   var s = SCENES[state.sc], c = s.choose, p = $('#panel'), pk = state.picked;
   p.className = 'panel yellow';
@@ -1762,12 +1858,12 @@ function renderChoose() {
   p.querySelectorAll('.opt').forEach(function (b) {
     b.onclick = function () {
       var i = +b.dataset.i, o = c.opts[i]; state.picked = i;
-      if (o.ok) { showFrames(s.wrong.slice(0, 1), ['想一想', 'yellow']); state.stamp = '⭕'; drawFrame(state.badge); renderChoose(); speak(o.fb); }
+      if (o.ok) { showFrames(introView(s), ['想一想', 'yellow']); state.stamp = '⭕'; drawFrame(state.badge); renderChoose(); speak(o.fb); }
       else { showFrames(o.demo, ['如果這樣做…', 'red']); renderChoose(); autoPlayThen(function () { state.stamp = '❌'; drawFrame(state.badge); speak(o.fb); }); }
     };
   });
   if ($('#go')) $('#go').onclick = function () { goPhase('right'); };
-  if ($('#again')) $('#again').onclick = function () { state.picked = null; showFrames(s.wrong.slice(0, 1), ['想一想', 'yellow']); renderChoose(); };
+  if ($('#again')) $('#again').onclick = function () { state.picked = null; showFrames(introView(s), ['想一想', 'yellow']); renderChoose(); };
 }
 function autoPlayThen(cb) {
   autoPlay();
