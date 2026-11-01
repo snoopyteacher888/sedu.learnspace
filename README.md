@@ -4,6 +4,7 @@
 
 - `index.html`：首頁（選科目）。點進科目後在同一個網址、同一個分頁裡顯示，上方有「🏠 回學習樂園」。
 - 三年級數學：另一個 repo [`nani-math-3`](https://github.com/snoopyteacher888/nani-math-3)（南一版三上，數學跑跑樂園：跑酷複習遊戲）。網址 https://snoopyteacher888.github.io/nani-math-3/
+- 五、六年級數學：課本單元還沒做，先打開 `nani-math-3/?grade=5`、`?grade=6`，只有「🦊 九九乘法大冒險」（自己的紀錄、預設不加注音）。
 - `social-skills/`：社會技巧「和喬治一起練習相處」（13 個情境：看一看 → 停！想一想 → 選一選 → 換個方式 → 換我練）。
 
 ## 手機版／網頁版
