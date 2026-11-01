@@ -346,6 +346,7 @@
 </div>
 
 <script src="anim-data.js"></script>
+<script src="voice/clips.js"></script>
 <script>
 /* ================= 人物 =================
  * 每個情境的 cast 寫角色，畫面（frame）只寫「這一格有什麼改變」。
@@ -1331,8 +1332,19 @@ function voiceNote() {
 if ('speechSynthesis' in window) { pickVoice(); speechSynthesis.onvoiceschanged = pickVoice; }
 /* sayTok：每次「重新開始念」就加一，正在念的一連串句子看到號碼變了就停下來 */
 var sayTok = 0;
-function say1(text, sex, done) {
+/* 喬治、阿明、大偉說的話：播放預先錄好的男生語音（老師要求：喬治要是男生的聲音） */
+var clipAudio = null;
+function playClip(file, done) {
+  if (clipAudio) { clipAudio.onended = clipAudio.onerror = null; clipAudio.pause(); }
+  var a = clipAudio = new Audio('voice/' + file), fin = false;
+  var end = function () { if (!fin) { fin = true; if (done) done(); } };
+  a.onended = end; a.onerror = end;
+  var pr = a.play(); if (pr && pr.catch) pr.catch(end);
+}
+function say1(text, sex, done, who) {
   var est = 600 + text.length * 260;
+  var clip = who && window.VOICE_CLIPS && window.VOICE_CLIPS[who + '|' + text];
+  if (state.tts && clip) { if ('speechSynthesis' in window) speechSynthesis.cancel(); playClip(clip, done); return; }
   if (!state.tts || !('speechSynthesis' in window)) { if (done) setTimeout(done, est); return; }
   speechSynthesis.cancel();
   var u = new SpeechSynthesisUtterance(fixSay(text)); u.lang = 'zh-TW'; u.rate = .9;
@@ -1349,14 +1361,14 @@ function speakSeq(list, done) {
   (function next() {
     if (tok !== sayTok) return;
     if (i >= list.length) { if (done) done(); return; }
-    var x = list[i++]; say1(x[0], x[1], next);
+    var x = list[i++]; say1(x[0], x[1], next, x[2]);
   })();
 }
 function speak(text, done, sex) { speakSeq([[text, sex || 'm']], done); }
 /* 語音念錯的詞：念的時候換成同音字（畫面上的字不變） */
 var SAY_FIX = [[/乾淨/g, '甘淨']];
 function fixSay(t) { SAY_FIX.forEach(function (f) { t = t.replace(f[0], f[1]); }); return t; }
-function stopAll() { sayTok++; if (state.auto) { clearTimeout(state.auto.t); state.auto = null; } if ('speechSynthesis' in window) speechSynthesis.cancel(); }
+function stopAll() { sayTok++; if (clipAudio) { clipAudio.onended = clipAudio.onerror = null; clipAudio.pause(); } if (state.auto) { clearTimeout(state.auto.t); state.auto = null; } if ('speechSynthesis' in window) speechSynthesis.cancel(); }
 function storeChecks() { try { localStorage.setItem('le-rate', JSON.stringify(state.rate || {})); } catch (e) {} }
 try { state.rate = JSON.parse(localStorage.getItem('le-rate') || '{}') || {}; } catch (e) { state.rate = {}; }
 
@@ -1746,8 +1758,8 @@ function dot(t) { return /[。！？…」]$/.test(t) ? t : t + '。'; }
 function frameSegs(f) {
   var s = SCENES[state.sc], out = [];
   if (f.cap) out.push([dot(f.cap), 'm']);
-  f.say.forEach(function (b) { out.push([dot(b[1]), sexOf(s.cast[b[0]])]); });
-  f.think.forEach(function (b) { out.push([dot(s.cast[b[0]].name + '心裡想：' + b[1]), sexOf(s.cast[b[0]])]); });
+  f.say.forEach(function (b) { out.push([dot(b[1]), sexOf(s.cast[b[0]]), b[0]]); });
+  f.think.forEach(function (b) { out.push([dot(s.cast[b[0]].name + '心裡想：' + b[1]), sexOf(s.cast[b[0]]), b[0]]); });
   return out;
 }
 
