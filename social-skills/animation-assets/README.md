@@ -1,5 +1,11 @@
 # 喬治社會技巧動畫素材
 
+> **原始 PNG 已移到 `animation-assets-original` 分支**（網站大小才不會超過 GitHub Pages 的 1GB 上限）。
+> 網站用的是壓縮後的 `social-skills/anim/`（WebP，1280×720）。
+> 要拿原始圖：在 GitHub 切到 `animation-assets-original` 分支，或執行
+> `git checkout origin/animation-assets-original -- social-skills/animation-assets`。
+> 本資料夾的 JSON 與說明文件仍保留；`preview.html` 需要在該分支上開啟才看得到圖。
+
 網站現有 13 個情境，每情境 31 張，共 403 張獨立 PNG 關鍵畫面初稿。
 
 - [角色、場景與畫面清單](製作清單.md)
