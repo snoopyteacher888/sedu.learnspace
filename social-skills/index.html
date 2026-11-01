@@ -1416,7 +1416,7 @@ function render() {
         var fr = build(s.cast, s.right, s.props), out = '';
         for (var c = 0; c < copies; c++) {
           out += '<article class="kcard' + (c ? ' dup' : '') + '">' + (c ? '' : sayBtn(s.title + '。我可以怎麼做：' + s.how.chain.join('，') + '。' + s.how.note, 'corner no-print')) +
-            '<div class="no">情境 ' + (i + 1) + '｜' + esc(s.title) + '</div><div class="kpic">' + frameSvg(s, fr[fr.length - 1]) + '</div>' +
+            '<div class="no">情境 ' + (i + 1) + '｜' + esc(s.title) + '</div><div class="kpic">' + frameSvg(s, s.anim ? { img: [30] } : fr[fr.length - 1]) + '</div>' +
             '<div class="ktext"><h3>我可以怎麼做</h3>' + chain(s.how.chain) + '</div><p>' + esc(s.how.note) + '</p></article>';
         }
         return out;
@@ -1468,7 +1468,7 @@ function scriptPage(s, i) {
     (f.say || []).forEach(function (b) { steps.push('<li' + (b[0] === 'le' ? ' class="me"' : '') + '>' + esc(s.cast[b[0]].name) + '：「' + esc(b[1].replace(/。$/, '')) + '」</li>'); });
   });
   return '<section class="pg">' + pgHead(s, i, '台詞卡') +
-    '<div class="pg-pic">' + frameSvg(s, fr[fr.length - 1]) + '</div>' +
+    '<div class="pg-pic">' + frameSvg(s, s.anim ? { img: [30] } : fr[fr.length - 1]) + '</div>' +
     '<div class="sc-meta"><div><b>角色：</b>' + Object.keys(who).map(function (id) { return esc(who[id]); }).join('、') + '</div>' +
     '<div><b>場景：</b>' + PLACE[s.bg] + (s.label ? '（' + esc(s.label) + '）' : '') + '</div>' +
     (props.length ? '<div><b>道具：</b>' + props.map(function (k) { return PROP_NAME[k] || k; }).join('、') + '</div>' : '') + '</div>' +
