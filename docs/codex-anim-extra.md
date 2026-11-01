@@ -6,10 +6,12 @@
 
 ## 指令
 
-請在 GitHub 倉庫 `snoopyteacher888/sedu.learnspace` 補畫社會技巧動畫的關鍵畫面。
+請在 GitHub 倉庫 `snoopyteacher888/sedu.learnspace` 的 **`animation-assets-original` 分支**補畫社會技巧動畫的關鍵畫面。
+
+**重要：所有工作都在 `animation-assets-original` 分支上做，不要推到 `main`。** 原始 PNG 很大，`main` 是網站用的，放進去會讓網站超過 GitHub Pages 的大小上限。開始前請先執行 `git checkout animation-assets-original`。
 
 **背景**
-`social-skills/animation-assets/` 已經有 13 個情境、每個情境 31 張關鍵畫面。網站原本的情境 4 和情境 10，在「正確做法」的最後還有一段「如果同學說不行／不想聊，該怎麼辦」，但目前的 31 張裡沒有這一段。請各補 3 張。
+`animation-assets-original` 分支的 `social-skills/animation-assets/` 已經有 13 個情境、每個情境 31 張關鍵畫面。網站原本的情境 4 和情境 10，在「正確做法」的最後還有一段「如果同學說不行／不想聊，該怎麼辦」，但目前的 31 張裡沒有這一段。請各補 3 張。
 
 **畫風和角色：一定要和現有畫面完全一致**
 - 先打開並參考同一個資料夾裡現有的畫面，沿用一模一樣的場景、機位、焦段、光線和角色外型。
@@ -33,7 +35,7 @@
 - `S10_friend_Frame_34.png`：阿明向喬治揮手邀他一起玩，喬治轉身走向阿明；小如繼續安心看書。
 
 **放進倉庫**
-1. 把 6 張 PNG 放在 `social-skills/animation-assets/S04_join/` 和 `social-skills/animation-assets/S10_friend/`，檔名照上面寫的。
+1. 確認目前在 `animation-assets-original` 分支，把 6 張 PNG 放在 `social-skills/animation-assets/S04_join/` 和 `social-skills/animation-assets/S10_friend/`，檔名照上面寫的。
 2. 在 `frame-list.json` 的 `frames` 陣列加上這 6 張的資料：`kind` 寫 `"twist"`，`action` 寫上面的動作描述。
-3. commit 訊息寫「補畫情境 4、10 被拒絕時的畫面」，推到 `main`。
-4. 推完告訴老師，老師再請 Claude 把這 6 張接進網站的動畫裡。
+3. commit 訊息寫「補畫情境 4、10 被拒絕時的畫面」，推到 **`animation-assets-original` 分支**（`git push origin animation-assets-original`）。**不要推到 `main`，也不要開 PR 合併到 `main`。**
+4. 推完告訴老師，老師再請 Claude 把這 6 張轉成網頁用的壓縮版，接進網站的動畫裡。
