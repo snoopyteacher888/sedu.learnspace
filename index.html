@@ -70,6 +70,27 @@
     .empty p { margin: 0 0 18px; color: var(--ink-soft); }
     .big-btn { min-height: var(--tap); padding: 0 32px; border-radius: 16px; border: 0; background: var(--brand); color: #fff; font-weight: 700; cursor: pointer; }
 
+    /* ===== 手機版／網頁版 ===== */
+    .dev-bar { display: flex; justify-content: center; align-items: center; gap: 10px; flex-wrap: wrap; margin-top: 14px; }
+    .dev-switch { display: inline-flex; border-radius: 16px; border: 2px solid var(--line); background: var(--surface); overflow: hidden; }
+    .dev-switch button { min-height: 48px; padding: 0 18px; border: 0; background: none; font-weight: 700; color: var(--ink-soft); cursor: pointer; }
+    .dev-switch button.on { background: var(--brand); color: #fff; }
+    .chooser { position: fixed; inset: 0; z-index: 10; display: flex; align-items: center; justify-content: center; padding: 16px; background: var(--bg); overflow-y: auto; }
+    .chooser-box { width: min(100%, 760px); text-align: center; }
+    .chooser h2 { margin: 8px 0 4px; font-size: clamp(26px, 5vw, 40px); }
+    .chooser p { margin: 0 0 18px; color: var(--ink-soft); }
+    .choices { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .choice { position: relative; min-height: 200px; border-radius: var(--radius); border: 3px solid var(--brand); background: var(--surface); box-shadow: 0 6px 0 rgba(224,122,46,.28);
+      display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; padding: 16px; cursor: pointer; }
+    .choice:hover { transform: translateY(-3px); }
+    .choice .ic { font-size: 64px; line-height: 1; }
+    .choice b { font-size: 1.5em; }
+    .choice small { color: var(--ink-soft); font-size: .9em; }
+    .choice-cell { position: relative; display: flex; }
+    .choice-cell .choice { flex: 1; }
+    .choice-cell .say { position: absolute; top: 10px; left: 10px; z-index: 1; }
+    @media (max-width: 560px) { .choices { grid-template-columns: 1fr; } .choice { min-height: 150px; } }
+
     @media (max-width: 480px) {
       .grid { grid-template-columns: 1fr 1fr; gap: 12px; }
       .card { min-height: 128px; padding: 12px 8px; }
@@ -83,9 +104,30 @@
       <div class="logo" aria-hidden="true">🏫</div>
       <h1><span class="brand">四德學輔班</span>學習樂園</h1>
       <p>歡迎進入！<b>今天要學什麼呢？</b><button class="say" type="button" data-say="四德，學輔班，學習樂園。歡迎進入！今天要學什麼呢？" aria-label="念出來">🔊</button></p>
+      <div class="dev-bar">
+        <div class="dev-switch" role="group" aria-label="手機版或網頁版">
+          <button type="button" data-dev="phone">📱 手機版</button><button type="button" data-dev="web">💻 網頁版</button>
+        </div>
+        <button class="say" type="button" data-say="現在是這個版本。用手機，按手機版；用平板或電腦，按網頁版。" aria-label="念出來">🔊</button>
+      </div>
     </header>
     <div id="groups"></div>
   </main>
+
+  <!-- 第一次進來先選：手機版或網頁版（國語、數學都會照這個設定） -->
+  <div class="chooser" id="chooser" hidden>
+    <div class="chooser-box">
+      <div style="font-size:56px" aria-hidden="true">🏫</div>
+      <h2>你用什麼來上學習樂園？<button class="say" type="button" data-say="你用什麼來上學習樂園？用手機，就按手機版。用平板或電腦，就按網頁版。" aria-label="念出來">🔊</button></h2>
+      <p>選好之後，國語和數學都會變成適合的畫面；之後也可以再換。</p>
+      <div class="choices">
+        <div class="choice-cell"><button class="say" type="button" data-say="手機版。用手機玩，畫面是直的。" aria-label="念出來">🔊</button>
+          <button class="choice" type="button" data-pick="phone"><span class="ic">📱</span><b>手機版</b><small>用手機玩，畫面是直的</small></button></div>
+        <div class="choice-cell"><button class="say" type="button" data-say="網頁版。用平板或電腦玩，可以用鍵盤。" aria-label="念出來">🔊</button>
+          <button class="choice" type="button" data-pick="web"><span class="ic">💻</span><b>網頁版</b><small>用平板或電腦玩，可以用鍵盤</small></button></div>
+      </div>
+    </div>
+  </div>
 
   <section class="view" id="view" hidden>
     <div class="bar">
@@ -150,6 +192,20 @@
     document.getElementById('home-btn').onclick = goHome;
     document.getElementById('empty-back').onclick = goHome;
 
+    /* 手機版／網頁版：存在 localStorage（同一個網址底下的國語、數學網站都讀得到），也用 ?device= 帶給科目網站 */
+    var DEV_KEY = 'sedu:device', device = null;
+    try { device = localStorage.getItem(DEV_KEY); } catch (e) {}
+    if (device !== 'phone' && device !== 'web') device = null;
+    function setDevice(d) {
+      device = d;
+      try { localStorage.setItem(DEV_KEY, d); } catch (e) {}
+      document.querySelectorAll('[data-dev]').forEach(function (b) { b.classList.toggle('on', b.dataset.dev === d); b.setAttribute('aria-pressed', b.dataset.dev === d); });
+    }
+    document.querySelectorAll('[data-dev]').forEach(function (b) { b.onclick = function () { setDevice(b.dataset.dev); }; });
+    document.querySelectorAll('[data-pick]').forEach(function (b) { b.onclick = function () { setDevice(b.dataset.pick); document.getElementById('chooser').hidden = true; }; });
+    if (device) setDevice(device); else document.getElementById('chooser').hidden = false;
+    function withDevice(url) { return device ? url + (url.indexOf('?') < 0 ? '?' : '&') + 'device=' + device : url; }
+
     function route() {
       var id = location.hash.replace(/^#\/?/, '').split('/')[0];
       var s = ALL[id];
@@ -165,7 +221,8 @@
       document.title = s.name + '｜四德學輔班學習樂園';
       if (s.url) {
         empty.hidden = true; frame.hidden = false; frame.title = s.name;
-        if (frame.getAttribute('src') !== s.url) frame.setAttribute('src', s.url);
+        var src = withDevice(s.url);
+        if (frame.getAttribute('src') !== src) frame.setAttribute('src', src);
       } else {
         frame.hidden = true; frame.removeAttribute('src'); empty.hidden = false;
         document.getElementById('empty-ic').textContent = s.ic;
