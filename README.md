@@ -3,6 +3,7 @@
 網址：https://snoopyteacher888.github.io/sedu.learnspace/
 
 - `index.html`：首頁（選科目）。點進科目後在同一個網址、同一個分頁裡顯示，上方有「🏠 回學習樂園」。
+- 三年級數學：另一個 repo [`nani-math-3`](https://github.com/snoopyteacher888/nani-math-3)（南一版三上，數學跑跑樂園：跑酷複習遊戲）。網址 https://snoopyteacher888.github.io/nani-math-3/
 - `social-skills/`：社會技巧「和喬治一起練習相處」（13 個情境：看一看 → 停！想一想 → 選一選 → 換個方式 → 換我練）。
 
 ## 新增或開放一個科目
