@@ -4739,6 +4739,116 @@
       "setting": "同一間高年級教室；窗在左、黑板在後，老師在左前方，喬治中景座位，小如右側。",
       "action": "喬治在教室比讚。",
       "filename": "S02_call_Frame_45.png"
+    },
+    {
+      "scene": 3,
+      "scene_id": "oops",
+      "title": "弄掉別人的東西",
+      "frame": 35,
+      "kind": "episode",
+      "setting": "同一教室美勞桌；喬治在左、大偉在右，蠟筆盒放在兩人之間桌邊。 喬治胸口以上近景，同場景背景稍微模糊。",
+      "action": "喬治近景：看到蠟筆掉滿地，嚇一跳。",
+      "filename": "S03_oops_Frame_35.png"
+    },
+    {
+      "scene": 3,
+      "scene_id": "oops",
+      "title": "弄掉別人的東西",
+      "frame": 36,
+      "kind": "episode",
+      "setting": "同一教室美勞桌；喬治在左、大偉在右，蠟筆盒放在兩人之間桌邊。 喬治胸口以上近景，同場景背景稍微模糊。",
+      "action": "喬治近景：心虛，眼神閃開，手縮回胸前。",
+      "filename": "S03_oops_Frame_36.png"
+    },
+    {
+      "scene": 3,
+      "scene_id": "oops",
+      "title": "弄掉別人的東西",
+      "frame": 37,
+      "kind": "episode",
+      "setting": "同一教室美勞桌；喬治在左、大偉在右，蠟筆盒放在兩人之間桌邊。 喬治面向觀眾示範，位於中間偏左，右側保留乾淨背景供提示卡使用。",
+      "action": "手放胸口、看著前方（說實話）。",
+      "filename": "S03_oops_Frame_37.png"
+    },
+    {
+      "scene": 3,
+      "scene_id": "oops",
+      "title": "弄掉別人的東西",
+      "frame": 38,
+      "kind": "episode",
+      "setting": "同一教室美勞桌；喬治在左、大偉在右，蠟筆盒放在兩人之間桌邊。 喬治面向觀眾示範，位於中間偏左，右側保留乾淨背景供提示卡使用。",
+      "action": "輕輕低頭鞠躬（說對不起）。",
+      "filename": "S03_oops_Frame_38.png"
+    },
+    {
+      "scene": 3,
+      "scene_id": "oops",
+      "title": "弄掉別人的東西",
+      "frame": 39,
+      "kind": "episode",
+      "setting": "同一教室美勞桌；喬治在左、大偉在右，蠟筆盒放在兩人之間桌邊。 喬治面向觀眾示範，位於中間偏左，右側保留乾淨背景供提示卡使用。",
+      "action": "蹲下撿地上的東西。",
+      "filename": "S03_oops_Frame_39.png"
+    },
+    {
+      "scene": 3,
+      "scene_id": "oops",
+      "title": "弄掉別人的東西",
+      "frame": 40,
+      "kind": "episode",
+      "setting": "同一教室美勞桌；喬治在左、大偉在右，蠟筆盒放在兩人之間桌邊。 喬治面向觀眾示範，位於中間偏左，右側保留乾淨背景供提示卡使用。",
+      "action": "雙手把東西放回桌上。",
+      "filename": "S03_oops_Frame_40.png"
+    },
+    {
+      "scene": 3,
+      "scene_id": "oops",
+      "title": "弄掉別人的東西",
+      "frame": 41,
+      "kind": "episode",
+      "setting": "校園走廊；小晴的水壺倒在喬治腳邊。",
+      "action": "走廊上喬治不小心踢倒小晴放在地上的水壺。",
+      "filename": "S03_oops_Frame_41.png"
+    },
+    {
+      "scene": 3,
+      "scene_id": "oops",
+      "title": "弄掉別人的東西",
+      "frame": 42,
+      "kind": "episode",
+      "setting": "同一走廊與機位；喬治把水壺遞還小晴。",
+      "action": "喬治撿起水壺遞給小晴、低頭道歉，小晴點頭。",
+      "filename": "S03_oops_Frame_42.png"
+    },
+    {
+      "scene": 3,
+      "scene_id": "oops",
+      "title": "弄掉別人的東西",
+      "frame": 43,
+      "kind": "episode",
+      "setting": "同一教室課桌旁；喬治拿著弄彎的尺，阿明在旁。",
+      "action": "教室裡喬治拿著借來、被他弄彎的尺，表情為難。",
+      "filename": "S03_oops_Frame_43.png"
+    },
+    {
+      "scene": 3,
+      "scene_id": "oops",
+      "title": "弄掉別人的東西",
+      "frame": 44,
+      "kind": "episode",
+      "setting": "同一課桌與機位；喬治向阿明還尺道歉。",
+      "action": "喬治把尺還給阿明並道歉，阿明擺擺手表示沒關係。",
+      "filename": "S03_oops_Frame_44.png"
+    },
+    {
+      "scene": 3,
+      "scene_id": "oops",
+      "title": "弄掉別人的東西",
+      "frame": 45,
+      "kind": "episode",
+      "setting": "同一教室美勞桌；喬治在左、大偉在右，蠟筆盒放在兩人之間桌邊。",
+      "action": "喬治在美勞桌旁比讚。",
+      "filename": "S03_oops_Frame_45.png"
     }
   ]
 }
