@@ -87,7 +87,7 @@
       { kind: '我的感受', q: '被笑的時候，你的心情溫度計會到哪裡？', feel: 1 }
     ]
   };
-  window.EPISODES = EP;
+  window.EPISODES = Object.assign(window.EPISODES || {}, EP);
 })();
 
 /* ================= 播放器 ================= */
@@ -322,30 +322,35 @@ function epTasks() {
 }
 var FEEL = [['平靜', '#9DC6A6', '😌'], ['有點煩', '#D9D28A', '😕'], ['生氣', '#E8B57A', '😠'], ['很生氣', '#E0906A', '😡'], ['氣炸了', '#C8664F', '🤯']];
 var CALM = [['🌬️', '深呼吸'], ['🔢', '數到十'], ['🥤', '喝口水'], ['🪑', '去安全的地方坐一下'], ['🟢', '捏捏小球'], ['🗣️', '跟大人說']];
+function epFeel() { return epData().feel || FEEL; }
+function epTools() { return epData().tools || CALM; }
+function epToolsTitle() { return epData().toolsTitle || '我的冷靜方法：我要用哪一個？'; }
+function epFeelTitle() { return epData().feelTitle || '我的心情溫度計和冷靜方法'; }
+function epBadge() { return epData().badge || '冷靜小勇士'; }
 function epMineData() { try { return JSON.parse(localStorage.getItem('ep-mine-' + SCENES[state.sc].id) || '{}') || {}; } catch (e) { return {}; } }
 function epMineSave(d) { try { localStorage.setItem('ep-mine-' + SCENES[state.sc].id, JSON.stringify(d)); } catch (e) {} }
 function epFeelHtml() {
   var d = epMineData();
-  return '<div class="thermo">' + FEEL.map(function (f, k) { return '<button class="th' + (d.feel === k ? ' on' : '') + '" data-f="' + k + '" style="--c:' + f[1] + '"><span>' + f[2] + '</span>' + f[0] + '</button>'; }).join('') + '</div>' +
-    '<h3 style="margin-top:16px"><span style="flex:1">我的冷靜方法：我要用哪一個？（可以選很多個）</span>' + epSayBtn('我的冷靜方法：我要用哪一個？') + '</h3>' +
-    '<div class="calm">' + CALM.map(function (c, k) { return '<button class="cm' + ((d.calm || []).indexOf(k) >= 0 ? ' on' : '') + '" data-c="' + k + '"><span>' + c[0] + '</span>' + c[1] + '</button>'; }).join('') + '</div>' +
+  return '<div class="thermo">' + epFeel().map(function (f, k) { return '<button class="th' + (d.feel === k ? ' on' : '') + '" data-f="' + k + '" style="--c:' + f[1] + '"><span>' + f[2] + '</span>' + f[0] + '</button>'; }).join('') + '</div>' +
+    '<h3 style="margin-top:16px"><span style="flex:1">' + esc(epToolsTitle()) + '（可以選很多個）</span>' + epSayBtn(epToolsTitle()) + '</h3>' +
+    '<div class="calm">' + epTools().map(function (c, k) { return '<button class="cm' + ((d.calm || []).indexOf(k) >= 0 ? ' on' : '') + '" data-c="' + k + '"><span>' + c[0] + '</span>' + c[1] + '</button>'; }).join('') + '</div>' +
     '<p class="note" style="margin-top:10px">這一題沒有標準答案，每個人都不一樣。</p>';
 }
 function epFeelBind(ok) {
   var d = epMineData();
-  document.querySelectorAll('.th').forEach(function (b) { b.onclick = function () { d.feel = +b.dataset.f; epMineSave(d); document.querySelectorAll('.th').forEach(function (x) { x.classList.toggle('on', x === b); }); stopAll(); epVoice([['nar', FEEL[d.feel][0]]]); if (ok) ok(); }; });
-  document.querySelectorAll('.cm').forEach(function (b) { b.onclick = function () { var k = +b.dataset.c; d.calm = d.calm || []; var at = d.calm.indexOf(k); if (at >= 0) d.calm.splice(at, 1); else { d.calm.push(k); stopAll(); epVoice([['nar', CALM[k][1]]]); } epMineSave(d); b.classList.toggle('on', at < 0); if (ok) ok(); }; });
+  document.querySelectorAll('.th').forEach(function (b) { b.onclick = function () { d.feel = +b.dataset.f; epMineSave(d); document.querySelectorAll('.th').forEach(function (x) { x.classList.toggle('on', x === b); }); stopAll(); epVoice([['nar', epFeel()[d.feel][0]]]); if (ok) ok(); }; });
+  document.querySelectorAll('.cm').forEach(function (b) { b.onclick = function () { var k = +b.dataset.c; d.calm = d.calm || []; var at = d.calm.indexOf(k); if (at >= 0) d.calm.splice(at, 1); else { d.calm.push(k); stopAll(); epVoice([['nar', epTools()[k][1]]]); } epMineSave(d); b.classList.toggle('on', at < 0); if (ok) ok(); }; });
 }
 function epResult() {
   var ep = epData(), got = EPS.score.filter(function (x) { return x === 1; }).length, total = ep.tasks.filter(function (t) { return !t.feel; }).length;
   var stars = got >= total - 1 ? 3 : got >= total - 3 ? 2 : 1;
   state.rate[SCENES[state.sc].id] = Math.max(state.rate[SCENES[state.sc].id] || 0, stars); storeChecks();
   var sheet = got >= total - 1 ? '進階（自己寫一寫）' : got >= total - 3 ? '一般（圈一圈、寫一寫）' : '圈選為主';
-  $('#epbody').innerHTML = '<section class="panel green result"><div class="medal">🏅</div><h3>冷靜小勇士！</h3>' +
+  $('#epbody').innerHTML = '<section class="panel green result"><div class="medal">🏅</div><h3>' + esc(epBadge()) + '！</h3>' +
     '<p class="stars big">' + '★★★'.slice(0, stars) + '<span>' + '★★★'.slice(stars) + '</span></p>' +
     '<p>第一次就答對 ' + got + ' 題，共 ' + total + ' 題。</p><p class="note">給老師：建議學習單用「' + sheet + '」的方式完成。</p>' +
     '<div class="row"><button class="btn" id="again">再做一次</button><span class="spacer"></span><button class="btn go" id="tomine">看我的方法和本週挑戰 →</button></div></section>';
-  stopAll(); epVoice([['nar', '你是冷靜小勇士！']]);
+  stopAll(); epVoice([['nar', '你是' + epBadge() + '！']]);
   $('#again').onclick = function () { EPS.task = 0; EPS.score = []; epTasks(); };
   $('#tomine').onclick = function () { EPS.tab = 'mine'; renderEpisode(); };
 }
@@ -356,7 +361,7 @@ function epMine() {
   d.week = d.week || [];
   $('#epbody').innerHTML = '<section class="panel green"><h3><span class="dot" style="background:var(--green)"></span><span style="flex:1">我可以怎麼做</span>' + epSayBtn('我可以怎麼做：' + ep.chain.join('，')) + '</h3>' +
     chain(ep.chain, 'big') +
-    '<h3 style="margin-top:18px"><span style="flex:1">我的心情溫度計和冷靜方法</span></h3>' + epFeelHtml() +
+    '<h3 style="margin-top:18px"><span style="flex:1">' + esc(epFeelTitle()) + '</span></h3>' + epFeelHtml() +
     '<h3 style="margin-top:18px"><span style="flex:1">🏅 本週挑戰</span>' + epSayBtn(ep.challenge) + '</h3><p class="lead">' + esc(ep.challenge) + '</p>' +
     '<div class="week">' + days.map(function (x, k) { return '<button class="wk' + (d.week[k] ? ' on' : '') + '" data-w="' + k + '">星期' + x + '<span>' + (d.week[k] ? '✔' : '') + '</span></button>'; }).join('') + '</div>' +
     '<p class="note" style="margin-top:8px">做到了，就在那一天按一下。</p>' +
