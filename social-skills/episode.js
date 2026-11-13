@@ -74,7 +74,7 @@
         b: [['喬治好兇，要打人', 19, 1], ['喬治很難過', 6, 0]],
         a: [['喬治好兇，要打人', 19, 1], ['喬治很難過', 6, 0], ['喬治在念課文', 2, 0]],
         h: '大家看不到心裡想的，只看得到做了什麼。', why: '心裡的想法別人看不到，用說的，別人才會懂。' },
-      { kind: '步驟排序', q: '把喬治的三招照順序排好。按一按，排出第一、第二、第三。',
+      { kind: '步驟排序', q: '喬治先做什麼、再做什麼？照順序，一個一個按下去。',
         b: ['停', '深呼吸', '說「我不喜歡」'], a: ['停', '深呼吸', '說「我不喜歡」', '找老師'],
         h: '先讓身體停住，再深呼吸，最後用說的。', why: '停、深呼吸、說出來，順序完全正確！' },
       { kind: '對還是不對', img: 13, q: '喬治看著大偉說：「我不喜歡你這樣笑我。」這樣做好嗎？',
@@ -260,9 +260,9 @@ function epTasks() {
     var items = opts.slice(), order = items.map(function (x, k) { return k; });
     for (var k = order.length - 1; k > 0; k--) { var j = (k * 7 + EPS.task) % (k + 1); var tmp = order[k]; order[k] = order[j]; order[j] = tmp; }
     if (order.every(function (x, k) { return x === k; })) order.reverse();
-    html += '<div class="slots">' + items.map(function (x, k) { return '<span class="slot" data-k="' + k + '">' + (k + 1) + '</span>'; }).join('') + '</div>' +
-      '<div class="opts seq">' + order.map(function (k) { return '<button class="opt" data-v="' + k + '"><span>' + esc(items[k]) + '</span></button>'; }).join('') + '</div>' +
-      '<div class="row"><button class="btn sm" id="sreset">↺ 重排</button></div>';
+    html += '<p class="seqtip">👆 不用拖，按一下就好。先按第 1 個要做的事。</p>' +
+      '<div class="slots">' + items.map(function (x, k) { return '<span class="slot' + (k ? '' : ' next') + '" data-k="' + k + '">第 ' + (k + 1) + ' 步</span>'; }).join('') + '</div>' +
+      '<div class="opts seq">' + order.map(function (k) { return '<button class="opt" data-v="' + k + '"><span>' + esc(items[k]) + '</span></button>'; }).join('') + '</div>';
   } else {
     html += '<div class="opts tg' + (opts.length > 2 ? ' four' : '') + '">' + opts.map(function (o, k) {
       var pic = typeof o[1] === 'number' ? '<img src="' + animSrc(s, o[1]) + '" alt="">' : '<span class="emo">' + o[1] + '</span>';
@@ -286,20 +286,27 @@ function epTasks() {
   next.onclick = function () { stopAll(); EPS.task++; epTasks(); window.scrollTo(0, 0); };
   if (t.feel) { epFeelBind(function () { next.hidden = false; EPS.score[EPS.task] = null; }); return; }
   if (t.kind === '步驟排序') {
+    /* 按對了就放進下一格；按錯那張卡輕輕晃一下、給提示，已經排好的不用重來（老師回報：太難操作） */
     var fill = function () {
-      document.querySelectorAll('.slot').forEach(function (sl, k) { sl.textContent = EPS.seq[k] !== undefined ? opts[EPS.seq[k]] : (k + 1); sl.classList.toggle('full', EPS.seq[k] !== undefined); });
-      document.querySelectorAll('.seq .opt').forEach(function (b) { b.disabled = EPS.seq.indexOf(+b.dataset.v) >= 0; });
+      document.querySelectorAll('.slot').forEach(function (sl, k) {
+        var v = EPS.seq[k]; sl.textContent = v !== undefined ? opts[v] : '第 ' + (k + 1) + ' 步';
+        sl.classList.toggle('full', v !== undefined); sl.classList.toggle('next', k === EPS.seq.length);
+      });
+      document.querySelectorAll('.seq .opt').forEach(function (b) { var used = EPS.seq.indexOf(+b.dataset.v) >= 0; b.disabled = used; b.style.visibility = used ? 'hidden' : ''; });
     };
     document.querySelectorAll('.seq .opt').forEach(function (b) {
       b.onclick = function () {
-        EPS.seq.push(+b.dataset.v); fill(); stopAll(); epVoice([['nar', opts[+b.dataset.v]]]);
-        if (EPS.seq.length === opts.length) {
-          if (EPS.seq.every(function (v, k) { return v === k; })) right(t.why);
-          else { wrong(); epLater(function () { EPS.seq = []; fill(); }, 1600); }
+        var v = +b.dataset.v;
+        if (v !== EPS.seq.length) {
+          b.classList.remove('shake'); void b.offsetWidth; b.classList.add('shake');
+          EPS.tries++; fb.hidden = false; fb.className = 'fb no'; fb.textContent = '還不是這個喔。' + t.h;
+          stopAll(); epVoice([['nar', '再想一想。' + t.h]]);
+          return;
         }
+        EPS.seq.push(v); fill(); fb.hidden = true;
+        if (EPS.seq.length === opts.length) right(t.why); else { stopAll(); epVoice([['nar', opts[v]]]); }
       };
     });
-    $('#sreset').onclick = function () { EPS.seq = []; fill(); };
     return;
   }
   document.querySelectorAll('.to').forEach(function (b) {

@@ -257,6 +257,11 @@
     .slot.full { border-style: solid; border-color: var(--green); background: var(--green-soft); color: var(--ink); }
     .opts.seq { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
     .opts.seq .opt { justify-content: center; }
+    .opts.seq .opt { min-height: 64px; font-size: 1.15em; }
+    .opt.shake { animation: shake .4s ease; border-color: var(--red); }
+    @keyframes shake { 20%, 60% { transform: translateX(-6px); } 40%, 80% { transform: translateX(6px); } }
+    .slot.next { border-color: var(--yellow); background: var(--yellow-soft); color: var(--ink); }
+    .seqtip { margin: 0 0 10px; color: var(--ink-soft); }
     .thermo { display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; }
     .th { border: 3px solid transparent; background: var(--c); border-radius: 14px; padding: 8px 4px; display: grid; justify-items: center; gap: 2px; font-weight: 700; color: #3A2E2A; min-height: 84px; }
     .th span { font-size: 1.9em; } .th.on { border-color: var(--ink); transform: translateY(-3px); box-shadow: 0 6px 12px rgba(0, 0, 0, .15); }
@@ -1580,6 +1585,8 @@ function labelOf(el) {
 }
 document.addEventListener('click', function (e) {
   var el = e.target.closest && e.target.closest(FIRST);
+  /* 小任務要按了馬上有反應（老師回報：反應慢），不先念 */
+  if (el && el.closest('#epbody')) return;
   if (!el || el.__go || el.disabled || !state.tts || !('speechSynthesis' in window)) return;
   e.preventDefault(); e.stopPropagation();
   if (el.__wait) return;
