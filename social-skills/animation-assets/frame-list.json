@@ -4959,6 +4959,116 @@
       "setting": "校園操場邊；左側步道、中景空曠球場、右側小晴與阿明傳球。",
       "action": "喬治在操場邊比讚。",
       "filename": "S04_join_Frame_45.png"
+    },
+    {
+      "scene": 6,
+      "scene_id": "help",
+      "title": "不會的時候",
+      "frame": 35,
+      "kind": "episode",
+      "setting": "同一教室；喬治坐中景書桌，小如右側，老師左前方；學習單不出現可讀文字。 喬治胸口以上近景，原場景背景稍微模糊。",
+      "action": "喬治近景：看著學習單皺眉、抓頭",
+      "filename": "S06_help_Frame_35.png"
+    },
+    {
+      "scene": 6,
+      "scene_id": "help",
+      "title": "不會的時候",
+      "frame": 36,
+      "kind": "episode",
+      "setting": "同一教室；喬治坐中景書桌，小如右側，老師左前方；學習單不出現可讀文字。 喬治胸口以上近景，原場景背景稍微模糊。",
+      "action": "喬治近景：很想放棄，嘆一口氣",
+      "filename": "S06_help_Frame_36.png"
+    },
+    {
+      "scene": 6,
+      "scene_id": "help",
+      "title": "不會的時候",
+      "frame": 37,
+      "kind": "episode",
+      "setting": "同一教室；喬治坐中景書桌，小如右側，老師左前方；學習單不出現可讀文字。 喬治面向觀眾示範，中間偏左構圖，右側留乾淨背景供提示卡。",
+      "action": "拿筆試著在紙上畫記號",
+      "filename": "S06_help_Frame_37.png"
+    },
+    {
+      "scene": 6,
+      "scene_id": "help",
+      "title": "不會的時候",
+      "frame": 38,
+      "kind": "episode",
+      "setting": "同一教室；喬治坐中景書桌，小如右側，老師左前方；學習單不出現可讀文字。 喬治面向觀眾示範，中間偏左構圖，右側留乾淨背景供提示卡。",
+      "action": "舉手",
+      "filename": "S06_help_Frame_38.png"
+    },
+    {
+      "scene": 6,
+      "scene_id": "help",
+      "title": "不會的時候",
+      "frame": 39,
+      "kind": "episode",
+      "setting": "同一教室；喬治坐中景書桌，小如右側，老師左前方；學習單不出現可讀文字。 喬治面向觀眾示範，中間偏左構圖，右側留乾淨背景供提示卡。",
+      "action": "指著題目開口詢問",
+      "filename": "S06_help_Frame_39.png"
+    },
+    {
+      "scene": 6,
+      "scene_id": "help",
+      "title": "不會的時候",
+      "frame": 40,
+      "kind": "episode",
+      "setting": "同一教室；喬治坐中景書桌，小如右側，老師左前方；學習單不出現可讀文字。 喬治面向觀眾示範，中間偏左構圖，右側留乾淨背景供提示卡。",
+      "action": "雙手合十、微笑說謝謝",
+      "filename": "S06_help_Frame_40.png"
+    },
+    {
+      "scene": 6,
+      "scene_id": "help",
+      "title": "不會的時候",
+      "frame": 41,
+      "kind": "episode",
+      "setting": "同校教室的美勞摺紙桌；前後兩格同一機位與道具，沿用原畫風和光線。",
+      "action": "美勞課喬治摺紙摺不出來，皺著眉",
+      "filename": "S06_help_Frame_41.png"
+    },
+    {
+      "scene": 6,
+      "scene_id": "help",
+      "title": "不會的時候",
+      "frame": 42,
+      "kind": "episode",
+      "setting": "同校教室的美勞摺紙桌；前後兩格同一機位與道具，沿用原畫風和光線。",
+      "action": "喬治舉手後，小晴過來示範摺法，喬治專心看",
+      "filename": "S06_help_Frame_42.png"
+    },
+    {
+      "scene": 6,
+      "scene_id": "help",
+      "title": "不會的時候",
+      "frame": 43,
+      "kind": "episode",
+      "setting": "同校操場邊的跳繩練習區；前後兩格同一機位與道具，沿用原畫風和光線。",
+      "action": "操場上喬治跳繩一直絆到，看向導師",
+      "filename": "S06_help_Frame_43.png"
+    },
+    {
+      "scene": 6,
+      "scene_id": "help",
+      "title": "不會的時候",
+      "frame": 44,
+      "kind": "episode",
+      "setting": "同校操場邊的跳繩練習區；前後兩格同一機位與道具，沿用原畫風和光線。",
+      "action": "導師示範跳繩的節奏，喬治點頭",
+      "filename": "S06_help_Frame_44.png"
+    },
+    {
+      "scene": 6,
+      "scene_id": "help",
+      "title": "不會的時候",
+      "frame": 45,
+      "kind": "episode",
+      "setting": "同一教室；喬治坐中景書桌，小如右側，老師左前方；學習單不出現可讀文字。",
+      "action": "喬治在座位上比讚",
+      "filename": "S06_help_Frame_45.png"
     }
   ]
 }
