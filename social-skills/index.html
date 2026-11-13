@@ -1599,7 +1599,7 @@ function render() {
       '<p>嗨！我是<b>喬治</b>。在學校裡，有時候會遇到不知道該怎麼辦的事情。<br>我們一起看一看、想一想、練一練，找到讓自己和大家都開心的方法吧！</p>' + sayBtn('嗨！我是喬治。在學校裡，有時候會遇到不知道該怎麼辦的事情。我們一起看一看、想一想、練一練，找到讓自己和大家都開心的方法吧！') + '</div>' +
       '<div class="grid">' + SCENES.map(function (s, i) {
         var r = state.rate[s.id];
-        return '<div class="sc-wrap"><button class="sc-card" data-i="' + i + '" data-label="情境' + (i + 1) + '，' + esc(s.title) + '"><span class="no"><span>情境 ' + (i + 1) + '</span>' + (r ? '<span class="stars">' + '★★★'.slice(0, r) + '</span>' : '') + '</span>' +
+        return '<div class="sc-wrap"><button class="sc-card" data-i="' + i + '" data-label="情境' + (i + 1) + '，' + esc(s.title) + '"><span class="no"><span>情境 ' + (i + 1) + (s.ep ? '<span class="epbadge" style="font-size:.85em">完整版</span>' : '') + '</span>' + (r ? '<span class="stars">' + '★★★'.slice(0, r) + '</span>' : '') + '</span>' +
           (s.anim ? '<img class="scene-art" src="anim/' + s.anim.dir + '/thumb.webp" alt="" loading="lazy">' : SCENE_ART[s.id] ? sceneImage(s) : '<div class="scene-art">' + (function () { var fr = build(s.cast, s.right, s.props); return frameSvg(s, fr[fr.length - 1]); })() + '</div>') + '<h3>' + esc(s.title) + '</h3><p>' + esc(s.short) + '</p>' + chain(s.how.chain, 'small') + '</button>' +
           sayBtn('情境' + (i + 1) + '，' + s.title + '。' + s.short, 'corner') + '</div>';
       }).join('') + '</div>';
