@@ -966,6 +966,75 @@
       ],
       "ending": "S14_phone/S14_phone_Frame_30.png",
       "summary": "S14_phone/S14_phone_Frame_31.png"
+    },
+    {
+      "scene": 15,
+      "title": "火很危險",
+      "decision_frame": 5,
+      "correct_option": "B",
+      "background": "S15_fire/S15_fire_Frame_01.png",
+      "intro": [
+        "S15_fire/S15_fire_Frame_02.png",
+        "S15_fire/S15_fire_Frame_03.png",
+        "S15_fire/S15_fire_Frame_04.png",
+        "S15_fire/S15_fire_Frame_05.png"
+      ],
+      "correct_demonstration": [
+        "S15_fire/S15_fire_Frame_02.png",
+        "S15_fire/S15_fire_Frame_03.png",
+        "S15_fire/S15_fire_Frame_04.png",
+        "S15_fire/S15_fire_Frame_05.png",
+        "S15_fire/S15_fire_Frame_06.png",
+        "S15_fire/S15_fire_Frame_07.png",
+        "S15_fire/S15_fire_Frame_08.png",
+        "S15_fire/S15_fire_Frame_09.png",
+        "S15_fire/S15_fire_Frame_10.png",
+        "S15_fire/S15_fire_Frame_11.png",
+        "S15_fire/S15_fire_Frame_12.png",
+        "S15_fire/S15_fire_Frame_13.png",
+        "S15_fire/S15_fire_Frame_14.png",
+        "S15_fire/S15_fire_Frame_15.png",
+        "S15_fire/S15_fire_Frame_16.png",
+        "S15_fire/S15_fire_Frame_17.png",
+        "S15_fire/S15_fire_Frame_30.png",
+        "S15_fire/S15_fire_Frame_31.png"
+      ],
+      "branches": {
+        "A": [
+          "S15_fire/S15_fire_Frame_18.png",
+          "S15_fire/S15_fire_Frame_19.png",
+          "S15_fire/S15_fire_Frame_20.png",
+          "S15_fire/S15_fire_Frame_21.png"
+        ],
+        "B": [
+          "S15_fire/S15_fire_Frame_22.png",
+          "S15_fire/S15_fire_Frame_23.png",
+          "S15_fire/S15_fire_Frame_24.png",
+          "S15_fire/S15_fire_Frame_25.png"
+        ],
+        "C": [
+          "S15_fire/S15_fire_Frame_26.png",
+          "S15_fire/S15_fire_Frame_27.png",
+          "S15_fire/S15_fire_Frame_28.png",
+          "S15_fire/S15_fire_Frame_29.png"
+        ]
+      },
+      "correct_replay_after_decision": [
+        "S15_fire/S15_fire_Frame_06.png",
+        "S15_fire/S15_fire_Frame_07.png",
+        "S15_fire/S15_fire_Frame_08.png",
+        "S15_fire/S15_fire_Frame_09.png",
+        "S15_fire/S15_fire_Frame_10.png",
+        "S15_fire/S15_fire_Frame_11.png",
+        "S15_fire/S15_fire_Frame_12.png",
+        "S15_fire/S15_fire_Frame_13.png",
+        "S15_fire/S15_fire_Frame_14.png",
+        "S15_fire/S15_fire_Frame_15.png",
+        "S15_fire/S15_fire_Frame_16.png",
+        "S15_fire/S15_fire_Frame_17.png"
+      ],
+      "ending": "S15_fire/S15_fire_Frame_30.png",
+      "summary": "S15_fire/S15_fire_Frame_31.png"
     }
   ]
 }

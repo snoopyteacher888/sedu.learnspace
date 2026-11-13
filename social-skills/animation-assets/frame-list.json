@@ -7,7 +7,8 @@
     "大偉": "11–12歲，栗棕短髮，霧藍上衣、卡其長褲。",
     "導師": "約35歲女性，深棕鮑伯短髮、細框眼鏡，灰綠開襟衫、米白內搭、深藍長裙。",
     "店員": "約30歲女性，深棕丸子髮髻，米白上衣、灰綠圍裙、炭灰長褲。",
-    "媽媽": "約38歲台灣女性，深棕色低馬尾，米白針織上衣、深藍長裙、咖啡色平底鞋；溫和、自然的頭身比例。"
+    "媽媽": "約38歲台灣女性，深棕色低馬尾，米白針織上衣、深藍長裙、咖啡色平底鞋；溫和、自然的頭身比例。",
+    "爸爸": "約40歲台灣男性，黑色短髮，霧藍色襯衫、深灰長褲；溫和、自然的頭身比例。"
   },
   "frames": [
     {
@@ -5839,6 +5840,316 @@
       "setting": "文具店；左側展示架、中景通道、右側收銀櫃台；喬治左中景、老師左後、小如中後、店員右。",
       "action": "喬治在文具店比讚",
       "filename": "S13_shop_Frame_45.png"
+    },
+    {
+      "scene": 15,
+      "scene_id": "fire",
+      "title": "火很危險",
+      "frame": 1,
+      "kind": "background",
+      "setting": "晚上的家裡客廳；右側鼠尾草綠沙發和一扇窗，左前方木頭矮桌，牆上兩張小畫，溫暖室內燈光。",
+      "action": "無人物的客廳，矮桌上放著一個紅色打火機。",
+      "filename": "S15_fire_Frame_01.png"
+    },
+    {
+      "scene": 15,
+      "scene_id": "fire",
+      "title": "火很危險",
+      "frame": 2,
+      "kind": "main",
+      "setting": "晚上的家裡客廳；右側鼠尾草綠沙發和一扇窗，左前方木頭矮桌，牆上兩張小畫，溫暖室內燈光。",
+      "action": "喬治走向坐在沙發邊的爸爸，伸手要平板",
+      "filename": "S15_fire_Frame_02.png"
+    },
+    {
+      "scene": 15,
+      "scene_id": "fire",
+      "title": "火很危險",
+      "frame": 3,
+      "kind": "main",
+      "setting": "晚上的家裡客廳；右側鼠尾草綠沙發和一扇窗，左前方木頭矮桌，牆上兩張小畫，溫暖室內燈光。",
+      "action": "爸爸溫和地搖頭，把平板放到一旁",
+      "filename": "S15_fire_Frame_03.png"
+    },
+    {
+      "scene": 15,
+      "scene_id": "fire",
+      "title": "火很危險",
+      "frame": 4,
+      "kind": "main",
+      "setting": "晚上的家裡客廳；右側鼠尾草綠沙發和一扇窗，左前方木頭矮桌，牆上兩張小畫，溫暖室內燈光。",
+      "action": "喬治皺眉、握拳，很生氣",
+      "filename": "S15_fire_Frame_04.png"
+    },
+    {
+      "scene": 15,
+      "scene_id": "fire",
+      "title": "火很危險",
+      "frame": 5,
+      "kind": "main",
+      "setting": "晚上的家裡客廳；右側鼠尾草綠沙發和一扇窗，左前方木頭矮桌，牆上兩張小畫，溫暖室內燈光。",
+      "action": "喬治表情轉為難過，眼眶有點紅（選擇點）",
+      "filename": "S15_fire_Frame_05.png"
+    },
+    {
+      "scene": 15,
+      "scene_id": "fire",
+      "title": "火很危險",
+      "frame": 6,
+      "kind": "main",
+      "setting": "晚上的家裡客廳；右側鼠尾草綠沙發和一扇窗，左前方木頭矮桌，牆上兩張小畫，溫暖室內燈光。",
+      "action": "喬治手放胸口，對爸爸說出自己的感覺",
+      "filename": "S15_fire_Frame_06.png"
+    },
+    {
+      "scene": 15,
+      "scene_id": "fire",
+      "title": "火很危險",
+      "frame": 7,
+      "kind": "main",
+      "setting": "晚上的家裡客廳；右側鼠尾草綠沙發和一扇窗，左前方木頭矮桌，牆上兩張小畫，溫暖室內燈光。",
+      "action": "喬治指向房間方向，表示要先去冷靜；爸爸點頭",
+      "filename": "S15_fire_Frame_07.png"
+    },
+    {
+      "scene": 15,
+      "scene_id": "fire",
+      "title": "火很危險",
+      "frame": 8,
+      "kind": "main",
+      "setting": "喬治的房間；一張床、書桌、窗戶，夜晚、溫暖安靜。",
+      "action": "（房間）喬治走進自己的房間",
+      "filename": "S15_fire_Frame_08.png"
+    },
+    {
+      "scene": 15,
+      "scene_id": "fire",
+      "title": "火很危險",
+      "frame": 9,
+      "kind": "main",
+      "setting": "喬治的房間；一張床、書桌、窗戶，夜晚、溫暖安靜。",
+      "action": "（房間）喬治坐在床邊，閉眼深呼吸",
+      "filename": "S15_fire_Frame_09.png"
+    },
+    {
+      "scene": 15,
+      "scene_id": "fire",
+      "title": "火很危險",
+      "frame": 10,
+      "kind": "main",
+      "setting": "喬治的房間；一張床、書桌、窗戶，夜晚、溫暖安靜。",
+      "action": "（房間）喬治肩膀放鬆，表情平靜一點",
+      "filename": "S15_fire_Frame_10.png"
+    },
+    {
+      "scene": 15,
+      "scene_id": "fire",
+      "title": "火很危險",
+      "frame": 11,
+      "kind": "main",
+      "setting": "喬治的房間；一張床、書桌、窗戶，夜晚、溫暖安靜。",
+      "action": "（房間）喬治抱著枕頭安靜坐著",
+      "filename": "S15_fire_Frame_11.png"
+    },
+    {
+      "scene": 15,
+      "scene_id": "fire",
+      "title": "火很危險",
+      "frame": 12,
+      "kind": "main",
+      "setting": "喬治的房間；一張床、書桌、窗戶，夜晚、溫暖安靜。",
+      "action": "（房間）喬治站起來，表情放鬆",
+      "filename": "S15_fire_Frame_12.png"
+    },
+    {
+      "scene": 15,
+      "scene_id": "fire",
+      "title": "火很危險",
+      "frame": 13,
+      "kind": "main",
+      "setting": "喬治的房間；一張床、書桌、窗戶，夜晚、溫暖安靜。",
+      "action": "（房間）喬治走出房門",
+      "filename": "S15_fire_Frame_13.png"
+    },
+    {
+      "scene": 15,
+      "scene_id": "fire",
+      "title": "火很危險",
+      "frame": 14,
+      "kind": "main",
+      "setting": "晚上的家裡客廳；右側鼠尾草綠沙發和一扇窗，左前方木頭矮桌，牆上兩張小畫，溫暖室內燈光。",
+      "action": "（客廳）喬治回到爸爸身邊",
+      "filename": "S15_fire_Frame_14.png"
+    },
+    {
+      "scene": 15,
+      "scene_id": "fire",
+      "title": "火很危險",
+      "frame": 15,
+      "kind": "main",
+      "setting": "晚上的家裡客廳；右側鼠尾草綠沙發和一扇窗，左前方木頭矮桌，牆上兩張小畫，溫暖室內燈光。",
+      "action": "爸爸蹲低到和喬治一樣高，專心聽",
+      "filename": "S15_fire_Frame_15.png"
+    },
+    {
+      "scene": 15,
+      "scene_id": "fire",
+      "title": "火很危險",
+      "frame": 16,
+      "kind": "main",
+      "setting": "晚上的家裡客廳；右側鼠尾草綠沙發和一扇窗，左前方木頭矮桌，牆上兩張小畫，溫暖室內燈光。",
+      "action": "爸爸微笑，比出約定的手勢；喬治點頭",
+      "filename": "S15_fire_Frame_16.png"
+    },
+    {
+      "scene": 15,
+      "scene_id": "fire",
+      "title": "火很危險",
+      "frame": 17,
+      "kind": "main",
+      "setting": "晚上的家裡客廳；右側鼠尾草綠沙發和一扇窗，左前方木頭矮桌，牆上兩張小畫，溫暖室內燈光。",
+      "action": "爸爸摸摸喬治的頭，兩人都放鬆",
+      "filename": "S15_fire_Frame_17.png"
+    },
+    {
+      "scene": 15,
+      "scene_id": "fire",
+      "title": "火很危險",
+      "frame": 18,
+      "kind": "option-A",
+      "setting": "晚上的家裡客廳；右側鼠尾草綠沙發和一扇窗，左前方木頭矮桌，牆上兩張小畫，溫暖室內燈光。",
+      "action": "喬治生氣地走到矮桌旁",
+      "filename": "S15_fire_Frame_18.png"
+    },
+    {
+      "scene": 15,
+      "scene_id": "fire",
+      "title": "火很危險",
+      "frame": 19,
+      "kind": "option-A",
+      "setting": "晚上的家裡客廳；右側鼠尾草綠沙發和一扇窗，左前方木頭矮桌，牆上兩張小畫，溫暖室內燈光。",
+      "action": "喬治拿起打火機，手舉在胸前，表情生氣（沒有火焰）",
+      "filename": "S15_fire_Frame_19.png"
+    },
+    {
+      "scene": 15,
+      "scene_id": "fire",
+      "title": "火很危險",
+      "frame": 20,
+      "kind": "option-A",
+      "setting": "晚上的家裡客廳；右側鼠尾草綠沙發和一扇窗，左前方木頭矮桌，牆上兩張小畫，溫暖室內燈光。",
+      "action": "爸爸快步走近，一手伸出把打火機拿走，表情緊張",
+      "filename": "S15_fire_Frame_20.png"
+    },
+    {
+      "scene": 15,
+      "scene_id": "fire",
+      "title": "火很危險",
+      "frame": 21,
+      "kind": "option-A",
+      "setting": "晚上的家裡客廳；右側鼠尾草綠沙發和一扇窗，左前方木頭矮桌，牆上兩張小畫，溫暖室內燈光。",
+      "action": "打火機在爸爸手中，喬治低頭後悔，爸爸表情擔心",
+      "filename": "S15_fire_Frame_21.png"
+    },
+    {
+      "scene": 15,
+      "scene_id": "fire",
+      "title": "火很危險",
+      "frame": 22,
+      "kind": "option-B",
+      "setting": "晚上的家裡客廳；右側鼠尾草綠沙發和一扇窗，左前方木頭矮桌，牆上兩張小畫，溫暖室內燈光。",
+      "action": "喬治手放胸口，對爸爸說出自己的感覺",
+      "filename": "S15_fire_Frame_22.png"
+    },
+    {
+      "scene": 15,
+      "scene_id": "fire",
+      "title": "火很危險",
+      "frame": 23,
+      "kind": "option-B",
+      "setting": "喬治的房間；一張床、書桌、窗戶，夜晚、溫暖安靜。",
+      "action": "（房間）喬治坐在床邊，閉眼深呼吸",
+      "filename": "S15_fire_Frame_23.png"
+    },
+    {
+      "scene": 15,
+      "scene_id": "fire",
+      "title": "火很危險",
+      "frame": 24,
+      "kind": "option-B",
+      "setting": "晚上的家裡客廳；右側鼠尾草綠沙發和一扇窗，左前方木頭矮桌，牆上兩張小畫，溫暖室內燈光。",
+      "action": "（客廳）喬治回到爸爸身邊",
+      "filename": "S15_fire_Frame_24.png"
+    },
+    {
+      "scene": 15,
+      "scene_id": "fire",
+      "title": "火很危險",
+      "frame": 25,
+      "kind": "option-B",
+      "setting": "晚上的家裡客廳；右側鼠尾草綠沙發和一扇窗，左前方木頭矮桌，牆上兩張小畫，溫暖室內燈光。",
+      "action": "爸爸微笑，比出約定的手勢；喬治點頭",
+      "filename": "S15_fire_Frame_25.png"
+    },
+    {
+      "scene": 15,
+      "scene_id": "fire",
+      "title": "火很危險",
+      "frame": 26,
+      "kind": "option-C",
+      "setting": "晚上的家裡客廳；右側鼠尾草綠沙發和一扇窗，左前方木頭矮桌，牆上兩張小畫，溫暖室內燈光。",
+      "action": "喬治跺腳大哭",
+      "filename": "S15_fire_Frame_26.png"
+    },
+    {
+      "scene": 15,
+      "scene_id": "fire",
+      "title": "火很危險",
+      "frame": 27,
+      "kind": "option-C",
+      "setting": "晚上的家裡客廳；右側鼠尾草綠沙發和一扇窗，左前方木頭矮桌，牆上兩張小畫，溫暖室內燈光。",
+      "action": "喬治坐在地上踢腳哭鬧",
+      "filename": "S15_fire_Frame_27.png"
+    },
+    {
+      "scene": 15,
+      "scene_id": "fire",
+      "title": "火很危險",
+      "frame": 28,
+      "kind": "option-C",
+      "setting": "晚上的家裡客廳；右側鼠尾草綠沙發和一扇窗，左前方木頭矮桌，牆上兩張小畫，溫暖室內燈光。",
+      "action": "爸爸為難地站著，手按額頭",
+      "filename": "S15_fire_Frame_28.png"
+    },
+    {
+      "scene": 15,
+      "scene_id": "fire",
+      "title": "火很危險",
+      "frame": 29,
+      "kind": "option-C",
+      "setting": "晚上的家裡客廳；右側鼠尾草綠沙發和一扇窗，左前方木頭矮桌，牆上兩張小畫，溫暖室內燈光。",
+      "action": "喬治哭累了，抱著膝蓋坐在地上",
+      "filename": "S15_fire_Frame_29.png"
+    },
+    {
+      "scene": 15,
+      "scene_id": "fire",
+      "title": "火很危險",
+      "frame": 30,
+      "kind": "ending",
+      "setting": "晚上的家裡客廳；右側鼠尾草綠沙發和一扇窗，左前方木頭矮桌，牆上兩張小畫，溫暖室內燈光。",
+      "action": "爸爸和喬治一起坐在沙發上，平靜地聊天。",
+      "filename": "S15_fire_Frame_30.png"
+    },
+    {
+      "scene": 15,
+      "scene_id": "fire",
+      "title": "火很危險",
+      "frame": 31,
+      "kind": "summary",
+      "setting": "晚上的家裡客廳；右側鼠尾草綠沙發和一扇窗，左前方木頭矮桌，牆上兩張小畫，溫暖室內燈光。",
+      "action": "喬治和爸爸自然站在畫面左半部，右半部留乾淨的牆面（網站會放口訣）。",
+      "filename": "S15_fire_Frame_31.png"
     }
   ]
 }
