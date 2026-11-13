@@ -4849,6 +4849,116 @@
       "setting": "同一教室美勞桌；喬治在左、大偉在右，蠟筆盒放在兩人之間桌邊。",
       "action": "喬治在美勞桌旁比讚。",
       "filename": "S03_oops_Frame_45.png"
+    },
+    {
+      "scene": 4,
+      "scene_id": "join",
+      "title": "我也想一起玩",
+      "frame": 35,
+      "kind": "episode",
+      "setting": "校園操場邊；左側步道、中景空曠球場、右側小晴與阿明傳球。 喬治胸口以上近景，同場景背景稍微模糊。",
+      "action": "喬治近景：很想玩，眼睛盯著球。",
+      "filename": "S04_join_Frame_35.png"
+    },
+    {
+      "scene": 4,
+      "scene_id": "join",
+      "title": "我也想一起玩",
+      "frame": 36,
+      "kind": "episode",
+      "setting": "校園操場邊；左側步道、中景空曠球場、右側小晴與阿明傳球。 喬治胸口以上近景，同場景背景稍微模糊。",
+      "action": "喬治近景：怕被拒絕，手指絞在一起。",
+      "filename": "S04_join_Frame_36.png"
+    },
+    {
+      "scene": 4,
+      "scene_id": "join",
+      "title": "我也想一起玩",
+      "frame": 37,
+      "kind": "episode",
+      "setting": "校園操場邊；左側步道、中景空曠球場、右側小晴與阿明傳球。 喬治面向觀眾示範，位於中間偏左，右側保留乾淨背景供提示卡使用。",
+      "action": "往前走近一步。",
+      "filename": "S04_join_Frame_37.png"
+    },
+    {
+      "scene": 4,
+      "scene_id": "join",
+      "title": "我也想一起玩",
+      "frame": 38,
+      "kind": "episode",
+      "setting": "校園操場邊；左側步道、中景空曠球場、右側小晴與阿明傳球。 喬治面向觀眾示範，位於中間偏左，右側保留乾淨背景供提示卡使用。",
+      "action": "看著正在玩的同學。",
+      "filename": "S04_join_Frame_38.png"
+    },
+    {
+      "scene": 4,
+      "scene_id": "join",
+      "title": "我也想一起玩",
+      "frame": 39,
+      "kind": "episode",
+      "setting": "校園操場邊；左側步道、中景空曠球場、右側小晴與阿明傳球。 喬治面向觀眾示範，位於中間偏左，右側保留乾淨背景供提示卡使用。",
+      "action": "雙手放下，安靜等待。",
+      "filename": "S04_join_Frame_39.png"
+    },
+    {
+      "scene": 4,
+      "scene_id": "join",
+      "title": "我也想一起玩",
+      "frame": 40,
+      "kind": "episode",
+      "setting": "校園操場邊；左側步道、中景空曠球場、右側小晴與阿明傳球。 喬治面向觀眾示範，位於中間偏左，右側保留乾淨背景供提示卡使用。",
+      "action": "舉起一手開口詢問。",
+      "filename": "S04_join_Frame_40.png"
+    },
+    {
+      "scene": 4,
+      "scene_id": "join",
+      "title": "我也想一起玩",
+      "frame": 41,
+      "kind": "episode",
+      "setting": "同校教室；小晴和小如玩翻花繩，喬治在旁。",
+      "action": "教室裡小晴和小如在玩翻花繩，喬治站在旁邊看。",
+      "filename": "S04_join_Frame_41.png"
+    },
+    {
+      "scene": 4,
+      "scene_id": "join",
+      "title": "我也想一起玩",
+      "frame": 42,
+      "kind": "episode",
+      "setting": "同一教室與機位；小晴讓出位置邀喬治加入。",
+      "action": "喬治開口問，小晴點頭、挪出位置。",
+      "filename": "S04_join_Frame_42.png"
+    },
+    {
+      "scene": 4,
+      "scene_id": "join",
+      "title": "我也想一起玩",
+      "frame": 43,
+      "kind": "episode",
+      "setting": "教室圖書角；阿明與大偉一起看一本書，喬治走近。",
+      "action": "圖書角阿明和大偉一起看一本書，喬治走近。",
+      "filename": "S04_join_Frame_43.png"
+    },
+    {
+      "scene": 4,
+      "scene_id": "join",
+      "title": "我也想一起玩",
+      "frame": 44,
+      "kind": "episode",
+      "setting": "同一圖書角與機位；大偉挪出位置讓喬治一起看。",
+      "action": "喬治問了之後，大偉挪出位置讓他一起看。",
+      "filename": "S04_join_Frame_44.png"
+    },
+    {
+      "scene": 4,
+      "scene_id": "join",
+      "title": "我也想一起玩",
+      "frame": 45,
+      "kind": "episode",
+      "setting": "校園操場邊；左側步道、中景空曠球場、右側小晴與阿明傳球。",
+      "action": "喬治在操場邊比讚。",
+      "filename": "S04_join_Frame_45.png"
     }
   ]
 }
