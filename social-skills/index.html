@@ -369,6 +369,7 @@ var KIDS = {
   wei:   { name: '大偉', kind: 'kid', hairStyle: 'man', hair: '#5B3B28', top: '#8FB3CC', pants: '#7A6A58', shoes: '#6C5A4E', color: '#8FB3CC' },
   tea:   { name: '老師', kind: 'teacher', hairStyle: 'bob', hair: '#3B2F2A', top: '#9BB59A', inner: '#F3EBDD', skirt: '#56657E', shoes: '#6C5A4E', glasses: 1, color: '#9BB59A' },
   mom:   { name: '媽媽', kind: 'mom', hairStyle: 'pony', hair: '#5A3E2E', top: '#EFE4D2', skirt: '#5E6E8A', shoes: '#8C6450', color: '#EFE4D2' },
+  dad:   { name: '爸爸', kind: 'man', hairStyle: 'man', hair: '#2F2724', top: '#8FA3BD', pants: '#5D5A57', shoes: '#5D5A57', color: '#8FA3BD' },
   clerk: { name: '店員', kind: 'clerk', hairStyle: 'bun', hair: '#4A3A30', top: '#F2E9DA', pants: '#5D5A57', apron: '#6F8F72', shoes: '#5D5A57', color: '#6F8F72' }
 };
 
@@ -846,13 +847,13 @@ var SCENES = [
   questions: [
     { q: '喬治想要什麼？媽媽為什麼說不行？', hint: '喬治想玩手機。今天已經玩過了，有約好的時間。' },
     { q: '喬治說要跳下去，媽媽有什麼感覺？', hint: '媽媽很害怕、很焦慮，擔心喬治受傷。' },
-    { q: '很生氣、拿不到想要的東西時，可以怎麼做？', hint: '先離開危險的地方、深呼吸，說出「我很生氣」，再和大人約好什麼時候可以。' }
+    { q: '很生氣、很難過的時候，可以怎麼做？', hint: '把難過說出來，再選一個安全的方式冷靜，例如去房間坐著、到一樓吹吹風、深呼吸。冷靜之後，再和大人約好時間。' }
   ],
   choose: { q: '媽媽說現在不能玩手機，喬治很生氣，可以怎麼做？', opts: [
     { ic: '⚠️', t: '威脅媽媽：「不給我，我就跳下去！」', fb: '用傷害自己來威脅，媽媽會很害怕，也很危險。再想一想！', demo: [
       { c: { le: { x: 110, mood: 'angry', pose: 'cross' } }, say: [['le', '不給我，我就跳下去！']] },
       { c: { mom: { x: 380, mood: 'scared', pose: 'reach' } }, say: [['mom', '你先下來！']], cap: '媽媽嚇壞了。用傷害自己來威脅，是很危險的事。' } ] },
-    { ic: '🗣️', t: '先深呼吸，說「我很生氣」，再問「什麼時候可以玩？」', ok: 1, fb: '對了！先讓自己冷靜，說出感覺，再和媽媽約好時間。' },
+    { ic: '🗣️', t: '說「我很生氣」，去房間坐著冷靜，再問「什麼時候可以玩？」', ok: 1, fb: '對了！把難過說出來，用安全的方式冷靜，再和媽媽約好時間。' },
     { ic: '😭', t: '一直哭鬧、摔東西', fb: '哭鬧摔東西，東西會壞掉，媽媽也更不會答應喔。再想一想！', demo: [
       { c: { le: { mood: 'angry', pose: 'hips' } }, say: [['le', '我要玩！我要玩！']] },
       { c: { le: { mood: 'sad', pose: 'down' }, mom: { mood: 'worried' } }, think: [['mom', '他這樣，我也沒辦法好好跟他說…']], cap: '一直哭鬧，事情沒有解決，大家都不開心。' } ] }
@@ -860,15 +861,60 @@ var SCENES = [
   right: [
     { cap: '放學回家，喬治想玩媽媽的手機。', c: { le: { mood: 'happy', pose: 'reach' }, mom: { mood: 'neutral' } }, say: [['le', '媽媽，手機借我玩！']] },
     { c: { le: { pose: 'down', mood: 'angry' } }, say: [['mom', '今天已經玩過了，現在不行喔。']], think: [['le', '好生氣！我好想玩！']] },
-    { c: { le: { mood: 'worried' } }, think: [['le', '停！深呼吸…1、2、3、4、5。']], cap: '喬治很生氣，但是他先讓自己冷靜。' },
-    { c: { le: { mood: 'neutral' } }, say: [['le', '媽媽，我很生氣，因為我真的很想玩。']] },
+    { c: { le: { mood: 'worried' } }, think: [['le', '停！深呼吸…1、2、3、4、5。']] },
+    { c: { le: { mood: 'sad' } }, say: [['le', '媽媽，我很生氣，也很難過，因為我真的很想玩。']], cap: '喬治把難過說出來。' },
+    { say: [['le', '我先去房間坐一下，冷靜一下。']] },
+    { c: { le: { x: 900 }, mom: { mood: 'happy' } }, say: [['mom', '好，你冷靜好了再來找我。']], cap: '用安全的方式冷靜：去房間坐著、到一樓吹吹風、深呼吸。' },
+    { c: { le: { x: 330, mood: 'neutral' } }, say: [['le', '媽媽，我好多了。我什麼時候可以玩？']] },
     { c: { mom: { mood: 'happy' } }, say: [['mom', '謝謝你把感覺說出來。吃完晚飯可以玩二十分鐘，好嗎？']] },
     { c: { le: { mood: 'happy' } }, say: [['le', '好，那我先去寫功課！']], cap: '說出感覺、約好時間，喬治和媽媽都安心了。' }
   ],
-  how: { chain: ['停', '深呼吸', '說「我很生氣」', '約好什麼時候可以'], note: '不可以用傷害自己來威脅別人。如果你真的很難過、想傷害自己，一定要告訴大人。' },
-  sum: { p: '拿不到手機，就說要跳下去來威脅媽媽。', o: '媽媽很害怕、很焦慮，擔心喬治受傷。', c: '先冷靜，說出「我很生氣」，再和媽媽約好時間。' },
-  practice: ['假裝想要的東西被說「不行」', '停下來，深呼吸三次', '說：「我很生氣，因為我很想＿＿。」', '問：「那什麼時候可以？」'],
+  how: { chain: ['說出「我很難過」', '去安全的地方冷靜', '冷靜好再回來', '約好什麼時候可以'], note: '難過要說出來。可以去房間坐著、到一樓吹吹風、深呼吸。不可以用傷害自己來威脅別人；如果真的想傷害自己，一定要告訴大人。' },
+  sum: { p: '拿不到手機，就說要跳下去來威脅媽媽。', o: '媽媽很害怕、很焦慮，擔心喬治受傷。', c: '把難過說出來，去房間坐著冷靜，再和媽媽約好時間。' },
+  practice: ['假裝想要的東西被說「不行」', '說：「我很難過，因為我很想＿＿。」', '說：「我先去＿＿冷靜一下。」（房間坐著、一樓吹吹風）', '冷靜好回來問：「那什麼時候可以？」'],
   twist: { q: '如果真的很難過，覺得想傷害自己？', a: '這不是你的錯。一定要馬上告訴爸爸媽媽、老師或輔導老師，大人會陪你一起想辦法。' }
+},
+{ id: 'fire', title: '火很危險', short: '平板不能玩，大哭大鬧，還拿打火機威脅爸爸。', bg: 'home', label: '',
+  /* 注意：只畫打火機，不畫火焰、不畫點火的動作（安全原則） */
+  teacherNote: '若學生在現實中玩火或用火威脅，請先確保安全、收走火源，事後與家長聯繫，並依學校輔導流程通報輔導室。',
+  props: [['lighter', 236, 334, 26]],
+  cast: { le: P(LE, 360), dad: P(KIDS.dad, 600) },
+  wrong: [
+    { cap: '晚上，喬治想玩平板。', c: { le: { mood: 'happy', pose: 'reach' } }, say: [['le', '爸爸，平板給我玩！']] },
+    { c: { le: { pose: 'down' } }, say: [['dad', '今天的時間已經用完了，明天再玩。']] },
+    { c: { le: { mood: 'sad', pose: 'hips' } }, say: [['le', '我要玩！我要玩！嗚哇——']], cap: '喬治大哭大鬧。' },
+    { c: { le: { x: 270, mood: 'angry', pose: 'point' } }, props: [['lighter', 322, 296, 24]], say: [['le', '不給我，我就點火燒東西！']], cap: '喬治拿起桌上的打火機威脅爸爸。' },
+    { c: { dad: { x: 430, mood: 'scared', pose: 'reach' } }, props: [['lighter', 322, 296, 24]], say: [['dad', '把打火機給我！火很危險！']] },
+    { c: { le: { mood: 'sad', pose: 'down' }, dad: { mood: 'worried', pose: 'down' } }, props: [['lighter', 456, 292, 24]], think: [['dad', '差一點就出事了…好可怕。']], cap: '火會燒傷自己和家人，還可能燒掉房子，非常危險。' }
+  ],
+  questions: [
+    { q: '喬治想要什麼？爸爸為什麼說不行？', hint: '喬治想玩平板。今天的時間已經用完了。' },
+    { q: '喬治拿打火機威脅，可能會發生什麼事？', hint: '可能燒傷自己和家人，還可能引起火災，非常危險。爸爸也嚇壞了。' },
+    { q: '很生氣、很難過的時候，可以怎麼做？', hint: '把難過說出來，再選一個安全的方式冷靜，例如去房間坐著、到一樓吹吹風、深呼吸。' }
+  ],
+  choose: { q: '爸爸說今天不能玩平板，喬治很生氣，可以怎麼做？', opts: [
+    { ic: '🔥', t: '拿打火機威脅：「不給我，我就燒東西！」', fb: '火很危險，會傷到自己和家人。絕對不可以玩火！再想一想！', demo: [
+      { c: { le: { x: 270, mood: 'angry', pose: 'point' } }, props: [['lighter', 322, 296, 24]], say: [['le', '不給我，我就燒東西！']] },
+      { c: { dad: { x: 430, mood: 'scared', pose: 'reach' } }, props: [['lighter', 322, 296, 24]], say: [['dad', '把打火機給我！']], cap: '爸爸嚇壞了。玩火可能造成火災，非常危險。' } ] },
+    { ic: '🗣️', t: '說「我很生氣」，去房間坐著冷靜，再問「明天什麼時候可以玩？」', ok: 1, fb: '對了！把難過說出來，用安全的方式冷靜，再和爸爸約好時間。' },
+    { ic: '😭', t: '大哭大鬧，躺在地上不起來', fb: '大哭大鬧，事情沒有解決，大家都很累。再想一想！', demo: [
+      { c: { le: { mood: 'sad', pose: 'hips' } }, say: [['le', '我要玩！我要玩！嗚哇——']] },
+      { c: { dad: { mood: 'worried' } }, think: [['dad', '他這樣，我們沒辦法好好說…']], cap: '一直哭鬧，事情沒有解決。' } ] }
+  ] },
+  right: [
+    { cap: '晚上，喬治想玩平板。', c: { le: { mood: 'happy', pose: 'reach' } }, say: [['le', '爸爸，平板給我玩！']] },
+    { c: { le: { pose: 'down', mood: 'angry' } }, say: [['dad', '今天的時間已經用完了，明天再玩。']], think: [['le', '好生氣！我好想玩！']] },
+    { c: { le: { mood: 'sad' } }, say: [['le', '爸爸，我很生氣，也很難過，因為我真的很想玩。']], cap: '喬治把難過說出來。' },
+    { say: [['le', '我先去房間坐一下，冷靜一下。']] },
+    { c: { le: { x: 900 }, dad: { mood: 'happy' } }, say: [['dad', '好，你冷靜好了再來找我。']], cap: '用安全的方式冷靜：去房間坐著、到一樓吹吹風、深呼吸。' },
+    { c: { le: { x: 380, mood: 'neutral' } }, say: [['le', '爸爸，我好多了。明天什麼時候可以玩？']] },
+    { c: { dad: { mood: 'happy' } }, say: [['dad', '謝謝你把感覺說出來。明天寫完功課，可以玩三十分鐘。']] },
+    { c: { le: { mood: 'happy' } }, say: [['le', '好！']], cap: '說出感覺、冷靜下來、約好時間，喬治和爸爸都安心了。' }
+  ],
+  how: { chain: ['說出「我很難過」', '去安全的地方冷靜', '冷靜好再回來', '約好什麼時候可以'], note: '火很危險，絕對不可以玩火，也不可以拿火威脅別人。看到打火機或火柴，要交給大人。' },
+  sum: { p: '平板不能玩，就拿打火機威脅要燒東西。', o: '爸爸非常害怕，擔心喬治和家人受傷、發生火災。', c: '把難過說出來，去房間冷靜，再和爸爸約好時間。' },
+  practice: ['假裝想玩平板，被說「今天不行」', '說：「我很難過，因為我很想＿＿。」', '說：「我先去＿＿冷靜一下。」（房間坐著、一樓吹吹風）', '冷靜好回來問：「那什麼時候可以？」'],
+  twist: { q: '如果看到打火機或火柴？', a: '不要拿來玩，馬上交給大人。' }
 }
 ];
 
@@ -1060,6 +1106,19 @@ var BGS = {
       fg: '<g filter="url(#f-b2)"><g class="sway"><path d="M-10,450 C10,400 20,380 40,370 C30,400 34,420 30,450 Z" fill="#8DAA7E"/><path d="M20,450 C40,404 60,392 74,388 C60,410 58,430 56,450 Z" fill="#9FBA8D"/></g>' +
         '<g class="sway"><path d="M800,450 C780,404 770,390 752,384 C762,410 760,430 764,450 Z" fill="#8DAA7E"/></g></g>',
       light: '<polygon class="beam slow" points="560,0 800,0 800,90 380,450 250,450" fill="url(#g-beam)" opacity=".35" style="mix-blend-mode:screen"/>' + dust(420, 120, 340, 240, 10, 12)
+    };
+  },
+  home: function () {
+    return {
+      bg: '<rect width="800" height="262" fill="url(#g-wall)"/>' + wash(41, 0, 0, 800, 250, ['#F0E2CB', '#EADCC5', '#F7EEDC']) +
+        windowPane(520, 50, 180, 150, treesOutside(180, 150, 44)) +
+        '<g transform="translate(560,60)"><circle r="0" /></g>' + poster(80, 60, 60, 46, -2, '#FBF7EE', 'mount') + poster(150, 70, 40, 52, 3, '#FDF3DC', 'flower') +
+        '<rect y="256" width="800" height="7" fill="#B9986E"/><rect y="262" width="800" height="188" fill="url(#g-floor)"/>' + planks(262, 400, '#B8976C', 6) +
+        '<polygon points="500,280 700,280 780,400 520,400" fill="#FFF3D6" opacity=".35"/>' +
+        '<g transform="translate(560,250)"><rect x="0" y="-60" width="200" height="40" rx="12" fill="#9DB59A" stroke="#6F8F72" stroke-width="1.4"/><rect x="0" y="-22" width="200" height="34" rx="8" fill="#AFC6AA" stroke="#6F8F72" stroke-width="1.4"/><rect x="-10" y="-50" width="20" height="62" rx="8" fill="#93AE8F"/><rect x="190" y="-50" width="20" height="62" rx="8" fill="#93AE8F"/></g>',
+      mid: plant(760, 262, .75, 'sway'),
+      fg: '<g transform="translate(240,400)"><ellipse cx="0" cy="0" rx="74" ry="7" fill="url(#g-shadow)"/><rect x="-70" y="-66" width="140" height="10" rx="3" fill="#E1C49C" stroke="#9C7650" stroke-width="1.4"/><rect x="-62" y="-56" width="8" height="56" fill="#A97A4C"/><rect x="54" y="-56" width="8" height="56" fill="#A97A4C"/></g>',
+      light: beam('520,200 700,200 780,400 520,400') + dust(520, 200, 240, 180, 8, 45)
     };
   },
   yard: function () {
@@ -1341,6 +1400,7 @@ function personStatic(p, face) {
 
 /* ================= 道具與特效（手繪，不用表情符號） ================= */
 var PROPS = {
+  'lighter': function () { return '<rect x="-6" y="-8" width="12" height="20" rx="2.5" fill="#C8664F" stroke="#9A4E3C" stroke-width="1"/><rect x="-6" y="-13" width="12" height="6" rx="1.2" fill="#C9C4BA" stroke="#9A958C" stroke-width=".8"/><circle cx="3" cy="-10" r="1.8" fill="#9A958C"/><path d="M-3,-4 V9" stroke="#E08E78" stroke-width="1.2" opacity=".6"/>'; },
   '📖': function () { return '<path d="M0,-10 C-8,-14 -18,-13 -24,-10 L-24,8 C-18,5 -8,5 0,9 Z" fill="#FBF7EE" stroke="#8A7A6A" stroke-width="1"/><path d="M0,-10 C8,-14 18,-13 24,-10 L24,8 C18,5 8,5 0,9 Z" fill="#F6EFE2" stroke="#8A7A6A" stroke-width="1"/><path d="M-20,-6 H-5 M-20,-1 H-5 M-20,4 H-8 M5,-6 H20 M5,-1 H20" stroke="#B9AA96" stroke-width=".9"/><path d="M-25,9 C-18,6 -8,6 0,10 C8,6 18,6 25,9" stroke="#7F9C7C" stroke-width="2.4" fill="none"/>'; },
   '✏️': function () { return '<g transform="rotate(-35)"><rect x="-20" y="-3.5" width="30" height="7" fill="#EBCB78" stroke="#B9944C" stroke-width=".9"/><path d="M10,-3.5 L18,0 L10,3.5 Z" fill="#E9CDA8" stroke="#B9944C" stroke-width=".8"/><path d="M15.5,-1 L18,0 L15.5,1 Z" fill="#5B4A42"/><rect x="-25" y="-3.5" width="5" height="7" rx="1" fill="#E7A9A0"/><rect x="-21" y="-3.5" width="2" height="7" fill="#B8B3AA"/></g>'; },
   '🖍️': function () { return '<rect x="-16" y="-8" width="32" height="18" rx="2" fill="#A9C2D4" stroke="#7E96A6" stroke-width="1"/><path d="M-12,-8 V-16 M-6,-8 V-18 M0,-8 V-15 M6,-8 V-17 M12,-8 V-14" stroke-width="4" stroke-linecap="round" stroke="#E7A9A0"/><path d="M-6,-8 V-18" stroke="#F2D48A" stroke-width="4" stroke-linecap="round"/><path d="M6,-8 V-17" stroke="#9DB59A" stroke-width="4" stroke-linecap="round"/><path d="M-12,0 H12" stroke="#FBF7EE" stroke-width="2"/>'; },
@@ -1353,7 +1413,7 @@ var PROPS = {
   '🪑': function () { return '<path d="M-14,-30 V20 M10,-4 V20 M-14,-4 H12" stroke="#A97A4C" stroke-width="4" stroke-linecap="round"/><rect x="-16" y="-34" width="6" height="30" rx="2" fill="#C99A68"/><rect x="-16" y="-8" width="30" height="6" rx="2" fill="#D9B78E" stroke="#A97A4C"/>'; },
   'charm': function () { return '<circle cy="-14" r="4" fill="none" stroke="#B8B3AA" stroke-width="1.6"/><path d="M0,-10 V-6" stroke="#B8B3AA" stroke-width="1.2"/><path d="M-9,-4 L0,-9 L9,-4 Z" fill="#C8664F" stroke="#9A4E3C" stroke-width=".8"/><rect x="-7" y="-4" width="14" height="13" rx="1.5" fill="#F3E6CF" stroke="#A7835C" stroke-width=".8"/><rect x="-2.5" y="2" width="5" height="7" fill="#C8664F"/><path d="M-10,-4 H10" stroke="#9A4E3C" stroke-width="1"/>'; }
 };
-var PROP_NAME = { '📖': '課本', '✏️': '鉛筆', '🖍️': '蠟筆盒', '📄': '學習單', '📒': '小本子', '🧻': '衛生紙', '🗑️': '垃圾桶', '📝': '紙條', '⚽': '球', '🪑': '椅子', 'charm': '鑰匙圈' };
+var PROP_NAME = { 'lighter': '打火機（道具用，不可點火）', '📖': '課本', '✏️': '鉛筆', '🖍️': '蠟筆盒', '📄': '學習單', '📒': '小本子', '🧻': '衛生紙', '🗑️': '垃圾桶', '📝': '紙條', '⚽': '球', '🪑': '椅子', 'charm': '鑰匙圈' };
 function propSvg(p) {
   var art = PROPS[p[0]], s = (p[3] || 40) / 40;
   if (!art) return '<text x="' + p[1] + '" y="' + p[2] + '" font-size="' + (p[3] || 40) + '" text-anchor="middle">' + p[0] + '</text>';
@@ -1500,7 +1560,7 @@ function render() {
 }
 
 /* ================= 列印教材：檢核表、學習單（問題）、台詞卡（演出喬治的做法） ================= */
-var PLACE = { hall: '走廊', class: '教室', play: '操場', shop: '商店', yard: '家門口' };
+var PLACE = { hall: '走廊', class: '教室', play: '操場', shop: '商店', yard: '家門口', home: '家裡客廳' };
 function pgHead(s, i, kind) {
   return '<div class="pg-head"><span class="n">情境 ' + (i + 1) + '</span><h2>' + esc(s.title) + '</h2><span class="kind">' + kind + '</span></div>';
 }
