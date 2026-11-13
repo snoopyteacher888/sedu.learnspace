@@ -5509,6 +5509,116 @@
       "setting": "操場旁樹蔭長椅；小如在右中景看書、喬治從左側步道接近，阿明遠景。",
       "action": "喬治在長椅旁比讚",
       "filename": "S10_friend_Frame_45.png"
+    },
+    {
+      "scene": 11,
+      "scene_id": "busy",
+      "title": "老師在忙的時候",
+      "frame": 35,
+      "kind": "episode",
+      "setting": "同一教室；老師在左中景協助大偉，喬治從右側拿學習單走近。 喬治胸口以上近景，原場景背景稍微模糊。",
+      "action": "喬治近景：拿著學習單，很著急",
+      "filename": "S11_busy_Frame_35.png"
+    },
+    {
+      "scene": 11,
+      "scene_id": "busy",
+      "title": "老師在忙的時候",
+      "frame": 36,
+      "kind": "episode",
+      "setting": "同一教室；老師在左中景協助大偉，喬治從右側拿學習單走近。 喬治胸口以上近景，原場景背景稍微模糊。",
+      "action": "喬治近景：手伸出想拉衣角又停住",
+      "filename": "S11_busy_Frame_36.png"
+    },
+    {
+      "scene": 11,
+      "scene_id": "busy",
+      "title": "老師在忙的時候",
+      "frame": 37,
+      "kind": "episode",
+      "setting": "同一教室；老師在左中景協助大偉，喬治從右側拿學習單走近。 喬治面向觀眾示範，中間偏左構圖，右側留乾淨背景供提示卡。",
+      "action": "看向前方，觀察老師是不是在忙",
+      "filename": "S11_busy_Frame_37.png"
+    },
+    {
+      "scene": 11,
+      "scene_id": "busy",
+      "title": "老師在忙的時候",
+      "frame": 38,
+      "kind": "episode",
+      "setting": "同一教室；老師在左中景協助大偉，喬治從右側拿學習單走近。 喬治面向觀眾示範，中間偏左構圖，右側留乾淨背景供提示卡。",
+      "action": "雙手拿著學習單，安靜站好等",
+      "filename": "S11_busy_Frame_38.png"
+    },
+    {
+      "scene": 11,
+      "scene_id": "busy",
+      "title": "老師在忙的時候",
+      "frame": 39,
+      "kind": "episode",
+      "setting": "同一教室；老師在左中景協助大偉，喬治從右側拿學習單走近。 喬治面向觀眾示範，中間偏左構圖，右側留乾淨背景供提示卡。",
+      "action": "眼睛看前方、微笑（老師看到我了）",
+      "filename": "S11_busy_Frame_39.png"
+    },
+    {
+      "scene": 11,
+      "scene_id": "busy",
+      "title": "老師在忙的時候",
+      "frame": 40,
+      "kind": "episode",
+      "setting": "同一教室；老師在左中景協助大偉，喬治從右側拿學習單走近。 喬治面向觀眾示範，中間偏左構圖，右側留乾淨背景供提示卡。",
+      "action": "指著學習單開口詢問",
+      "filename": "S11_busy_Frame_40.png"
+    },
+    {
+      "scene": 11,
+      "scene_id": "busy",
+      "title": "老師在忙的時候",
+      "frame": 41,
+      "kind": "episode",
+      "setting": "文具店櫃台；前後兩格同一機位與道具，沿用原畫風和光線。",
+      "action": "文具店裡店員正在幫小如結帳，喬治拿著東西在後面等",
+      "filename": "S11_busy_Frame_41.png"
+    },
+    {
+      "scene": 11,
+      "scene_id": "busy",
+      "title": "老師在忙的時候",
+      "frame": 42,
+      "kind": "episode",
+      "setting": "文具店櫃台；前後兩格同一機位與道具，沿用原畫風和光線。",
+      "action": "店員看向喬治，喬治開口詢問",
+      "filename": "S11_busy_Frame_42.png"
+    },
+    {
+      "scene": 11,
+      "scene_id": "busy",
+      "title": "老師在忙的時候",
+      "frame": 43,
+      "kind": "episode",
+      "setting": "同校教室的課桌旁；前後兩格同一機位與道具，沿用原畫風和光線。",
+      "action": "教室裡小晴正在跟小如說話，喬治想借橡皮擦",
+      "filename": "S11_busy_Frame_43.png"
+    },
+    {
+      "scene": 11,
+      "scene_id": "busy",
+      "title": "老師在忙的時候",
+      "frame": 44,
+      "kind": "episode",
+      "setting": "同校教室的課桌旁；前後兩格同一機位與道具，沿用原畫風和光線。",
+      "action": "等她們說完，喬治禮貌地向小晴開口，小晴遞出橡皮擦",
+      "filename": "S11_busy_Frame_44.png"
+    },
+    {
+      "scene": 11,
+      "scene_id": "busy",
+      "title": "老師在忙的時候",
+      "frame": 45,
+      "kind": "episode",
+      "setting": "同一教室；老師在左中景協助大偉，喬治從右側拿學習單走近。",
+      "action": "喬治在教室比讚",
+      "filename": "S11_busy_Frame_45.png"
     }
   ]
 }
