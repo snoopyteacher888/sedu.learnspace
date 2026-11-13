@@ -27,17 +27,17 @@
       { ch: 1, img: [21], cap: '喬治差一點就打人，同學都嚇到了。' },
       { ch: 1, img: [21], pause: { q: '喬治現在的心情怎麼樣？你從哪裡看出來的？', hint: '很生氣、很丟臉。他的臉很紅、拳頭握緊、往前衝。' } },
       { ch: 2, img: [7], mode: 'memory', say: [['le', '等一下，我們倒帶回去看看。']] },
-      { ch: 2, img: [4], mode: 'memory', say: [['le', '大偉笑我的時候，其實我心裡覺得好丟臉，好怕大家覺得我很笨。']] },
-      { ch: 2, img: [6], mode: 'memory', say: [['le', '我的臉變好熱、心跳好快、拳頭一直握緊。這是我的身體在說：我生氣了！']] },
+      { ch: 2, img: [33], mode: 'memory', say: [['le', '大偉笑我的時候，其實我心裡覺得好丟臉，好怕大家覺得我很笨。']] },
+      { ch: 2, img: [32], mode: 'memory', say: [['le', '我的臉變好熱、心跳好快、拳頭一直握緊。這是我的身體在說：我生氣了！']] },
       { ch: 2, img: [19], mode: 'split', split: ['我好丟臉、好難過。', '喬治好兇，要打人。'], say: [['le', '可是大家看不到我心裡在想什麼，只看到我要打人。']] },
       { ch: 2, img: [19], mode: 'split', split: ['我好丟臉、好難過。', '喬治好兇，要打人。'], pause: { q: '喬治心裡想的，和大家看到的，有什麼不一樣？', hint: '喬治心裡是丟臉、難過，可是大家只看到他很兇、要打人。' } },
-      { ch: 3, img: [8], step: 1, say: [['le', '所以我學會了三招。第一招：停！身體先不要動，把手放下來。']] },
-      { ch: 3, img: [9], step: 1, say: [['le', '你也試試看：把手放在腿上，停住不動。']] },
-      { ch: 3, img: [10], step: 2, say: [['le', '第二招：深呼吸。我們一起做。']] },
-      { ch: 3, img: [10], step: 2, mode: 'breathe', cycles: 3 },
-      { ch: 3, img: [11], step: 2, say: [['le', '吐完氣，肩膀放鬆了，心跳也慢下來了。']] },
-      { ch: 3, img: [12, 13], step: 3, say: [['le', '第三招：看著對方，說出來。']] },
-      { ch: 3, img: [13], step: 3, mode: 'along', along: '我不喜歡你這樣笑我。', say: [['le', '我們一起說一次：']] },
+      { ch: 3, img: [34], step: 1, say: [['le', '所以我學會了三招。第一招：停！身體先不要動，把手放下來。']] },
+      { ch: 3, img: [34], step: 1, say: [['le', '你也試試看：把手放在腿上，停住不動。']] },
+      { ch: 3, img: [35], step: 2, say: [['le', '第二招：深呼吸。我們一起做。']] },
+      { ch: 3, img: [35, 36], step: 2, mode: 'breathe', cycles: 3 },
+      { ch: 3, img: [36], step: 2, say: [['le', '吐完氣，肩膀放鬆了，心跳也慢下來了。']] },
+      { ch: 3, img: [37], step: 3, say: [['le', '第三招：看著對方，說出來。']] },
+      { ch: 3, img: [37], step: 3, mode: 'along', along: '我不喜歡你這樣笑我。', say: [['le', '我們一起說一次：']] },
       { ch: 3, img: [15], step: 4, say: [['le', '如果他還是一直笑，就去找老師幫忙。']] },
       { ch: 3, img: [15], pause: { q: '你生氣的時候，身體會有什麼感覺？', hint: '臉變熱、心跳變快、想大叫、拳頭握緊……每個人都不一樣。' } },
       { ch: 4, img: [2, 3], cap: '我們再看一次。這一次，喬治用了三招。' },
@@ -51,10 +51,10 @@
       { ch: 4, img: [30], say: [['tea', '念錯沒關係，大家都在學習。']] },
       { ch: 4, img: [30], pause: { q: '這一次喬治做了哪些事？結果有什麼不一樣？', hint: '停下來、深呼吸、說出不喜歡、找老師。大家沒有吵架，課也可以繼續上。' } },
       { ch: 5, img: [31], mode: 'card', card: ['✨', '這三招，在別的地方也可以用'], say: [['le', '這三招，在別的地方也可以用喔！']] },
-      { ch: 5, img: [31], mode: 'card', card: ['🏠', '在家裡，弟弟笑你畫得很醜'], say: [['le', '在家裡，弟弟笑我畫得很醜，我也可以先停、深呼吸，再說：「我不喜歡你這樣笑我。」']] },
-      { ch: 5, img: [31], mode: 'card', card: ['⚽', '下課玩遊戲輸了，同學笑你'], say: [['le', '下課玩遊戲輸了，被同學笑的時候，也可以先停下來、深呼吸，需要的話就去找老師。']] },
+      { ch: 5, img: [38, 39], cap: '美勞課，阿明笑我畫得很醜', say: [['le', '美勞課，阿明笑我畫得很醜，我也可以先停、深呼吸，再說：「我不喜歡你這樣笑我。」']] },
+      { ch: 5, img: [40, 41], cap: '下課猜拳輸了，小晴笑我', say: [['le', '下課猜拳輸了，小晴笑我的時候，我也可以先停下來、深呼吸，說出我的感覺。']] },
       { ch: 6, img: [31], mode: 'sum', say: [['le', '記住口訣：停、深呼吸、說「我不喜歡」、找老師。']] },
-      { ch: 6, img: [31], mode: 'card', card: ['🏅', '本週挑戰：被笑或很生氣的時候，試一次「停、深呼吸、說出來」'], say: [['le', '這個星期，我們一起試試看！']] }
+      { ch: 6, img: [42], mode: 'card', card: ['🏅', '本週挑戰：被笑或很生氣的時候，試一次「停、深呼吸、說出來」'], say: [['le', '這個星期，我們一起試試看！']] }
     ],
     /* 小任務：b 基礎版、a 進階版；o 選項 [文字, 圖（畫格號碼或表情）, 對不對]；h 答錯的提示；why 答對的說明 */
     tasks: [
@@ -141,7 +141,8 @@ function epVideo() {
     '<div class="row ctrl"><button class="btn" id="eprev">⏮ 上一段</button><button class="btn primary" id="eplay">▶ 播放</button><button class="btn" id="enext">下一段 ⏭</button>' +
     '<span class="spacer"></span><label class="tog"><input type="checkbox" id="ecm"' + (EPS.classroom ? ' checked' : '') + '> 課堂模式（討論點自動暫停）</label></div>' +
     '<section class="panel green" id="eppanel"><h3><span class="dot" style="background:var(--green)"></span><span style="flex:1">看影片</span></h3>' +
-    '<p class="lead">影片約 4 分鐘。開著「課堂模式」，影片會在 4 個討論點停下來，讓大家說說看。看完後到「②小任務」。</p>' +
+    (SCENES[state.sc].teacherNote ? '<p class="tnote">👩‍🏫 給老師：' + esc(SCENES[state.sc].teacherNote) + '</p>' : '') +
+    '<p class="lead">影片約 3 分鐘。開著「課堂模式」，影片會在 4 個討論點停下來，讓大家說說看。看完後到「②小任務」。</p>' +
     '<div class="row"><span class="spacer"></span><button class="btn go" id="totask">看完了，去做小任務 →</button></div></section>';
   $('#chaps').querySelectorAll('button').forEach(function (b) { b.onclick = function () { var k = +b.dataset.ch; epGo(ep.shots.findIndex(function (x) { return x.ch === k; }), true); }; });
   $('#eplay').onclick = function () { if (EPS.playing) epPause(); else { if (EPS.i >= ep.shots.length - 1 && EPS.done) EPS.i = 0; epPlay(); } };
