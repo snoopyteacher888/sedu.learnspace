@@ -897,6 +897,75 @@
       ],
       "ending": "S13_shop/S13_shop_Frame_30.png",
       "summary": "S13_shop/S13_shop_Frame_31.png"
+    },
+    {
+      "scene": 14,
+      "title": "想要的東西拿不到",
+      "decision_frame": 7,
+      "correct_option": "B",
+      "background": "S14_phone/S14_phone_Frame_01.png",
+      "intro": [
+        "S14_phone/S14_phone_Frame_02.png",
+        "S14_phone/S14_phone_Frame_03.png",
+        "S14_phone/S14_phone_Frame_04.png",
+        "S14_phone/S14_phone_Frame_05.png",
+        "S14_phone/S14_phone_Frame_06.png",
+        "S14_phone/S14_phone_Frame_07.png"
+      ],
+      "correct_demonstration": [
+        "S14_phone/S14_phone_Frame_02.png",
+        "S14_phone/S14_phone_Frame_03.png",
+        "S14_phone/S14_phone_Frame_04.png",
+        "S14_phone/S14_phone_Frame_05.png",
+        "S14_phone/S14_phone_Frame_06.png",
+        "S14_phone/S14_phone_Frame_07.png",
+        "S14_phone/S14_phone_Frame_08.png",
+        "S14_phone/S14_phone_Frame_09.png",
+        "S14_phone/S14_phone_Frame_10.png",
+        "S14_phone/S14_phone_Frame_11.png",
+        "S14_phone/S14_phone_Frame_12.png",
+        "S14_phone/S14_phone_Frame_13.png",
+        "S14_phone/S14_phone_Frame_14.png",
+        "S14_phone/S14_phone_Frame_15.png",
+        "S14_phone/S14_phone_Frame_16.png",
+        "S14_phone/S14_phone_Frame_17.png",
+        "S14_phone/S14_phone_Frame_30.png",
+        "S14_phone/S14_phone_Frame_31.png"
+      ],
+      "branches": {
+        "A": [
+          "S14_phone/S14_phone_Frame_18.png",
+          "S14_phone/S14_phone_Frame_19.png",
+          "S14_phone/S14_phone_Frame_20.png",
+          "S14_phone/S14_phone_Frame_21.png"
+        ],
+        "B": [
+          "S14_phone/S14_phone_Frame_22.png",
+          "S14_phone/S14_phone_Frame_23.png",
+          "S14_phone/S14_phone_Frame_24.png",
+          "S14_phone/S14_phone_Frame_25.png"
+        ],
+        "C": [
+          "S14_phone/S14_phone_Frame_26.png",
+          "S14_phone/S14_phone_Frame_27.png",
+          "S14_phone/S14_phone_Frame_28.png",
+          "S14_phone/S14_phone_Frame_29.png"
+        ]
+      },
+      "correct_replay_after_decision": [
+        "S14_phone/S14_phone_Frame_08.png",
+        "S14_phone/S14_phone_Frame_09.png",
+        "S14_phone/S14_phone_Frame_10.png",
+        "S14_phone/S14_phone_Frame_11.png",
+        "S14_phone/S14_phone_Frame_12.png",
+        "S14_phone/S14_phone_Frame_13.png",
+        "S14_phone/S14_phone_Frame_14.png",
+        "S14_phone/S14_phone_Frame_15.png",
+        "S14_phone/S14_phone_Frame_16.png",
+        "S14_phone/S14_phone_Frame_17.png"
+      ],
+      "ending": "S14_phone/S14_phone_Frame_30.png",
+      "summary": "S14_phone/S14_phone_Frame_31.png"
     }
   ]
 }

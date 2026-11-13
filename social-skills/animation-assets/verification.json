@@ -1,15 +1,49 @@
 {
-  "expected": 403,
-  "present": 403,
+  "expected": 434,
+  "present": 434,
   "missing": [],
   "dimensions": {
-    "1672x941": 352,
-    "1671x941": 22,
+    "1672x941": 381,
+    "1671x941": 23,
     "1670x941": 4,
     "1670x942": 12,
     "1668x943": 8,
     "1669x942": 3,
-    "1672x940": 2
+    "1672x940": 2,
+    "1673x940": 1
   },
-  "duplicate_hashes": []
+  "duplicate_hashes": [
+    {
+      "sha256": "1b30b6bbc243b741f4e734aac5f4e27ca1f62d595e14de0ccefad020f699ebfd",
+      "paths": [
+        "S14_phone/S14_phone_Frame_09.png",
+        "S14_phone/S14_phone_Frame_22.png"
+      ],
+      "reason": "情境14選項B沿用對應主線畫面（09→22、12→23、14→24、16→25）。"
+    },
+    {
+      "sha256": "529f309cd692ec72a216e4ade118d6b25cd38491a4a39a0b5660d448dad853ff",
+      "paths": [
+        "S14_phone/S14_phone_Frame_12.png",
+        "S14_phone/S14_phone_Frame_23.png"
+      ],
+      "reason": "情境14選項B沿用對應主線畫面（09→22、12→23、14→24、16→25）。"
+    },
+    {
+      "sha256": "60c9e9979d4f4cf2e12215d462e4797839deb8e6976ce67942d5d1533b40806f",
+      "paths": [
+        "S14_phone/S14_phone_Frame_14.png",
+        "S14_phone/S14_phone_Frame_24.png"
+      ],
+      "reason": "情境14選項B沿用對應主線畫面（09→22、12→23、14→24、16→25）。"
+    },
+    {
+      "sha256": "2f3b222752307c0538e63f8b12539f9c282cef96df1d8ee42997ec71d63137c0",
+      "paths": [
+        "S14_phone/S14_phone_Frame_16.png",
+        "S14_phone/S14_phone_Frame_25.png"
+      ],
+      "reason": "情境14選項B沿用對應主線畫面（09→22、12→23、14→24、16→25）。"
+    }
+  ]
 }
