@@ -361,3 +361,5 @@ function epMine() {
 
 /* 接上：有完整版的情境，打開就是完整版 */
 SCENES.forEach(function (s) { if (window.EPISODES[s.id]) s.ep = window.EPISODES[s.id]; });
+/* 情境列表在這個檔案載入前就畫好了：重畫一次，才會顯示「完整版」 */
+if (state.view === 'list') render();
