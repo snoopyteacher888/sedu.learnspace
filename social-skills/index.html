@@ -1531,6 +1531,7 @@ var clipAudio = null;
 function playClip(file, done) {
   if (clipAudio) { clipAudio.onended = clipAudio.onerror = null; clipAudio.pause(); }
   var a = clipAudio = new Audio('voice/' + file), fin = false;
+  if (state.view === 'episode' && window.EP_RATE) { a.playbackRate = EP_RATE; a.preservesPitch = true; }
   var end = function () { if (!fin) { fin = true; if (done) done(); } };
   a.onended = end; a.onerror = end;
   var pr = a.play(); if (pr && pr.catch) pr.catch(end);
@@ -1541,7 +1542,7 @@ function say1(text, sex, done, who) {
   if (state.tts && clip) { if ('speechSynthesis' in window) speechSynthesis.cancel(); playClip(clip, done); return; }
   if (!state.tts || !('speechSynthesis' in window)) { if (done) setTimeout(done, est); return; }
   speechSynthesis.cancel();
-  var u = new SpeechSynthesisUtterance(fixSay(text)); u.lang = 'zh-TW'; u.rate = .9;
+  var u = new SpeechSynthesisUtterance(fixSay(text)); u.lang = 'zh-TW'; u.rate = state.view === 'episode' && window.EP_RATE ? .9 * EP_RATE : .9;
   var fem = sex === 'f';
   u.voice = fem ? (V.f || V.m) : (V.m || V.f);
   u.pitch = !fem && !V.m ? .65 : 1;

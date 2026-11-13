@@ -91,6 +91,8 @@
 })();
 
 /* ================= 播放器 ================= */
+/* 節奏（老師回報偏慢，已調快）：每張圖停留毫秒、語音播放速度 */
+var EP_IMG = 650, EP_RATE = 1.15;
 var EPS = { sc: -1, i: 0, playing: false, tok: 0, t: [], classroom: true, tab: 'video', level: 'b', task: 0, score: [], tries: 0, seq: [] };
 try { var cm = localStorage.getItem('ep-classroom'); if (cm !== null) EPS.classroom = cm === '1'; var lv = localStorage.getItem('ep-level'); if (lv) EPS.level = lv; } catch (e) {}
 function epData() { return SCENES[state.sc].ep; }
@@ -167,7 +169,7 @@ function epRun(i) {
   if (shot.pause && !EPS.classroom) { epRun(i + 1); return; }
   epShow(i, false);
   var tok = EPS.tok;
-  epPerform(shot, function () { if (tok !== EPS.tok || !EPS.playing) return; epLater(function () { epRun(i + 1); }, 700); });
+  epPerform(shot, function () { if (tok !== EPS.tok || !EPS.playing) return; epLater(function () { epRun(i + 1); }, 250); });
 }
 /* 畫面：畫格依序淡入＋慢慢推近（鏡頭感），疊上旁白、對話、特別效果 */
 function epShow(i, instant) {
@@ -209,12 +211,12 @@ function epShow(i, instant) {
       if (instant && k === 0) im.className = 'on'; box.appendChild(im);
       requestAnimationFrame(function () { requestAnimationFrame(function () { im.className = 'on'; }); });
       epLater(function () { while (box.children.length > 2) box.removeChild(box.firstElementChild); }, 900);
-    }, k * 900);
+    }, k * EP_IMG);
   });
 }
 /* 這個鏡頭要做的事：念台詞、跟著深呼吸、一起說、討論暫停 */
 function epPerform(shot, done) {
-  var minMs = shot.img.length * 900 + 600, t0 = Date.now();
+  var minMs = shot.img.length * EP_IMG + 300, t0 = Date.now();
   var finish = function () { epLater(done, Math.max(0, minMs - (Date.now() - t0))); };
   var lines = [];
   if (shot.cap) lines.push(['nar', shot.cap]);
@@ -225,7 +227,7 @@ function epPerform(shot, done) {
   if (shot.mode === 'along') {
     epVoice(lines, function () {
       var p = $('#alt'); if (p) p.classList.add('glow');
-      epLater(function () { epVoice([['le', shot.along]], finish); }, 4200);
+      epLater(function () { epVoice([['le', shot.along]], finish); }, 3200);
     });
     return;
   }
