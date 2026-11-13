@@ -5069,6 +5069,116 @@
       "setting": "同一教室；喬治坐中景書桌，小如右側，老師左前方；學習單不出現可讀文字。",
       "action": "喬治在座位上比讚",
       "filename": "S06_help_Frame_45.png"
+    },
+    {
+      "scene": 7,
+      "scene_id": "nose",
+      "title": "鼻子不舒服",
+      "frame": 35,
+      "kind": "episode",
+      "setting": "同一教室及相鄰洗手台；喬治中景、小晴右側；左側柔光一致。 喬治胸口以上近景，原場景背景稍微模糊。",
+      "action": "喬治近景：鼻子癢，皺起鼻子",
+      "filename": "S07_nose_Frame_35.png"
+    },
+    {
+      "scene": 7,
+      "scene_id": "nose",
+      "title": "鼻子不舒服",
+      "frame": 36,
+      "kind": "episode",
+      "setting": "同一教室及相鄰洗手台；喬治中景、小晴右側；左側柔光一致。 喬治胸口以上近景，原場景背景稍微模糊。",
+      "action": "喬治近景：手指停在鼻子前猶豫（不碰鼻孔）",
+      "filename": "S07_nose_Frame_36.png"
+    },
+    {
+      "scene": 7,
+      "scene_id": "nose",
+      "title": "鼻子不舒服",
+      "frame": 37,
+      "kind": "episode",
+      "setting": "同一教室及相鄰洗手台；喬治中景、小晴右側；左側柔光一致。 喬治面向觀眾示範，中間偏左構圖，右側留乾淨背景供提示卡。",
+      "action": "從面紙盒抽出衛生紙",
+      "filename": "S07_nose_Frame_37.png"
+    },
+    {
+      "scene": 7,
+      "scene_id": "nose",
+      "title": "鼻子不舒服",
+      "frame": 38,
+      "kind": "episode",
+      "setting": "同一教室及相鄰洗手台；喬治中景、小晴右側；左側柔光一致。 喬治面向觀眾示範，中間偏左構圖，右側留乾淨背景供提示卡。",
+      "action": "頭轉向無人的一側",
+      "filename": "S07_nose_Frame_38.png"
+    },
+    {
+      "scene": 7,
+      "scene_id": "nose",
+      "title": "鼻子不舒服",
+      "frame": 39,
+      "kind": "episode",
+      "setting": "同一教室及相鄰洗手台；喬治中景、小晴右側；左側柔光一致。 喬治面向觀眾示範，中間偏左構圖，右側留乾淨背景供提示卡。",
+      "action": "用衛生紙輕輕擦鼻子",
+      "filename": "S07_nose_Frame_39.png"
+    },
+    {
+      "scene": 7,
+      "scene_id": "nose",
+      "title": "鼻子不舒服",
+      "frame": 40,
+      "kind": "episode",
+      "setting": "相鄰走廊洗手台，沿用原洗手鏡頭配置、溫暖日光，喬治在左半部示範洗手。",
+      "action": "在洗手台洗手",
+      "filename": "S07_nose_Frame_40.png"
+    },
+    {
+      "scene": 7,
+      "scene_id": "nose",
+      "title": "鼻子不舒服",
+      "frame": 41,
+      "kind": "episode",
+      "setting": "同校教室的營養午餐座位；前後兩格同一機位與道具，沿用原畫風和光線。",
+      "action": "吃營養午餐時，喬治想打噴嚏，表情皺起",
+      "filename": "S07_nose_Frame_41.png"
+    },
+    {
+      "scene": 7,
+      "scene_id": "nose",
+      "title": "鼻子不舒服",
+      "frame": 42,
+      "kind": "episode",
+      "setting": "同校教室的營養午餐座位；前後兩格同一機位與道具，沿用原畫風和光線。",
+      "action": "喬治轉頭、用手肘遮住口鼻打噴嚏（不畫任何噴出物）",
+      "filename": "S07_nose_Frame_42.png"
+    },
+    {
+      "scene": 7,
+      "scene_id": "nose",
+      "title": "鼻子不舒服",
+      "frame": 43,
+      "kind": "episode",
+      "setting": "同校操場體育課後的休息區；前後兩格同一機位與道具，沿用原畫風和光線。",
+      "action": "體育課跑完步，喬治滿頭汗，正要拉起衣服擦臉",
+      "filename": "S07_nose_Frame_43.png"
+    },
+    {
+      "scene": 7,
+      "scene_id": "nose",
+      "title": "鼻子不舒服",
+      "frame": 44,
+      "kind": "episode",
+      "setting": "同校操場體育課後的休息區；前後兩格同一機位與道具，沿用原畫風和光線。",
+      "action": "喬治改拿出手帕擦汗",
+      "filename": "S07_nose_Frame_44.png"
+    },
+    {
+      "scene": 7,
+      "scene_id": "nose",
+      "title": "鼻子不舒服",
+      "frame": 45,
+      "kind": "episode",
+      "setting": "同一教室及相鄰洗手台；喬治中景、小晴右側；左側柔光一致。",
+      "action": "喬治在座位上比讚",
+      "filename": "S07_nose_Frame_45.png"
     }
   ]
 }
