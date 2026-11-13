@@ -241,6 +241,8 @@
       box-shadow: 0 10px 30px rgba(40, 30, 20, .35); font-size: clamp(11px, 2.2cqw, 20px); animation: capIn .4s ease both; }
     .pausecard small { color: #C8664F; font-weight: 700; } .pausecard p { margin: .3em 0 .7em; font-size: 1.15em; font-weight: 700; } .pausecard .ph { font-size: .95em; font-weight: 400; margin: .7em 0 0; color: var(--ink-soft); }
     .tog { display: inline-flex; align-items: center; gap: 6px; font-size: .9em; background: var(--surface); border-radius: 12px; padding: 6px 10px; }
+    .rate-ctl input { width: 120px; accent-color: var(--brand); }
+    .rate-ctl b { min-width: 3.2em; }
     .tog select { font: inherit; border: 1.5px solid var(--line); border-radius: 8px; background: #fff; }
     .tbar { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; flex-wrap: wrap; }
     .tprog { display: flex; gap: 6px; } .tprog i { width: 26px; height: 10px; border-radius: 5px; background: rgba(255, 255, 255, .45); } .tprog i.done { background: #9DB59A; } .tprog i.on { background: var(--yellow); }
@@ -1528,10 +1530,24 @@ if ('speechSynthesis' in window) { pickVoice(); speechSynthesis.onvoiceschanged 
 var sayTok = 0;
 /* 喬治、阿明、大偉說的話：播放預先錄好的男生語音（老師要求：喬治要是男生的聲音） */
 var clipAudio = null;
+/* 語速：0.5～1.5 倍，老師用拉桿調整，記在這台電腦上（老師回報：對話太快） */
+var SPEECH_RATE = 1;
+try { var sr = parseFloat(localStorage.getItem('le-rate-speech')); if (sr >= .5 && sr <= 1.5) SPEECH_RATE = sr; } catch (e) {}
+function rateCtl() {
+  return '<label class="tog rate-ctl">🐢 語速 <input type="range" class="srate" min="0.5" max="1.5" step="0.1" value="' + SPEECH_RATE + '" aria-label="語速"> <b class="srv">' + SPEECH_RATE.toFixed(1) + ' 倍</b> 🐇</label>';
+}
+document.addEventListener('input', function (e) {
+  if (!e.target.classList || !e.target.classList.contains('srate')) return;
+  SPEECH_RATE = Math.round(parseFloat(e.target.value) * 10) / 10;
+  try { localStorage.setItem('le-rate-speech', SPEECH_RATE); } catch (err) {}
+  document.querySelectorAll('.srate').forEach(function (x) { x.value = SPEECH_RATE; });
+  document.querySelectorAll('.srv').forEach(function (x) { x.textContent = SPEECH_RATE.toFixed(1) + ' 倍'; });
+  if (clipAudio) clipAudio.playbackRate = SPEECH_RATE;
+});
 function playClip(file, done) {
   if (clipAudio) { clipAudio.onended = clipAudio.onerror = null; clipAudio.pause(); }
   var a = clipAudio = new Audio('voice/' + file), fin = false;
-  if (state.view === 'episode' && window.EP_RATE) { a.playbackRate = EP_RATE; a.preservesPitch = true; }
+  a.playbackRate = SPEECH_RATE; a.preservesPitch = true;
   var end = function () { if (!fin) { fin = true; if (done) done(); } };
   a.onended = end; a.onerror = end;
   var pr = a.play(); if (pr && pr.catch) pr.catch(end);
@@ -1542,7 +1558,7 @@ function say1(text, sex, done, who) {
   if (state.tts && clip) { if ('speechSynthesis' in window) speechSynthesis.cancel(); playClip(clip, done); return; }
   if (!state.tts || !('speechSynthesis' in window)) { if (done) setTimeout(done, est); return; }
   speechSynthesis.cancel();
-  var u = new SpeechSynthesisUtterance(fixSay(text)); u.lang = 'zh-TW'; u.rate = state.view === 'episode' && window.EP_RATE ? .9 * EP_RATE : .9;
+  var u = new SpeechSynthesisUtterance(fixSay(text)); u.lang = 'zh-TW'; u.rate = .9 * SPEECH_RATE;
   var fem = sex === 'f';
   u.voice = fem ? (V.f || V.m) : (V.m || V.f);
   u.pitch = !fem && !V.m ? .65 : 1;
@@ -1977,7 +1993,7 @@ function renderCtrl() {
     '<button class="btn primary" id="next"' + (last ? ' disabled' : '') + '>下一格 ▶</button>' +
     '<span class="spacer"></span>' +
     (state.auto ? '<button class="btn" id="stop">■ 停止</button>' : '<button class="btn" id="auto">▶ 自動播放</button>') +
-    '<button class="btn" id="read" title="再念一次">🔁 再念一次</button>';
+    '<button class="btn" id="read" title="再念一次">🔁 再念一次</button>' + rateCtl();
   $('#prev').onclick = function () { stopAll(); state.fi--; state.stamp = null; drawFrame(state.badge); renderCtrl(); speakFrame(); };
   $('#next').onclick = function () { stopAll(); nextFrame(); speakFrame(); };
   if ($('#auto')) $('#auto').onclick = autoPlay;

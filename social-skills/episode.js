@@ -91,8 +91,8 @@
 })();
 
 /* ================= 播放器 ================= */
-/* 節奏（老師回報偏慢，已調快）：每張圖停留毫秒、語音播放速度 */
-var EP_IMG = 650, EP_RATE = 1.15;
+/* 節奏：每張圖停留毫秒（語速由下方拉桿調整） */
+var EP_IMG = 650;
 var EPS = { sc: -1, i: 0, playing: false, tok: 0, t: [], classroom: true, tab: 'video', level: 'b', task: 0, score: [], tries: 0, seq: [] };
 try { var cm = localStorage.getItem('ep-classroom'); if (cm !== null) EPS.classroom = cm === '1'; var lv = localStorage.getItem('ep-level'); if (lv) EPS.level = lv; } catch (e) {}
 function epData() { return SCENES[state.sc].ep; }
@@ -139,7 +139,7 @@ function epVideo() {
     '<div class="chaps" id="chaps">' + ep.chapters.map(function (c, k) { return '<button data-ch="' + k + '">' + esc(c) + '</button>'; }).join('') + '</div>' +
     '<div class="stage anim ep" id="stage"><div class="aframe"></div><span class="tag" id="tag"></span><span class="count" id="cnt"></span><div class="epprog"><i id="prog"></i></div></div>' +
     '<div class="row ctrl"><button class="btn" id="eprev">⏮ 上一段</button><button class="btn primary" id="eplay">▶ 播放</button><button class="btn" id="enext">下一段 ⏭</button>' +
-    '<span class="spacer"></span><label class="tog"><input type="checkbox" id="ecm"' + (EPS.classroom ? ' checked' : '') + '> 課堂模式（討論點自動暫停）</label></div>' +
+    '<span class="spacer"></span>' + rateCtl() + '<label class="tog"><input type="checkbox" id="ecm"' + (EPS.classroom ? ' checked' : '') + '> 課堂模式（討論點自動暫停）</label></div>' +
     '<section class="panel green" id="eppanel"><h3><span class="dot" style="background:var(--green)"></span><span style="flex:1">看影片</span></h3>' +
     (SCENES[state.sc].teacherNote ? '<p class="tnote">👩‍🏫 給老師：' + esc(SCENES[state.sc].teacherNote) + '</p>' : '') +
     '<p class="lead">影片約 3 分鐘。開著「課堂模式」，影片會在 4 個討論點停下來，讓大家說說看。看完後到「②小任務」。</p>' +
